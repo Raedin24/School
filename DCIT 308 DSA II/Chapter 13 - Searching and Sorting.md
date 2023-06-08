@@ -30,4 +30,7 @@
 	 - Inner loop finds the smallest value by scanning all positions greater than or equal to index in outer loop
 - Sorted array is in ascending order since the smallest element is found first. Can be switched to largest element for descending order
 ## Insertion Sort
-- Sorts a list of values by repetitively inserting a particular value into a subset of the list that has already been sorted
+- Sorts a list of values by repetitively inserting a particular value into a subset of the list that has already been sorted.
+- Each unsorted element is inserted at the appropriate position until the list is sorted
+- Sort the first 2 values in the list
+	- Insert the 3rd value in the sorted position relative to the first 2 sorted

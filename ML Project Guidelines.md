@@ -1,0 +1,4 @@
+- Build code from scratch
+- Follow suggested paper as template
+- If dataset of paper is too large, substitute with other data with similar features
+- Try these steps and run code over the weekend to evaluate performance
