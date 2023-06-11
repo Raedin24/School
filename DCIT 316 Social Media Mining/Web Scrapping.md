@@ -7,7 +7,7 @@
 	2. Parsing and extracting data into useful structures
 3. Processing
 
-**XPath Notation**
+## XPath Notation
 - Can be used to traverse html tags
 - Similar to a directory
 	- xpath = '/html/body/div[2]'
@@ -41,5 +41,14 @@
 - Use `extract()` to obtain the information from the selector/selectorlist
 - Use `extract_first()` to obtain the information from the selector/selectorlist
 
-**CSS Locators**
- 
+## CSS Locators
+**Rosetta CSStone**
+- `/` replaced by `>` (except first character)
+	XPath: /html/body/div
+	CSS Locator: html > body > div
+- `//` replaced by a blank space (except first character)
+	XPath: //div/span//p
+	CSS Locator : div > span p
+- `[N] `replaced by `:nth-of-type(N)`
+	XPath: //div/p[2]
+	CSS Locator: div > p:nth-of-type(2)
