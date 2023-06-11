@@ -23,5 +23,9 @@
 	 '@' - used to refer to attributes
 	 - xpath = '/html/body/\*'
 	 Selects all children of the `body` element
-- *contains* - can be used to select a substring
+- *contains* - can be used to select a all substrings which contain an expression
 	 contains(@attribute-name, "string_expression")
+	 xpath = '//\*[contains(@class, "class-1")]'
+		 Will also choose \<p class="class-1 2">...\</p>, since "class-1" is a substring of "class-1 2"
+	 xpath = '//\*[(@class, "class-1")]'
+		 Will only choose if entire attribute is equal
