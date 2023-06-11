@@ -32,3 +32,5 @@
 - **attributes**
 	 To get to a specific attribute, first direct to the element containing the attribute
 	 xpath = '/html/body/div/p[2]/@class'
+	 Create an xpath to the href attribute
+	 xpath = '//p[@id="p2"]/a/@href'
