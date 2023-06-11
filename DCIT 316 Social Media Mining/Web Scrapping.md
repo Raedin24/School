@@ -31,7 +31,7 @@
 		 Will only choose if entire attribute is equal
 - **attributes**
 	 To get to a specific attribute, first direct to the element containing the attribute
-	 xpath = '/html/body/div/p[2]/@class'
+	 xpath = '/html/body/div/p[2]/@class' - Selects class attribute from all the paragraph children 
 	 Create an xpath to the href attribute
 	 xpath = '//p[@id="p2"]/a/@href'
 
@@ -62,4 +62,5 @@ css = 'html > body  div > p:nth-of-type(2)'
 - `@id` replaced by `#`
 	 Xpath = '/html/body/div/p[@id="uid"]'
 	 CSS = 'html > body > div > p#uid
-- 
+- 	 xpath = '//p[@id="p2"]/a/@href'
+	CSS Locator: 'p#p2 > a::attr(hre)' > p:nth-of-type(2)
