@@ -38,3 +38,4 @@
 - Using an `xpath` call within a `Selector` creates a new `Selector` s of specific elements
 	- Returns a `SelectorList` of `Selector` objects
 - Use `extract()` to obtain the information from the selector/selectorlist
+- Use `extract()` to obtain the information from the selector/selectorlist
