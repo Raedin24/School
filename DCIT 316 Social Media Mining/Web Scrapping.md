@@ -26,6 +26,9 @@
 - *contains* - can be used to select a all substrings which contain an expression
 	 contains(@attribute-name, "string_expression")
 	 xpath = '//\*[contains(@class, "class-1")]'
-		 Will also choose \<p class="class-1 2">...\</p>, since "class-1" is a substring of "class-1 2"
+		 Will also choose \<p class="class-12">...\</p>, since "class-1" is a substring of "class-12"
 	 xpath = '//\*[(@class, "class-1")]'
 		 Will only choose if entire attribute is equal
+- **attributes**
+	 To get to a specific attribute, first direct to the element containing the attribute
+	 xpath = '/html/body/div/p[2]/@class'
