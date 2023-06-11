@@ -34,8 +34,9 @@
 	 xpath = '/html/body/div/p[2]/@class'
 	 Create an xpath to the href attribute
 	 xpath = '//p[@id="p2"]/a/@href'
+
 **Scrappy Selector**
 - Using an `xpath` call within a `Selector` creates a new `Selector` s of specific elements
 	- Returns a `SelectorList` of `Selector` objects
 - Use `extract()` to obtain the information from the selector/selectorlist
-- Use `extract()` to obtain the information from the selector/selectorlist
+- Use `extract_first()` to obtain the information from the selector/selectorlist
