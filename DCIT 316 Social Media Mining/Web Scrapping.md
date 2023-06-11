@@ -46,9 +46,16 @@
 - `/` replaced by `>` (except first character)
 	XPath: /html/body/div
 	CSS Locator: html > body > div
-- `//` replaced by a blank space (except first character)
+-  `//` replaced by a blank space (except first character)
 	XPath: //div/span//p
 	CSS Locator : div > span p
 - `[N] `replaced by `:nth-of-type(N)`
 	XPath: //div/p[2]
 	CSS Locator: div > p:nth-of-type(2)
+```CSS
+xpath = '/html/body//div/p[2]'
+css = 'html > body  div > p:nth-of-type(2)'
+```
+- `@class` replaced by `.`
+	 Xpath = '/html/body/div/p[2]/@class'
+	 CSS = 'html > '
