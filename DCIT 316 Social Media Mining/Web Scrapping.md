@@ -20,3 +20,5 @@
 	 Restricts the search to all `table` elements in the second `div`;
 	 - xpath = '//div[@class="div-class"]'
 	 Specifically looks for all `div` elements that have `class` attribute to be "div-class"
+	 - xpath = '/html/body/\*'
+	 Selects all children of the `body` element
