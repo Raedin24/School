@@ -40,3 +40,6 @@
 	- Returns a `SelectorList` of `Selector` objects
 - Use `extract()` to obtain the information from the selector/selectorlist
 - Use `extract_first()` to obtain the information from the selector/selectorlist
+
+**CSS Locators**
+ 
