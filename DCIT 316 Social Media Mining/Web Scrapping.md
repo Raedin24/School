@@ -62,5 +62,9 @@ css = 'html > body  div > p:nth-of-type(2)'
 - `@id` replaced by `#`
 	 Xpath = '/html/body/div/p[@id="uid"]'
 	 CSS = 'html > body > div > p#uid
-- 	 xpath = '//p[@id="p2"]/a/@href'
-	CSS Locator: 'p#p2 > a::attr(hre)' > p:nth-of-type(2)
+-  Xpath = '//p[@id="p2"]/a/@href'
+	CSS Locator='p#p2 > a::attr(href)'
+- Text Extraction
+	sel.xpath('//p[@id="p-example"]/text()').extract() - All text within the current generation
+	sel.xpath('//p[@id="p-example"]//text()').extract() - All text within current and future generations
+	sel.css('p#p-example::text()').extract()
