@@ -57,5 +57,9 @@ xpath = '/html/body//div/p[2]'
 css = 'html > body  div > p:nth-of-type(2)'
 ```
 - `@class` replaced by `.`
-	 Xpath = '/html/body/div/p[2]/@class'
-	 CSS = 'html > '
+	 Xpath = '/html/body/div/p[@class="class-1"]'
+	 CSS = 'html > body > div > p.class-1
+- `@id` replaced by `#`
+	 Xpath = '/html/body/div/p[@id="uid"]'
+	 CSS = 'html > body > div > p#uid
+- 
