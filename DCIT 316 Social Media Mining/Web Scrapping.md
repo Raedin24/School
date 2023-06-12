@@ -68,5 +68,5 @@ css = 'html > body  div > p:nth-of-type(2)'
 - Text Extraction
 	sel.xpath('//p[@id="p-example"]/text()').extract() - All text within the current generation
 	sel.xpath('//p[@id="p-example"]//text()').extract() - All text within current and future generations
-	sel.css('p#p-example::text()').extract() - All text within the current generation
-	sel.css('p#p-example ::text()').extract() - All text within current and future generations. Note the space before `::`
+	sel.css('p#p-example::text').extract() - All text within the current generation
+	sel.css('p#p-example ::text').extract() - All text within current and future generations. Note the space before `::`
