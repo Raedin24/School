@@ -97,6 +97,20 @@ process.crawl(YourSpider)
 process.start()
 ```
 
-```Ptython
+```Python
+import scrapy
+from scrapy.crawler import CrawlerProcess
 
+class SpiderClassName(scrapy.Spider):
+	name = "spider_name"
+	
+	# start_requests method
+	def start_requests(self):
+		urls = ["https://www.datacamp.com", "https://scrapy.org"]
+		for url in urls:
+			yield url
+	
+	# parse method
+	def parse(self, response):
+		pass
 ```
