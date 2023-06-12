@@ -70,3 +70,17 @@ css = 'html > body  div > p:nth-of-type(2)'
 	sel.xpath('//p[@id="p-example"]//text()').extract() - All text within current and future generations
 	sel.css('p#p-example::text').extract() - All text within the current generation
 	sel.css('p#p-example ::text').extract() - All text within current and future generations. Note the space before `::`
+
+## Spiders
+**Steps**
+1. Required imports
+```Python
+import scrapy
+from scrapy.crawler import CrawlerProcess
+```
+2.  Create Spider
+```Python
+class SpiderClassName(scrapy.Spider):
+	name = "spider_name"
+	# T
+```
