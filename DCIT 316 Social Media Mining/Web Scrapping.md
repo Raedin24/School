@@ -82,5 +82,17 @@ from scrapy.crawler import CrawlerProcess
 ```Python
 class SpiderClassName(scrapy.Spider):
 	name = "spider_name"
-	# T
+	# Code for spider
+	...
+```
+3. Run Spider
+```Python
+# Initiate a CrawlerProcess
+process = CrawlerProcess()
+
+# Tel process which spider to use
+process.crawl(YourSpider)
+
+# Start crawling
+process.start()
 ```
