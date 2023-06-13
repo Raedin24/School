@@ -5,4 +5,6 @@ Consists of 2 parts
 Goal of the network is to learn 2 things
 1. Which features to extract from an image (base)
 2. Which class goes with which feature (head)
-CNNs are rarely trained from scratch. They often reuse the base of a pretrained model. The base is attached to an untrained head
+CNNs are rarely trained from scratch. They often reuse the base of a pretrained model. The base is attached to an untrained head. ie. Use the part that has learned to extract features to learn new layers, then classify those.
+> Reusing a pretrained model is known as *Transfer Learning*
+
