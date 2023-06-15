@@ -33,9 +33,13 @@ print(xls['1700'].head())
 ```Python
 from urllib.request imoprt urlopen, Request
 url = "https://www.wikipedia.org/"
-request = Request(url) # Package the request
-response = urlopen(request) # Returns an HTTP Response object
-html = response.read() # Apply read method of Response object. Returns HTML as a string
+# Package the request
+request = Request(url)
+# Returns an HTTP Response object
+response = urlopen(request) 
+# Apply read method of Response object. Returns HTML as a string
+html = response.read() 
+# Close request
 response.close()
 ```
 
