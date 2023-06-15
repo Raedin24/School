@@ -8,5 +8,7 @@ urlretrieve(url, 'whinequality-white.csv')
 ```
 - Can use `pandas` to directly read a csv from a website without first saving the file
 ```Python
-url = 
+url = 'https://assets.datacamp.com/production/course_1606/datasets/winequality-red.csv'
+df = pandas.read_csv(url, sep=';')
 ```
+
