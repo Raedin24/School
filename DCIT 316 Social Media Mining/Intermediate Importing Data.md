@@ -79,3 +79,18 @@ pretty_soup = soup.prettify()
 # Print the response
 print(pretty_soup)
 ```
++ Using `find_all()` to get a particular tag
+```Python
+soup = BeautifulSoup(html_doc)
+
+# Find all 'a' tags
+a_tags = soup.find_all('a')
+
+# Print URLs in a_tags
+for link in a_tags:
+	print(link.get('href'))
+```
+
+## Intro to APIs and JSONs
+**API** = Application Programming Interface
+- A set of protocols and routines for building and interacting with software applications
