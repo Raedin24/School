@@ -1,4 +1,4 @@
-**urllib** package
+### **urllib** package
 - Provides interface for fetching data across the web
 - `urlopen()` accepts URLs instead of file names
 ```Python
@@ -38,6 +38,8 @@ response = urlopen(request) # Returns an HTTP Response object
 html = response.read() # Apply read method of Response object. Returns HTML as a string
 response.close()
 ```
+
+### **requests** package
 - The higher level `requests` library can be used to package, send the request, and catch a response with a single function
 ```Python
 import requests
@@ -47,3 +49,6 @@ r = requests.get(url)
 # Extract the response using the 'text' attribute
 text = r.text
 ```
+
+## *BeautifulSoup* package
+
