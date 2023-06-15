@@ -105,6 +105,7 @@ json_data = r.json()
 for key, value in json_data.items():
 	print(key + ':', value)
 ```
+`?t=hackers` is known as a *Query String*. They are parts of URLs that do not fit into the conventional path structure
 **JSON** = JavaScript Object Notation
 - Standard form for transferring data between APIs
 ## Loading JSONs in Python
