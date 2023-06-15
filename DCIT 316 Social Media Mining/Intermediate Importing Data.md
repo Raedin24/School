@@ -95,6 +95,7 @@ for link in a_tags:
 # Intro to APIs and JSONs
 **API** = Application Programming Interface
 - A set of protocols and routines for building and interacting with software applications
+- Basically allows 2 software programs to communicate
 **JSON** = JavaScript Object Notation
 - Standard form for transferring data between APIs
 ## Loading JSONs in Python
