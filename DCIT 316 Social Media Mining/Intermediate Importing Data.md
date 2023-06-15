@@ -1,3 +1,4 @@
+# Scrapping and Parsing
 ### **urllib** package
 - Provides interface for fetching data across the web
 - `urlopen()` accepts URLs instead of file names
@@ -91,6 +92,8 @@ for link in a_tags:
 	print(link.get('href'))
 ```
 
-## Intro to APIs and JSONs
+# Intro to APIs and JSONs
 **API** = Application Programming Interface
 - A set of protocols and routines for building and interacting with software applications
+**JSON** = JavaScript Object Notation
+- Standard form for transferring data between APIs
