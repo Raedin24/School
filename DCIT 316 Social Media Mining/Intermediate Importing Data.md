@@ -105,7 +105,8 @@ json_data = r.json()
 for key, value in json_data.items():
 	print(key + ':', value)
 ```
-`?t=hackers` is known as a *Query String*. They are parts of URLs that do not fit into the conventional path structure
+`?...` is known as a *Query String*. They are parts of URLs that do not fit into the conventional path structure
+- The part after the question mark is the query being made to the API
 **JSON** = JavaScript Object Notation
 - Standard form for transferring data between APIs
 ## Loading JSONs in Python
