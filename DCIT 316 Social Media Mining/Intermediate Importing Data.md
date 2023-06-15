@@ -31,5 +31,10 @@ print(xls['1700'].head())
 - `urlretrive()` performs a GET request and saves the data locally
 **GET requests using urllib**
 ```Python
-from urllib
+from urllib.request imoprt urlopen, Request
+url = "https://www.wikipedia.org/"
+request = Request(url)
+response = urlopen(request) # Returns an HTTP Response object
+html = response.read() # Apply read method of Response object. Returns HTML as a string
+response.close()
 ```
