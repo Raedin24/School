@@ -97,3 +97,11 @@ for link in a_tags:
 - A set of protocols and routines for building and interacting with software applications
 **JSON** = JavaScript Object Notation
 - Standard form for transferring data between APIs
+## Loading JSONs in Python
+1. From a local directory
+```Python
+import json
+
+with open('snakes.json', 'r') as json_file:
+	json_data = json.load(json_file)
+```
