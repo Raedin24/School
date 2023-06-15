@@ -33,8 +33,17 @@ print(xls['1700'].head())
 ```Python
 from urllib.request imoprt urlopen, Request
 url = "https://www.wikipedia.org/"
-request = Request(url)
+request = Request(url) # Package the request
 response = urlopen(request) # Returns an HTTP Response object
 html = response.read() # Apply read method of Response object. Returns HTML as a string
 response.close()
+```
+- The higher level `requests` library can be used to package, send the request, and catch a response with a single function
+```Python
+import requests
+url = "http://www.datacamp.com/teach/documentation"
+# Packages the request, send the request and catch the response
+r = requests.get(url)
+# Extract the response using the 'text' attribute
+text = r.text
 ```
