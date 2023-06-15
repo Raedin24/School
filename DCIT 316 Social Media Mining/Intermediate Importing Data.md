@@ -96,6 +96,15 @@ for link in a_tags:
 **API** = Application Programming Interface
 - A set of protocols and routines for building and interacting with software applications
 - Basically allows 2 software programs to communicate
+## Connecting to an API
+```Python
+import requests
+url = 'http://www.omdbapi.com/?t=hackers'
+r = requests.get(url)
+json_data = r.json()
+for key, value in json_data.items():
+	print(key + ':', value)
+```
 **JSON** = JavaScript Object Notation
 - Standard form for transferring data between APIs
 ## Loading JSONs in Python
