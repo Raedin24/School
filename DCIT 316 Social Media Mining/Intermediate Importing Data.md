@@ -159,3 +159,14 @@ tweets_file.close()
 # Print the keys of the first tweet dict
 print(tweets_data[0].keys())
 ```
+
+## Twitter data to DataFrame
+```Python
+import pandas as pd
+
+# Build DataFrame of tweet texts and languages
+df = pd.DataFrame(tweets_data, columns=['text', 'lang'])
+
+# Print head of DataFrame
+print(df.head())
+```
