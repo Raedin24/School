@@ -117,3 +117,19 @@ import json
 with open('snakes.json', 'r') as json_file:
 	json_data = json.load(json_file)
 ```
+
+# Using Tweepy
+## Steps 
+```Python
+# Authentication
+import tweepy, json
+access_token = "..."
+access_token_secret = "..."
+consumer_key = "..."
+consumer_secret = "..."
+
+# Create Streaming object
+stream = tweepy.Stream(consumer_key, consumer_secret, access_token, access_token_secret)
+# Apply filter method to stream tweets containing keywords
+stream.filter(track=['apples', 'oranges'])
+```
