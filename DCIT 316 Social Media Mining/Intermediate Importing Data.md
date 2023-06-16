@@ -183,3 +183,21 @@ for index, row in df.iterrows():
 	sanders += word_in_text('sanders', row['text'])
 	cruz += word_in_text('cruz', row['text'])
 ```
+
+## Plotting data
+```Python
+# Import packages
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set seaborn style
+sns.set(color_codes=True)
+
+# Create a list of labels:cd
+cd = ['clinton', 'trump', 'sanders', 'cruz']
+
+# Plot the bar chart
+ax = sns.barplot(cd, [clinton, trump, sanders, cruz])
+ax.set(ylabel="count")
+plt.show()
+```
