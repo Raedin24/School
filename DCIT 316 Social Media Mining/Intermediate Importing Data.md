@@ -119,7 +119,7 @@ with open('snakes.json', 'r') as json_file:
 ```
 
 # Using Tweepy
-## Steps 
+## Setup 
 ```Python
 # Authentication
 import tweepy, json
@@ -132,4 +132,30 @@ consumer_secret = "..."
 stream = tweepy.Stream(consumer_key, consumer_secret, access_token, access_token_secret)
 # Apply filter method to stream tweets containing keywords
 stream.filter(track=['apples', 'oranges'])
+```
+
+## Load and explore data
+```Python
+# Import package
+import json
+
+# String of path to file: tweets_data_path
+tweets_data_path = 'tweets.txt'
+
+# Initialize empty list to store tweets: tweets_data
+tweets_data = []
+
+# Open connection to file
+tweets_file = open(tweets_data_path, "r")
+
+# Read in tweets and store in list: tweets_data
+for line in tweets_file:
+	tweet = json.loads(line)
+	tweets_data.append(tweet)
+
+# Close connection to file
+tweets_file.close()
+
+# Print the keys of the first tweet dict
+print(tweets_data[0].keys())
 ```
