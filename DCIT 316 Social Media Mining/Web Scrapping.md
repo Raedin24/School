@@ -114,3 +114,4 @@ class SpiderClassName(scrapy.Spider):
 	def parse(self, response):
 		pass
 ```
+- `self` allows for references between methods within the class. Basically instructs to look in the same class for a named method to be used
