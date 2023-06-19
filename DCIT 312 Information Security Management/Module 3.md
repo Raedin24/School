@@ -2,6 +2,7 @@
 - Understand firewalls
 - Understand firewall security policies
 - Know firewall security policy configuration
+
 # 3.1 Firewall Classification
 **Firewall features**
 - *Logical area filter* - Able to separate the internet into a trusted and untrusted domain.
@@ -35,15 +36,20 @@
 	- Vulnerable to attacks such as DOS - Due to it being dependent on the software and resources of the firewall
 3. **Stateful Inspection Firewall**
 	- Extension of the packet filtering firewall
-	-  Filters
+	-  Filters based on the packet and also on the connection status
+	- Each packet passing through is treated as independent units
 	- ACLs are created for each session/traffic
 	- Intercepts traffic at the network layer. Checks filtering status
 	- Saves header/session information and applies the same rules to subsequent packets with similar info
+	- Can be used with both TCP and UDP sessions
+
 ## Firewall Networking Modes
-**Mode 1**
+**Mode 1** - Layer 2 Design
+- Firewall is transparent to both domains 
+- Firewall does not interrupt existing IP scheme of the environment
 - Does not perform routing
 - Does not filter packets
-**Mode 2**
+**Mode 2** - Layer 3 Design
 - Second mode implements redundancy
 	- When there is high traffic, packets can be routed to another firewall for processing
 - Works even with topology changes
