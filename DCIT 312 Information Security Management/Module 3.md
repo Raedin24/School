@@ -76,5 +76,7 @@ Upon receiving packet, firewall:
 **Firewall Security Policy Mechanism**
 - Defines a list of rules for traffic passing through the firewall
 - Steps:
-	- Incoming data flow passes through the firewall
-	- Filter based on the security policies. If data matches with none of the security policies, the default policy is used(deny all )
+	1.  Incoming data flow passes through the firewall
+	2.  Firewall searches for matching security policy and determines whether to allow the next operation
+		-  If data matches with none of the security policies, the default policy is used(deny all traffic)
+	3.  Processes data packets according to rules in security policy
