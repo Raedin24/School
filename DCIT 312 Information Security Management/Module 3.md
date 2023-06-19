@@ -80,3 +80,4 @@ Upon receiving packet, firewall:
 	2.  Firewall searches for matching security policy and determines whether to allow the next operation
 		-  If data matches with none of the security policies, the default policy is used(deny all traffic)
 	3.  Processes data packets according to rules in security policy
+- Filtering is based on source/destination IP, source/destination zone, region, user and services such as port number and protocol, applications, and schedule
