@@ -71,4 +71,10 @@ Upon receiving packet, firewall:
 - Major applications:
 	-  Control network communication through firewall
 	- Control access to firewall
-- Security policy can be configured using Telnet, Web User interface or by command
+- Security policy can be configured using Telnet, Web User interface or by command 
+
+**Firewall Security Policy Mechanism**
+- Defines a list of rules for traffic passing through the firewall
+- Steps:
+	- Incoming data flow passes through the firewall
+	- Filter based on the security policies. If data matches with none of the security policies, the default policy is used(deny all )
