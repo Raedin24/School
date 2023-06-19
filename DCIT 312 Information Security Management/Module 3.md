@@ -22,7 +22,8 @@
 	- Does not check the application-layer data
 
 2. **Proxy/Application Firewalls**
-	- Firewall is not local to the network
+	- Firewall is not local to the network	
+	- Needs to be configured for every new protocol
 	*Procedure*
 	- Internet device first sends connection request to firewall
 	- Firewall performs security checks on the request. If check fails, connection is blocked
@@ -30,13 +31,14 @@
 	- Packets to/from the server are first sent through firewall
 	*Disadvantages*
 	- Slow processing
-	- Difficult to upgrade
-	- Vulnerable to attacks such as DOS - Due to it being dependent on the software
-
-1. **Stateful Inspection Firewall**
-- ACLs are created for each session/traffic
-- Intercepts traffic at the network layer. Checks filtering status
-- Saves header/session information and applies the same rules to subsequent packets with similar info
+	- Difficult to upgrade - Every protocol needs to have resources specially allocated to it. Hence difficult to upgrade quickly for new protocols
+	- Vulnerable to attacks such as DOS - Due to it being dependent on the software and resources of the firewall
+3. **Stateful Inspection Firewall**
+	- Extension of the packet filtering firewall
+	-  Filters
+	- ACLs are created for each session/traffic
+	- Intercepts traffic at the network layer. Checks filtering status
+	- Saves header/session information and applies the same rules to subsequent packets with similar info
 ## Firewall Networking Modes
 **Mode 1**
 - Does not perform routing
