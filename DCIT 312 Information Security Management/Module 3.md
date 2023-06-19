@@ -10,13 +10,15 @@
 - *Proactive defense against attacks* - Determines attack based on IP or patterns, and applies actions such as rack release or dropping the packets
 
 1. **Packet Filtering Firewalls**
-	- Uses an ACL to filter data packets
+	- Uses an ACL to filter data packets. F
+	- Filtering is based on source/destination IP, source/destination port, and protocol
 	- When there are complex/lengthy ACL rules, the packet filtering takes a long while
 	- Packet filtering does not check filtering status
 	- Only packet headers are checked
 	*Disadvantages*
 	- Unable to associate data packets
-	- Unable to adapt to multi-channel protocols
+	- Only effective at the packet level
+	- Unable to adapt to multi-channel protocols such as FTP
 	- Does not check the application-layer data
 
 2. **Proxy/Application Firewalls**
@@ -29,6 +31,7 @@
 	*Disadvantages*
 	- Slow processing
 	- Difficult to upgrade
+	- Vulnerable to attacks such as DOS - Due to it being dependent on the software
 
 1. **Stateful Inspection Firewall**
 - ACLs are created for each session/traffic
