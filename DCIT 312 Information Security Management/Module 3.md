@@ -3,6 +3,10 @@
 - Understand firewall security policies
 - Know firewall security policy configuration
 # 3.1 Firewall Classification
+**Firewall features**
+- Logical area filter - Able to separate the internet into a trusted and untrusted domain.
+- Hiding intranet structure - Hides the structure of the internal network ie. the trusted domain
+- Security assurance - P
 1. **Packet Filtering Firewalls**
 	- When there are complex/lengthy ACL rules, the packet filtering takes a long while
 	- Packet filtering does not check filtering status
