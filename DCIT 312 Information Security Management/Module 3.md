@@ -11,7 +11,7 @@
 - *Proactive defense against attacks* - Determines attack based on IP or patterns, and applies actions such as rack release or dropping the packets
 
 1. **Packet Filtering Firewalls**
-	- Uses an ACL to filter data packets. F
+	- Uses an ACL to filter data packets.
 	- Filtering is based on source/destination IP, source/destination port, and protocol
 	- When there are complex/lengthy ACL rules, the packet filtering takes a long while
 	- Packet filtering does not check filtering status
@@ -50,9 +50,12 @@
 - Does not perform routing
 - Does not filter packets
 **Mode 2** - Layer 3 Design
+- Allows the firewall to run on different IP network
+- Interrupts existing IP scheme
 - Second mode implements redundancy
 	- When there is high traffic, packets can be routed to another firewall for processing
 - Works even with topology changes
+
 # 3.2 Principle of Firewall Forwarding
 **Steps to Packet Filtering**
 Upon receiving packet, firewall:
@@ -62,8 +65,10 @@ Upon receiving packet, firewall:
 `Core technique for packet filtering is the Access Control List(ACL)`
 
 **Security Policies**
-- Control traffic forwarding according to specific rules
+- Control traffic forwarding according to specific rules or actions
 - Apply integrated content security detection to traffic
 - Rules focus on packet filtering
-- Control network communication through firewall
-- Control access to firewall
+- Major applications:
+	-  Control network communication through firewall
+	- Control access to firewall
+- Security policy can be configured using Telnet, Web User interface or by command
