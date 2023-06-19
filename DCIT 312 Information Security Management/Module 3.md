@@ -78,6 +78,8 @@ Upon receiving packet, firewall:
 - Steps:
 	1.  Incoming data flow passes through the firewall
 	2.  Firewall searches for matching security policy and determines whether to allow the next operation
-		-  If data matches with none of the security policies, the default policy is used(deny all traffic)
+		-  If data matches with none of the security policies, the default policy is used(deny all traffic). Only needed when filtering for the first time, otherwise the session table is refered to.
 	3.  Processes data packets according to rules in security policy
 - Filtering is based on source/destination IP, source/destination zone, region, user and services such as port number and protocol, applications, and schedule
+- A session table is created after the matching of rules is done
+**Firewall Interzone Forwarding**
