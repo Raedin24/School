@@ -8,11 +8,6 @@ b) The key components of the .NET Framework include:
 
 - Base Class Library (BCL)
 
-- Framework Class Library (FCL): The FCL is built on top of the BCL and provides additional classes and services for specific application domains, such as Windows Forms, ASP.NET, ADO.NET, and WPF.
-
-- Common Type System (CTS): The CTS defines the data types and programming constructs that are supported by the .NET Framework. It ensures that different languages targeting the .NET platform can interoperate seamlessly.
-
-- Common Language Specification (CLS): The CLS defines a set of rules and guidelines that enable language interoperability within the .NET Framework. Languages that conform to the CLS can share and use code written in other CLS-compliant languages.
 
 c) i. The .NET Framework supports cross-language development by providing a common runtime environment, the Common Intermediate Language (CIL), and a set of standards known as Common Language Infrastructure (CLI). The CIL is an intermediate language to which source code written in different .NET languages (such as C#, Visual Basic .NET, F#, etc.) is compiled. This intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, ensuring that code written in one language can call and use code written in another language.
 
