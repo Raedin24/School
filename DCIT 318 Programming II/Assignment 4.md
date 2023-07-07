@@ -9,7 +9,7 @@ b) The key components of the .NET Framework include:
 - Base Class Library (BCL)
 
 
-c) i. The .NET Framework supports cross-language development by providing a common runtime environment, the Common Intermediate Language (CIL), and a set of standards known as Common Language Infrastructure (CLI). The CIL is an intermediate language to which source code written in different .NET languages (such as C#, Visual Basic .NET, F#, etc.) is compiled. This intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, ensuring that code written in one language can call and use code written in another language.
+c) i. The .NET Framework compiler converts source code into Microsoft Intermediate Language. This intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, ensuring that code written in one language can call and use code written in another language.
 
 ii. Yes, C# code can interact with code written in other .NET languages. Since all .NET languages share the common runtime environment and adhere to the CLI standards, they can interoperate seamlessly. C# code can call functions, use classes, and exchange data with code written in other .NET languages, as long as they conform to the common specifications provided by the .NET Framework.
 
