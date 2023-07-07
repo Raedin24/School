@@ -1,0 +1,265 @@
+Q1.
+
+a) The .NET Framework provides a runtime environment for executing applications and a set of libraries and services for building software. C# is one of the primary languages used for developing applications on the .NET platform. The .NET Framework includes the necessary tools and libraries to compile, run, and manage C# code.
+
+b) The key components of the .NET Framework include:
+
+- Common Language Runtime (CLR): The CLR is the execution engine of the .NET Framework. It provides core services such as memory management, code execution, exception handling, and security.
+
+- Base Class Library (BCL): The BCL is a collection of reusable classes, types, and methods that provide a wide range of functionality for developing applications. It includes classes for working with strings, collections, input/output, networking, XML, and more.
+
+- Framework Class Library (FCL): The FCL is built on top of the BCL and provides additional classes and services for specific application domains, such as Windows Forms, ASP.NET, ADO.NET, and WPF.
+
+- Common Type System (CTS): The CTS defines the data types and programming constructs that are supported by the .NET Framework. It ensures that different languages targeting the .NET platform can interoperate seamlessly.
+
+- Common Language Specification (CLS): The CLS defines a set of rules and guidelines that enable language interoperability within the .NET Framework. Languages that conform to the CLS can share and use code written in other CLS-compliant languages.
+
+c) i. The .NET Framework supports cross-language development by providing a common runtime environment, the Common Intermediate Language (CIL), and a set of standards known as Common Language Infrastructure (CLI). The CIL is an intermediate language to which source code written in different .NET languages (such as C#, Visual Basic .NET, F#, etc.) is compiled. This intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, ensuring that code written in one language can call and use code written in another language.
+
+ii. Yes, C# code can interact with code written in other .NET languages. Since all .NET languages share the common runtime environment and adhere to the CLI standards, they can interoperate seamlessly. C# code can call functions, use classes, and exchange data with code written in other .NET languages, as long as they conform to the common specifications provided by the .NET Framework.
+
+Q2.
+
+a) The basic syntax and structure of a C# program include the following elements:
+
+- Namespace declaration: A C# program typically starts with a namespace declaration, which is used to organize classes and types into logical groups.
+
+- Class declaration: C# programs consist of one or more classes. A class is a blueprint for creating objects and defines the properties, methods, and events associated with those objects.
+
+- Main method: Every C# program must have a Main method, which serves as the entry point for the program. The execution of the program starts from the Main method.
+
+- Statements and expressions: C# programs consist of statements and expressions that define the logic and behavior of the program. Statements perform actions, while expressions produce values.
+
+b) i. In C#, a class is a blueprint or template that defines the data and behavior of objects. It encapsulates data (in the form of fields or properties) and functions (in the form of methods) that operate on that data. Classes provide a way to create objects, which are instances of a class. Objects have their own state (data) and behavior (methods), and they can interact with other objects.
+
+ii. To define a class in C#, you use the `class` keyword followed by the class name. Here's an example of a class declaration:
+
+```csharp
+public class Person
+{
+    // Fields
+    public string Name;
+    public int Age;
+
+    // Methods
+    public void SayHello()
+    {
+        Console.WriteLine("Hello, my name is " + Name + " and I am " + Age + " years old.");
+    }
+}
+```
+
+To create objects from a class, you use the `new` keyword followed by the class name and any necessary arguments for the constructor (if defined). Here's an example of creating an object from the `Person` class:
+
+```csharp
+Person person = new Person();
+person.Name = "John";
+person.Age = 25;
+person.SayHello(); // Output: Hello, my name is John and I am 25 years old.
+```
+
+c) In C#, there are two main categories of types: value types and reference types.
+
+- Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When you assign a value type to a new variable or pass it as a method parameter, a copy of the value is made.
+
+Example:
+
+```csharp
+int a = 10;
+int b = a; // 'b' receives a copy of the value stored in 'a'
+b = 20;   // Changing 'b' does not affect the value of 'a'
+Console.WriteLine(a); // Output: 10
+```
+
+- Reference types: Reference types store references (memory addresses) to the actual data and are allocated on the heap. They include classes, interfaces, delegates, and strings. When you assign a reference type to a new variable or pass it as a method parameter, a copy of the reference is made, pointing to the same underlying data.
+
+Example:
+
+```csharp
+int[] array1 = { 1, 2, 3 };
+int[] array2 = array1; // 'array2' receives a copy of the reference to the same array
+array2[0] = 10;        // Modifying 'array2' also modifies 'array1'
+Console.WriteLine(array1[0]); // Output: 10
+```
+
+In the example above, changing the value of `array2` also affects `array1` because they both refer to the same array in memory.
+
+
+Q3.
+
+```csharp
+using System;
+
+interface IMeasurable
+{
+    double CalculateArea();
+}
+
+struct Rectangle : IMeasurable
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public double CalculateArea()
+    {
+        return Width * Height;
+    }
+
+    public static Rectangle operator +(Rectangle r1, Rectangle r2)
+    {
+        return new Rectangle
+        {
+            Width = r1.Width + r2.Width,
+            Height = r1.Height + r2.Height
+        };
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Rectangle rectangle1 = new Rectangle { Width = 5, Height = 3 };
+        Rectangle rectangle2 = new Rectangle { Width = 2, Height = 4 };
+
+        double area1 = rectangle1.CalculateArea();
+        double area2 = rectangle2.CalculateArea();
+
+        Rectangle combinedRectangle = rectangle1 + rectangle2;
+        double combinedArea = combinedRectangle.CalculateArea();
+
+        Console.WriteLine("Area of rectangle 1: " + area1);
+        Console.WriteLine("Area of rectangle 2: " + area2);
+        Console.WriteLine("Area of combined rectangle: " + combinedArea);
+    }
+}
+```
+
+Q4.
+
+```csharp
+using System;
+
+class OutOfFuelException : Exception
+{
+    public OutOfFuelException(string message) : base(message)
+    {
+    }
+}
+
+class Vehicle
+{
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public int Year { get; set; }
+
+    public virtual void Drive()
+    {
+        throw new OutOfFuelException("Out of fuel!");
+    }
+}
+
+class Car : Vehicle
+{
+    public int FuelLevel { get; set; }
+
+    public override void Drive()
+    {
+        if (FuelLevel > 0)
+        {
+            Console.WriteLine("Car is driving.");
+            FuelLevel--;
+        }
+        else
+        {
+            throw new OutOfFuelException("Out of fuel!");
+        }
+    }
+}
+
+class Motorcycle : Vehicle
+{
+    public int FuelLevel { get; set; }
+
+    public override void Drive()
+    {
+        if (FuelLevel > 0)
+        {
+            Console.WriteLine("Motorcycle is driving.");
+            FuelLevel--;
+        }
+        else
+        {
+            throw new OutOfFuelException("Out of fuel!");
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Car car = new Car { Make = "Toyota", Model = "Camry", Year = 2022, FuelLevel = 2 };
+        Motorcycle motorcycle = new Motorcycle { Make = "Honda", Model = "CBR500R", Year = 2021, FuelLevel = 0 };
+
+        try
+        {
+            car.Drive();
+            motorcycle.Drive();
+        }
+        catch (OutOfFuelException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
+```
+
+Q5.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+record Student(string Name, int Age) : IComparable<Student>
+{
+    public int CompareTo(Student other)
+    {
+        return Age.CompareTo(other.Age);
+    }
+
+    public override string ToString()
+    {
+        return $"Name: {Name}, Age: {Age}";
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student[] students = {
+            new Student("Alice", 20),
+            new Student("Bob", 22),
+            new Student("Charlie", 19)
+        };
+
+        try
+        {
+            Array.Sort(students);
+            foreach (var student in students)
+            {
+                Console.WriteLine(student);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred during sorting: " + ex.Message);
+        }
+    }
+}
+```
+
+In the example above, the `Student` record is created with properties for name and age. The record implements the `IComparable<Student>` interface, which allows comparing students based on their ages. The `CompareTo` method is overridden to compare the ages. The `ToString` method is also overridden to display the name and age of a student.
+
+An array of `Student` records is created, and the `Array.Sort` method is used to sort the array based on the students' ages. If any exception occurs during sorting, it is caught in a `catch` block, and an appropriate error message is displayed.
