@@ -4,9 +4,9 @@ a) The .NET Framework provides a runtime environment for executing applications 
 
 b) The key components of the .NET Framework include:
 
-- Common Language Runtime (CLR): The CLR is the execution engine of the .NET Framework. It provides core services such as memory management, code execution, exception handling, and security.
+- Common Language Runtime (CLR)
 
-- Base Class Library (BCL): The BCL is a collection of reusable classes, types, and methods that provide a wide range of functionality for developing applications. It includes classes for working with strings, collections, input/output, networking, XML, and more.
+- Base Class Library (BCL)
 
 - Framework Class Library (FCL): The FCL is built on top of the BCL and provides additional classes and services for specific application domains, such as Windows Forms, ASP.NET, ADO.NET, and WPF.
 
