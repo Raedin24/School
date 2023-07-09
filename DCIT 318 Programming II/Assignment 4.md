@@ -167,7 +167,7 @@ class Program
     {
         Car car = new Car { Make = "Toyota", Model = "Camry", Year = 2022, FuelLevel = 2 };
         
-        Motorcycle motorcycle = new Motorcycle { Make = "Kawasaki", Model = "Ninja ", Year = 2021, FuelLevel = 0 };
+        Motorcycle motorcycle = new Motorcycle { Make = "Kawasaki", Model = "Ninja H2R", Year = 2023, FuelLevel = 0 };
 
         try
         {
@@ -206,9 +206,9 @@ class Program
     static void Main()
     {
         Student[] students = {
-            new Student("Alice", 20),
-            new Student("Bob", 22),
-            new Student("Charlie", 19)
+            new Student("Kwame Appiah", 20),
+            new Student("Bob Marley", 22),
+            new Student("Alexander IV", 19)
         };
 
         try
