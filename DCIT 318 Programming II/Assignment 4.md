@@ -42,7 +42,7 @@ To create objects from a class,  use the `new` keyword followed by the class nam
 Trial trial = new Trial();
 ```
 
-c) In C#, there are two main categories of types.
+c) Difference between Value and Reference .
 
 - Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When a value type is assigned to a new variable , a copy of the value is made. When the new variable is modified, the original data is not affected.
 
@@ -91,8 +91,8 @@ class Program
         double area1 = rectangle1.CalculateArea();
         double area2 = rectangle2.CalculateArea();
 
-        Rectangle joinedRectangle = rectangle1 + rectangle2;
-        double joinedArea = joinedRectangle.CalculateArea();
+        Rectangle combinedRectangle = rectangle1 + rectangle2;
+        double combinedArea = combinedRectangle.CalculateArea();
 
         Console.WriteLine("Area of rectangle 1: " + area1);
         Console.WriteLine("Area of rectangle 2: " + area2);
