@@ -91,8 +91,8 @@ class Program
         double area1 = rectangle1.CalculateArea();
         double area2 = rectangle2.CalculateArea();
 
-        Rectangle combinedRectangle = rectangle1 + rectangle2;
-        double combinedArea = combinedRectangle.CalculateArea();
+        Rectangle joinedRectangle = rectangle1 + rectangle2;
+        double joinedArea = joinedRectangle.CalculateArea();
 
         Console.WriteLine("Area of rectangle 1: " + area1);
         Console.WriteLine("Area of rectangle 2: " + area2);
