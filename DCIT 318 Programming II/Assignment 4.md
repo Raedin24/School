@@ -9,23 +9,23 @@ b) The key components of the .NET Framework include:
 - Base Class Library (BCL)
 
 
-c) i. The .NET Framework compiler converts source code into Microsoft Intermediate Language. This intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, ensuring that code written in one language can call and use code written in another language.
+c) i. The .NET Framework compiler converts source code into Microsoft Intermediate Language. The intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, allowing code written in one language to call and use code written in another language.
 
-ii. Yes, C# code can interact with code written in other .NET languages. Since all .NET languages share the common runtime environment and adhere to the CLI standards, they can interoperate seamlessly. C# code can call functions, use classes, and exchange data with code written in other .NET languages, as long as they conform to the common specifications provided by the .NET Framework.
+ii.  C# code can interact with code written in other .NET languages. Since all .NET languages share the common runtime environment and adhere to the CLI standards, they can interoperate seamlessly. 
 
 Q2.
 
-a) The basic syntax and structure of a C# program include the following elements:
+a) The basic syntax and structure of a C# program:
 
-- Namespace declaration: A C# program typically starts with a namespace declaration, which is used to organize classes and types into logical groups.
+- Namespace declaration:  Used to organize classes and types into logical groups.
 
 - Class declaration: C# programs consist of one or more classes. A class is a blueprint for creating objects and defines the properties, methods, and events associated with those objects.
 
-- Main method: Every C# program must have a Main method, which serves as the entry point for the program. The execution of the program starts from the Main method.
+- Main method: Serves as the entry point for the program. The execution of the program starts from the Main method.
 
-- Statements and expressions: C# programs consist of statements and expressions that define the logic and behavior of the program. Statements perform actions, while expressions produce values.
+- Statements and expressions: Define the logic and behavior of the program. Statements perform actions, while expressions produce values.
 
-b) i. In C#, a class is a blueprint or template that defines the data and behavior of objects. It encapsulates data (in the form of fields or properties) and functions (in the form of methods) that operate on that data. Classes provide a way to create objects, which are instances of a class. Objects have their own state (data) and behavior (methods), and they can interact with other objects.
+b) i. A class is a blueprint for creating objects and defines the properties, methods, and events associated with those objects. Classes provide a way to create objects, which are instances of a class. Objects have their own state (data) and behavior (methods), and they can interact with other objects.
 
 ii. To define a class in C#, you use the `class` keyword followed by the class name. Here's an example of a class declaration:
 
