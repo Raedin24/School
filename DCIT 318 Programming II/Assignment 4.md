@@ -133,7 +133,7 @@ class Car : Vehicle
     {
         if (FuelLevel > 0)
         {
-            Console.WriteLine("Car is driving.");
+            Console.WriteLine("Driving car.");
             FuelLevel--;
         }
         else
@@ -151,7 +151,7 @@ class Motorcycle : Vehicle
     {
         if (FuelLevel > 0)
         {
-            Console.WriteLine("Motorcycle is driving.");
+            Console.WriteLine("Riding motorcycle.");
             FuelLevel--;
         }
         else
@@ -166,7 +166,8 @@ class Program
     static void Main()
     {
         Car car = new Car { Make = "Toyota", Model = "Camry", Year = 2022, FuelLevel = 2 };
-        Motorcycle motorcycle = new Motorcycle { Make = "Honda", Model = "CBR500R", Year = 2021, FuelLevel = 0 };
+        
+        Motorcycle motorcycle = new Motorcycle { Make = "Kawasaki", Model = "Ninja ", Year = 2021, FuelLevel = 0 };
 
         try
         {
