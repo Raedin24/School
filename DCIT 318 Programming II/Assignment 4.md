@@ -227,6 +227,3 @@ class Program
 }
 ```
 
-In the example above, the `Student` record is created with properties for name and age. The record implements the `IComparable<Student>` interface, which allows comparing students based on their ages. The `CompareTo` method is overridden to compare the ages. The `ToString` method is also overridden to display the name and age of a student.
-
-An array of `Student` records is created, and the `Array.Sort` method is used to sort the array based on the students' ages. If any exception occurs during sorting, it is caught in a `catch` block, and an appropriate error message is displayed.
