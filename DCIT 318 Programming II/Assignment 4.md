@@ -1,12 +1,12 @@
 Q1.
 
-a) The .NET Framework provides a runtime environment for executing applications and a set of libraries and services for building software. C# is one of the primary languages used for developing applications on the .NET platform. The .NET Framework includes the necessary tools and libraries to compile, run, and manage C# code.
+a) The.NET Framework offers a runtime environment for running programs as well as a collection of libraries and services for creating software. C# is one of the languages available for creating apps on the .NET framework. The framework contains the tools and libraries required to create, run, and maintain C# programs.
 
 b) The key components of the .NET Framework include:
 
-- Common Language Runtime (CLR)
+- Common Language Runtime (CLR) 
 
-- Base Class Library (BCL)
+- Class Library 
 
 
 c) i. The .NET Framework compiler converts source code into Microsoft Intermediate Language. The intermediate language can then be executed by the CLR. The CLI defines the rules and specifications for how different .NET languages should interoperate, allowing code written in one language to call and use code written in another language.
@@ -42,7 +42,7 @@ To create objects from a class,  use the `new` keyword followed by the class nam
 Trial trial = new Trial();
 ```
 
-c) Difference between Value and Reference .
+c) Difference between Value and Reference types:
 
 - Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When a value type is assigned to a new variable , a copy of the value is made. When the new variable is modified, the original data is not affected.
 
