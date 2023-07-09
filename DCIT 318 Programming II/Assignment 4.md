@@ -44,29 +44,11 @@ Trial trial = new Trial();
 
 c) In C#, there are two main categories of types.
 
-- Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When   a value type is assigned to a new variable or pass it as a method parameter, a copy of the value is made.
+- Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When a value type is assigned to a new variable , a copy of the value is made. When the new variable is modified, the original data is not affected.
 
-Example:
+- Reference types: Reference types store memory addresses references to the actual data and are allocated on the heap. They include classes, interfaces,  and strings. When a reference type is assigned to a new variable, a copy of the reference is made, pointing to the same original data. When the new variable is modified, the original data is also changed.
 
-```csharp
-int a = 10;
-int b = a; // 'b' receives a copy of the value stored in 'a'
-b = 20;   // Changing 'b' does not affect the value of 'a'
-Console.WriteLine(a); // Output: 10
-```
 
-- Reference types: Reference types store references (memory addresses) to the actual data and are allocated on the heap. They include classes, interfaces, delegates, and strings. When you assign a reference type to a new variable or pass it as a method parameter, a copy of the reference is made, pointing to the same underlying data.
-
-Example:
-
-```csharp
-int[] array1 = { 1, 2, 3 };
-int[] array2 = array1; // 'array2' receives a copy of the reference to the same array
-array2[0] = 10;        // Modifying 'array2' also modifies 'array1'
-Console.WriteLine(array1[0]); // Output: 10
-```
-
-In the example above, changing the value of `array2` also affects `array1` because they both refer to the same array in memory.
 
 
 Q3.
