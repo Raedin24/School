@@ -25,37 +25,26 @@ a) The basic syntax and structure of a C# program:
 
 - Statements and expressions: Define the logic and behavior of the program. Statements perform actions, while expressions produce values.
 
-b) i. A class is a blueprint for creating objects and defines the properties, methods, and events associated with those objects. Classes provide a way to create objects, which are instances of a class. Objects have their own state (data) and behavior (methods), and they can interact with other objects.
+b) i. A class is a blueprint for creating objects and defines the properties, methods, and events associated with those objects. Classes provide a way to create objects, which are instances of a class. Objects have their own data and methods, and can interact with other objects.
 
-ii. To define a class in C#, you use the `class` keyword followed by the class name. Here's an example of a class declaration:
+ii. To define a class in C#,  use the `class` keyword followed by the class name:
 
 ```csharp
-public class Person
+public class Trial
 {
-    // Fields
-    public string Name;
-    public int Age;
-
-    // Methods
-    public void SayHello()
-    {
-        Console.WriteLine("Hello, my name is " + Name + " and I am " + Age + " years old.");
-    }
+	...
 }
 ```
 
-To create objects from a class, you use the `new` keyword followed by the class name and any necessary arguments for the constructor (if defined). Here's an example of creating an object from the `Person` class:
+To create objects from a class,  use the `new` keyword followed by the class name and any necessary arguments for the constructor (if defined):
 
 ```csharp
-Person person = new Person();
-person.Name = "John";
-person.Age = 25;
-person.SayHello(); // Output: Hello, my name is John and I am 25 years old.
+Trial trial = new Trial();
 ```
 
-c) In C#, there are two main categories of types: value types and reference types.
+c) In C#, there are two main categories of types.
 
-- Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When you assign a value type to a new variable or pass it as a method parameter, a copy of the value is made.
+- Value types: Value types store their data directly and are allocated on the stack. They include primitive types such as `int`, `float`, `bool`, `char`, and `structs`. When   a value type is assigned to a new variable or pass it as a method parameter, a copy of the value is made.
 
 Example:
 
