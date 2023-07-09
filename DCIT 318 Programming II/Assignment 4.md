@@ -131,15 +131,11 @@ class Car : Vehicle
 
     public override void Drive()
     {
-        if (FuelLevel > 0)
-        {
-            Console.WriteLine("Driving car.");
-            FuelLevel--;
-        }
-        else
-        {
-            throw new OutOfFuelException("Out of fuel!");
-        }
+		while (FuelLevel > 0){
+			Console.WriteLine("Driving car.");
+			FuelLevel--;
+		}
+		throw new OutOfFuelException("out of fuel!");
     }
 }
 
@@ -172,11 +168,18 @@ class Program
         try
         {
             car.Drive();
+        }
+        catch (OutOfFuelException ex)
+        {
+            Console.WriteLine("Car " + ex.Message);
+        }
+		        try
+        {
             motorcycle.Drive();
         }
         catch (OutOfFuelException ex)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine("Motorcycle " + ex.Message);
         }
     }
 }
