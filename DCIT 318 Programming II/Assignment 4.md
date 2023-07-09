@@ -207,7 +207,7 @@ class Program
     {
         Student[] students = {
             new Student("Kwame Appiah", 20),
-            new Student("Bob Marley", 22),
+            new Student("Bob Marley", 25),
             new Student("Alexander IV", 19)
         };
 
@@ -219,6 +219,7 @@ class Program
                 Console.WriteLine(student);
             }
         }
+		
         catch (Exception ex)
         {
             Console.WriteLine("An error occurred during sorting: " + ex.Message);
