@@ -1,5 +1,5 @@
 # 1. Basic Concepts of Information Security
-## 1.1 
+## 1.1 Information and Information Security
 **Information Security** is the process of ensuring safe data communication and preventing issues such as information leakage, modification, and disruption. It refers to the preservation of *confidentiality*, *integrity*, and *availability* of data through security technologies
 - *Confidentiality* refers to the secrecy of the information
 - *Integrity* is when the information is not tampered with during storage or transmission
@@ -18,6 +18,16 @@ Additional principles have been added with the development of internet technolog
 2. **Indirect Cause**
 	1. Information System complexity
 	2. Human and environment factors
+
+## 1.2 Information Security Risks and Management
+### Risks Involved in Information Security
+1. Physical risks - Device theft and destruction, network device fault, unavailability due to power failure
+2. Network risks
+3. System risks
+4. Information risks - Storage security, transmission security, access security
+5. Application risks
+6. Management risks
+
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
