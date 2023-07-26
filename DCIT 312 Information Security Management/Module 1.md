@@ -1,6 +1,8 @@
 # Information Security Standards and Specifications
-**Information Security** is the process of ensuring safe data communication and preventing issues such as information leakage, modification, and disruption.
-- **Information security** refers to the preservation of *confidentiality*, *integrity*, and *availability* of data through security technologies
+**Information Security** is the process of ensuring safe data communication and preventing issues such as information leakage, modification, and disruption. It refers to the preservation of *confidentiality*, *integrity*, and *availability* of data through security technologies
+- *Confidentiality* refers to the secrecy of the information
+- *Integrity* is when the information is not tampered with during storage or transmission
+- *Availability*
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
