@@ -6,6 +6,17 @@
 Additional principles have been added with the development of internet technologies:
 - *Controllability* refers to what can be controlled about the information(when it can be exposed, what actions can be performed eg deletion)
 - *Non-repudiation* is concerned with verifying the source of the information 
+
+### Causes of attacks
+1. **Direct Cause**
+	1. Virus
+	2. Vulnerability
+	3. Trojan horse
+	4. Backdoor program
+	5. DDOS attacks
+2. **Indirect Cause**
+	1. Information System complexity
+	2. Human and environment factors
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
