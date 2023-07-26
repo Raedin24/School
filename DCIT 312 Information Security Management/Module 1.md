@@ -35,8 +35,10 @@ Additional principles have been added with the development of internet technolog
 
 # 2. Information Security Standards and Specification
 ## 2.1 Information Security Standards and Specification
-### Significance of Information Security Standards
-
+### **Significance of Information Security Standards**
+**Standards** are normative documents that are jointly formulated, approved by recognized authorities, and used throught the industry to achieve the best security
+International organizations related to security standardization:
+- International Organization for Standardization(ISO) - Composed of reps from various organisations. Promotes worldwide propriet
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
