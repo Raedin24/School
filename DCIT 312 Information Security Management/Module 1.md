@@ -1,4 +1,5 @@
-# Information Security Standards and Specifications
+# 1. Basic Concepts of Information Security
+## 1.1 
 **Information Security** is the process of ensuring safe data communication and preventing issues such as information leakage, modification, and disruption. It refers to the preservation of *confidentiality*, *integrity*, and *availability* of data through security technologies
 - *Confidentiality* refers to the secrecy of the information
 - *Integrity* is when the information is not tampered with during storage or transmission
