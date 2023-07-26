@@ -33,6 +33,10 @@ Additional principles have been added with the development of internet technolog
 	2. Enterprise system - Inherits same rules
 	3. Management system - Inherits same rules
 
+# 2. Information Security Standards and Specification
+## 2.1 Information Security Standards and Specification
+### Significance of Information Security Standards
+
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
