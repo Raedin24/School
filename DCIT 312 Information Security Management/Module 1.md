@@ -2,7 +2,10 @@
 **Information Security** is the process of ensuring safe data communication and preventing issues such as information leakage, modification, and disruption. It refers to the preservation of *confidentiality*, *integrity*, and *availability* of data through security technologies
 - *Confidentiality* refers to the secrecy of the information
 - *Integrity* is when the information is not tampered with during storage or transmission
-- *Availability*
+- *Availability* refers to who can access the information
+Additional principles have been added with the development of internet technologies:
+- *Controllability* refers to what can be controlled about the information(when it can be exposed, what actions can be performed eg deletion)
+- *Non-repudiation* is concerned with verifying the source of the information 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
