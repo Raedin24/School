@@ -45,6 +45,12 @@ Other standards organization:
 - *Cyber and Information Security Technical Committee(TC8) of China Communications Standards Association(CSSA)*
 - *International Telecommunication Union(ITU)*
 - *Internet Engineering Task Force(IETF)*
+
+Common Info Security Standards
+1. ISO 27001
+2. China: Graded Protection of Information Security (GB)
+3. US: Trusted Computer System Evaluation Criteria(TCSEC)
+4. EU: Information Technology Security Evaluation Criteria(ITSEC)
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
