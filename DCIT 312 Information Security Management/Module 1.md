@@ -1,3 +1,5 @@
+# Foreword
+**Information Security** is the process of ensuring 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
