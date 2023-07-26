@@ -21,12 +21,17 @@ Additional principles have been added with the development of internet technolog
 
 ## 1.2 Information Security Risks and Management
 ### Risks Involved in Information Security
-1. Physical risks - Device theft and destruction, network device fault, unavailability due to power failure
-2. Network risks -  Internet risk(threats from outside), intranet risk(inside risks)
-3. System risks - Database system configuration security, security database, security of services running in the system
-4. Information risks - Storage security, transmission security, access security
-5. Application risks - Network virus, OS security, email application security, web service security, FTP service security, DNS sevice security
-6. Management risks - 
+1. **Physical risks** - Device theft and destruction, network device fault, unavailability due to power failure
+2. **Network risks** -  Internet risk(threats from outside), intranet risk(inside risks)
+3. **System risks** - Database system configuration security, security database, security of services running in the system
+4. **Information risks** - Storage security, transmission security, access security
+5. **Application risks** - Network virus, OS security, email application security, web service security, FTP service security, DNS sevice security
+**6. Management risks**
+	1. National policy 
+		- Effective national information security regulation. 
+		- Specialized agency to manage information security
+	2. Enterprise system - Inherits same rules
+	3. Management system - Inherits same rules
 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
