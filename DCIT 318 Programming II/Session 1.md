@@ -33,7 +33,35 @@
 
 # C\#
 - A type-safe, OOP language that exploits XML-based Web sevices on the .NET platform
+- Features
+	- Simplicity
+	- Type safety
+	- Version Control
+	- Compatibility
+	- Object Orientation
+- **Key Features**
+	- Nullable value type
+	- Enumerations
+	- Delegates
+	- Direct memory access
+	- Lambda expressions
 ![[Pasted image 20230727205730.png]]
 **Program Structure**
 - *Namespace* - Contains types and other namespaces
 - *Type Declaration* - Classes, structs, interfaces
+- *Members* - Constants, fields, methods, events, constructors, destructors
+**Type System**
+1. *Value Type* - Directly contains data. Cannot be null. When a value type is assigned to a new variable, a copy of the value is made. When the new variable is modified, the original data is not affected. Includes **primitives**, **enums**, **structs**.
+2. *Reference Type* - Contains references to objects. May be null. When a reference type is assigned to a new variable, a copy of the reference is made, pointing to the same original data. When the new variable is modified, the original data is also changed. Includes **classes**, **interfaces**, **arrays**, **delegates**
+
+### Classes
+- Single inheritance
+- Multiple interface implementation
+- Members: Constants, fields, methods, events, operators etc.
+- Member access: **protected**, **public**, **internal**, **private**.
+### Structs
+- No inheritance
+- Stored in-line, not heap allocated
+- Assignment copies data, not reference
+- Includes: **int**, **float**, **double** etc.
+Structs have more efficient use of memory than classes. Also, there is less garbage collector pressure as there is no heap allocation
