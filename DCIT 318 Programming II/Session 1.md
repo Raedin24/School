@@ -35,4 +35,5 @@
 - A type-safe, OOP language that exploits XML-based Web sevices on the .NET platform
 ![[Pasted image 20230727205730.png]]
 **Program Structure**
-- *Namespa*
+- *Namespace* - Contains types and other namespaces
+- *Type Declaration* - Classes, structs, interfaces
