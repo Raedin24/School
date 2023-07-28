@@ -137,6 +137,19 @@ namespace DCIT318
 		public string Name { get; }
 		// write-only
 		public string Name { set; }
+
+		// Can be combined with a backing field
+		private int _id;
+		public int ID 
+		{
+			get
+			{
+				return _id * 10
+			}
+			set
+			{
+			}
+		}
 	}
 }
 ```
