@@ -243,3 +243,13 @@ namespace DCIT318
 }
 ```
 A private constructor is a special instance constructor used in classes which contain only static members. If a class has no public constructors and only private constructors, other classes cannot create instances of the class. Exception to this are nested classes
+```csharp
+// SimpleMath.cs
+class NLog
+{
+	// Private Constructor
+	private NLog(){}
+	
+	public static double e = Math.E;
+}
+```
