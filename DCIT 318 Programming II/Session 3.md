@@ -1,3 +1,4 @@
+# Inheritance
 **Inheritance** is an attribute of OOP. It allows one class (called the derived or subclass) to inherit properties and behaviors from another class (called the base or superclass). The derived class can then extend or override the functionality of the base class while also adding its own unique features.
 - Only applies to **class** and **interface** types
 - Members which are not inherited are **static constructors**, **instance constructors**, and **finalizers**.
@@ -97,11 +98,14 @@ public class Canvas : IControl, ISurface
 	// Actual Implementaion
 	public void IControl.Paint()
 	{
-		Console.WriteLine("Paint method fri")
+		Console.WriteLine("Paint method from IControl")
 	}
 	public void Draw()
 	{
-		Console.WriteLine("Draw method in SampleClass")
+		Console.WriteLine("Draw method from ISurface")
 	}
 }
 ```
+
+# Operator Overloading
+A user-defined type can overload a predefined o
