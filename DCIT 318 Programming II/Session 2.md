@@ -189,6 +189,34 @@ A code block that contains a series of statements
 // SimpleMath.cs
 public class SimpleMath
 {
-	public int Add
+	public int AddTwoNumbers(int num1, int, num2)
+	{
+		return num1 + num2
+	}
+	public int SquareANumber(int num)
+	{
+		return num ** 2
+	}
+}
+```
+Methods can be *overloaded* by having two or more methods in a class with the same name but different numbers, types, or order of parameters
+```csharp
+// SimpleMath.cs
+public class SimpleMath
+{
+	public int AddNumbers(int num1, int, num2)
+	{
+		return num1 + num2
+	}
+	
+	public int AddNumbers(int num1, int num2, int num3)
+	{
+		return num1 + num2 + num3
+	}
+	
+	public int SquareANumber(int num)
+	{
+		return num ** 2
+	}
 }
 ```
