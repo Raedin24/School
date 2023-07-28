@@ -227,5 +227,19 @@ public class SimpleMath
 Called whenever an instance of a class or struct is created
 - A class or struct may have multiple constructors that take different arguements.
 ```csharp
+// Student.cs
+using System
 
+namespace DCIT318
+{
+	private string name;
+	private int id;
+
+	public Student( string Name, int StudentID)
+	{
+		Name = name;
+		StudentID = id;
+	}
+}
 ```
+A private constructor is a special instance constructor used in classes which contain only static members. If a class has no public constructors and only private constructors, other classes cannot create instances of the class. Exception to this are nested classes
