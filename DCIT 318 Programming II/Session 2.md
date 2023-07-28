@@ -122,6 +122,7 @@ A member that provides a flexible mechanism to read, write, or compute the value
 	- **read-write** : Has both getter and setter
 	- **read-only** : Has only getter
 	- **write-only** - Has only setter
+- Begins with a capital letter by convention
 ```csharp
 using System
 
@@ -130,7 +131,9 @@ namespace DCIT318
 	public class Student
 	{
 		public string Name { get; set; }
+		// Can also be simply written as
+		public string Name;
 	}
 }
 ```
-Private
+Properties are similar to Fields in their creation. The difference b/n the two is that, since fields use *private* or *protected*, they do not have a default `get` or `set` accessor. Once *public* is used, there is a default getter and setter, allowing it to be a property. Note that in the field, there had to be other methods created to access the field and set it to a value
