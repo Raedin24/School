@@ -50,3 +50,5 @@ public abstract class A
 	public abstract void SomeAction(int i);
 }
 ```
+
+- An interface defines a contract

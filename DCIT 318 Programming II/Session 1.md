@@ -51,7 +51,41 @@
 - *Type Declaration*
 	- **Class** - provides a template for creating instances (objects) that share the same structure and behavior defined within the class.
 	- **Struct** -  A data type in C# that combines different data variables into a single unit.
+	- **Interface** - A contract that defines a set of method and property signatures. It does not contain any implementation for these members; instead, it declares what methods and properties a class implementing the interface should have. An interface defines the "what" but not the "how" of an object's behavior.
+	- **Delegate** - Similar to function pointers in other programming languages. They are objects that hold references to methods, allowing them to be passed as parameters, stored in variables, and invoked dynamically.
+	- **Enum** - A set of named integral constants. They provide a way to give friendly names to specific values, making the code more readable and maintainable.
+
+```csharp
+public enum DaysOfWeek
+{
+	Monday,
+	Tuesday,
+	Wednesday,
+	Thursday,
+	Friday,
+	Saturday,
+	Sunday
+}
 ```
+- *Members* - Constants, fields, methods, events, constructors, destructors
+**Type System**
+1. *Value Type* - Directly contains data. Cannot be null. When a value type is assigned to a new variable, a copy of the value is made. When the new variable is modified, the original data is not affected. Includes **primitives**, **enums**, **structs**.
+2. *Reference Type* - Contains references to objects. May be null. When a reference type is assigned to a new variable, a copy of the reference is made, pointing to the same original data. When the new variable is modified, the original data is also changed. Includes **classes**, **interfaces**, **arrays**, **delegates**
+
+### Classes
+- Single inheritance
+- Reference type
+- Multiple interface implementation
+- Members: Constants, fields, methods, events, operators etc.
+- Member access: **protected**, **public**, **internal**, **private**.
+### Structs
+- No inheritance
+- Value type
+- Stored in-line, not heap allocated
+- Assignment copies data, not reference
+- Includes: **int**, **float**, **double** etc.
+Structs have more efficient use of memory than classes. Also, there is less garbage collector pressure as there is no heap allocation
+```csharp
 // Define a simple struct representing a 2D point
 public struct Point
 {
@@ -86,36 +120,4 @@ public class Program
     }
 }
 
-	- **Interface** - A contract that defines a set of method and property signatures. It does not contain any implementation for these members; instead, it declares what methods and properties a class implementing the interface should have. An interface defines the "what" but not the "how" of an object's behavior.
-	- **Delegate** - Similar to function pointers in other programming languages. They are objects that hold references to methods, allowing them to be passed as parameters, stored in variables, and invoked dynamically.
-	- **Enum** - A set of named integral constants. They provide a way to give friendly names to specific values, making the code more readable and maintainable.
-```csharp
-public enum DaysOfWeek
-{
-	Monday,
-	Tuesday,
-	Wednesday,
-	Thursday,
-	Friday,
-	Saturday,
-	Sunday
-}
 ```
-- *Members* - Constants, fields, methods, events, constructors, destructors
-**Type System**
-1. *Value Type* - Directly contains data. Cannot be null. When a value type is assigned to a new variable, a copy of the value is made. When the new variable is modified, the original data is not affected. Includes **primitives**, **enums**, **structs**.
-2. *Reference Type* - Contains references to objects. May be null. When a reference type is assigned to a new variable, a copy of the reference is made, pointing to the same original data. When the new variable is modified, the original data is also changed. Includes **classes**, **interfaces**, **arrays**, **delegates**
-
-### Classes
-- Single inheritance
-- Reference type
-- Multiple interface implementation
-- Members: Constants, fields, methods, events, operators etc.
-- Member access: **protected**, **public**, **internal**, **private**.
-### Structs
-- No inheritance
-- Value type
-- Stored in-line, not heap allocated
-- Assignment copies data, not reference
-- Includes: **int**, **float**, **double** etc.
-Structs have more efficient use of memory than classes. Also, there is less garbage collector pressure as there is no heap allocation
