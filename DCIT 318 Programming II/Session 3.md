@@ -51,4 +51,7 @@ public abstract class A
 }
 ```
 
-- An interface defines a contract
+- An interface defines a contract i.e. members that any class implementing it must have.
+- When a class/struct implements an interface, they provide concrete implementations for all the members declared in the interface, hence adhering to the contract.
+- An interface may inherit multiple base interfaces
+- A class or struct may implement multiple interfaces
