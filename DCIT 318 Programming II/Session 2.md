@@ -181,3 +181,14 @@ namespace DCIT318
 	}
 }
 ```
+
+## Methods
+A code block that contains a series of statements
+- Begins with an uppercase by convention
+```csharp
+// SimpleMath.cs
+public class SimpleMath
+{
+	public int Add
+}
+```
