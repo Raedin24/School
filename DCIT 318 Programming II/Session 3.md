@@ -55,3 +55,7 @@ public abstract class A
 - When a class/struct implements an interface, they provide concrete implementations for all the members declared in the interface, hence adhering to the contract.
 - An interface may inherit multiple base interfaces
 - A class or struct may implement multiple interfaces
+`Interfaces begin with `
+```csharp
+interface I
+```
