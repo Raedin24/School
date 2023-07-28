@@ -1,1 +1,2 @@
 **Inheritance** is an attribute of OOP that allows for a definition of a child class that reuses, extends, or modifies the behaviour of a parent class
+Members which are not inherited are **static constructors**, **instance constructors**, and **finalizers**.
