@@ -29,6 +29,8 @@ This includes all members declared in the class (except *constructors* and *fina
 - **Indexers** - Enable an object to be indexed similar to an array
 - **Operators** - Refers to overloaded operators in a class
 - **Events** - Provide notifications about occurences, such as button clicks, to other objects
+---
+- **Constructors** - Methods that are called when the object is first created
 
 ## Fields
 A class or struct may have *instance* fields, *static* fields, or both.
@@ -219,4 +221,11 @@ public class SimpleMath
 		return num ** 2
 	}
 }
+```
+
+## Constructors
+Called whenever an instance of a class or struct is created
+- A class or struct may have multiple constructors that take different arguements.
+```csharp
+
 ```
