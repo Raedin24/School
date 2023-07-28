@@ -110,7 +110,22 @@ public class Canvas : IControl, ISurface
 # Operator Overloading
 A user-defined type can overload a predefined operator. An operator declaration must satisfy the following:
 - Includes both a `public` and `static` modifier
-- 
+- At least one parameter must have type `T` or `T?`, where 'T' is the type that contains the operator declaration
 ```
 In C#, the `?` symbol is used to define a nullable type. A nullable type allows a value type (such as `int`, `double`, etc.) to have an additional value of `null`. For example, `int?` represents a nullable integer.The use of nullable types ('T?') allows you to handle scenarios where a value might be missing or undefined
+```
+
+**Overloadable Operators**
+![[Pasted image 20230728122714.png]]
+
+```csharp
+public class Fraction
+{
+	private readonly int num;
+	private readonly int den;
+	public Fraction(int numerator, int denominator)
+	{
+		num = numerator
+	}
+}
 ```
