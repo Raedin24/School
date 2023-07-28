@@ -162,8 +162,8 @@ From **C# 11**, a `required` member can be added to force initialization of a fi
 // Course.cs
 public class Course
 {
-	public required string CourseName
-	{ get; set; }
+	public required string CourseName { get; set; }
+	public require string CourseCode; // Same thing
 	
 }
 ```
@@ -174,6 +174,10 @@ namespace DCIT318
 {
 	internal class Program
 	{
-		static co}
+		static void Main(string[] args)
+		{
+			Course course = new Course() {CourseName = "Programming II", CourseCode="DCIT318"}
+		}
+	}
 }
 ```
