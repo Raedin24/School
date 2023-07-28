@@ -48,7 +48,12 @@
 ![[Pasted image 20230727205730.png]]
 **Program Structure**
 - *Namespace* - Contains types and other namespaces
-- *Type Declaration* - Classes, structs, interfaces, delegates, enums
+- *Type Declaration*
+	- **Class** - provides a template for creating instances (objects) that share the same structure and behavior defined within the class.
+	- **Struct**
+	- **Interface** - A contract that defines a set of method and property signatures. It does not contain any implementation for these members; instead, it declares what methods and properties a class implementing the interface should have. An interface defines the "what" but not the "how" of an object's behavior.
+	- **Delegate**
+	- **Enum**
 - *Members* - Constants, fields, methods, events, constructors, destructors
 **Type System**
 1. *Value Type* - Directly contains data. Cannot be null. When a value type is assigned to a new variable, a copy of the value is made. When the new variable is modified, the original data is not affected. Includes **primitives**, **enums**, **structs**.
