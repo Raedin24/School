@@ -124,6 +124,7 @@ A member that provides a flexible mechanism to read, write, or compute the value
 	- **write-only** - Has only setter
 - Begins with a capital letter by convention.
 ```csharp
+// Student.cs
 using System
 
 namespace DCIT318
@@ -148,9 +149,31 @@ namespace DCIT318
 			}
 			set
 			{
+				_id = value
 			}
 		}
 	}
 }
 ```
 **Properties** are similar to **Fields** in their creation. The difference b/n the two is that, since fields use *private* or *protected*, they do not have a default `get` or `set` accessor. Once *public* is used, there is a default getter and setter, allowing it to be a property. Note that in the field, there had to be other methods created to access the field and set it to a value
+
+From **C# 11**, a `required` member can be added to force initialization of a field or property
+```csharp
+// Course.cs
+public class Course
+{
+	public required string CourseName
+	{ get; set; }
+	
+}
+```
+
+```csharp
+// Program.cs
+namespace DCIT318
+{
+	internal class Program
+	{
+		static co}
+}
+```
