@@ -61,11 +61,13 @@
 
 ### Classes
 - Single inheritance
+- Reference type
 - Multiple interface implementation
 - Members: Constants, fields, methods, events, operators etc.
 - Member access: **protected**, **public**, **internal**, **private**.
 ### Structs
 - No inheritance
+- Value type
 - Stored in-line, not heap allocated
 - Assignment copies data, not reference
 - Includes: **int**, **float**, **double** etc.
