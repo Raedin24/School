@@ -125,7 +125,12 @@ public class Fraction
 	private readonly int den;
 	public Fraction(int numerator, int denominator)
 	{
-		num = numerator
+		num = numerator;
+		den = denominator;
+	}
+	public static Fraction operator +(Fraction a, Fraction b)
+	{
+		=> new Fraction(a.num *b.den + b.num * a.den)
 	}
 }
 ```

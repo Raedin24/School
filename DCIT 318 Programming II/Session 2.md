@@ -157,7 +157,7 @@ namespace DCIT318
 	}
 }
 ```
-**Properties** are similar to **Fields** in their creation. The difference b/n the two is that, since fields use *private* or *protected*, they do not have a default `get` or `set` accessor. Once *public* is used, there is a default getter and setter, allowing it to be a property. Note that in the field, there had to be other methods created to access the field and set it to a value
+**Properties** are similar to **Fields** in their creation. The difference b/n the two is that, since fields use *private* or *protected*, they do not have a default `get` or `set` accessor. Once *public* is used, there is a default getter and setter, allowing it to be a property. Note that in the field, there has to be other methods created to access the field and set it to a value.
 
 From **C# 11**, a `required` member can be added to force initialization of a field or property
 ```csharp
@@ -165,7 +165,7 @@ From **C# 11**, a `required` member can be added to force initialization of a fi
 public class Course
 {
 	public required string CourseName { get; set; }
-	public require string CourseCode; // Same thing
+	public required string CourseCode; // Same thing
 	
 }
 ```
