@@ -57,6 +57,15 @@ Common Info Security Standards
 - Is a set of policies and the standard procedure for an enterprise to systematically organise sensitive information
 - Based on the ***BS7799*** standard developed the British Standards Institution(BSI)
 - Objective is to minimise risk and ensure business continuity by limiting the impact of a security breach
+**Idealogy/Steps of ISMS**
+1. *Plan* - Establish an ISMS
+2. *Do* - Implement and operate ISMS
+3. *Check* - Monitor and review ISMS
+4. *Action* - Maintain and improve ISMS
+
+### ISO 27000 ISMS Family of Standards
+The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC 27002**
+- **ISO/IEC 27001** provides the 
 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
