@@ -78,6 +78,10 @@ The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC
 2. **Do, Check** - System operation and monitoring. Involves ISMS trial run , system operation monitoring and business continuity management training.
 3. **Act** - Certification and continuous improvement. Involves auditing(internal and external)
 
+## 2.1 Graded Protection of Information Security
+The grades are defined based on the extent of information system damage to citizens, society, and state.
+![[]]
+
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
