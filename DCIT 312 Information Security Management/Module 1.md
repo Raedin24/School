@@ -75,8 +75,8 @@ The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC
 	1. Project initiation and variance analysis
 	2. Risk assessment
 	3. System design and release
-2. **Do, Check** - System operation and monitoring. Involves ISMS trial run and system operation monitoring
-3. **Act** - Certification and continuous improvement
+2. **Do, Check** - System operation and monitoring. Involves ISMS trial run , system operation monitoring and business continuity management training.
+3. **Act** - Certification and continuous improvement. Involves auditing(internal and external)
 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
