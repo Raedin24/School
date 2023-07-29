@@ -65,7 +65,8 @@ Common Info Security Standards
 
 ### ISO 27000 ISMS Family of Standards
 The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC 27002**
-- **ISO/IEC 27001** provides the 
+- **ISO/IEC 27001** provides the requirement for an information security management system
+- **ISO/IEC 27002** is a supplement for 27001 and provides the guidelines for organisational information security standards and information security management practices
 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
