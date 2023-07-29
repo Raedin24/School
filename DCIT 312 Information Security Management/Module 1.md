@@ -70,6 +70,13 @@ The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC
 - There are 14 control areas in ISO 27002
 ![[Pasted image 20230729194532.png]]
 
+### ISO 27001 Project Implementation Methodology
+1. **Plan**
+	1. Project initiation and variance analysis
+	2. Risk assessment
+	3. System design and release
+2, 3. **Check** - System operation and monitoring
+2. **Act** - Certification and continuous improvement
 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
