@@ -80,8 +80,13 @@ The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC
 
 ## 2.1 Graded Protection of Information Security
 The grades are defined based on the extent of information system damage to citizens, society, and state.
-![[]]
-
+![[Pasted image 20230729205006.png]]
+**Graded Protection Process**
+1. Grading - Primary step
+2. Filing - Mandatory procedure for notifying the supervision department
+3. Assessment - Assessment of the status of security protection
+4. Rectification - Key to the implementation of graded prote
+5. Supervision
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
