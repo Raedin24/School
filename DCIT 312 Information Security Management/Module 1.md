@@ -53,7 +53,10 @@ Common Info Security Standards
 4. EU: Information Technology Security Evaluation Criteria(ITSEC)
 
 ## 2.2 ISO 27001 ISMS
-**ISMS** stands for In
+**ISMS** stands for Information Security Management System.
+- Is a set of policies and the standard procedure for an enterprise to systematically organise sensitive information
+- Based on the ***BS7799*** standard developed the British Standards Institution(BSI)
+- Objective is to minimise risk and ensure business continuity by limiting the impact of a security breach
 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
