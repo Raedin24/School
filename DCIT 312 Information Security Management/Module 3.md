@@ -118,6 +118,9 @@ Optional steps include:
 - Used to filter packets at the application layer
 
 A *server map table* is generated under the following conditions
-1. Sever map entries are generated when multi-channel protocols of the firewall such as ASPF are enabled
-2. Static server map entries will be generated when there is a NAT server mapping or port forwarding
-3. Triplet server map entries will be generated when STUN
+1. Sever map entries are generated when multi-channel protocols of the firewall such as **ASPF** are enabled
+2. Static server map entries will be generated when there is a **NAT server mapping** or port forwarding
+3. Triplet server map entries will be generated when **STUN protocols** (Simple Traversal of UDP through NAT) are configured
+4. Dynamic server map entries are generated when **NAT No-PAT** (Network Address Translation without Port Address Translation) is configured
+
+- Port identification maps non-standard protocol pr
