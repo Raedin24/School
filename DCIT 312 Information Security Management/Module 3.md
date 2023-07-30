@@ -88,5 +88,7 @@ Control traffic forwarding according to specific rules or actions and apply inte
 		-  If data matches with none of the security policies, the default policy is used(deny all traffic). Only needed when filtering for the first time, otherwise the session table is refered to.
 	3.  Processes data packets according to rules in security policy
 - Filtering is based on source/destination IP, source/destination zone, region, user and services such as port number and protocol, applications, and schedule
-- A session table is created after the matching of rules is done
-**Firewall Interzone Forwarding**
+- A session table is created only after the matching of rules is done, and the packet being handled is the first packet.
+- For every subsequent packet the session table is referred to and updated
+**Stateful Inspection Mechanism**
+- A session can only be created when the first packet passes the inspection of the firewall. Any other packets comi
