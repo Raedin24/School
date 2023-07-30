@@ -208,7 +208,7 @@ Configures source NAT based on NAT server function. Simplifies the configuration
 **Dual-system hot standby** improves network reliability. Two firewalls can be deployed at the *egress* of a network to ensure communication b/n intranet and Internet
 
 ## 3.3.1 Technical Principles of Dual-System Hot Standby
-- *Virtual Router Redundancy Protocol*
+- *Virtual Router Redundancy Protocol*  is used to provide router redundancy
 
 # 3.4 Firewall User Management
 ---
