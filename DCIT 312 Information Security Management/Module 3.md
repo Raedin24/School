@@ -192,3 +192,7 @@ A translation proxy used for certain application protocols and can translate the
 	- Data is transmitted over the established data connection
 
 ## 3.2.3 Server Mapping
+
+# 3.3 Dual-System Hot Standby
+# 3.4 Firewall User Management
+# 3.5 Overview of Intrusion Prevention

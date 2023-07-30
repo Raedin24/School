@@ -1,7 +1,8 @@
-# 2. Common Server Types and Threats
+# 2.1 Operating System Overview
+# 2.2 Common Server Types and Threats
 - A server is a computer system that provides services to other machines over a network
 - A server is a high-performance computer that provides business services to external computers/clients through a network.
-## 2.1 Server Overview
+## 2.2.1 Server Overview
 Services provided by servers
 - Web applications
 - File download
@@ -33,7 +34,7 @@ Features of servers
 	- High-end enterprise server
 	- Complex internal structure with large number of devices
 	- Many different device units may be placed in the same cabinet
-## 2.2 Common Server Software
+## 2.2.2 Common Server Software
 - Software works in client/server (C/S) or browser/server(B/S) mode.
 1. File Server - Provides file sharing services to clients
 2. Database Server - Consists of one/more computers and a DBMS running on a LAN. Services include query, update, security and multi-user access control
@@ -41,7 +42,7 @@ Features of servers
 4. FTP Server - Computer that provides file transfer and access services
 5. DNS Server - Consists of a DNS resolver and a DNS server. Stores the domain names and IP addresses of all hosts on a network and can convert a domain name into the corresponding IP address
 
-## 2.3 Server Security Threats
+## 2.2.3 Server Security Threats
 1. **Malicious Programs**
 	- Can be divided into 2 categories
 		- Dependent on host programs that cannot take effect without an application
@@ -83,3 +84,4 @@ Causes
 - Improper system configuration
 - Limited security awareness
 
+# 2.3 Host Firewalls and Antivirus Software
