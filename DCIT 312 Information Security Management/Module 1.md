@@ -92,7 +92,8 @@ The grades are defined based on the extent of information system damage to citiz
 ## 3.1 TCP/IP Architecture
 ### Architecture of a Typical Campus Network
 1. **Access Layer** - Network components are connected directly to the user or peripherals, such as printers, laptops, smart television
-2. **Aggregation Layer** - All traffic from access layer goes to aggregation layer. On this layer, permission controls and ACLs can be applied 
+2. **Aggregation Layer** - All traffic from access layer goes to aggregation layer. On this layer, permission controls and ACLs can be applied. Typical layer for application of routing protocols
+3. **Core Layer** - Carries all information from within an organisation that is going to the internet or a different network. Might include other routers and firewalls 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
