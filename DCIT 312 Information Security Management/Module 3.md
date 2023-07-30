@@ -42,6 +42,8 @@
 	- Intercepts traffic at the network layer. Checks filtering status
 	- Saves header/session information and applies the same rules to subsequent packets with similar info
 	- Can be used with both TCP and UDP sessions
+	*Procedure*
+	- Host sends an **SYN** packet 
 
 ## Firewall Networking Modes
 **Mode 1** - Layer 2 Design
