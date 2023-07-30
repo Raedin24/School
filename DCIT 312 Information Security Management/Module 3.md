@@ -172,4 +172,7 @@ Created sessions have a time limit, which is not suitable for the transmission o
 	1. Static mapping (NAT server) - A one-to-one mapping between a private address and public address. Used when external users should be able to access internal users
 
 **Source NAT**
-1. *Address Pool Mode (1)*  - One-to-one IP address translation without port translation
+1. Address Pool Mode
+	1. *Address Pool Mode (1)*  - One-to-one IP address translation without port translation
+	- If the pool is running out of IPs, any subsequent private IPs trying to communicate with the external network will not be translated and hence cannot access the network
+	2. *Address Pool Mode (2)* - Many-to-one with port translation. Different private addresses are mapped to the same public address but with different port numbers
