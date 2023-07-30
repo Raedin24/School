@@ -163,3 +163,10 @@ Created sessions have a time limit, which is not suitable for the transmission o
 *Disadvantages*
 1. Network monitoring is more difficult
 2. Some applications are restricted
+
+**NAT Categories**
+1. *Source NAT*
+	1. Address pool mode - Uses a fixed public IP from a range of IPs (the pool)
+	2. Outbound interface address mode(easy IP) - A number of internal hosts are translated to the same public IPs, usually dynamic IPs
+2. *Server mapping*
+	1. Static mapping (NAT server) - A one-to-one mapping 
