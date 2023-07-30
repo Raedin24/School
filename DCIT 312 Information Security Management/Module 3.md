@@ -116,6 +116,11 @@ Optional steps include:
 - Create security zones - After start, before configuring interfaces
 - Configure user authentication, configure objects, create profile - After configuring interfaces
 
+- An *address object* is a set of **IPv4**/**IPv6** addresses or **MAC** addresses.
+- A *region* is a set of public IP addresses in a certain area
+- A *service* is a type of application protocol determined by a **protocol type** and a **port number**.
+- An *application* is a computer program used for a specific purpose or task
+
 ## 3.1.4 Application Specific Packet Filtering (ASPF)
 - Single-channel protocol refer to application services that use only one port during communication. eg. WWW uses port 80
 - Multi-channel protocol use 2 or more ports for communication. eg FTP uses 21 and a random port
@@ -137,3 +142,6 @@ A *server map table* is generated under the following conditions
 **Fragment Cache**
 Used to cache fragments that arrive before the first fragment in the flow. 
 Done to prevent the firewall from discarding fragments
+
+**Persistent Connection**
+Created sessions have a time limit, which is not suitable for the transmission of big data.
