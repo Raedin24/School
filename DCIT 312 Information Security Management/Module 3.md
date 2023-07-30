@@ -43,7 +43,12 @@
 	- Saves header/session information and applies the same rules to subsequent packets with similar info
 	- Can be used with both TCP and UDP sessions
 	*Procedure*
-	- Host sends an **SYN** packet 
+	- Establish TCP connection b/n the host and the server
+	- Host sends an **SYN** packet
+	- Server sends back an SYN acknowledge packet, **ACK**
+	- Host sends back an **ACK** packet once it receives the packet from the server
+	- Firewall checks the connection status throughout the entire process. The packets are discarded if the session info is wrong.
+	- 
 
 ## Firewall Networking Modes
 **Mode 1** - Layer 2 Design
