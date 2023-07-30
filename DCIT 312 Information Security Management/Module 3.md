@@ -192,8 +192,8 @@ A translation proxy used for certain application protocols and can translate the
 	- Data is transmitted over the established data connection
 
 ## 3.2.3 Server Mapping
-The NAT server function uses a public address to represen
-
+The NAT server function uses a public address to represent the private address of an internal server
+- After the NAT server is configured, the device automatically generates server map entries mapping public addresses to private ones
 # 3.3 Dual-System Hot Standby
 ---
 # 3.4 Firewall User Management
