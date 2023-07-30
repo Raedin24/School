@@ -153,6 +153,7 @@ Created sessions have a time limit, which is not suitable for the transmission o
 
 # 3.2 Network Address Translation
 ---
+## 3.2.1 NAT Principle
 **NAT** is used to translate private addresses into public addresses to allow devices to communicate across private and public networks
 - Is a temporary solution to alleviate shortage of public IPv4 addresses 
 *Advantages*
@@ -164,17 +165,24 @@ Created sessions have a time limit, which is not suitable for the transmission o
 1. Network monitoring is more difficult
 2. Some applications are restricted
 
-**NAT Categories**
+
+**NAT Categories
 1. *Source NAT*
 	1. Address pool mode - Uses a fixed public IP from a range of IPs (the pool)
 	2. Outbound interface address mode(easy IP) - A number of internal hosts are translated to the same public IPs, usually dynamic IPs
 2. *Server mapping*
 	1. Static mapping (NAT server) - A one-to-one mapping between a private address and public address. Used when external users should be able to access internal users
 
-**Source NAT**
+## 3.2.1 Source NAT
 1. *Address Pool Mode*
 	1. *Address Pool Mode (1)*  - One-to-one IP address translation without port translation
 	- If the pool is running out of IPs, any subsequent private IPs trying to communicate with the external network will not be translated and hence cannot access the network
 	2. *Address Pool Mode (2)* - Many-to-one address translation with port translation. Different private addresses are mapped to the same public address but with different port numbers
 2. *Easy IP* - Uses the public IP of the outbound interface of the firewall. Involves port translation
 `Difference b/n Address Pool Mode and Easy IP is that the public IP addresses in the pool are static IP addresses granted to the hosting provider. All addresses in Easy IP are translated into a single IP, which can be dynamic`
+
+**NAT Application Level Gateway (NAT ALG)**
+A translation proxy used for certain application protocols and can translate the address and port number carried in application layer data.
+- Not enabled by default
+
+## 3.2.3 Server Mapping
