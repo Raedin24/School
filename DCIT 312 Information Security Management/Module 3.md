@@ -49,7 +49,6 @@
 	- Server sends back an SYN acknowledge packet, **ACK**
 	- Host sends back an **ACK** packet once it receives the packet from the server
 	- Firewall checks the connection status throughout the entire process based on the security policy. The packets are discarded if the session info is wrong.
-	- 
 
 ### Firewall Networking Modes
 **Mode 1** - Layer 2 Design
@@ -65,7 +64,7 @@
 	- When there is high traffic, packets can be routed to another firewall for processing
 - Works even with topology changes
 
-# 3.1.2 Principle of Firewall Forwarding
+## 3.1.2 Principle of Firewall Forwarding
 **Steps to Packet Filtering**
 Upon receiving packet, firewall:
 1. Obtains the header
@@ -102,7 +101,7 @@ Control traffic forwarding according to specific rules or actions and apply inte
 	- User (eg. abc)
 	- Application ( eg. Telnet)
 
-
+## 3.1.3 Firewall Security Policies and Application
 - System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*
 - Security Policy Configuration Process:
 > Start > Configure Interfaces >  Configure security policy >  Save and commit > Exit
@@ -111,4 +110,6 @@ Optional steps include:
 - Create security zones - After start, before configuring interfaces
 - Configure user authentication, configure objects, create profile - After configuring interfaces
 
-# 3.4 
+## 3.1.4 Application Specific Packet Filtering (ASPF)
+- Single-channel protocol refer to application services that use only one port during communication. eg. WWW uses port 80
+- 
