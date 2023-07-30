@@ -101,5 +101,7 @@ Control traffic forwarding according to specific rules or actions and apply inte
 	- User (eg. abc)
 	- Application ( eg. Telnet)
 
-**Configuring a Security Zone on Web UI**
+
 - System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*
+- Security Policy Configuration Process:
+> Start > Configure Interfaces >  Configure security policy >  Save and commit
