@@ -112,4 +112,5 @@ Optional steps include:
 
 ## 3.1.4 Application Specific Packet Filtering (ASPF)
 - Single-channel protocol refer to application services that use only one port during communication. eg. WWW uses port 80
-- 
+- Multi-channel protocol use 2 or more ports for communication. eg FTP uses 21 and a random port
+- Protocols that use random ports cannot be monitored effectively by pure packet filtering
