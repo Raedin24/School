@@ -105,7 +105,7 @@ Control traffic forwarding according to specific rules or actions and apply inte
 
 ## 3.1.3 Firewall Security Policies and Application
 - System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*. Security levels of default zones cannot be changed.
-- Additional zones(user defined) can be created and configured.
+- Additional zones(user-defined) can be created and configured.
 - Security policy includes
 	1. Matching conditions: Source and destination security zone, source and destination address, user, service, application, schedule
 	2. Action: Permit or deny
@@ -153,3 +153,5 @@ Created sessions have a time limit, which is not suitable for the transmission o
 
 # 3.2 Network Address Translation
 ---
+**NAT** is used to translate private addresses into public addresses to allow devices to communicate across private and public networks
+- Is a temporary solution to alleviate shortage of public IPv4 addresses 
