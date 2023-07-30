@@ -87,6 +87,7 @@ The grades are defined based on the extent of information system damage to citiz
 3. Assessment - Assessment of the status of security protection
 4. Rectification - Key to the implementation of graded protection
 5. Supervision - External management of graded protection
+
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
