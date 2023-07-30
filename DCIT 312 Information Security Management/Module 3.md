@@ -4,6 +4,7 @@
 - Know firewall security policy configuration
 
 # 3.1 Introduction to Firewalls
+---
 ## 3.1.1 Firewall Classification
 **Firewall features**
 - *Logical area filter* - Able to separate the internet into a trusted and untrusted domain.
@@ -103,8 +104,8 @@ Control traffic forwarding according to specific rules or actions and apply inte
 	- Application ( eg. Telnet)
 
 ## 3.1.3 Firewall Security Policies and Application
-- System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*
-- Additional zones can be created and configured.
+- System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*. Security levels of default zones cannot be changed.
+- Additional zones(user defined) can be created and configured.
 - Security policy includes
 	1. Matching conditions: Source and destination security zone, source and destination address, user, service, application, schedule
 	2. Action: Permit or deny
@@ -144,4 +145,11 @@ Used to cache fragments that arrive before the first fragment in the flow.
 Done to prevent the firewall from discarding fragments
 
 **Persistent Connection**
-Created sessions have a time limit, which is not suitable for the transmission of big data.
+Created sessions have a time limit, which is not suitable for the transmission of big data. 
+- Longer sessions can be configured using the command `long link`
+- `long link` changes the aging time of the session
+- If not data is transmitted withing the session aging time, the session is disconnected
+
+
+# 3.2 Network Address Translation
+---
