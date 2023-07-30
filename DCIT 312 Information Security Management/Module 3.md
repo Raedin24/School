@@ -3,7 +3,8 @@
 - Understand firewall security policies
 - Know firewall security policy configuration
 
-# 3.1 Firewall Classification
+# 3.1 Introduction to Firewalls
+## 3.1.1 Firewall Classification
 **Firewall features**
 - *Logical area filter* - Able to separate the internet into a trusted and untrusted domain.
 - *Hiding intranet structure* - Hides the structure of the internal network ie. the trusted domain
@@ -50,7 +51,7 @@
 	- Firewall checks the connection status throughout the entire process based on the security policy. The packets are discarded if the session info is wrong.
 	- 
 
-## Firewall Networking Modes
+### Firewall Networking Modes
 **Mode 1** - Layer 2 Design
 - Firewall is transparent to both domains 
 - Firewall does not interrupt existing IP scheme of the environment
@@ -64,7 +65,7 @@
 	- When there is high traffic, packets can be routed to another firewall for processing
 - Works even with topology changes
 
-# 3.2 Principle of Firewall Forwarding
+# 3.1.2 Principle of Firewall Forwarding
 **Steps to Packet Filtering**
 Upon receiving packet, firewall:
 1. Obtains the header
@@ -104,4 +105,10 @@ Control traffic forwarding according to specific rules or actions and apply inte
 
 - System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*
 - Security Policy Configuration Process:
-> Start > Configure Interfaces >  Configure security policy >  Save and commit
+> Start > Configure Interfaces >  Configure security policy >  Save and commit > Exit
+
+Optional steps include:
+- Create security zones - After start, before configuring interfaces
+- Configure user authentication, configure objects, create profile - After configuring interfaces
+
+# 3.4 
