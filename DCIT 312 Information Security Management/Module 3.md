@@ -91,4 +91,12 @@ Control traffic forwarding according to specific rules or actions and apply inte
 - A session table is created only after the matching of rules is done, and the packet being handled is the first packet.
 - For every subsequent packet the session table is referred to and updated
 **Stateful Inspection Mechanism**
-- A session can only be created when the first packet passes the inspection of the firewall. Any other packets comi
+- A session can only be created when the first packet passes the inspection of the firewall. Any other packets coming within the same session are also forwarded without being checked. Enabled by default
+- If disabled, even if the first packet does not pass, subsequent packets will trigger the creation of a session table as long as they pass
+
+- A session table will usually contain the following information
+	- Source and Destination IP address
+	- Source and Destination Port number
+	- Protocol (eg TCP)
+	- User (eg. abc)
+	- Application ( eg. Telnet)
