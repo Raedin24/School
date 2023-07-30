@@ -88,16 +88,18 @@ The grades are defined based on the extent of information system damage to citiz
 4. *Rectification* - Key to the implementation of graded protection
 5. *Supervision* - External management of graded protection
 
-# 3. Basic Network Concepts
-## 3.1 TCP/IP Architecture
+# 1.3 Basic Network Concepts
+## 1.3.1 TCP/IP Architecture
 ### Architecture of a Typical Campus Network
 1. **Access Layer** - Network components are connected directly to the user or peripherals, such as printers, laptops, smart television
 2. **Aggregation Layer** - All traffic from access layer goes to aggregation layer. On this layer, permission controls and ACLs can be applied. Typical layer for application of routing protocols
 3. **Core Layer** - Carries all information from within an organisation that is going to the internet or a different network. Might include other routers and firewalls 
 4. **Egress zone** - Typically the routers of the service provider
-# 3. Common Network Devices
+
+## 1.3.2 Common Network Protocols
+# 1.4 Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
-## 3.1 Basic Network Devices
+## 1.4.1 Basic Network Devices
 1. **Switch** 
 	- Works at the data link layer
 	- Forwards data *frames*
@@ -122,7 +124,7 @@ Link to extra [info](https://www.cisco.com/c/en/us/products/security/firewalls/w
 - Each zone consists of a single interface or a group of interfaces, to which a security policy is applied
 - More [info](https://www.kwtrain.com/blog/network-security-zones)
 
-## 3.2 Device Initial Login
+## 1.4.2 Initial Device Login
 `3.2.1 Basic Service Configurations`
 
 **Versatile Routing Platform**
@@ -203,3 +205,9 @@ Steps
 		 - >System
 		- >License Management
 		- >Upload license file
+
+# 1.5 Common Information Security Threats
+## 1.5.1 Current Situation of Information Security Threats
+## 1.5.2 Threats to Network Security
+## 1.5.3 Threats to Application Security
+1*
