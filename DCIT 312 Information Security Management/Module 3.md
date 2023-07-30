@@ -97,6 +97,6 @@ Control traffic forwarding according to specific rules or actions and apply inte
 - A session table will usually contain the following information
 	- Source and Destination IP address
 	- Source and Destination Port number
-	- Protocol (eg TCP)
+	- Protocol (eg. TCP)
 	- User (eg. abc)
 	- Application ( eg. Telnet)
