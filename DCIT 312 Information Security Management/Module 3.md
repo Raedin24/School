@@ -194,6 +194,11 @@ A translation proxy used for certain application protocols and can translate the
 ## 3.2.3 Server Mapping
 The NAT server function uses a public address to represent the private address of an internal server
 - After the NAT server is configured, the device automatically generates server map entries mapping public addresses to private ones
+- The server generates map entries for both inbound and outbound traffic
+- Specifying `no-reverse` in the configuration makes the device generate only forward/outbound map entries
+## 3.2.4 Application Scenarios
+**Source NAT application**
+**NAT server application**
 # 3.3 Dual-System Hot Standby
 ---
 # 3.4 Firewall User Management
