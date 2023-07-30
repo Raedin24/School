@@ -156,4 +156,10 @@ Created sessions have a time limit, which is not suitable for the transmission o
 **NAT** is used to translate private addresses into public addresses to allow devices to communicate across private and public networks
 - Is a temporary solution to alleviate shortage of public IPv4 addresses 
 *Advantages*
-1
+1. IP addresses can be reused(private IPs)
+2. Address translation process is transparent to users
+3. Privacy protection is available to internal users
+4. Load balancing among internal servers is available
+*Disadvantages*
+1. Network monitoring is more difficult
+2. Some applications are restricted
