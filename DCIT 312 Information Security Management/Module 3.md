@@ -123,4 +123,11 @@ A *server map table* is generated under the following conditions
 3. Triplet server map entries will be generated when **STUN protocols** (Simple Traversal of UDP through NAT) are configured
 4. Dynamic server map entries are generated when **NAT No-PAT** (Network Address Translation without Port Address Translation) is configured
 
-- Port identification maps non-standard protocol pr
+- Port identification maps non-standard protocol ports to identifiable application protocol ports
+- Can be done by
+	1. Configuring a basic ACL
+	2. Configuring port identification/mapping with the ACL
+
+**Fragment Cache**
+Used to cache fragments that arrive before the first fragment in the flow. 
+Done to prevent the firewall from discarding fragments
