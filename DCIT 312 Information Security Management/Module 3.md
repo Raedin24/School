@@ -169,4 +169,7 @@ Created sessions have a time limit, which is not suitable for the transmission o
 	1. Address pool mode - Uses a fixed public IP from a range of IPs (the pool)
 	2. Outbound interface address mode(easy IP) - A number of internal hosts are translated to the same public IPs, usually dynamic IPs
 2. *Server mapping*
-	1. Static mapping (NAT server) - A one-to-one mapping 
+	1. Static mapping (NAT server) - A one-to-one mapping between a private address and public address. Used when external users should be able to access internal users
+
+**Source NAT**
+1. *Address Pool Mode (1)*  - One-to-one IP address translation without port translation
