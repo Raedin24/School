@@ -114,3 +114,5 @@ Optional steps include:
 - Single-channel protocol refer to application services that use only one port during communication. eg. WWW uses port 80
 - Multi-channel protocol use 2 or more ports for communication. eg FTP uses 21 and a random port
 - Protocols that use random ports cannot be monitored effectively by pure packet filtering
+- **ASPF** checks application-layer protocol information. It maintains status information for all connections of a specified application protocol and dynamically determines whether to allow the data packets
+- Used to filter packets at the application layer
