@@ -184,5 +184,11 @@ Created sessions have a time limit, which is not suitable for the transmission o
 **NAT Application Level Gateway (NAT ALG)**
 A translation proxy used for certain application protocols and can translate the address and port number carried in application layer data.
 - Not enabled by default
+*Implementation Principle*
+	- Set up control connection (TCP three-way handshake) b/n host and server
+	- Host sends a **PORT** packet
+	- Firewall enables with ALG translates private address and port number in packet
+	- Server initiates a data connection to the host
+	- Data is transmitted over the established data connection
 
 ## 3.2.3 Server Mapping
