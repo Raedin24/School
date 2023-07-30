@@ -205,7 +205,11 @@ Configures source NAT based on NAT server function. Simplifies the configuration
 - Firewall translate the *source address* of the *response packet* from the *FTP server* into the *public address*. Also translates the *destination address* into the *private address* of the *user*.
 # 3.3 Dual-System Hot Standby
 ---
-**Dual-system hot standby** improves network reliability. Two firewalls can be deployed at the **
+**Dual-system hot standby** improves network reliability. Two firewalls can be deployed at the *egress* of a network to ensure communication b/n intranet and Internet
+
+## 3.3.1 Technical Principles of Dual-System Hot Standby
+- *Virtual Router Redundancy Protocol*
+
 # 3.4 Firewall User Management
 ---
 # 3.5 Overview of Intrusion Prevention
