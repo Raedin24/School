@@ -100,3 +100,6 @@ Control traffic forwarding according to specific rules or actions and apply inte
 	- Protocol (eg. TCP)
 	- User (eg. abc)
 	- Application ( eg. Telnet)
+
+**Configuring a Security Zone on Web UI**
+- System has 4 security zones by default: *local*, *trust*, *untrust* and *DMZ*
