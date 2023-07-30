@@ -209,6 +209,9 @@ Configures source NAT based on NAT server function. Simplifies the configuration
 
 ## 3.3.1 Technical Principles of Dual-System Hot Standby
 - *Virtual Router Redundancy Protocol*  is used to provide router redundancy
+- VRRP creates a virtual IP, with all traffic using that IP as the gateway
+- There is 1 master router, with the remaining routers serving as backups.
+- If there is a failure in the master router, the backups can come online. There is no need to change the configuration as the gateway IP remains as the virtual IP
 
 # 3.4 Firewall User Management
 ---
