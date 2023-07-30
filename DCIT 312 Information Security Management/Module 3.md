@@ -73,13 +73,12 @@ Upon receiving packet, firewall:
 `Core technique for packet filtering is the Access Control List(ACL)`
 
 **Security Policies**
-- Control traffic forwarding according to specific rules or actions
-- Apply integrated content security detection to traffic
+Control traffic forwarding according to specific rules or actions and apply integrated content security detection to traffic
 - Rules focus on packet filtering
 - Major applications:
 	-  Control network communication through firewall
 	- Control access to firewall
-- Security policy can be configured using Telnet, Web User interface or by command 
+- Security policy can be configured using *Telnet*, *Web* User interface or by command 
 
 **Firewall Security Policy Mechanism**
 - Defines a list of rules for traffic passing through the firewall
