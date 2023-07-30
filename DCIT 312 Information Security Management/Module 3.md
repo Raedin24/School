@@ -47,7 +47,7 @@
 	- Host sends an **SYN** packet
 	- Server sends back an SYN acknowledge packet, **ACK**
 	- Host sends back an **ACK** packet once it receives the packet from the server
-	- Firewall checks the connection status throughout the entire process. The packets are discarded if the session info is wrong.
+	- Firewall checks the connection status throughout the entire process based on the security policy. The packets are discarded if the session info is wrong.
 	- 
 
 ## Firewall Networking Modes
@@ -58,6 +58,7 @@
 - Does not filter packets
 **Mode 2** - Layer 3 Design
 - Allows the firewall to run on different IP network
+- Firewall supports some Layer 3 features such as *Network Address Translation(NAT)* and *Unified Threat Management(UTM)*
 - Interrupts existing IP scheme
 - Second mode implements redundancy
 	- When there is high traffic, packets can be routed to another firewall for processing
