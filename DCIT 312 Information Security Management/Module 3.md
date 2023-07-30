@@ -197,8 +197,10 @@ The NAT server function uses a public address to represent the private address o
 - The server generates map entries for both inbound and outbound traffic
 - Specifying `no-reverse` in the configuration makes the device generate only forward/outbound map entries
 ## 3.2.4 Application Scenarios
-**Intrazone Twice NAT**
+**Interzone Twice NAT**
 Configures source NAT based on NAT server function. Simplifies the configuration of the route from server to public network
+
+**Intrazone Twice NAT**
 - The firewall translates the *destination address* of the *user's request packet* into the *private address* of the *FTP server*. Also translate the *source address* into the *public address* of the *user*.
 - Firewall translate the *source address* of the *response packet* from the *FTP server* into the *public address*. Also translates the *destination address* into the *private address* of the *user*.
 # 3.3 Dual-System Hot Standby
