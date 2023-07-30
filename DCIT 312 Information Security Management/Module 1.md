@@ -1,4 +1,4 @@
-# 1. Basic Concepts of Information Security
+# 1.1 Basic Concepts of Information Security
 ## 1.1 Information and Information Security
 **Information Security** is the process of ensuring safe data communication and preventing issues such as information leakage, modification, and disruption. It refers to the preservation of *confidentiality*, *integrity*, and *availability* of data through security technologies
 - *Confidentiality* refers to the secrecy of the information
@@ -33,8 +33,8 @@ Additional principles have been added with the development of internet technolog
 	2. Enterprise system - Inherits same rules
 	3. Management system - Inherits same rules
 
-# 2. Information Security Standards and Specification
-## 2.1 Information Security Standards and Specification
+# 1.2 Information Security Standards and Specification
+## 1.2.1 Information Security Standards and Specification
 ### **Significance of Information Security Standards**
 **Standards** are normative documents that are jointly formulated, approved by recognized authorities, and used throught the industry to achieve the best security
 
@@ -52,7 +52,7 @@ Common Info Security Standards
 3. US: Trusted Computer System Evaluation Criteria(TCSEC)
 4. EU: Information Technology Security Evaluation Criteria(ITSEC)
 
-## 2.2 ISO 27001 ISMS
+## 1.2.2 ISO 27001 ISMS
 **ISMS** stands for Information Security Management System.
 - Is a set of policies and the standard procedure for an enterprise to systematically organise sensitive information
 - Based on the ***BS7799*** standard developed the British Standards Institution(BSI)
@@ -78,7 +78,7 @@ The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC
 2. **Do, Check** - System operation and monitoring. Involves ISMS trial run , system operation monitoring and business continuity management training.
 3. **Act** - Certification and continuous improvement. Involves auditing(internal and external)
 
-## 2.1 Graded Protection of Information Security
+## 1.2.3 Graded Protection of Information Security
 The grades are defined based on the extent of information system damage to citizens, society, and state.
 ![[Pasted image 20230729205006.png]]
 **Graded Protection Process**
