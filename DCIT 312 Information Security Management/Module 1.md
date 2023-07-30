@@ -82,12 +82,17 @@ The most important among this family are the **ISO/IEC 27001** and the **ISO/IEC
 The grades are defined based on the extent of information system damage to citizens, society, and state.
 ![[Pasted image 20230729205006.png]]
 **Graded Protection Process**
-1. Grading - Primary step
-2. Filing - Mandatory procedure for notifying the supervision department
-3. Assessment - Assessment of the status of security protection
-4. Rectification - Key to the implementation of graded protection
-5. Supervision - External management of graded protection
+1. *Grading* - Primary step
+2. *Filing* - Mandatory procedure for notifying the supervision department
+3. *Assessment* - Assessment of the status of security protection
+4. *Rectification* - Key to the implementation of graded protection
+5. *Supervision* - External management of graded protection
 
+# 3. Basic Network Concepts
+## 3.1 TCP/IP Architecture
+### Architecture of a Typical Campus Network
+1. **Access Layer** - Network components are connected directly to the user or peripherals, such as printers, laptops, smart television
+2. **Aggregation Layer** - All traffic from access layer goes to aggregation layer. On this layer, permission controls and ACLs can be applied 
 # 3. Common Network Devices
 - Network devices are the basic components of a network. They need to be deployed and configured when constructing a network to meet connection or security requirements
 ## 3.1 Basic Network Devices
