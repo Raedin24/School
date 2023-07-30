@@ -155,3 +155,5 @@ Created sessions have a time limit, which is not suitable for the transmission o
 ---
 **NAT** is used to translate private addresses into public addresses to allow devices to communicate across private and public networks
 - Is a temporary solution to alleviate shortage of public IPv4 addresses 
+*Advantages*
+1
