@@ -210,4 +210,8 @@ Steps
 ## 1.5.1 Current Situation of Information Security Threats
 ## 1.5.2 Threats to Network Security
 ## 1.5.3 Threats to Application Security
-1*
+## 1.5.4 Threats to Data Transmission and Device Security
+# 1.6 Threat Defense and Information Security Development Trends
+## 1.6.1 Security Threat Defense
+## 1.6.2 Information Security Awareness
+## 1.6.3 Information Security Development Trends
