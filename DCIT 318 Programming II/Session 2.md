@@ -18,7 +18,7 @@ namespace DCIT318
 3. *protected* - Member is accessible inside the type and any type that inherits it
 4. *public* - Member is accessible everywhere
 5. *internal protected* - Combines internal and protected
-6. *private protected* - Member is accessible inside the type, *or* any type that inherits from the type and is in the same assembly. Only availabe from **C# 7.2**
+6. *private protected* - Member is accessible inside the type, *or* any type that inherits from the type and is in the same assembly. Only available from **C# 7.2**
 
 # Class Members
 This includes all members declared in the class (except *constructors* and *finalizers*), and all members declared in all classes in the inheritance hierarchy
@@ -28,7 +28,7 @@ This includes all members declared in the class (except *constructors* and *fina
 - **Properties** - Methods in a class that are accesses as though being fields in that class
 - **Indexers** - Enable an object to be indexed similar to an array
 - **Operators** - Refers to overloaded operators in a class
-- **Events** - Provide notifications about occurences, such as button clicks, to other objects
+- **Events** - Provide notifications about occurrences, such as button clicks, to other objects
 ---
 - **Constructors** - Methods that are called when the object is first created
 
