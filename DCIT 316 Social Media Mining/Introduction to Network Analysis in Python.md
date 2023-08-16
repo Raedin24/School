@@ -21,4 +21,21 @@ import matplotlib.pyplot as plt
 plt.show() # Displays a node-link diagram of the graph
 ```
 
-# #
+- Can draw directed and undirected graphs
+```python
+G = nx.Graph() # Instantiates empty undirected graph
+type(G) # Is of type 'Graph'
+
+D = nx.DiGraph() # Instantiates empty directed graph
+type(D) # Is of type 'DiGraph'
+
+M 
+```
+# Exercises
+```python
+# Use a list comprehension to get the nodes of interest: noi
+noi = [n for n, d in T.nodes(data=True) if d['occupation'] == 'scientist']
+
+# Use a list comprehension to get the edges of interest: eoi
+eoi = [(u, v) for u, v, d in T.edges(data=True) if d['date'] < date(2010, 1, 1)]
+```
