@@ -24,12 +24,16 @@ plt.show() # Displays a node-link diagram of the graph
 - Can draw directed and undirected graphs
 ```python
 G = nx.Graph() # Instantiates empty undirected graph
-type(G) # Is of type 'Graph'
+type(G) # Is of class 'Graph'
 
 D = nx.DiGraph() # Instantiates empty directed graph
-type(D) # Is of type 'DiGraph'
+type(D) # Is of class 'DiGraph'
 
-M 
+M = nx.MultiGraph() # Instantiates empty multi-edge graph
+type(M) # Is of class 'MultiGraph'
+
+MD = nx.MultiDiGraph() # Instantiates empty multi-edge graph (directed)
+type(MD) # Is of class 'MultiDiGraph'
 ```
 # Exercises
 ```python
