@@ -11,5 +11,12 @@ G.edges() # Returns [(1, 2)]
 ```
 - Metadata can be added to the nodes in the graph, providing extra information
 ```python
-G.node[1]['Label']
+G.node[1]['Label'] = 'blue'
+G.nodes(data=True) # Returns [(1, {'label': 'blue'}), (2, {}), (3, {})]
+```
+- Provides drawing functionality
+```python
+nx.draw(G)
+import matplotlib.pyplot as plt
+plt.show() # Displays a node-link diagram of the graph
 ```
