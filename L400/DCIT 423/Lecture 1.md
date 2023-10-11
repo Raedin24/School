@@ -1,6 +1,6 @@
 # Setup
 - PuTTY
-- Terraterm
+- TeraTerm
 - Prolific drivers
 - Packet Tracer
 
