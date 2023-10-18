@@ -13,4 +13,4 @@
 - `transport` is used to provide unique usernames and passwords to each user
 - `copy running-config startup-config` saves the current configuration to the startup-configuration. Can only be run in the privilege exec mode.
 - `do wr` saves the configuration in whichever mode is in use
-- 
+
