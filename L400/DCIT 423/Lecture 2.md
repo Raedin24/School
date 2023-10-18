@@ -11,3 +11,4 @@
 ` > - User exec mode , # - Privilege exec mode`
 - `enable secret` is the syntax used to lock access from the user exec mode to the privilege exec mode
 - `transport` is used to provide unique usernames and passwords to each user
+- copy running-config startup-config
