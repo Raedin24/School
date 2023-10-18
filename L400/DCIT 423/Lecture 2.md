@@ -4,3 +4,5 @@
 	- Line
 	- Virtual (VTY)
 	- Config
+- Switches usually only handle MAC addresses
+- To handle/configure a switch remotely, an IP address is needed. To assign an IP address to a switch, a VLAN is used
