@@ -1,1 +1,6 @@
 - Serial ports are used to connect 2 routers together
+- `hostname` is used to uniquely identify devices on a network. It can only be changed when in the configuration terminal
+- Types of terminals
+	- Line
+	- Virtual (VTY)
+	- Config
