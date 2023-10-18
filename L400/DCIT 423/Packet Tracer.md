@@ -12,4 +12,6 @@ Packet Tracer can create four different types of files
 
 ## Assessments
 There are two types of assessments
-1. **Pac
+1. **Packet Tracer Media Objects (PTMO)**
+	- Can be a .pkt or .pka file.
+1. **Packet Tracer Skills Assessments (PTSA)
