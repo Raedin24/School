@@ -1,0 +1,1 @@
+- Serial ports are used to connect 2 routers together
