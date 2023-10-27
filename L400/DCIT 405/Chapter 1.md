@@ -8,3 +8,9 @@ Two basics types of structured data
 	- *Ordinal* - Has an explicit ordering
 The data type is important in data analysis for determining the type of visual display, data analysis or statistical model to be used. In software, it acts as a signal on how to process the data
 `The outcome is also known as the dependent variable`
+
+# Estimates of Location
+A basic step in exploring data is getting a typical value for each feature: an estimate of where most of the data is located. Usually the *mean* and the *median*
+- **Weighted Mean**  - The sum of all values times a weight, divided by the sum of the weights
+- **Trimmed Mean** - The average of all values after dropping a fixed number of extreme values. aka *Truncated Mean*
+- **Weighted Median** - 
