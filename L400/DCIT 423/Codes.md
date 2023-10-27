@@ -1,4 +1,4 @@
 hostname S2 - Sets device name on network
 no ip domain lookup - Prevents network device from trying to do NAT / map to any domain
-enable secret `password` - Prevents entry into privilege exec mode. `password` is the 
+enable secret `password` - Prevents entry into privilege exec mode. `password` is the password to be set.
 line console 0
