@@ -1,0 +1,2 @@
+- Learn R
+- Learn C++
