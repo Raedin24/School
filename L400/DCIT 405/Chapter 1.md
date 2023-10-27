@@ -14,6 +14,9 @@ A basic step in exploring data is getting a typical value for each feature: an e
 - **Weighted Mean**  - The sum of all values times a weight, divided by the sum of the weights
 - **Trimmed Mean** - The average of all values after dropping a fixed number of extreme values. aka *Truncated Mean*
 	Trimmed Mean =     $$	 \overline{x} = \frac{\sum ^{n-p}_{i = p+1^x(i)}}{n-2p}  $$
-	- 
+	- Eliminates the influence of extreme values
 - **Weighted Median** - The value such that one-half of the sum of the weights lies above and below the sorted data
+	Weighted mean = $$ \overline{x}_w = \frac{\sum^n_{i-1}{w_ix_i}}{\sum^n_{i=1}w_i}  $$
+	Reasons for using a weighted mean
+	- Some values are more variable than others. Highly variable observations are given a lowe 
 - **Robust** - Not sensitive to extreme values/outliers
