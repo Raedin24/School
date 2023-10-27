@@ -4,3 +4,8 @@ enable secret `class` - Prevents entry into privilege exec mode. `class` is the 
 line console 0 - Switches to conf mode to line-configuration mode
 password `cisco` - Sets a password for console 0 user exec mode
 login - Enforces the password set above
+line vty 0 4 - Same as line console, but for remote logins like SSH or Telnet
+password `cisco`
+login
+exit
+banner motd # Authorised Users Only #
