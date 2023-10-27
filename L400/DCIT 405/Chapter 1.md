@@ -17,6 +17,7 @@ A basic step in exploring data is getting a typical value for each feature: an e
 	- Eliminates the influence of extreme values
 - **Weighted Median** - The value such that one-half of the sum of the weights lies above and below the sorted data
 	Weighted mean = $$ \overline{x}_w = \frac{\sum^n_{i-1}{w_ix_i}}{\sum^n_{i=1}w_i}  $$
-	Reasons for using a weighted mean
-	- Some values are more variable than others. Highly variable observations are given a lowe 
+	A weighted mean is used when:
+	- Some values are more variable than others. Highly variable observations are given a lower weight
+	- The data collected does not equally represent the different groups of interest. Higher weights can be given to underrepresented groups
 - **Robust** - Not sensitive to extreme values/outliers
