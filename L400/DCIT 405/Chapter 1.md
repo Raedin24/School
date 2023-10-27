@@ -7,4 +7,4 @@ Two basics types of structured data
 	- *Binary* - Special case of categorical data with only two categories
 	- *Ordinal* - Has an explicit ordering
 The data type is important in data analysis for determining the type of visual display, data analysis or statistical model to be used. In software, it acts as a signal on how to process the data
-`The outcome is also known as the
+`The outcome is also known as the dependent variable`
