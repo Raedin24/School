@@ -1,4 +1,22 @@
-en
+```bash
+enable
+configure terminal
+hostname S1
+no ip domain lookup
+enable secret class
+line console 0
+password cisco
+login
+line vty 0 4
+password cisco
+login
+exit
+banner motd # Authorized Users Only #
+service password-encryption
+exit
+copy running-config startup-config
+```
+en - En
 conf t
 hostname S2 - Sets device name on network
 no ip domain lookup - Prevents network device from trying to do NAT / map to any domain
