@@ -13,4 +13,5 @@ The data type is important in data analysis for determining the type of visual d
 A basic step in exploring data is getting a typical value for each feature: an estimate of where most of the data is located. Usually the *mean* and the *median*
 - **Weighted Mean**  - The sum of all values times a weight, divided by the sum of the weights
 - **Trimmed Mean** - The average of all values after dropping a fixed number of extreme values. aka *Truncated Mean*
-- **Weighted Median** - 
+- **Weighted Median** - The value such that one-half of the sum of the weights lies above and below the sorted data
+- **Robust** - Not sensitive to extreme values/outliers
