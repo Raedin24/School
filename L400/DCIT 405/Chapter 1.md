@@ -24,3 +24,9 @@ A basic step in exploring data is getting a typical value for each feature: an e
 - **Robust** - Not sensitive to extreme values/outliers
 `Mean is more sensitive to the data`
 `Usually, mean > trimmed mean > median`
+
+# Estimates of Variability
+**Variability** aka *dispersion*, measures the spread of the data.
+- **Deviation** - The difference b/n the observed values and the estimate of location. aka *error, residuals*
+- **Variance** - The sum of the squared deviation from the mean divided by n-1, where n is the number of data values. aka *mean-squared-error(MSE)*
+- **Standard Deviation** - Square root of variance
