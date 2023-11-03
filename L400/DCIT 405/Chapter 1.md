@@ -26,7 +26,7 @@ A basic step in exploring data is getting a typical value for each feature: an e
 `Usually, mean > trimmed mean > median`
 
 # Estimates of Variability
-**Variability** aka *dispersion*, measures the spread of the data.
+**Variability** aka *dispersion*, measures the spread of the data or its dispersion around a central value.
 - **Deviation** - The difference b/n the observed values and the estimate of location. aka *error, residuals*
 - **Variance** - The sum of the squared deviation from the mean divided by n-1, where n is the number of data values. aka *mean-squared-error(MSE)*
 - **Standard Deviation** - Square root of variance
