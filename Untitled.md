@@ -4,3 +4,5 @@
 # Against the motion
 1. The "fictional" tag given mean that the name, unless uniquely identifying, cannot be referring to a real person
 2. Freedom of expression : writers are allowed to create and share written content as they imagine
+3. The first amendment protects people's rights to express themselves. 
+4. No real harm was cause to the individual in question
