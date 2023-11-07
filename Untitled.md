@@ -1,4 +1,4 @@
-cr# For the motion
+# For the motion
 1. Putting the fictional tag does not give them the freedom to write anything they want. A real person with the name is going to be affected badly by the fictional story.
 2. 
 # Against the motion
