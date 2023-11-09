@@ -9,4 +9,4 @@
 - Finite and infinite population
 Can be combined to have queuing systems with particular characteristics
 
-Queuing theory helps in determining the time that the jobs spend in queues in the system. This time can be used to predict the response time
+**Queuing theory** helps in determining the time that the jobs spend in various queues in the system. This time can be used to predict the response time
