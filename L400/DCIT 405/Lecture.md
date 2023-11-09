@@ -3,4 +3,3 @@ Types of structured data
 	- Discrete
 	- Continuous
 - Categorical
-- 
