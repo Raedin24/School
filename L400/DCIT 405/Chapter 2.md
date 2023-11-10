@@ -18,4 +18,4 @@ Refers to the distribution of some sample statistic over many samples drawn from
 - *Standard error* - The variability of a sample statistic over many samples.
 `Standard error is concerned with samples, whilst standard deviation is concerned with the variability of individual data values`
 
-The distribution of a sample statistic is likely to be more regular and bell-shaped than the distribution of the data itself. The larger the sample, the narrower the distribution of the sample statistic
+The distribution of a sample statistic is likely to be more regular and bell-shaped than the distribution of the data itself. The larger the sample, the narrower the distribution of the sample statistic.
