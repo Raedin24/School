@@ -19,3 +19,8 @@ Refers to the distribution of some sample statistic over many samples drawn from
 `Standard error is concerned with samples, whilst standard deviation is concerned with the variability of individual data values`
 
 The distribution of a sample statistic is likely to be more regular and bell-shaped than the distribution of the data itself. The larger the sample, the narrower the distribution of the sample statistic.
+
+#### Standard Error
+A metric that measure the variability in the sampling distribution. Can be estimated using the **standard deviation** of the sample values, and the **sample size**
+Standard error = 
+$$ SE = frac{s}
