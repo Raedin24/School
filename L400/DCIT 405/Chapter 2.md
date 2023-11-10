@@ -23,4 +23,4 @@ The distribution of a sample statistic is likely to be more regular and bell-sha
 #### Standard Error
 A metric that measure the variability in the sampling distribution. Can be estimated using the **standard deviation** of the sample values, and the **sample size**
 Standard error = 
-$$ SE = frac{s}
+$$ SE = \frac{s}{\sqrt{n}} $$
