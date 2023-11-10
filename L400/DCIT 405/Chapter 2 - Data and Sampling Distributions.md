@@ -1,3 +1,7 @@
+## Random Sampling and Sample Bias
+- A *sample* is a subset of data from a larger data set
+- A *population* is a large, defined set of data
+Random sampling is a process in which each member of the population being sampled has an equal chance of being chosen
 ## Selection Bias
 The practice of selectively choosing data in a way that leads to misleading conclusions
 Forms:
