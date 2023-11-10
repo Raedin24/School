@@ -1,8 +1,9 @@
 ## Random Sampling and Sample Bias
 - A *sample* is a subset of data from a larger data set
 - A *population* is a large, defined set of data
-**Random sampling** is a process in which each member of the population being sampled has an equal chance of being chosen.
-`Data quality often matters more than data quantity when mak`
+- **Random sampling** is a process in which each member of the population being sampled has an equal chance of being chosen. ie. drawing elements at random
+- **Stratified sampling** is a process in which the population is divided in strata and randomly 
+`Data quality often matters more than data quantity when making an estimate or model based on a sample. Involves completeness, consistency of format, cleanliness and accuracy of individual data points.`
 ## Selection Bias
 The practice of selectively choosing data in a way that leads to misleading conclusions
 Forms:
