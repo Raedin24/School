@@ -11,4 +11,8 @@ Forms:
 ## Sampling Distribution of a Statistic
 Refers to the distribution of some sample statistic over many samples drawn from the same population
 `Classical statistics is usually concerned with making inferences from samples to populations`
-- *Sample statistic* - A metric calculated for a sample of data drawn from a larger population
+- *Sample statistic* - A metric calculated for a sample of data drawn from a larger population.
+- *Data distribution* - The frequency distribution of **individual values** in a data set
+- *Sampling distribution* - The frequency distribution of a **sample statistic** over many samples.
+- *Central limit theorem* - The tendency of the sampling distribution to take a normal shape as the sample size rises
+- *Standard error* - The variability of a sample statistic
