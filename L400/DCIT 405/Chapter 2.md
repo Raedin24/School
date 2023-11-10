@@ -21,6 +21,7 @@ Refers to the distribution of some sample statistic over many samples drawn from
 The distribution of a sample statistic is likely to be more regular and bell-shaped than the distribution of the data itself. The larger the sample, the narrower the distribution of the sample statistic.
 
 #### Standard Error
-A metric that measure the variability in the sampling distribution. Can be estimated using the **standard deviation** of the sample values, and the **sample size**
+A metric that sums up the variability in the sampling distribution. Can be estimated using the **standard deviation** of the sample values, and the **sample size**
 Standard error = 
 $$ SE = \frac{s}{\sqrt{n}} $$
+As sample size increases, the standard error decreases
