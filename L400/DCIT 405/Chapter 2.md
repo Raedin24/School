@@ -24,4 +24,4 @@ The distribution of a sample statistic is likely to be more regular and bell-sha
 A metric that sums up the variability in the sampling distribution. Can be estimated using the **standard deviation** of the sample values, and the **sample size**
 Standard error = 
 $$ SE = \frac{s}{\sqrt{n}} $$
-As sample size increases, the standard error decreases
+As sample size increases, the standard error decreases. Known as the `square root of n rule`.
