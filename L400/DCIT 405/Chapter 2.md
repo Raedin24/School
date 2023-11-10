@@ -15,4 +15,7 @@ Refers to the distribution of some sample statistic over many samples drawn from
 - *Data distribution* - The frequency distribution of **individual values** in a data set
 - *Sampling distribution* - The frequency distribution of a **sample statistic** over many samples.
 - *Central limit theorem* - The tendency of the sampling distribution to take a normal shape as the sample size rises
-- *Standard error* - The variability of a sample statistic
+- *Standard error* - The variability of a sample statistic over many samples.
+`Standard error is concerned with samples, whilst standard deviation is concerned with the variability of individual data values`
+
+The distribution of a sample statistic is likely to be more regular and bell-shaped than the distribution of the data itself. The larger the sample, the narrower the distribution of the sample statistic
