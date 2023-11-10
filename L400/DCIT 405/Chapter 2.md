@@ -6,4 +6,9 @@ Forms:
 	- *Nonrandom sampling*
 - Using a *holdout set* to validate performance can guard against selection bias.
 - Use *target shuffling*, which is a permutation test, to test the validity of predictive associations that a model suggests
-**Regression to the mean** - A phenomenon in successive measurements of a given variable where extreme observations ten
+**Regression to the mean** - A phenomenon in successive measurements of a given variable where extreme observations tend to be followed by more central observations. Is a consequence of selection bias
+
+## Sampling Distribution of a Statistic
+Refers to the distribution of some sample statistic over many samples drawn from the same population
+`Classical statistics is usually concerned with making inferences from samples to populations`
+- *Sample statistic* - A metric calculated for a sample of data drawn from a larger population
