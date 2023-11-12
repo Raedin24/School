@@ -4,19 +4,28 @@
 
 Azubi-GPT is a simple chatbot designed to answer user queries based on a set of predefined questions and responses. This documentation provides an overview of how to use the chatbot and describes the functions used in the application.
 
-## Table of Contents
-
-1. [Getting Started](#getting-started)
-   - [Installation](#installation)
-   - [Running the Chatbot](#running-the-chatbot)
-
-2. [Chatbot Features](#chatbot-features)
-   - [User Interface](#user-interface)
-   - [Sending Messages](#sending-messages)
-   - [Admin Panel](#admin-panel)
-
-3. [ChatGui](#`ChatGui` Class)
-   - [Methods](#Methods)
+## Table of Contents 
+1. [Getting Started](#getting-started) 
+	- [Installation](#installation)
+	- [Running the Chatbot](#running-the-chatbot) 
+2. [Chatbot Features](#chatbot-features) 
+	- [User Interface](#user-interface) 
+	- [Sending Messages](#sending-messages) 
+	- [Admin Panel](#admin-panel) 
+3. [ChatGui Class](#chatgui-class) 
+	- [__init__ Method](#__init__-method) 
+	- [send_message Method](#send_message-method) 
+	- [show_admin_login Method](#show_admin_login-method) 
+4. [SimpleChatbot Class](#simplechatbot-class) 
+	- [__init__ Method](#__init__-method) 
+	- [get_response Method](#get_response-method) 
+	- [add_response Method](#add_response-method) 
+5. [AdminPanel Class](#adminpanel-class) 
+	- [__init__ Method](#__init__-method) 
+	- [add_edit_response Method](#add_edit_response-method) 
+6. [AdminLogin Class](#adminlogin-class)
+	- [__init__ Method](#__init__-method) 
+	- [login Method](#login-method)
 
 
 ## Getting Started
@@ -199,7 +208,3 @@ The `AdminLogin` class provides a login interface for accessing the admin panel.
   ```python
   admin_login.login()
   ```
-
----
-
-These classes and functions collectively create a simple chatbot system with an admin interface for managing responses. The documentation provides a clear overview of their usage and functionality.
