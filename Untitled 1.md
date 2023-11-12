@@ -15,12 +15,12 @@ Azubi-GPT is a simple chatbot designed to answer user queries based on a set of 
    - [Sending Messages](#sending-messages)
    - [Admin Panel](#admin-panel)
 
-3. [Functions](#functions)
-   - [__init__](#__init__)
-   - [send_message](#send_message)
-   - [show_admin_login](#show_admin_login)
+3. [ChatGui](#`ChatGui` Class)
+   - [Methods](#Methods)
+
 
 ## Getting Started
+This documentation provides a quick guide on installing and using the Azubi-GPT chatbot. Users can interact with the chatbot through the provided user interface, and admins can access an admin panel for managing responses. The functions described give an overview of the functionality and usage of the chatbot's main features.
 
 ### Installation
 
@@ -68,7 +68,7 @@ Clicking the "Admin" button opens an admin login window. Admins can log in and a
 
 ## `ChatGui` Class
 - - -
-## Functions
+### Methods
 
 ### `__init__`
 
@@ -97,11 +97,6 @@ Clicking the "Admin" button opens an admin login window. Admins can log in and a
   ```python
   gui.show_admin_login()
   ```
-
----
-
-This documentation provides a quick guide on installing and using the Azubi-GPT chatbot. Users can interact with the chatbot through the provided user interface, and admins can access an admin panel for managing responses. The functions described give an overview of the functionality and usage of the chatbot's main features.
-
 
 
 ---
