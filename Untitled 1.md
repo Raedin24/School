@@ -66,6 +66,8 @@ Users can interact with the chatbot by typing their messages in the input field 
 
 Clicking the "Admin" button opens an admin login window. Admins can log in and access an admin panel for managing chatbot responses.
 
+## `ChatGui` Class
+- - -
 ## Functions
 
 ### `__init__`
@@ -100,7 +102,7 @@ Clicking the "Admin" button opens an admin login window. Admins can log in and a
 
 This documentation provides a quick guide on installing and using the Azubi-GPT chatbot. Users can interact with the chatbot through the provided user interface, and admins can access an admin panel for managing responses. The functions described give an overview of the functionality and usage of the chatbot's main features.
 
-Certainly! Below is the documentation for the remaining classes and functions:
+
 
 ---
 
