@@ -5,4 +5,7 @@ The delay depends on
 - workload intensity,  nature of workload
 - resource sharing policy or scheduling policy
 | Resource | User / Customer |
-| - - -| 
+
+| Host | Network Address | Broadcast Address | Subnet |
+| --- | --- | --- | --- |
+
