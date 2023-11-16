@@ -4,8 +4,15 @@ The delay depends on
 - number of resources
 - workload intensity,  nature of workload
 - resource sharing policy or scheduling policy
-| Resource | User / Customer |
 
-| Host | Network Address | Broadcast Address | Subnet |
-| --- | --- | --- | --- |
+| Resource | User / Customer |
+| --- |---|
+| CPU | Processes or Threads|
+| Web Server(Threads) | HTTP requests |
+| Cellular Networ | |
+|Wireless medium | Link Layer Packets, "Frames" |
+| Printer | Print job |
+| Web Server Log File | Web Server Threads |
+| WAN link of router | IP packets |
+
 
