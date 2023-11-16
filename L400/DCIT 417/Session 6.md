@@ -9,6 +9,6 @@ $$
 For K number of customers, the state is found by
 $$ \pi_k = \frac{1}{k!}(\frac{\lambda}{\mu})^k\pi_0 $$
 where k = no of customers, 
-pi_0 = initial state
+\pi_0 = initial state
 mu = service rate
 lambda = arrival rate
