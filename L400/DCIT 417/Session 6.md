@@ -4,4 +4,5 @@ Types of Multiple Server Queuing Systems
 2. Multi-server multi-queue
 3. Multi-server
 
+$$ prob(state 1) = (\gamma + \lambda )\pi_1
 $$
