@@ -6,4 +6,7 @@ Switches go through a five-step boot sequence before configuration can be done.
 3. The boot loader performs *low-level CPU initialization*. It initializes the CPU registers, which control where physical memory is mapped, quantity of memory, and its speed.
 4. Boot loader initializes the *flash file system*  on the system board.
 5. Boot loader locates and loads a default *IOS operating system software*  image into memory and gives control of the switch to the IOS.
-## 1.1.2 
+## 1.1.2 Boot System Command
+- The switch attempts to auto boot using the info in the *BOOT* environment variable.
+- If the variable is not set, the switch attempts to load and execute the first executable file it finds.
+- The IOS operating system then initializes the interfaces using the commands found in 
