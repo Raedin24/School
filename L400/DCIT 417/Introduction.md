@@ -9,10 +9,9 @@ The delay depends on
 | --- |---|
 | CPU | Processes or Threads|
 | Web Server(Threads) | HTTP requests |
-| Cellular Networ | |
+| Cellular Network Channels | Cellular Calls |
 |Wireless medium | Link Layer Packets, "Frames" |
 | Printer | Print job |
 | Web Server Log File | Web Server Threads |
 | WAN link of router | IP packets |
-
 
