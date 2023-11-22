@@ -14,4 +14,11 @@ Switches go through a five-step boot sequence before configuration can be done.
 ```Shell
 S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.150-2.SE.bin
 ```
-	-`boot system` - 
+	- `boot system` - main command
+	- `flash`: - storage device
+	- `c2950...SE/` - path to file system
+	- `c2950...SE.bin` - IOS file name
+
+## 1.1.3 Switch LED Indicators
+1. **System LED** - Shows whether the system is receiving power and functioning properly. Off = no power, Green = normal operation, Amber = on but not functioning properly
+2. **RPS** - 
