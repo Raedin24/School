@@ -9,4 +9,8 @@ Switches go through a five-step boot sequence before configuration can be done.
 ## 1.1.2 Boot System Command
 - The switch attempts to auto boot using the info in the *BOOT* environment variable.
 - If the variable is not set, the switch attempts to load and execute the first executable file it finds.
-- The IOS operating system then initializes the interfaces using the commands found in 
+- The IOS operating system then initializes the interfaces using the commands found in the startup-config file.
+- The startup-config file is located in *flash*  and is called the **config.text**.
+```terminal
+S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.150-2.SE.bin
+```
