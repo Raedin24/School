@@ -21,4 +21,9 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 
 ## 1.1.3 Switch LED Indicators
 1. **System LED** - Shows whether the system is receiving power and functioning properly. Off = no power, Green = normal operation, Amber = on but not functioning properly
-2. **RPS** - 
+2. **(RPS) LED** - Shows  Redundant Power Supply status.
+	1. Off = off / not connected properly
+	2. Green = Connected and ready to provide backup power
+	3. Blinking green = Connected but unavailable, being used to power another device
+	4. Amber = Standby mode  / has a fault
+	5. Blinking amber = Internal power supply failed, RPS is providing power.
