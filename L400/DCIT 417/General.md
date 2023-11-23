@@ -11,4 +11,6 @@ Performance can be measured through
 ## Need for Simulation
 1. Complexity - huge networks
 2. Cost - space communication, satellite
-3. Dangerous - PPDR systems, emergency networks
+3. Dangerous - PPDR systems, emergency networks (cannot be done in production)
+
+An event is when a packet is generated, dropped to another layer etc. Event can trigger and be triggered by other events.  Most simulations are discrete-event simulations.
