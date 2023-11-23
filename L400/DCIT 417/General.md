@@ -6,4 +6,5 @@ Performance can be measured through
 2. Computational simulations
 3. Experiments
 4. Test beds - Where the experiments are done on a small scale with only a few devices. Usually done right after simulation.
-`Mathematical modeling`
+`Mathematical modelling is the furthermost from reality because there is a lot of abstraction involved in the calculation, as the model cannot account for all the variables that would be present in the real world`
+
