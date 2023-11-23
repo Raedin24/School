@@ -26,3 +26,4 @@ An event is when a packet is generated, dropped to another layer etc. Event can 
 1. Accuracy - Does the simulation reflect reality? Usually approximates reality instead of reflecting it accurately.
 2. Large scale system - Lots of resources needed for simulation
 3. May be slow - As a result of lack of computational power.
+`ARP does translation from IP to MAC address`
