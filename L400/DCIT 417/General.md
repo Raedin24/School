@@ -14,3 +14,15 @@ Performance can be measured through
 3. Dangerous - PPDR systems, emergency networks (cannot be done in production)
 
 An event is when a packet is generated, dropped to another layer etc. Event can trigger and be triggered by other events.  Most simulations are discrete-event simulations.
+## Quick alternatives evaluation
+1. Star/mesh topology
+2. TCP / UDP
+### Pros:
+1. Cheaper (compared to production environments and experimentation)
+2. Bugs can be found in advance
+3. Generality
+4. Detail - The granularity of the system can be tuned in detail
+### Cons:
+1. Accuracy - Does the simulation reflect reality? Usually approximates reality instead of reflecting it accurately.
+2. Large scale system - Lots of resources needed for simulation
+3. May be slow - As a result of lack of computational power.
