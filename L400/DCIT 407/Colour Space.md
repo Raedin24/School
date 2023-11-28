@@ -28,5 +28,6 @@ A *colour space* is a mathematical model describing how colours can be represent
 ## YCbCr
 - Used in separation of *luminance*  from *chrominance*  into different channels
 - Luminance info is stored as a single component (*Y* )
+- Luminance refers to the light
 - Chrominance information is stored as two colour-difference components (*Cb* and *Cr* )
-- 
+- Used widely for digital video
