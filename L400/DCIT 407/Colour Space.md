@@ -15,4 +15,15 @@ A *colour space* is a mathematical model describing how colours can be represent
 ## CMYK Colour Space
 - Stands for *(C)yan, (M)agenta, (Y)ellow*  and *blac(K)*
 - Is a subtractive colour model.
-- Cyan, Magenta and Yellow are gotten from white light minus *red, green*
+- Cyan, Magenta and Yellow are gotten from *white*  light minus *red, green* and *blue* respectively.
+- Values are on a percentage scale (**o% to 100%**)
+
+## CIELAB Colour Space
+- The **LAB** colour space
+- Has 3 components
+	- *L* - Lightness
+	- *A* - Colour range from Green to Magenta
+	- *B* - Colour range from Blue to Yellow
+
+## YCrCb
+- Used in separation of *luminance*  from *chrominance*  into different channels
