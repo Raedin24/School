@@ -25,5 +25,8 @@ A *colour space* is a mathematical model describing how colours can be represent
 	- *A* - Colour range from Green to Magenta
 	- *B* - Colour range from Blue to Yellow
 
-## YCrCb
+## YCbCr
 - Used in separation of *luminance*  from *chrominance*  into different channels
+- Luminance info is stored as a single component (*Y* )
+- Chrominance information is stored as two colour-difference components (*Cb* and *Cr* )
+- 
