@@ -11,6 +11,7 @@ A *colour space* is a mathematical model describing how colours can be represent
 - Closer to how humans perceive colour.
 - Hue ranges from **0 to 179**
 - Saturation and Value range from **0 to 255**.
+- Used in graphics and paint programs.
 
 ## CMYK Colour Space
 - Stands for *(C)yan, (M)agenta, (Y)ellow*  and *blac(K)*
