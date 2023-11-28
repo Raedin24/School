@@ -7,4 +7,12 @@ A *colour space* is a mathematical model describing how colours can be represent
 - Combining the 3 can create all possible colours in the visible spectrum
 
 ## HSV Colour Space
-HSV stands for *Hue, Saturation* and *Value*
+- **HSV** stands for *Hue, Saturation*  and *Value*.
+- Closer to how humans perceive colour.
+- Hue ranges from **0 to 179**
+- Saturation and Value range from **0 to 255**.
+
+## CMYK Colour Space
+- Stands for *(C)yan, (M)agenta, (Y)ellow*  and *blac(K)*
+- Is a subtractive colour model.
+- Cyan, Magenta and Yellow are gotten from white light minus *red, green*
