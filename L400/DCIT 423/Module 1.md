@@ -42,4 +42,8 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 	1. Off = Operating at 10 Mbps
 	2. Green = 100 Mbps
 	3. Blinking green = 1000 Mbps
-	4.  P
+6.  **Power over Ethernet LED (PoE)** - Will be present only if PoE is supported. 
+	1. Off = PoE is not selected, no ports have been denied power
+	2. Blinking amber = PoE is not selected, at least one port has been denied power, or PoE has a fault
+	3. Green = PoE is selected
+	4. Alternating green-amber = PoE is denied because providing power to device will exceed the switch power capacity.
