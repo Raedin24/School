@@ -30,11 +30,18 @@ A colour image can be modelled as *three bands* of monochrome image data.
 	- Stands for *Tagged Image File Format*.
 	- Is a *lossless* image format, meaning they do not compress or lose any image quality/information
 	- Results in high-quality images but also larger file sizes
-	- Best for high quality prints, professional publications, archival copies
+	- **Best for** high quality prints, professional publications, archival copies
 	- Can save transparencies
 2. Bitmap (.bmp)
-	- Also called BMP (Bitmap Image File)
+	- Also called *BMP (Bitmap Image File)*
 	- Developed by Microsoft for Windows
 	- Is a *lossless* image format
 	- High quality images with large file sizes
-	- 
+	- **Best for** high quality scans, archival copies.
+	`BMP is proprietary(owned by Microsoft), hence TIFF is recommended for use.`
+3. JPEG (.jpg, .jpeg)
+	- Stands for *Joint Photographic Experts Groups*
+	- Is a *lossy*  file format, meaning the image is compressed to make a smaller file.
+	- The loss in quality is generally not noticeable.
+	- **Best for** web images, non-professional printing, e-mail, powerpoints
+	- **Special Attribute**: Can choose amount of compression when saving 
