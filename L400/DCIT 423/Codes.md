@@ -10,6 +10,7 @@
 |Return to the privileged EXEC mode.|S1(config-if)# **end**|
 |Save the running config to the startup config.|S1# **copy running-config startup-config**|
 `An IP address applied to the SVI is only for remote management access. Does not allow the switch to route Layer 3 packets`
+
 **Configure Default Gateway**
 
 |**Task**|**IOS Commands**|
