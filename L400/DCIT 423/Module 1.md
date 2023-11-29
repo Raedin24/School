@@ -45,5 +45,14 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 6.  **Power over Ethernet LED (PoE)** - Will be present only if PoE is supported. 
 	1. Off = PoE is not selected, no ports have been denied power
 	2. Blinking amber = PoE is not selected, at least one port has been denied power, or PoE has a fault
-	3. Green = PoE is selected
-	4. Alternating green-amber = PoE is denied because providing power to device will exceed the switch power capacity.
+	3. Amber = PoE for the port is disabled
+	4. Green = PoE is selected
+	5. Alternating green-amber = PoE is denied because providing power to device will exceed the switch power capacity.
+
+## 1.1.4 System Crash Recovery
+The boot loader provides access into the switch in case of OS failure. Can be access through a console connection. 
+**Steps**
+1. Connect console cable to switch and PC. Configure terminal emulation software to connect to the switch
+2. Unplug switch power cord
+3. Reconnect power cord, and press and hold *Mode*  button within 15 seconds
+4. Continue pressing until *System LED*  turns amber 
