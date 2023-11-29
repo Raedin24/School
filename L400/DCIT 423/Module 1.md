@@ -27,3 +27,4 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 	3. Blinking green = Connected but unavailable, being used to power another device
 	4. Amber = Standby mode  / has a fault
 	5. Blinking amber = Internal power supply failed, RPS is providing power.
+3. **Port Status LED (STAT)** - Indicates the port status mode selected
