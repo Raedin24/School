@@ -6,4 +6,7 @@ A *digital image*  **I (r, c)** is represented as a *two-dimensional*  array of 
 	- Only takes two values ie. **black** and **white**, or **0** and **1**
 	- Is a **1 bit/pixel** image, meaning it takes 1 binary digit to represent each pixel
 2. Gray Scale Image
-	1. 
+	- Known as **monochrome** or one-colour image
+	- Only contains brightness information
+	- Is a **8 bit/pixel** image, thus having **0 - 255**  levels of brightness
+	`8 bit representation is because the byte(8 bits) is the standard small unit in computers`
