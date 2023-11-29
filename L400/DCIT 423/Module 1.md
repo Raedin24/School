@@ -1,4 +1,4 @@
-# Configure a Switch with Initial Settings
+# 1.1 Configure a Switch with Initial Settings
 ## 1.1.1 Switch Boot Sequence
 Switches go through a five-step boot sequence before configuration can be done.
 1. The switch loads a *power-on-self-test (POST)* program stored in ROM. POST checks the CPU subsystem, and tests the CPU, DRAM, and the flash file system
@@ -80,3 +80,4 @@ For a switch to allow remote management access, the following have to be in plac
 	1. IPv4 address and subnet mask, or
 	2. IPv6 address and prefix length for IPv6
 `VLAN 1 is used for switch management by default. Recommended to use other VLAN for management for security reasons. `
+# 1.2 Configure Switch Ports
