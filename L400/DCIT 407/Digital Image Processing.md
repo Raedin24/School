@@ -26,4 +26,15 @@ A colour image can be modelled as *three bands* of monochrome image data.
 - The resulting colour image has **24 bits/pixel**, 8 bits for each colour band (red, green, and blue)
 
 ## Digital Image Formats
-1. TIFF (.tif, )
+1. TIFF (.tif, .tiff)
+	- Stands for *Tagged Image File Format*.
+	- Is a *lossless* image format, meaning they do not compress or lose any image quality/information
+	- Results in high-quality images but also larger file sizes
+	- Best for high quality prints, professional publications, archival copies
+	- Can save transparencies
+2. Bitmap (.bmp)
+	- Also called BMP (Bitmap Image File)
+	- Developed by Microsoft for Windows
+	- Is a *lossless* image format
+	- High quality images with large file sizes
+	- 
