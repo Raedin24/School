@@ -28,14 +28,14 @@ A colour image can be modelled as *three bands* of monochrome image data.
 ## Digital Image Formats
 1. TIFF (.tif, .tiff)
 	- Stands for *Tagged Image File Format*.
-	- Is a *lossless* image format, meaning they do not compress or lose any image quality/information
+	- Is a *lossless*  image format, meaning they do not compress or lose any image quality/information
 	- Results in high-quality images but also larger file sizes
 	- **Best for** high quality prints, professional publications, archival copies
-	- Can save transparencies
+	- **Special Attribute**: Can save transparency
 2. Bitmap (.bmp)
 	- Also called *BMP (Bitmap Image File)*
 	- Developed by Microsoft for Windows
-	- Is a *lossless* image format
+	- Is a *lossless*  image format
 	- High quality images with large file sizes
 	- **Best for** high quality scans, archival copies.
 	`BMP is proprietary(owned by Microsoft), hence TIFF is recommended for use.`
@@ -45,3 +45,12 @@ A colour image can be modelled as *three bands* of monochrome image data.
 	- The loss in quality is generally not noticeable.
 	- **Best for** web images, non-professional printing, e-mail, powerpoints
 	- **Special Attribute**: Can choose amount of compression when saving 
+4. GIF (.gif)
+	- Stands for *Graphics Interchange Format*
+	- Is a *lossless*  image format
+	- Limited to 256 colours
+	- Can allow for transparency
+	- Can be animated
+	- Typically small in size
+	- **Best for** web images
+	- **Special Attribute**: Can be animated, can save transparency
