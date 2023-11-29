@@ -51,8 +51,15 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 
 ## 1.1.4 System Crash Recovery
 The boot loader provides access into the switch in case of OS failure. Can be access through a console connection. 
-**Steps**
+**Steps to access boot loader**
 1. Connect console cable to switch and PC. Configure terminal emulation software to connect to the switch
 2. Unplug switch power cord
 3. Reconnect power cord, and press and hold *Mode*  button within 15 seconds
-4. Continue pressing until *System LED*  turns amber 
+4. Continue pressing until *System LED*  turns amber briefly and the solid green
+5. Boot loader `switch:` prompt appears in terminal emulation software on PC
+
+**Recovery Steps**
+1.  Use `set` to view path to switch BOOT environment variable
+2. Use `flash_init` to view current files in flash
+3. Can use `dir flash` to view directories and files in flash
+4. Use `BOOT=flash:...` command to change BOOT environm
