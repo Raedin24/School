@@ -59,7 +59,19 @@ The boot loader provides access into the switch in case of OS failure. Can be ac
 5. Boot loader `switch:` prompt appears in terminal emulation software on PC
 
 **Recovery Steps**
-1.  Use `set` to view path to switch BOOT environment variable
+1.  Use `set` to view path to switch BOOT environment variable type
 2. Use `flash_init` to view current files in flash
 3. Can use `dir flash` to view directories and files in flash
-4. Use `BOOT=flash:...` command to change BOOT environm
+4. Use `BOOT=flash:...` command to change BOOT environment variable path
+5. Can use `set` to verify new BOOT environment variable path
+6. Use `boot` to load new IOS type
+
+The boot loader supports the following functions
+1. Initializing flash
+2. Formatting flash
+3. Installing new IOS
+4. Changing BOOT environment variable
+5. Recovery of passwords
+
+## 1.1.5 Switch Management Access
+For a switch to allow remote management access, the following have to be in place: switch virtual interface (SVI) configured with IPv4 address and subnet mask, or IPv6 address and prefix length for 
