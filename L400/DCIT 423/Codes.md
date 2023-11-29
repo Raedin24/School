@@ -1,3 +1,11 @@
+**Management Interface configuration**
+```Shell
+configure terminal
+interface vlan 99
+ip address 172.17.99.11 255.255.255.0
+ipv6 address 2001:db8:acad:99::11/64
+```
+
 ```bash
 enable
 configure terminal

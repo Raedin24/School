@@ -74,4 +74,9 @@ The boot loader supports the following functions
 5. Recovery of passwords
 
 ## 1.1.5 Switch Management Access
-For a switch to allow remote management access, the following have to be in place: switch virtual interface (SVI) configured with IPv4 address and subnet mask, or IPv6 address and prefix length for 
+For a switch to allow remote management access, the following have to be in place: 
+1. Default gateway
+2.  Switch virtual interface (SVI) configured with 
+	1. IPv4 address and subnet mask, or
+	2. IPv6 address and prefix length for IPv6
+`VLAN 1 is used for switch management by default. Recommended to use other VLAN for management for security reasons. `
