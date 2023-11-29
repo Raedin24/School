@@ -1,0 +1,1 @@
+A *digital image* I (r, c) is represented as a *two-dimensional*  array of data, where each pixel value corresponds to the brightness of the image at the point (r, c).
