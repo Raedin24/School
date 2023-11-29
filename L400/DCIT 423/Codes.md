@@ -57,4 +57,8 @@ secret has a higher encryption level than password
 service password-encryption - Encrypts the passwords used so far
 copy running-config startup-config - Saves the running configuration to the startup configuration. Same as `do wr`.
 
-`interfac`
+```
+interface range f0/4 f0/24
+shutdown
+```
+Can shut down access to all ports in that range
