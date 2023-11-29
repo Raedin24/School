@@ -20,7 +20,10 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 	- `c2950...SE.bin` - IOS file name
 
 ## 1.1.3 Switch LED Indicators
-1. **System LED** - Shows whether the system is receiving power and functioning properly. Off = no power, Green = normal operation, Amber = on but not functioning properly
+1. **System LED** - Shows whether the system is receiving power and functioning properly. 
+	1. Off = no power
+	2. Green = normal operation
+	3. Amber = on but not functioning properly
 2. **(RPS) LED** - Shows  Redundant Power Supply status.
 	1. Off = off / not connected properly
 	2. Green = Connected and ready to provide backup power
@@ -28,3 +31,15 @@ S1(config)# boot system flash:/c2960-lanbasek9-mx.150-2.SE/c2960-lanbasek9-mz.15
 	4. Amber = Standby mode  / has a fault
 	5. Blinking amber = Internal power supply failed, RPS is providing power.
 3. **Port Status LED (STAT)** - Indicates the port status mode selected
+	1. Green = link present
+	2. Blinking green = port is sending/receiving data
+	3. Alternating green-amber = link fault
+	4. Amber/blinking amber = port is blocked to prevent loops
+4. **Port Duplex LED (DUPLX)** - Indicates port duplex mode
+	1. Off = half-duplex
+	2. Green = full-duplex
+5. **Port Speed LED (SPEED)** - Indicates port speed mode
+	1. Off = Operating at 10 Mbps
+	2. Green = 100 Mbps
+	3. Blinking green = 1000 Mbps
+	4.  P
