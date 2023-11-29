@@ -10,3 +10,14 @@ A *digital image*  **I (r, c)** is represented as a *two-dimensional*  array of 
 	- Only contains brightness information
 	- Is a **8 bit/pixel** image, thus having **0 - 255**  levels of brightness
 	`8 bit representation is because the byte(8 bits) is the standard small unit in computers`
+
+**Creation of a Digital Image**
+1. Analogue Image
+2. Digital Sampling
+3. Pixel Quantization
+![[Pasted image 20231129090837.png]]
+
+## Colour Image
+A colour image can be modelled as *three bands* of monochrome image data.
+- Each band of data corresponds to a different colour
+- 
