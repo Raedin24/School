@@ -20,4 +20,10 @@ A *digital image*  **I (r, c)** is represented as a *two-dimensional*  array of 
 ## Colour Image
 A colour image can be modelled as *three bands* of monochrome image data.
 - Each band of data corresponds to a different colour
-- 
+- The information stored in the digital image data is the *brightness information*  in each spectral band
+- The brightness information is displayed on the screen by picture elements that emit light energy corresponding to  that colour.
+- Colour images are usually represented as RGB.
+- The resulting colour image has **24 bits/pixel**, 8 bits for each colour band (red, green, and blue)
+
+## Digital Image Formats
+1. TIFF (.tif, )
