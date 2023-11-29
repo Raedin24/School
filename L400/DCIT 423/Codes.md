@@ -56,3 +56,5 @@ secret has a higher encryption level than password
 ~~~
 service password-encryption - Encrypts the passwords used so far
 copy running-config startup-config - Saves the running configuration to the startup configuration. Same as `do wr`.
+
+`interfac`
