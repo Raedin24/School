@@ -5,11 +5,15 @@
 4. Generate new subnet mask
 5. Use subnet generator to find the network ranges(subnets)
 
-| Subnetting Table | 
-| - - - | - - - | - - - | 
-| Subnet|1 |
-| Host| 1 |
-| Subnet Mask| 1 |
+ |  Subnetting Table |
+ | --- |
+ 
+ 
+
+
+
+| Host |
+| ---|
 
 ## Question 1
 
