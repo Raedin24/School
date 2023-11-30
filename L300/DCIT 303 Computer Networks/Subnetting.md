@@ -4,6 +4,10 @@
 3. Note the number of hosts required per subnet and find the subnet generator and octet position
 4. Generate new subnet mask
 5. Use subnet generator to find the network ranges(subnets)
+|- - -|
+| Subnet| - |1 |
+| Host| - | 1 |
+| Subnet Mask| - | 1 |
 
 ## Question 1
 
