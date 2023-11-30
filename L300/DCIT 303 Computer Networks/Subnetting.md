@@ -2,7 +2,7 @@
 1. Identify class of IP address and default subnet mask
 2. Convert subnet mask to binary
 3. Convert number of hosts to binary and note the number of bits required. Find the subnet generator and octet position.
-4. Starting from the right, reserve a number of 0's corresponding to the number of bit required
+4. Starting from the right, reserve a number of 0's corresponding to the number of bit required. The first 1 after that is the subnet generator (the number of hosts, not actual value. Refer to last row of table 2)
 5. Generate new subnet mask
 6. Use subnet generator to find the network ranges(subnets)
 
@@ -11,8 +11,14 @@
  | Subnet | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 |
  | Host | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
  | Mask | /24 | /25 | /26 | /27 | /28 | /29 | /30 | /31 | /32 |
- 
- 
+*Table 1*
+
+| 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 31, 23, 15, 7 | 30, 22, 14, 6 | 29, 21, 13, 5 | 28, 20, 12, 4 | 27, 19, 11, 3 | 26, 18, 10, 2 | 25, 17, 9, 1 | 24, 16, 8, 0 |
+| 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
+| 128 | 64  | 32  | 16  | 8   | 4   | 2   | 1   |
+ *Table 2*
 
 
 
@@ -45,11 +51,7 @@
 | 2   | 172.16.78.164 | 172.16.78.167 | /30 |
 | 2   | 172.16.78.168 | 172.16.78.171 | /30 |
 
-| 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 31, 23, 15, 7 | 30, 22, 14, 6 | 29, 21, 13, 5 | 28, 20, 12, 4 | 27, 19, 11, 3 | 26, 18, 10, 2 | 25, 17, 9, 1 | 24, 16, 8, 0 |
-| 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
-| 128 | 64  | 32  | 16  | 8   | 4   | 2   | 1   |
+
 
 Every movement into the next octect add 1 to the subnet mask
 
