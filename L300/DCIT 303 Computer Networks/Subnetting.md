@@ -6,7 +6,10 @@
 5. Use subnet generator to find the network ranges(subnets)
 
  |  Subnetting Table |
- | --- |
+ | --- | --- | --- | --- | --- | --- | --- | --- |
+ | Subnet | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+ | Host | 256 |
+ | Mask | /24 |
  
  
 
