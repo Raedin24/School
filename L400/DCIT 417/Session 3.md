@@ -15,4 +15,6 @@ A wireless network can be
 `Ipv4AddressHelper` - Used to set and assign IPv4 addresses and the subnets to the nodes
 
 ## Generate Application
-`UdpEchoSeverHel`
+Generation of packets is basically pinging a server and listening for responses.
+
+`UdpEchoSeverHelper` - Used to 
