@@ -1,9 +1,10 @@
 # Steps
 1. Identify class of IP address and default subnet mask
 2. Convert subnet mask to binary
-3. Note the number of hosts required per subnet and find the subnet generator and octet position. Convert number of hosts to binary and note the number of bits require
-4. Generate new subnet mask
-5. Use subnet generator to find the network ranges(subnets)
+3. Convert number of hosts to binary and note the number of bits required. Find the subnet generator and octet position.
+4. Starting from the right, reserve a number of 0's corresponding to the number of bit required
+5. Generate new subnet mask
+6. Use subnet generator to find the network ranges(subnets)
 
  |  Subnetting Table |
  | --- | --- | --- | --- | --- | --- | --- | --- |
