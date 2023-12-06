@@ -35,5 +35,8 @@ Used to remove secure MAC addresses without manually deleting the existing secur
 By default, the security violation mode is set to `shutdown`. Hence, when a port violation occurs, the port enters the `error-disabled` state
 **Modes**
 1. `shutdown` - Port enters the *error-disabled* state immediately, turns off, sends a syslog message and increments the violation counter. Must be restarted to re-enable the port
-2. `restrict` - Port drops packets with unknown source addresses until the number of secure MAC addresses falls below the max. Increments the violation counter and generates a syslog message
-3. `protect` - Similar to *restrict*, 
+2. `restrict` - Port drops packets with unknown source addresses until the number of secure MAC addresses falls below the max allowed, or the max is increased. Increments the violation counter and generates a syslog message
+3. `protect` - Similar to *restrict*, except that no syslog message is sent and violation counter is not increased
+![[Pasted image 20231206161615.png]]
+
+`Every time a port is in trunk, it needs to be added to the native VLAN`
