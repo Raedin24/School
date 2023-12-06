@@ -27,5 +27,6 @@ The switch can be configured to learn MAC addresses in 3 ways
 3. **Dynamically learned - Sticky** - Learned MAC address are saved to the running config. Saving the running config commits the learnt address to *NVRAM*. 
 
 # 11.1.5 Port Security Aging
-Used to remove secure MAC addresses without manually deleting
-1. **Absolute** - 
+Used to remove secure MAC addresses without manually deleting the existing secure MAC address
+1. **Absolute** - Address are deleted after the specified aging time
+2. **Inactivity** - Address are deleted only after a period of inactivity
