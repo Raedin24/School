@@ -9,10 +9,18 @@ Port security
 - Command used is `switchport port-security`
 `By default, Layer 2 switch ports are set to dynamic auto (trunking on)`
 
-```Shell
+```Bash
 interface f0/1
 switchport mode access
 switchport port-security
 ```
 
-To view the port secu
+To view the port security configuration
+```Bash
+show port-security interface f0/1
+```
+## 11.1.4 Limit and Learn MAC Addresses
+The switch can be configured to learn MAC addresses in 3 ways
+1. **Manually configured** - Admin manually configures a static MAC address
+`switchport port-security mac-address *mac-address*`
+2. **Dynamicall learned** - 
