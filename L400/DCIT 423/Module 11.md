@@ -1,3 +1,4 @@
+## 11.1 Implement Port Security
 ### 11.1.2 Mitigate MAC Address Table Attacks
 Simplest and most effective way to prevent MAC address table overflow attacks is to enable port security
 Port security
@@ -39,4 +40,6 @@ By default, the security violation mode is set to `shutdown`. Hence, when a port
 3. `protect` - Similar to *restrict*, except that no syslog message is sent and violation counter is not increased
 ![[Pasted image 20231206161615.png]]
 
+
+##  11.2 Mitigate VLAN Attacks
 `Every time a port is in trunk, it needs to be added to the native VLAN`
