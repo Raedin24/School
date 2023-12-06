@@ -23,4 +23,9 @@ show port-security interface f0/1
 The switch can be configured to learn MAC addresses in 3 ways
 1. **Manually configured** - Admin manually configures a static MAC address
 `switchport port-security mac-address *mac-address*`
-2. **Dynamicall learned** - 
+2. **Dynamically learned** - When the `switchport port-security` command is entered, current source MAC for devices connected to the port is automatically secured. This address is not saved and will have to be re-learnt after switch reboots.
+3. **Dynamically learned - Sticky** - Learned MAC address are saved to the running config. Saving the running config commits the learnt address to *NVRAM*. 
+
+# 11.1.5 Port Security Aging
+Used to remove secure MAC addresses without manually deleting
+1. **Absolute** - 
