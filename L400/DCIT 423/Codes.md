@@ -62,3 +62,69 @@ interface range f0/4 f0/24
 shutdown
 ```
 Can shut down access to all ports in that range
+
+
+# PTSA Codes
+```Shell
+---------------------------Router------------------------------
+
+enable
+conf t
+hostname Town-Hall
+enable secret class
+line console 0
+password cisco
+login
+line vty 0 4
+password cisco
+login
+loggin synchronous
+exit
+
+security passwords min-length 10
+service password-encryption
+username netadmin secret Cisco_CCNA7
+ip domain-name cisco.com
+crypto key generate rsa
+1024
+ssh version 2
+line vty 0 4
+login local
+transport input ssh
+
+interface g0/0
+ip address 192.168.1.126 255.255.255.224
+ipv6 address 2001:db8:acad:a::1/64
+ipv6 address fe80::1 link-local
+description Connected to IT Department Switch
+no shutdown
+
+interface g0/1
+ip address 192.168.1.158 255.255.255.240
+ipv6 address 2001:db8:acad:b::1/64
+ipv6 address fe80::1 link-local
+description Connected to Administration Switch
+no shutdown
+exit
+
+ipv6 unicast-routing
+banner motd # Authorized Users Only #
+
+
+----------------------------Switch-----------------------------
+
+enable
+conf t
+interface vlan 1
+ip address 192.168.1.157 255.255.255.240
+exit
+ip default-gateway 192.168.1.158
+interface vlan 1
+description Management VLAN
+no shutdown
+
+line vty 0 15
+passwor
+
+```
+
