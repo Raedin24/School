@@ -149,17 +149,17 @@ login
 |---|---|---|---|
 |**Device**|**Interface**|**IP Address/Mask**|**Default Gateway**|
 |Town Hall|G0/0|192.168.1.126/27|N/A|
-||G0/0|2001:db8:acad:a::1/64|N/A|
-||G0/0|fe80::1|N/A|
+|||2001:db8:acad:a::1/64|N/A|
+|||fe80::1|N/A|
 ||G0/1|192.168.1.158/28|N/A|
-||G0/1|2001:db8:acad:b::1/64|N/A|
-|Router0|G0/1|fe80::1|N/A|
+|||2001:db8:acad:b::1/64|N/A|
+|||fe80::1|N/A|
 |Administration Switch|SVI|192.168.1.157/28|192.168.1.158|
-|Reception Host|NIC|192.168.1.100/27|192.168.1.126|
-|PC1|NIC|2001:db8:acad:a::ff/64|fe80::1|
-|Operator Host|NIC|192.168.1.110/27|192.168.1.126|
-|PC2|NIC|2001:db8:acad:a::15/64|fe80::1|
-|IT Host|NIC|192.168.1.145/28|192.168.1.158|
-|PC3|NIC|2001:db8:acad:b::ff/64|fe80::1|
-|Server|NIC|192.168.1.147/28|192.168.1.158|
-|TFTP Server|NIC|2001:db8:acad:b::15/64|fe80::1|
+|Reception Host (PC1)|NIC|192.168.1.100/27|192.168.1.126|
+|||2001:db8:acad:a::ff/64|fe80::1|
+|Operator Host (PC2)|NIC|192.168.1.110/27|192.168.1.126|
+|||2001:db8:acad:a::15/64|fe80::1|
+|IT Host (PC3)|NIC |192.168.1.145/28|192.168.1.158|
+|||2001:db8:acad:b::ff/64|fe80::1|
+|Server (TFTP Server)|NIC|192.168.1.147/28|192.168.1.158|
+|||2001:db8:acad:b::15/64|fe80::1|
