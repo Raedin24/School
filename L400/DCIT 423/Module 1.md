@@ -118,4 +118,7 @@ The following can be deduced based on the output of the `show interfaces` comman
 
 # 1.3 Secure Remote Access
 ## 1.3.1 Telnet Operation
-Telnet uses **TCP  port 23 ** 
+-  **TCP  port 23**
+- Uses unsecure plaintext transmission of login authentication and data transmitted.
+- Packets can easily be monitored using **Wireshark**
+- 
