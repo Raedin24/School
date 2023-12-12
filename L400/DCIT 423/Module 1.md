@@ -85,5 +85,13 @@ For a switch to allow remote management access, the following have to be in plac
 1. **Full-duplex**
 	- Is bidirectional
 	- Increases bandwidth efficiency by allowing both ends of a connection transmit and receive data simultaneously.
-	- Requires microsegmentation
-1. **Half-duplex**
+	- Requires microsegmentation. A microsegmented LAN is created when a switch port has only one device connected and is in full-duplex mode.
+	- No collision domain
+2. **Half-duplex**
+	- Is unidirectional
+	- Results in collisions since data can only flow in one direction at a time
+Use `duplex` to specify the duplex mode
+Use `speed` to set the speed of the link
+Note that the above can only be done once in a particular interface
+
+- 
