@@ -115,3 +115,7 @@ The following can be deduced based on the output of the `show interfaces` comman
 - Interface up, line protocol down = Encapsulation type mismatch, other interface is error-disabled, hardware problem
 - Interface down, line protocol down = Cable not attached, interface problem
 - Interface down = Interface manually disabled (`shutdown`)
+
+# 1.3 Secure Remote Access
+## 1.3.1 Telnet Operation
+Telnet uses **TCP  port 23 ** 
