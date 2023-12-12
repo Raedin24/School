@@ -123,8 +123,11 @@ The following can be deduced based on the output of the `show interfaces` comman
 - Packets can easily be monitored using **Wireshark**
 
 ### Steps to setup Telnet
-enable password admin -- for getting telnet connection
-line vty 0 15
+
+| Description | Command |
+| --- | --- |
+|Set password for Telent connection | S1(config)# **enable secret** *admin* 
+| Move into vty interface | S1(config)# **line vty** *0  15*|
 password cisco -- for authentication into configuration mode
 login - Enables password checking
 ## 1.3.2 SSH Operation
