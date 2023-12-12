@@ -19,6 +19,8 @@
 |Configure the default gateway for the switch.|S1(config)# **ip default-gateway 172.17.99.1**|
 |Return to the privileged EXEC mode.|S1(config)# **end**|
 |Save the running config to the startup config.|S1# **copy running-config startup-config**|
+
+## Initial Device Settings
 ```bash
 enable
 configure terminal
