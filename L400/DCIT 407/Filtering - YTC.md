@@ -3,7 +3,7 @@
 ## 1. Mean Filter
 - Simplest filter
 - Gives equal weight to all pixels in the neighbourhood.
-- A *weight*  is has the effect of smoothing the image
+- A *weight*  is has the effect of *smoothing* the image
 - Replaces every pixel with the mean value of the neighbourhood
 - Reasonably effective at removing **Gaussian noise**, at the expense of high-frequency image detail (ie. edges)
 - Larger kernel sizes remove more noise but also degrade image quality
@@ -33,4 +33,8 @@
 - Relatively effective at removing Gaussian noise, at the expense of image detail ( mostly the background lightening ).
 - Salt and pepper-type noise have its high values amplified by a maximum filter.
 ## 4. Gaussian Filter
-- Image is filtere
+- Image is filtered using a discrete kernel 
+- Kernel is derived from a radially symmetric form of continuous 2-D Gaussian function
+- Has **2** parameters
+	1. Discrete size of the kernel
+	2. Value of the standard deviation of the function
