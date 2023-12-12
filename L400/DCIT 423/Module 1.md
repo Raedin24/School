@@ -112,3 +112,6 @@ Note that the above can only be done once in a particular interface
 
 ## 1.2.6 Network Access Layer Issues
 The following can be deduced based on the output of the `show interfaces` command
+- Interface up, line protocol down = Encapsulation type mismatch, other interface is error-disabled, hardware problem
+- Interface down, line protocol down = Cable not attached, interface problem
+- Interface down = Interface manually disabled (`shutdown`)
