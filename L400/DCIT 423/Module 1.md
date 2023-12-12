@@ -81,3 +81,9 @@ For a switch to allow remote management access, the following have to be in plac
 	2. IPv6 address and prefix length for IPv6
 `VLAN 1 is used for switch management by default. Recommended to use other VLAN for management for security reasons. `
 # 1.2 Configure Switch Ports
+## 1.2.1 Duplex Communication
+1. **Full-duplex**
+	- Is bidirectional
+	- Increases bandwidth efficiency by allowing both ends of a connection transmit and receive data simultaneously.
+	- Requires microsegmentation
+1. **Half-duplex**
