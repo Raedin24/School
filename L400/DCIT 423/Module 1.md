@@ -110,3 +110,5 @@ Note that the above can only be done once in a particular interface
 |Display IP information about an interface.|S1# **show ip interface** [_interface-id_]<br><br>OR<br><br>S1# **show ipv6 interface** [_interface-id_]|
 |Display the MAC address table.|S1# **show mac-address-table**<br><br>OR<br><br>S1# **show mac address-table**|
 
+## 1.2.6 Network Access Layer Issues
+The following can be deduced based on the output of the `show interfaces` command
