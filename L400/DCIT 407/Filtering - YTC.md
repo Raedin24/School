@@ -51,3 +51,7 @@
 - Edge detection is a method of segmenting an image into regions based on discontinuity
 - It allows the user to observe those features of an image where there is an abrupt change in grey level or texture,
 `An abrupt change indicates the end of one region in the image and the beginning of another.`
+- Makes use of differential operators  to detect changes in gradients
+- Divided into two main categories
+	1. **First-order** edge detection
+	2. **Second-order** edge detection
