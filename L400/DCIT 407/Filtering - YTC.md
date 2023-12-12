@@ -47,6 +47,7 @@
 - Degree of smoothing is controlled by *choice of standard deviation parameter*
 
 ## Filtering for edge detection 
-An edge an be considered as a discontinuity or gradient within the image. 
-Edge detection is a method of segmenting an image into regions based on discontinuity
-- It allows the user to observe those features of an image where there is an
+- An edge is a discontinuity or gradient within the image. 
+- Edge detection is a method of segmenting an image into regions based on discontinuity
+- It allows the user to observe those features of an image where there is an abrupt change in grey level or texture,
+`A change indicates the end of one region in the image and the beginning of another.`
