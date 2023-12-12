@@ -1,9 +1,13 @@
 - Filtering can be classified in to *linear*  and *non-linear*  filtering.
-- Filtering is used in image enhancement for noise removal
+- Filtering is used in image enhancement for mainly noise removal
+- Also used for 
+	1. feature extraction
+	2. feature enhancement
 ## 1. Mean Filter
 - Simplest filter
 - Gives equal weight to all pixels in the neighbourhood.
 - A *weight*  is has the effect of *smoothing* the image
+- Degree of smoothing is controlled by *absolute value of kernel size*
 - Replaces every pixel with the mean value of the neighbourhood
 - Reasonably effective at removing **Gaussian noise**, at the expense of high-frequency image detail (ie. edges)
 - Larger kernel sizes remove more noise but also degrade image quality
@@ -39,4 +43,7 @@
 	1. Discrete size of the kernel
 	2. Value of the standard deviation of the function
 - There is a trade-off between accurate function sampling and computational time required for implementation.
-- 
+- Gaussian filters also smooth the image, similar to mean filters
+- Degree of smoothing is controlled by *choice of standard deviation parameter*
+
+## Filtering for edge detection
