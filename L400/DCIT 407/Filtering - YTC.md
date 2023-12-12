@@ -27,3 +27,10 @@
 	2. Rank them in ascending order
 	3. Choose the order of the filter (from ***1*** to ***N***)
 	4. Set the filtered value to be equal to the value of the chosen rank pixel
+
+## 3. Maximum and Minimum Filter
+- **Order filters** that select the max and min values in the defined neighbourhood.
+- Relatively effective at removing Gaussian noise, at the expense of image detail ( mostly the background lightening ).
+- Salt and pepper-type noise have its high values amplified by a maximum filter.
+## 4. Gaussian Filter
+- Image is filtere
