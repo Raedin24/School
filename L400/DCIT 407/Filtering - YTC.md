@@ -20,3 +20,10 @@
 - Requires ordering of the values in the pixel neighbourhood at every pixel location, hence the computational cost
 
 ## Rank Filtering
+- The median filter is a special case of a **generalised order** or **rank** filter
+- Rank filter is a *non-linear*  filter
+- Steps:
+	1. Define the neighbourhood of the target pixel
+	2. Rank them in ascending order
+	3. Choose the order of the filter (from ***1*** to ***N***)
+	4. Set the filtered value to be equal to the value of the chosen rank pixel
