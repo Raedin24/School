@@ -94,4 +94,19 @@ Use `duplex` to specify the duplex mode
 Use `speed` to set the speed of the link
 Note that the above can only be done once in a particular interface
 
-- 
+`Mismatched settings for duplex and speed can cause connectivity issues`
+
+## 1.2.4 Switch Verification Commands
+  
+
+|**Task**|**IOS Commands**|
+|---|---|
+|Display interface status and configuration.|S1# **show interfaces** [_interface-id_]|
+|Display current startup configuration.|S1# **show startup-config**|
+|Display current running configuration.|S1# **show running-config**|
+|Display information about flash file system.|S1# **show flash**|
+|Display system hardware and software status.|S1# **show version**|
+|Display history of command entered.|S1# **show history**|
+|Display IP information about an interface.|S1# **show ip interface** [_interface-id_]<br><br>OR<br><br>S1# **show ipv6 interface** [_interface-id_]|
+|Display the MAC address table.|S1# **show mac-address-table**<br><br>OR<br><br>S1# **show mac address-table**|
+
