@@ -50,4 +50,4 @@
 - An edge is a discontinuity or gradient within the image. 
 - Edge detection is a method of segmenting an image into regions based on discontinuity
 - It allows the user to observe those features of an image where there is an abrupt change in grey level or texture,
-`A change indicates the end of one region in the image and the beginning of another.`
+`An abrupt change indicates the end of one region in the image and the beginning of another.`
