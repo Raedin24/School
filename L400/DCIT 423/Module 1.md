@@ -134,12 +134,19 @@ Switch must have a unique hostname and correct network connectivity settings bef
 |**Description** | **Command** |
 |---|---|
 | Verify SSH support | S1# **show ip ssh** |
-| Configure the IP domain | S1(config)# **ip domain-name *cisco.com***|
+| Configure the IP domain | S1(config)# **ip domain-name** *cisco.com*|
 | Generate RSA key pairs | S1(config)# **crypto key generate rsa**|
-| Configure user authentication| S1(config)# **username admin secret ccna**|
+| Configure user authentication (locally)| S1(config)# **username** *admin* **secret** *ccna*|
+| Configure vty lines| S1(config)# **line vty** *0 15* |
+| | S1(config-line)# **transport input ssh** |
+| | S1(config-line)# **login local** |
+| | S1(config-line)# **exit** |
+| | |
 
 ```
 Generating an RSA key pair automatically enables SSH
 Using a longer modulus is more secure, but takes longer to generate and use
 Use 'crypto key zeroize rsa' to delete RSA key pair. Also disables SSH
+
+
 ```
