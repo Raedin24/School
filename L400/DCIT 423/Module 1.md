@@ -122,6 +122,11 @@ The following can be deduced based on the output of the `show interfaces` comman
 - Uses unsecure plaintext transmission of login authentication and data transmitted.
 - Packets can easily be monitored using **Wireshark**
 
+### Steps to setup Telnet
+enable password admin -- for getting telnet connection
+line vty 0 15
+password cisco -- for authentication into configuration mode
+login
 ## 1.3.2 SSH Operation
 - **TCP port 22**
 - Provides secure connection, and should be used for management connections.
