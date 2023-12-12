@@ -38,3 +38,5 @@
 - Has **2** parameters
 	1. Discrete size of the kernel
 	2. Value of the standard deviation of the function
+- There is a trade-off between accurate function sampling and computational time required for implementation.
+- 
