@@ -129,9 +129,17 @@ The following can be deduced based on the output of the `show interfaces` comman
 `To check whether a switch supports SSH, use the 'show version' command. If 'k9' is included in the filename, the switch supports cryptographic features`
 
 ### Steps to setup SSH
+Switch must have a unique hostname and correct network connectivity settings before configuring SSH
 
 |**Description** | **Command** |
 |---|---|
 | Verify SSH support | S1# **show ip ssh** |
-| Configure the IP domain | S1(config)# **ip domain-name cisco.com**|
-| | |
+| Configure the IP domain | S1(config)# **ip domain-name *cisco.com***|
+| Generate RSA key pairs | S1(config)# **crypto key generate rsa**|
+| Configure user authentication| S1(config)# **username admin secret ccna**|
+
+```
+Generating an RSA key pair automatically enables SSH
+Using a longer modulus is more secure, but takes longer to generate and use
+Use 'crypto key zeroize rsa' to delete RSA key pair. Also disables SSH
+```
