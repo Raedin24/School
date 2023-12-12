@@ -126,4 +126,12 @@ The following can be deduced based on the output of the `show interfaces` comman
 - **TCP port 22**
 - Provides secure connection, and should be used for management connections.
 - Session can still be tracked using the IP address of the admin device, however the username and password are encrytped
-`To check whether a switch supports SSH, use the `
+`To check whether a switch supports SSH, use the 'show version' command. If 'k9' is included in the filename, the switch supports cryptographic features`
+
+### Steps to setup SSH
+
+|**Description** | **Command** |
+|---|---|
+| Verify SSH support | S1# **show ip ssh** |
+| Configure the IP domain | S1(config)# **ip domain-name cisco.com**|
+| | |
