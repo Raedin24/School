@@ -128,8 +128,9 @@ The following can be deduced based on the output of the `show interfaces` comman
 | --- | --- |
 |Set password for Telent connection | S1(config)# **enable secret** *admin* 
 | Move into vty interface | S1(config)# **line vty** *0  15*|
-password cisco -- for authentication into configuration mode
-login - Enables password checking
+|Set password for privilege exec mode | S1(config-line)# **password** *cisco*  |
+| Enable password checking | S1(config-line)# **login** | 
+
 ## 1.3.2 SSH Operation
 - **TCP port 22**
 - Provides secure connection, and should be used for management connections.
