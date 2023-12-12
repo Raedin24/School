@@ -121,4 +121,9 @@ The following can be deduced based on the output of the `show interfaces` comman
 -  **TCP  port 23**
 - Uses unsecure plaintext transmission of login authentication and data transmitted.
 - Packets can easily be monitored using **Wireshark**
-- 
+
+## 1.3.2 SSH Operation
+- **TCP port 22**
+- Provides secure connection, and should be used for management connections.
+- Session can still be tracked using the IP address of the admin device, however the username and password are encrytped
+`To check whether a switch supports SSH, use the `
