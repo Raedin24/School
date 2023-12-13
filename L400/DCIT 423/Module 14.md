@@ -10,3 +10,8 @@ Primary functions of a router.
 5. Packet is dropped if there is no matching route entry
 `Destination can be a directly connected device or a next-hop router`
 
+### Forwarding on Directly Connected Networks
+The router needs to determine the destination MAC address associated with the destination IP address
+1. **IPv4 Packet** - Router checks the *ARP table* for destination IP and associated MAC address. If there is no match, router sends an ARP Request. Destination device returns an ARP Reply with its MAC address. Packet is then forwarded
+2. **IPv6 Packet** - Router checks its *neighbour cache*  for the destination IPv6 address and associated MAC address.
+`Control plane is`
