@@ -5,4 +5,4 @@
 2. **Data Breach**
 	- Attacks aims to compromise data servers or hosts to obtain confidential information
 3. **Malware**
-	- Attack 
+	- Attack aims to infect ho
