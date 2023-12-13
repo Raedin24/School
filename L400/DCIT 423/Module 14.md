@@ -12,6 +12,6 @@ Primary functions of a router.
 
 ### Forwarding on Directly Connected Networks
 The router needs to determine the destination MAC address associated with the destination IP address
-1. **IPv4 Packet** - Router checks the *ARP table* for destination IP and associated MAC address. If there is no match, router sends an ARP Request. Destination device returns an ARP Reply with its MAC address. Packet is then forwarded
-2. **IPv6 Packet** - Router checks its *neighbour cache*  for the destination IPv6 address and associated MAC address.
-`Control plane is`
+1. **IPv4 Packet** - Router checks the *ARP table* for destination IP and associated MAC address. If there is no match, router sends an *ARP Request*. Destination device returns an *ARP Reply* with its MAC address. Packet is then forwarded
+2. **IPv6 Packet** - Router checks its *neighbour cache*  for the destination IPv6 address and associated MAC address. If there is no match, router sends an *ICMPv6 Neighbour Solicitation (NS)*  message. Destination device returns an *ICMPv6 Neighbour Advertisement (NA)*  message with 
+`Control plane is basically code that directs the data on how and where to move.`
