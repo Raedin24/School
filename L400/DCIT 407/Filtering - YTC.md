@@ -55,3 +55,4 @@
 - Divided into two main categories
 	1. **First-order** edge detection
 	2. **Second-order** edge detection
+`The sum of weights in a kernel must sum up to zero. This ensures that the kernel's response is 0 in completely smooth regions`
