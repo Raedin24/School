@@ -56,3 +56,15 @@
 	1. **First-order** edge detection
 	2. **Second-order** edge detection
 `The sum of weights in a kernel must sum up to zero. This ensures that the kernel's response is 0 in completely smooth regions`
+
+## First-order Edge Detection
+Most common are
+1. Roberts
+2. Prewitt
+3. Sobel
+- Implemented as a combination of two kernels: one for *x-derivative*  and one for *y-derivative*
+**Roberts operator**
+- Commonly known as **Roberts-cross**
+- One of the earliest methods for edge detection
+- Calculates a simple 2D spatial gradient measurement on an image and highlights edge regions.
+- 
