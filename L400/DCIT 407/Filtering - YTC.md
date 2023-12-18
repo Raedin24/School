@@ -67,4 +67,4 @@ Most common are
 - Commonly known as **Roberts-cross**
 - One of the earliest methods for edge detection
 - Calculates a simple 2D spatial gradient measurement on an image and highlights edge regions.
-- 
+- Implemented using **2** convolution masks/kernels
