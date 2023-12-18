@@ -68,3 +68,6 @@ Most common are
 - One of the earliest methods for edge detection
 - Calculates a simple 2D spatial gradient measurement on an image and highlights edge regions.
 - Implemented using **2** convolution masks/kernels
+- Fast to compute, but sensitive to noise
+**Prewitt / Sobel**
+- Preferred to **Roberts**
