@@ -73,4 +73,5 @@ Most common are
 - Preferred to **Roberts**
 - **Sobel** kernel implements *differentiation*  in one direction and *Gaussian averaging*  in the other.
 - This smooths the edge region reducing the effect of noise on the filter response
-- Sobel and Prewitt filters are 
+- Sobel and Prewitt filters are *linearly separable filters*  - meaning they can be expressed as the matrix product of a *column vector*  and *row vector*.
+- `Basically, they're matrices`
