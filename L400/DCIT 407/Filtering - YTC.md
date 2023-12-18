@@ -73,4 +73,4 @@ Most common are
 - Preferred to **Roberts**
 - **Sobel** kernel implements *differentiation*  in one direction and *Gaussian averaging*  in the other.
 - This smooths the edge region reducing the effect of noise on the filter response
-- 
+- Sobel and Prewitt filters are 
