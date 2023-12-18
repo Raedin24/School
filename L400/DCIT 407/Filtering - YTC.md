@@ -75,3 +75,5 @@ Most common are
 - This smooths the edge region reducing the effect of noise on the filter response
 - Sobel and Prewitt filters are *linearly separable filters*  - meaning they can be expressed as the matrix product of a *column vector*  and *row vector*.
 - `Basically, they're matrices`
+
+## Second-order Edge Detection
