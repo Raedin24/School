@@ -114,7 +114,7 @@ The grades are defined based on the extent of information system damage to citiz
 2. **Router**
 	- Selects an optimal path for forwarding data *packets*
 3. **Firewall**
-	- Used to protect one network area against network attacts and intrusions from other network areas
+	- Used to protect one network area against network attacks and intrusions from other network areas
 Link to extra [info](https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html)
 ![e8e594e9d29cbf6fdd3d31d165cf1980.png](e8e594e9d29cbf6fdd3d31d165cf1980.png)
 ![394308ea0421fc08469a1298a5554e0f.png](394308ea0421fc08469a1298a5554e0f.png)
