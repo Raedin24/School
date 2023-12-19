@@ -15,7 +15,7 @@ A *colour space* is a mathematical model describing how colours can be represent
 
 ## CMYK Colour Space
 - Stands for *(C)yan, (M)agenta, (Y)ellow*  and *blac(K)*
-- Is a subtractive colour model.
+- Is a *subtractive*  colour model.
 - Cyan, Magenta and Yellow are gotten from *white*  light minus *red, green* and *blue* respectively.
 - Values are on a percentage scale (**o% to 100%**)
 
