@@ -169,3 +169,4 @@ A router interface needs the following
 2. Available - LAN and WAN interfaces are not activated by default. Activate using the `no shutdown` command. Interface needs to be connected to another device for the physical layer to be active
 3. Description - Optional. Up to **240** characters. Considered good practice
 
+## 1.4.6 IPv4 Loopback Inter
