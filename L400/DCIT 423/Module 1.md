@@ -173,3 +173,4 @@ A router interface needs the following
 - A **loopback interface** is a logical interface internal to the router.
 - It is considered a software interface and is in the `up` state as long as the router is on.
 - It is used for tests, such as testing internal routing processes.
+- Can be used to simulate a link to the internet
