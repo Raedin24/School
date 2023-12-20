@@ -163,4 +163,9 @@ Using 'login local' requires local auth for SSH connections
 ```
 
 # 1.4 Basic Router Configuration
-## 1.4.1 Configure Basic Router Settings
+## 1.4.3 Configure Router Interfaces
+A router interface needs the following
+1. IP address - At least one IP address needs to be configured on the interface
+2. Available - LAN and WAN interfaces are not activated by default. Activate using the `no shutdown` command. Interface needs to be connected to another device for the physical layer to be active
+3. 
+
