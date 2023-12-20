@@ -169,4 +169,7 @@ A router interface needs the following
 2. Available - LAN and WAN interfaces are not activated by default. Activate using the `no shutdown` command. Interface needs to be connected to another device for the physical layer to be active
 3. Description - Optional. Up to **240** characters. Considered good practice
 
-## 1.4.6 IPv4 Loopback Inter
+## 1.4.6 IPv4 Loopback Interfaces
+- A **loopback interface** is a logical interface internal to the router.
+- It is considered a software interface and is in the `up` state as long as the router is on.
+- It is used for tests, such as testing internal routing processes.
