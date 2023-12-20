@@ -167,5 +167,5 @@ Using 'login local' requires local auth for SSH connections
 A router interface needs the following
 1. IP address - At least one IP address needs to be configured on the interface
 2. Available - LAN and WAN interfaces are not activated by default. Activate using the `no shutdown` command. Interface needs to be connected to another device for the physical layer to be active
-3. 
+3. Description - Optional. Up to **240** characters. Considered good practice
 
