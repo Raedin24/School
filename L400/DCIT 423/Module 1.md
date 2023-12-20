@@ -161,3 +161,6 @@ Use 'crypto key zeroize rsa' to delete RSA key pair. Also disables SSH
 Configuring vty lines with 'transport input ssh' prevents non-SSH connections
 Using 'login local' requires local auth for SSH connections
 ```
+
+# 1.4 Basic Router Configuration
+## 1.4.1 Configure Basic Router Settings
