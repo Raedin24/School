@@ -33,4 +33,6 @@ The router needs to determine the destination MAC address associated with the de
 `Control plane is basically code that directs the data on how and where to move.`
 
 ## Forwarding on Remote Networks
-If router and next-hop router are on an ethernet network, a similar process as [[#^218ef8 |above]] will be done for IPv4 and IPv6. However here the router searches for the *IP address of next*
+If router and next-hop router are on an ethernet network, a similar process as [[#^218ef8 |above]] will be done for IPv4 and IPv6. However here the router searches for the *IP address of next-hop*  instead of destination address of packet
+
+- Packet is dropped if th
