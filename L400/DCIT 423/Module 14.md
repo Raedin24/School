@@ -35,4 +35,19 @@ The router needs to determine the destination MAC address associated with the de
 ## Forwarding on Remote Networks
 If router and next-hop router are on an ethernet network, a similar process as [[#^218ef8 |above]] will be done for IPv4 and IPv6. However here the router searches for the *IP address of next-hop*  instead of destination address of packet
 
-- Packet is dropped if th
+`Packet is dropped if there is no matching entry and no default route`
+
+## 14.2.3 Packet Forwarding Mechanisms
+- Primary use of** packet forwarding function** is to *encapsulate packets*  in appropriate data link frame type.
+- Faster encapsulation = faster packet forwarding.
+- Routers support **3** mechanisms
+### 1. Process Switching
+- Inbound packets are forwarded to the control plane
+- CPU matches destination address in routing table, determines the exit interface, and forwards the packet
+- Repeats for every packet
+- Slow, rarely used in modern networks
+
+### 2. Fast Switching
+- Successor to process switching.
+- Uses a **fast-switching cache** to store next-hop info.
+- 
