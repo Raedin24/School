@@ -64,3 +64,7 @@ If router and next-hop router are on an ethernet network, a similar process as [
 - Table entries are *change-triggered*  meaning they only change when there is a change in the network topology.
 - After network convergence, FIB and adjacency table contains all necessary routing information
 - Packets are processed and forwarded in the data plane
+
+
+# 14.3 Basic Router Configuration Review
+## 14.
