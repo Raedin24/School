@@ -18,6 +18,8 @@ A **routing table** consists of prefixes and their prefix lengths. Routers learn
 - Specifies the next-hop router when routing table does not contain destination IP.
 - Can be manually or dynamically configured
 - Also called the *gateway of last resort* 
+
+# 14.2 Packet Forwarding
 ## 14.2.1 Packet Forwarding Decision Process
 1. Data link frame with encapsulated IP packet arrives on the ingress
 2. Router examines the destination IP in header and consults routing table
@@ -54,7 +56,11 @@ If router and next-hop router are on an ethernet network, a similar process as [
 - CPU searches for match in fast-switching cache
 - If there is no match, packet is process-switched and forwarded, and the flow information is stored in the fast-switching cache
 - Subsequent packets with same destination use next-hop without CPU intervention
+- Changes in table entry are *packet-triggered*
 
 ### 3. Cisco Express Forwarding (CEF)
 - Default Cisco IOS packet-forwarding mechanism.
-- Build a **Forwarding Information Base (FIB)** 
+- Build a **Forwarding Information Base (FIB)** and an *adjacency table*
+- Table entries are *change-triggered*  meaning they only change when there is a change in the network topology.
+- After network convergence, FIB and adjacency table contains all necessary routing information
+- Packets are processed and forwarded in the data plane
