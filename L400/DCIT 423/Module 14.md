@@ -4,7 +4,18 @@ Primary functions of a router.
 2. Forward packets to destination
 
 ## 14.1.6 Build the Routing Table
-
+A **routing table** consists of prefixes and their prefix lengths. Routers learn routes in the following ways
+**Directly Connected Networks**
+- Networks that are configured on the active interface of a router. 
+- Added to the routing table when an interface with an *IP address* and *subnet mask*  is active
+**Remote Networks**
+- Not directly connected to the router.
+- Can be discovered in **2** ways
+- *Static routes* : Added when a route is manually configured
+- *Dynamic routes* : Added when a routing protocol learns about the remote network
+**Default Route**
+- Specifies the next-hop router when routing table does not contain destination IP.
+- Can be n
 ## 14.2.1 Packet Forwarding Decision Process
 1. Data link frame with encapsulated IP packet arrives on the ingress
 2. Router examines the destination IP in header and consults routing table
