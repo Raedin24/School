@@ -1,6 +1,6 @@
 # 14.1 Path Determination
 Primary functions of a router.
-1. Determine the best path to forward packets
+1. Determine the best path to forward packets (using routing table)
 2. Forward packets to destination
 
 `Prefix length of route in routing table is used to determine minimum match length for best path`
@@ -28,6 +28,8 @@ A **routing table** consists of prefixes and their prefix lengths. Routers learn
 
 ### Forwarding on Directly Connected Networks
 The router needs to determine the destination MAC address associated with the destination IP address
-1. **IPv4 Packet** - Router checks the *ARP table* for destination IP and associated MAC address. If there is no match, router sends an *ARP Request*. Destination device returns an *ARP Reply* with its MAC address. Packet is then forwarded
+1. **IPv4 Packet** - Router checks the *ARP table* for destination IP and associated MAC address. If there is no match, router sends an *ARP Request*. Destination device returns an *ARP Reply*   with its MAC address. Packet is then forwarded
 2. **IPv6 Packet** - Router checks its *neighbour cache*  for the destination IPv6 address and associated MAC address. If there is no match, router sends an *ICMPv6 Neighbour Solicitation (NS)*  message. Destination device returns an *ICMPv6 Neighbour Advertisement (NA)*  message with its MAC address
 `Control plane is basically code that directs the data on how and where to move.`
+
+## Forwarding on Remote Networks
