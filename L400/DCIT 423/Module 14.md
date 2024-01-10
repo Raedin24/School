@@ -73,3 +73,4 @@ If router and next-hop router are on an ethernet network, a similar process as [
 3. Routing information does not provide a return path
 
 `A stub network is one accessed by a single route, and the router only has one neighbour`
+`A default route can either be static or dynamically learned`
