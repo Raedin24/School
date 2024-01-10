@@ -19,3 +19,8 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 `Both messages can be sent as unicast or broadcast messages`
 
 # 7.2 Configure a Cisco IOS DHCPv4 Server
+`A router can be configured to act as a DHCPv4 server`
+
+## 7.2.2 Steps to Configure
+1. Exclude IPv4 addresses : Router assigns all addresses in the address pool unless specifically excluded. Excluded address should be those manually configured for other devices.
+2. Define a DHCPv4
