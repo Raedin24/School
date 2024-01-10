@@ -66,6 +66,16 @@ shutdown
 Can shut down access to all ports in that range
 
 
+# DHCP Configuration
+```Shell
+ip dhcp excluded-address low-address [high-address]
+ip dhcp pool pool-name
+network network-numbmer [mask / prefix-length]
+dns-server address [address / address-range]
+domain-name domain
+lease {days [hours [minutes]] | infinte}
+```
+
 # PTSA Codes
 ```Shell
 ---------------------------Router------------------------------
