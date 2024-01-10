@@ -1,0 +1,1 @@
+The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addresses to devices
