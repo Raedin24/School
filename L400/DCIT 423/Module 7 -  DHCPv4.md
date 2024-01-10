@@ -27,3 +27,7 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 3. **Configure the DHCPv4 Pool** : Define the *range of available address* and the *default gateway router* (typically the LAN interface of the router closest to the client)
 - Can assign up to **8 gateways** if multiple gateways are required.
 - Default lease period is **1** day
+- DHCPv4 is enabled by default. Use `no service dhcp` to deactivate
+
+## 7.2.8 DHCPv4 Relay
+- In situations where the DHCP server is located on another network, the router 
