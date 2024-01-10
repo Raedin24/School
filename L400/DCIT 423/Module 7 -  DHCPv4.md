@@ -30,6 +30,9 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 - DHCPv4 is enabled by default. Use `no service dhcp` to deactivate
 
 ## 7.2.8 DHCPv4 Relay
-- In situations where the DHCP server is located on another network, the router cannot forward broadcasts from the clients to the server. The router has to be configured to relay DHCPv4 messages to the server
+- In situations where the DHCP server is located on another network, the router cannot forward broadcasts from the clients to the server. **R1** has to be configured to relay DHCPv4 messages to the server
 1. **ipconfig /release** - Admin releases all current IPv4 addressing information (**ifconfig** for other systems)
-2. **ipconfig /renew** - Admin attempts renews IPv4 addressing info. The PC broadcasts and DHCPDISCOVER message. Request is not successful 
+2. **ipconfig /renew** - Admin attempts renews IPv4 addressing info. The PC broadcasts and DHCPDISCOVER message. Request is not successful because router does not forward broadcasts.
+3. **ip helper-address** *address* - **R1** has to be configured with this command and the address of the server to relay DHCPv4 broadcasts to the server.
+4. **show ip interface** - **R1** accepts broadcast request and forwards them as a unicast to the DHCP server address. Admin can use the `show ip interface` command to verify the configuration
+5. **ipconfig /all** - Admin can verify that PCs are able to receive IP addres
