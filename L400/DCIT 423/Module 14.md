@@ -66,5 +66,8 @@ If router and next-hop router are on an ethernet network, a similar process as [
 - Packets are processed and forwarded in the data plane
 
 
-# 14.3 Basic Router Configuration Review
-## 14.
+# 14.4 IP Routing Table
+## 14.4.2 Routing Table Principles
+1. Every router makes its own decisions based on its routing table
+2. Routing table entries of a router do not have to match that of a different router
+3. Routing information does not provide a return path
