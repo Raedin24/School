@@ -35,4 +35,15 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 2. **ipconfig /renew** - Admin attempts renews IPv4 addressing info. The PC broadcasts and DHCPDISCOVER message. Request is not successful because router does not forward broadcasts.
 3. **ip helper-address** *address* - **R1** has to be configured with this command and the address of the server to relay DHCPv4 broadcasts to the server.
 4. **show ip interface** - **R1** accepts broadcast request and forwards them as a unicast to the DHCP server address. Admin can use the `show ip interface` command to verify the configuration
-5. **ipconfig /all** - Admin can verify that PCs are able to receive IP addres
+5. **ipconfig /all** - Admin can verify that PCs are able to receive IP addresses with the `ipconfig /all` command
+
+## 7.2.9 Other Service Broadcasts Relayed
+By default the `ip helper-address` command forwards the following eight UDP services
+1. Port 37: Time
+2. Port 49: TACACS
+3. Port 53: DNS
+4. Port 67: DHCP/BOOTP server
+5. Port 68: DHCP/BOOTP client
+6. Port 69: TFTP
+7. Port 137: NetBIOS name service
+8. Port 138: NetBIOS datagram service
