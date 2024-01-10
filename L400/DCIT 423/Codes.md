@@ -67,6 +67,16 @@ Can shut down access to all ports in that range
 
 
 # DHCP Configuration
+| **Task** | **IOS Command** |
+| ---- | ---- |
+| Exclude addresses | **ip dhcp** excluded-address *low-address*  [*high-address*] |
+| Define pool name | **ip dhcp** pool *pool-name* |
+| Define the address pool. | **network** _network-number_ [_mask_ \| / _prefix-length_] |
+| Define the default router or gateway. | **default-router** address [ _address2….address8_] |
+| Define a DNS server. | **dns-server** _address_ [ _address2…address8_] |
+| Define the domain name. | **domain-name** _domain_ |
+| Define the duration of the DHCP lease. | **lease** {_days_ [_hours_ [ _minutes_]] \| **infinite**} |
+| Define the NetBIOS WINS server. | **netbios-name-server** _address_ [ _address2…address8_] |
 ```Shell
 ip dhcp excluded-address low-address [high-address]
 ip dhcp pool pool-name
@@ -74,6 +84,7 @@ network network-numbmer [mask / prefix-length]
 dns-server address [address / address-range]
 domain-name domain
 lease {days [hours [minutes]] | infinte}
+netbios-name-server address [address]
 ```
 
 # PTSA Codes
