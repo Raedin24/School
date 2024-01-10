@@ -15,4 +15,7 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 4. **DHCP Acknowledgment** - ***Server***  verifies lease info with an *ICMP ping*  to confirm the address is available. Creates new ARP entry for the client lease and sends DHCPACK message to client.
 ## 7.1.4 Renewing a Lease
 1. DHCP Request: Client sends a request message to server that offered the IPv4 address. If no acknowledgement is received in time, client broadcasts another DHCPREQUEST so another server can extend the lease
-2. DHCP A\c
+2. DHCP Acknowledgement: Server verifies lease information by returning a DHCPACK.
+`Both messages can be sent as unicast or broadcast messages`
+
+# 7.2 Configure a Cisco IOS DHCPv4 Server
