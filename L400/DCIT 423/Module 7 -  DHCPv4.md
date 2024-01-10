@@ -11,6 +11,6 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 ## 7.1.3 Steps to Obtain a Lease
 1. **DHCP Discover** - ***Client*** broadcasts DHCPDISCOVER message containing its *MAC address*. Uses *layer 2 and 3*  broadcast address to communicate with server. Used to find DHCPv4 servers
 2. **DHCP Offer** - ***Server***  reserves an available IPv4 address for lease to client.  Also creates *ARP entry* containing the MAC address of the requesting client and the leased IPv4 address of the client. Sends DHCPOFFER to the client
-3. **DHCP Request** - ***Client***  sends DHCPREQUEST after
-4. **DHCP Acknowledgment** - DHCPACK
+3. **DHCP Request** - ***Client***  sends DHCPREQUEST after receiving DHCPOFFER. Used to notify the selected server for the parameters, and to decline any other servers. Sent as a broadcast
+4. **DHCP Acknowledgment** - ***Server***  DHCPACK
  
