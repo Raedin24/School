@@ -22,5 +22,8 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 `A router can be configured to act as a DHCPv4 server`
 
 ## 7.2.2 Steps to Configure
-1. Exclude IPv4 addresses : Router assigns all addresses in the address pool unless specifically excluded. Excluded address should be those manually configured for other devices.
-2. Define a DHCPv4
+1. **Exclude IPv4 addresses** : Router assigns all addresses in the address pool unless specifically excluded. Excluded address should be those manually configured for other devices.
+2. **Define a DHCPv4 Pool Name** : Defines a pool with a specific name and puts the router in DHCPv4 configuration mode
+3. **Configure the DHCPv4 Pool** : Define the *range of available address* and the *default gateway router* (typically the LAN interface of the router closest to the client)
+`Can assign up to 8 gateways if multiple gateways are required.
+Default lease period is 1 day`
