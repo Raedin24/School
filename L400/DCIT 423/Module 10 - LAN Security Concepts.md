@@ -57,3 +57,11 @@ login local
 ```
 
 ## 10.2.2 AAA Components
+**Authentication** - Who are you?
+**Authorization** - What can you do?
+**Accounting** - What did you do?
+
+## 10.2.3 Authentication
+Two method of implementation
+1. **Local** - Stores usernames and passwords locally in a network device (eg. router). Ideal for small networks
+2. **Server-based** - Router accesses central AAA server which stores all usernames and passwords. 
