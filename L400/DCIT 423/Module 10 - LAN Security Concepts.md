@@ -78,4 +78,6 @@ Two method of implementation
 - A port-based *access control and authentication protocol*
 - Restricts unauthorized workstations from connecting to a LAN through public switch ports
 - Each device in the network has specific roles
-	1. **Client (Supplicant)**  - A device running 802.1X-
+	1. **Client (Supplicant)**  - A device running 802.1X-compliant client software
+	2. **Switch (Authenticator)** - Acts as intermediary b/n client and authentication server. Can alternatively be a *wireless access point*
+	3. **Authentication server** - Validates the identity of the client and notifies the authenticator whether client is authorized to access.
