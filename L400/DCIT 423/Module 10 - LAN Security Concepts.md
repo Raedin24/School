@@ -42,6 +42,10 @@ login
 - **SSH** is more secure, requires username and password, both of which are encrypted during transmission
 - Provides accountability: username is recorded during login.
 - Authentication can be done using local database
+- Local database authentication has limitations:
+	- User accounts must be configured locally on each device
+	- Provides no fallback authentication method. If password/username is lost, the only option available is password recovery.
+- Alternative to local database is having a central server for usernames and passwords
 ```shell
 ip domain-name cisco.com
 crypto key generate rsa general-keys modulus 2048
@@ -51,3 +55,5 @@ line vty 0 4
 transport input ssh
 login local
 ```
+
+## 10.2.2 AAA Components
