@@ -64,4 +64,6 @@ login local
 ## 10.2.3 Authentication
 Two method of implementation
 1. **Local** - Stores usernames and passwords locally in a network device (eg. router). Ideal for small networks
-2. **Server-based** - Router accesses central AAA server which stores all usernames and passwords. 
+2. **Server-based** - Router accesses central AAA server which stores all usernames and passwords. Router uses **Remote Authentication Dial-In User Service** *(RADIUS)* or  **Terminal Access Control Systems** (*TACACS+*) protocols to communicate with server
+
+## 10.2.4 Authorization
