@@ -81,3 +81,16 @@ Two method of implementation
 	1. **Client (Supplicant)**  - A device running 802.1X-compliant client software
 	2. **Switch (Authenticator)** - Acts as intermediary b/n client and authentication server. Can alternatively be a *wireless access point*
 	3. **Authentication server** - Validates the identity of the client and notifies the authenticator whether client is authorized to access.
+
+
+# 10.3 Layer 2 Security Threats
+## 10.3.2 Switch Attack Categories
+
+|**Category**|**Examples**|
+|---|---|
+|**MAC Table Attacks**|Includes MAC address flooding attacks.|
+|**VLAN Attacks**|Includes VLAN hopping and VLAN double-tagging attacks. It also includes attacks between devices on a common VLAN.|
+|**DHCP Attacks**|Includes DHCP starvation and DHCP spoofing attacks.|
+|**ARP Attacks**|Includes ARP spoofing and ARP poisoning attacks.|
+|**Address Spoofing Attacks**|Includes MAC address and IP address spoofing attacks.|
+|**STP Attacks**|Includes Spanning Tree Protocol manipulation attacks.|
