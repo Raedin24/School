@@ -33,3 +33,21 @@
 - Does not provide accountability
 - Password is sent in plaintext
 - Anyone with password can gain access
+```shell
+line vty 0 4
+password cisco
+login
+```
+
+- **SSH** is more secure, requires username and password, both of which are encrypted during transmission
+- Provides accountability: username is recorded during login.
+- Authentication can be done using local database
+```shell
+ip domain-name cisco.com
+crypto key generate rsa general-keys modulus 2048
+username admin secret class
+ip ssh version 2
+line vty 0 4
+transport input ssh
+login local
+```
