@@ -23,3 +23,8 @@
 	- Includes authentication, authorization, and accounting (*AAA* ) services.
 	- Can be integrated into an appliance to manage access policies
 	- eg Cisco Identity Services Engine (ISE)
+
+- Cisco **Email Security Appliance (ESA)**  is designed to monitor SMTP traffic(emails). Works by pulling data from a security database to perform real-time checks of email content. Also encrypts outgoing email messages.
+- Cisco **Web Security Appliance (WSA)** is designed to monitor HTTP traffic. Can allow/restrict access to certain features such as chat, messaging, video/audio. Can perform URL blacklisting, web app filtering, and encryption and decryption of web traffic.
+
+#
