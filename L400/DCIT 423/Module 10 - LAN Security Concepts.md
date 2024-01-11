@@ -8,18 +8,18 @@
 3. **Malware**
 	- Attack aims to infect hosts with malicious software
 
-## Network Security Devices
+## 10.1.2 Network Security Devices
 1. **VPN-Enabled Router**
 	- Provides secure connection to remote users
 	- VPN services can be integrated into the firewall
-2. **NGFW**
+2. **Next-Generation Firewall (NGFW)**
 	Provides:
 	- Stateful packet inspection
 	- Application visibility / control
 	- Next-generation intrusion prevention system (*NGIPS* )
 	- Advanced malware protection (*AMP* )
 	- URL filtering
-3. **NAC**
+3. **Network Access Control (NAC) Device**
 	- Includes authentication, authorization, and accounting (*AAA* ) services.
 	- Can be integrated into an appliance to manage access policies
 	- eg Cisco Identity Services Engine (ISE)
