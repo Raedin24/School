@@ -67,3 +67,15 @@ Two method of implementation
 2. **Server-based** - Router accesses central AAA server which stores all usernames and passwords. Router uses **Remote Authentication Dial-In User Service** *(RADIUS)* or  **Terminal Access Control Systems** (*TACACS+*) protocols to communicate with server
 
 ## 10.2.4 Authorization
+- Automatic, does not require users to perform additional steps
+- Uses a set of attributes that describes the user's access to the network
+
+## 10.2.5 Accounting
+- Collects and reports usage data.
+- Keeps a detailed log of exactly what the authenticated user does on the device
+
+## 10.2.6 802.1X
+- A port-based *access control and authentication protocol*
+- Restricts unauthorized workstations from connecting to a LAN through public switch ports
+- Each device in the network has specific roles
+	1. **Client (Supplicant)**  - A device running 802.1X-
