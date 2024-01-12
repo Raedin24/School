@@ -115,7 +115,10 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 - MAC address tables have a fixed sized
 - MAC address flooding spams fake MAC addresses until the switch MAC table is full.
 > When full, the switch treats frames as unknown unicast and floods all incoming traffic out on all ports on the same VLAN
-
 - This allows external actors to capture all frames sent from one host to another on the local LAN / VLAN
-`Traffic is `
+`Traffic is flooded only with the local LAN/VLAN. Traffic can only be captured if the threat actor is connected.`
 
+- Port security must be implement to mitigate MAC address table overflow attacks.
+- This allows only a specified number of source MAC address to be learned on the port
+
+# 10.5 LAN Attacks
