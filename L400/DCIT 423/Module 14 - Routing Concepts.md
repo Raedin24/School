@@ -40,7 +40,7 @@ If router and next-hop router are on an ethernet network, a similar process as [
 `Packet is dropped if there is no matching entry and no default route`
 
 ## 14.2.3 Packet Forwarding Mechanisms
-- Primary use of** packet forwarding function** is to *encapsulate packets*  in appropriate data link frame type.
+- Primary use of **packet forwarding function** is to *encapsulate packets*  in appropriate data link frame type.
 - Faster encapsulation = faster packet forwarding.
 - Routers support **3** mechanisms
 ### 1. Process Switching
