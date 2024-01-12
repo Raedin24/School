@@ -126,3 +126,8 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 - Enables traffic from one VLAN to be seen by another VLAN without the aid of a router
 - Threat actor configures the host to *act like a switch*  and spoof **802.1Q** and **DTP signalling** to establish a trunk with the connecting switch
 - This allows them to send and receive traffic on any VLAN
+
+## 10.5.3 VLAN Double-Tagging Attack
+- Allows a frame to go to a VLAN that the original tag did not specify
+- Threat actor embeds a *hidden*  **802.1Q** tag inside a frame that already has an 802.1Q tag.
+- Only works if attacker is connected to a port which is in the *same VLAN as the native VLAN*  of the trunk port
