@@ -164,7 +164,7 @@ There are **2** types of DHCP attacks
 - Other devices will try to route packets through the root bridge, giving the threat actor access to all transmitted info. 
 - Mitigated by implementing **BPDU Guard** on all access ports
 
-## 10.5.10 CDP Reconnaisance
+## 10.5.10 CDP Reconnaissance
 - Stands for Cisco Discovery  Protocol
 - Is a *Layer 2*  protocol and can be used to verify Layer 1 and 2 connectivity
 `If admin cannot ping a directly connected interface, but can receive CDP broadcasts, then the issue is most likely from the Layer 3 configuration`
@@ -177,4 +177,10 @@ There are **2** types of DHCP attacks
 no cdp run #disables CDP globally
 no cdp enable #disables CDP on a port
 ```
-- Layer 
+- **Link Layer Discovery Protocol (LLDP)**  is also vulnerable to reconnaissance attacks. Can be disabled by running the following commands
+```shell
+no lldp run #disables LLDP globally
+#Disables on an interface
+no lldp transmit
+no lldp receive
+```
