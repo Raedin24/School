@@ -136,7 +136,7 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 	2. Disable auto trunking and use manual trunking as needed
 	3. *Native VLANs*  should only be used *on trunk links*.
 
-## 10.5.5 DHCP Attacks
+## 10.5.5 DHCP Attack
 There are **2** types of DHCP attacks
 
 **DHCP Starvation Attack**
@@ -150,7 +150,7 @@ There are **2** types of DHCP attacks
 - If the rogue server's offer is received first, the client completes the DHCP process with the rogue server.
 - If not, in the *DHCPACK*  stage, the rogue server sends out its own acknowledgement packet and can provide the wrong default gateway, DNS server and IP address for client
 
-## 10.5.7 ARP Attacks
+## 10.5.7 ARP Attack
 **ARP Spoofing and ARP Poisoning Attack**
 - A client can send an unsolicited ARP reply, called a *gratuitous ARP*
 - This is a broadcast that the host has a specific IP address that is mapped to a specific MAC address
@@ -159,6 +159,9 @@ There are **2** types of DHCP attacks
 - Basically a man-in-the-middle attack. If the threat actor claims that the MAC address for another device is actually the MAC address address of it own device(threat actor), other hosts update their table with that info. Hence, any packets meant for that host is sent to the threat actor's device, who then forwards it to the actual intended target
 - Can be mitigated by implementing **DAI**
 
+## 10.5.8 Address Spoofing Attack
+- **IP address spoofing** - Threat actor hijacks a valid IP of another device, or uses a random IP address. Difficult to mitigate when used in a subnet in which the IP belongs
+- **MAC address spoofing** - Threat actor changes their host MAC address to that of another known MAC address. Threat host then sends a frame, which when received by the switch, causes it to overwrite the MAC table and forward frames to the threat host instead.
 ## 10.5.9 STP Attack
 - Threat actor makes their device appear as the root bridge sending BPDUs announcing it has a low priority.
 - Other devices will try to route packets through the root bridge, giving the threat actor access to all transmitted info. 
