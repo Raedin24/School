@@ -136,6 +136,16 @@ Used:
 ## 14.5.3 Dynamic Routing Protocol Concepts
 A routing protocol is a set of *processes*, *algorithms*  and *messages*  that are used to exchange routing information and populate the routing table.
 The main components of dynamic routing protocols include
-1. **Data structures**
-2. **Routing protocol messages**
+1. **Data structures** - Typically tables and databases. Stored in the *RAM*
+2. **Routing protocol messages** - Used to discover neighbouring routers, exchange routing info, and learn and maintain accurate network info
 3. **Algorithm** - Used for best path determination
+
+## 14.5.4 Best Path
+- The best path to a network is the path with the lowest metric
+- A metric is the quantitative valued used to measure the distance to a given network
+
+|**Routing Protocol**|**Metric**|
+|---|---|
+|**Routing Information Protocol (RIP)**|- Metric is “hop count”.<br>- Each router along a path adds a hop to the hop count.<br>- A maximum of **15** hops allowed. |
+|**Open Shortest Path First (OSPF)**|- Metric is “cost” which is the based on the cumulative bandwidth from source to destination.<br>- Faster links are assigned lower costs compared to slower (higher cost) links. |
+|**Enhanced Interior Gateway Routing Protocol (EIGRP)**|- Metric is based on the slowest bandwidth and delay values.<br>- It could also include load and reliability into the metric calculation. |
