@@ -8,4 +8,8 @@ Four types of static routes:
 4. Summary static route
 
 ## 15.1.2 Next-Hop Options
-The next hop can be identified either by an *IP address*, *exit interface*, or both. How the destination is identified
+The next hop can be identified either by an *IP address*, *exit interface*, or both. How the destination is identified creates one of **3** types of static route
+1. **Next-hop route** - Only next-hop IP address specified
+2. **Directly connected static route** - Only router exit interface specified
+3. **Fully specified static route** - Both next-hop IP and exit interface specified
+
