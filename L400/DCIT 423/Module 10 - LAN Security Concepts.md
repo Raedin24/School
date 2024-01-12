@@ -122,3 +122,7 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 - This allows only a specified number of source MAC address to be learned on the port
 
 # 10.5 LAN Attacks
+## 10.5.2 VLAN Hopping Attack
+- Enables traffic from one VLAN to be seen by another VLAN without the aid of a router
+- Threat actor configures the host to *act like a switch*  and spoof **802.1Q** and **DTP signalling** to establish a trunk with the connecting switch
+- This allows them to send and receive traffic on any VLAN
