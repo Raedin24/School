@@ -156,3 +156,7 @@ There are **2** types of DHCP attacks
 - This is a broadcast that the host has a specific IP address that is mapped to a specific MAC address
 - Other hosts store the MAC and IP address of the gratuitous ARP in their ARP tables
 - If a threat actor sends a gratuitous ARP with  a spoofed MAC address, any host can claim to be the owner of any IP and MAC address of their choice
+- Basically a man-in-the-middle attack. If the threat actor claims that the MAC address for another device is actually the MAC address address of it own device(threat actor), other hosts update their table with that info. Hence, any packets meant for that host is sent to the threat actor's device, who then forwards it to the actual intended target
+- Can be mitigated by implementing **DAI**
+
+## 10.5.6 STP Attack
