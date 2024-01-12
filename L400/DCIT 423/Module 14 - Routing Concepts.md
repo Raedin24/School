@@ -106,3 +106,12 @@ Used:
 - In networks consisting of more than just a few routers
 - When a change in network topology requires network to automatically determine another path.
 - When network needs to be scalable.
+
+|Feature|Dynamic Routing|Static Routing|
+|---|---|---|
+|Configuration complexity|Independent of network size|Increases with network size|
+|Topology changes|Automatically adapts to topology changes|Administrator intervention required|
+|Scalability|Suitable for simple to complex network topologies|Suitable for simple topologies|
+|Security|Security must be configured|Security is inherent|
+|Resource Usage|Uses CPU, memory, and link bandwidth|No additional resources needed|
+|Path Predictability|Route depends on topology and routing protocol used|Explicitly defined by the administrator|
