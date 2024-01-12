@@ -141,3 +141,5 @@ There are **2** types of DHCP attacks
 
 **DHCP Starvation Attack**
 - Goal is to create a *denial  of service (DOS)*
+- Threat actor creates DHCP discovery messages from fake MAC addresses
+- Th
