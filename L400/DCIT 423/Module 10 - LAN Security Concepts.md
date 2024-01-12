@@ -109,4 +109,13 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 # 10.4 MAC Address Table Attack
 ## 10.4.1 Switch Operation Review
 - Layer 2 switch builds a MAC address table based on the source MAC address in received frames. This info is used to make forwarding decisions
-- MAC address tables are stored in 
+- MAC address tables are stored in volatile memory
+
+## 10.4.2 MAC Address Table Flooding
+- MAC address tables have a fixed sized
+- MAC address flooding spams fake MAC addresses until the switch MAC table is full.
+> When full, the switch treats frames as unknown unicast and floods all incoming traffic out on all ports on the same VLAN
+
+- This allows external actors to capture all frames sent from one host to another on the local LAN / VLAN
+`Traffic is `
+
