@@ -131,3 +131,9 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 - Allows a frame to go to a VLAN that the original tag did not specify
 - Threat actor embeds a *hidden*  **802.1Q** tag inside a frame that already has an 802.1Q tag.
 - Only works if attacker is connected to a port which is in the *same VLAN as the native VLAN*  of the trunk port
+- Can be prevented by:
+	1. Disable trunking on access ports
+	2. Disable auto trunking and use manual trunking as needed
+	3. *Native VLANs*  should only be used *on trunk links*  and should never span to end devices
+
+## 10.5.4 DHCP Messages

@@ -13,6 +13,7 @@ The **Dynamic Host Configuration Protocol (DHCP)** dynamically assigns IP addres
 2. **DHCP Offer** - ***Server***  reserves an available IPv4 address for lease to client.  Also creates *ARP entry* containing the MAC address of the requesting client and the leased IPv4 address of the client. Sends DHCPOFFER to the client
 3. **DHCP Request** - ***Client***  sends DHCPREQUEST after receiving DHCPOFFER. Used to notify the selected server for the parameters, and to decline any other servers. Sent as a broadcast
 4. **DHCP Acknowledgment** - ***Server***  verifies lease info with an *ICMP ping*  to confirm the address is available. Creates new ARP entry for the client lease and sends DHCPACK message to client.
+`DORA - Discover, Offer, Request, Acknowledge`
 ## 7.1.4 Renewing a Lease
 1. DHCP Request: Client sends a request message to server that offered the IPv4 address. If no acknowledgement is received in time, client broadcasts another DHCPREQUEST so another server can extend the lease
 2. DHCP Acknowledgement: Server verifies lease information by returning a DHCPACK.
