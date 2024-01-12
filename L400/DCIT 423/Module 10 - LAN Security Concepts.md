@@ -134,6 +134,10 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 - Can be prevented by:
 	1. Disable trunking on access ports
 	2. Disable auto trunking and use manual trunking as needed
-	3. *Native VLANs*  should only be used *on trunk links*  and should never span to end devices
+	3. *Native VLANs*  should only be used *on trunk links*.
 
-## 10.5.4 DHCP Messages
+## 10.5.4 DHCP Attacks
+There are **2** types of DHCP attacks
+
+**DHCP Starvation Attack**
+- Goal is to create a *denial  of service (DOS)*
