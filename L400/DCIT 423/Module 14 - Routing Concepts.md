@@ -95,3 +95,14 @@ If router and next-hop router are on an ethernet network, a similar process as [
 `IPv6 routing protocols use the link-local address of the next-hop router, while IPv4 uses the IP address`
 # 14.5 Static and Dynamic Routing
 Most networks use a combo of dynamic routing protocols and static routes
+**Static Routes**
+Used:
+- As default route for forwarding packets to service provider
+- For  routes outside the routing domain
+- When the admin wants to explicitly define the path for a specific network
+- For routing b/n stub networks
+**Dynamic Routing Protocols**
+Used:
+- In networks consisting of more than just a few routers
+- When a change in network topology requires network to automatically determine another path.
+- When network needs to be scalable.
