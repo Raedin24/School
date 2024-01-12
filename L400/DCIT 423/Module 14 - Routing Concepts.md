@@ -128,8 +128,8 @@ Used:
 - BGP - Developed to replace EGP. 
 
 
-||**Interior Gateway Protocols**|   |   |   |**Exterior Gateway Protocols**|
-|---|---|---|---|---|---|
-||**Distance Vector**|   |**Link-State**|   |**Path Vector**|
-|**IPv4**|RIPv2|EIGRP|OSPFv2|IS-IS|BGP-4|
-|**IPv6**|RIPng|EIGRP for IPv6|OSPFv3|IS-IS for IPv6|BGP-MP|
+|  | **Interior Gateway Protocols** |  |  | **Exterior Gateway Protocols** |  |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+|  | **Distance Vector** |  | **Link-State** |  | **Path Vector** |
+| **IPv4** | RIPv2 | EIGRP | OSPFv2 | IS-IS | BGP-4 |
+| **IPv6** | RIPng | EIGRP for IPv6 | OSPFv3 | IS-IS for IPv6 | BGP-MP |
