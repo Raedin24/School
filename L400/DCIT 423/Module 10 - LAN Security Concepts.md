@@ -136,7 +136,7 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 	2. Disable auto trunking and use manual trunking as needed
 	3. *Native VLANs*  should only be used *on trunk links*.
 
-## 10.5.4 DHCP Attacks
+## 10.5.5 DHCP Attacks
 There are **2** types of DHCP attacks
 
 **DHCP Starvation Attack**
@@ -149,3 +149,5 @@ There are **2** types of DHCP attacks
 - In the *DHCPOFFER* stage, both the legitimate and rogue server offer IP configuration details to the client
 - If the rogue server's offer is received first, the client completes the DHCP process with the rogue server.
 - If not, in the *DHCPACK*  stage, the rogue server sends out its own acknowledgement packet and can provide the wrong default gateway, DNS server and IP address for client
+
+## 10.5.7 ARP Attacks
