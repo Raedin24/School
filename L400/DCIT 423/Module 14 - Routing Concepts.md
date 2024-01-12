@@ -72,5 +72,7 @@ If router and next-hop router are on an ethernet network, a similar process as [
 2. Routing table entries of a router do not have to match that of a different router
 3. Routing information does not provide a return path
 
+- Network discovery is the ability of a routing protocol to share information about the networks it knows with other routers using the same routing protocol.
 `A stub network is one accessed by a single route, and the router only has one neighbour`
-`A default route can either be static or dynamically learned`
+`A default route can either be static or dynamically learned. 0.0.0.0/0 for IPv4 and ::/0 for IPv6`
+`IPv6 routing protocols use the link-local address of the next-hop router, while IPv4 uses the IP address`
