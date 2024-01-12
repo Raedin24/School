@@ -84,6 +84,7 @@ Two method of implementation
 
 
 # 10.3 Layer 2 Security Threats
+Technologies such as **VPNs**, **Firewalls** and **IPS** 
 ## 10.3.2 Switch Attack Categories
 |**Category**|**Examples**|
 |---|---|
@@ -101,4 +102,7 @@ Two method of implementation
 |**Dynamic ARP Inspection (DAI)**|Prevents ARP spoofing and ARP poisoning attacks.|
 |**IP Source Guard (IPSG)**|Prevents MAC and IP address spoofing attacks.|
 - Always use secure variants such as **SSH**, Secure Copy Protocol (**SCP**), Secure FTP (**SFTP**), Secure Socket Layer/Transport Layer Security (**SSL/TLS**)
-- Use an out-of-band managem
+- Use an out-of-band management network for device management
+- Use a dedicated management VLAN
+- Use ACLs to filter unwanted access
+- 
