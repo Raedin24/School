@@ -162,4 +162,8 @@ There are **2** types of DHCP attacks
 ## 10.5.9 STP Attack
 - Threat actor makes their device appear as the root bridge sending BPDUs announcing it has a low priority.
 - Other devices will try to route packets through the root bridge, giving the threat actor access to all transmitted info. 
-- Mitigated by implementing BPDU G
+- Mitigated by implementing **BPDU Guard** on all access ports
+
+## 10.5.10 CDP Reconnaisance
+- Stands for Cisco Discovery  Protocol
+- Is a *Layer 2*  protocol and can be used to verify Layer 1 and 2 connectivity
