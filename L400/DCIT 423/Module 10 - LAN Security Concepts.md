@@ -1,3 +1,4 @@
+> Endpoints are best protected by a combination of NAC,
 # 10.1 Endpoint Security
 ## 10.1.1 Common Network Attacks
 1. **Distributed Denial of Service (DDoS)**
@@ -162,6 +163,8 @@ There are **2** types of DHCP attacks
 ## 10.5.8 Address Spoofing Attack
 - **IP address spoofing** - Threat actor hijacks a valid IP of another device, or uses a random IP address. Difficult to mitigate when used in a subnet in which the IP belongs
 - **MAC address spoofing** - Threat actor changes their host MAC address to that of another known MAC address. Threat host then sends a frame, which when received by the switch, causes it to overwrite the MAC table and forward frames to the threat host instead.
+- MAC address table is corrected when the target host(legitimate device) sends out a frame. Hence, the threat actor can create a script to constantly send frames to the switch to maintain the incorrect info
+- Both address spoofing types can be mitigated by implementing **IPSG**.
 ## 10.5.9 STP Attack
 - Threat actor makes their device appear as the root bridge sending BPDUs announcing it has a low priority.
 - Other devices will try to route packets through the root bridge, giving the threat actor access to all transmitted info. 
