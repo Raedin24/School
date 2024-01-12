@@ -85,7 +85,6 @@ Two method of implementation
 
 # 10.3 Layer 2 Security Threats
 ## 10.3.2 Switch Attack Categories
-
 |**Category**|**Examples**|
 |---|---|
 |**MAC Table Attacks**|Includes MAC address flooding attacks.|
@@ -94,4 +93,11 @@ Two method of implementation
 |**ARP Attacks**|Includes ARP spoofing and ARP poisoning attacks.|
 |**Address Spoofing Attacks**|Includes MAC address and IP address spoofing attacks.|
 |**STP Attacks**|Includes Spanning Tree Protocol manipulation attacks.|
-
+## 10.3.3 Switch Attack Mitigation
+|**Solution**|**Description**|
+|---|---|
+|**Port Security**|Prevents many types of attacks including MAC address flooding attacks and DHCP starvation attacks.|
+|**DHCP Snooping**|Prevents DHCP starvation and DHCP spoofing attacks.|
+|**Dynamic ARP Inspection (DAI)**|Prevents ARP spoofing and ARP poisoning attacks.|
+|**IP Source Guard (IPSG)**|Prevents MAC and IP address spoofing attacks.|
+- Always use secure variants such as **SSH**, Secure Copy Protocol (**SCP**), Secure FTP
