@@ -73,6 +73,25 @@ If router and next-hop router are on an ethernet network, a similar process as [
 3. Routing information does not provide a return path
 
 - Network discovery is the ability of a routing protocol to share information about the networks it knows with other routers using the same routing protocol.
+
+## 14.4.12 Administrative Distance
+- Used to determine which route to install into the IP table in situations where the same route is learnt from different sources.
+- The lower the administrative distance (AD), the higher the preference
+
+|Route Source|Administrative Distance|
+|---|---|
+|Directly connected|0|
+|Static route|1|
+|EIGRP summary route|5|
+|External BGP|20|
+|Internal EIGRP|90|
+|OSPF|110|
+|IS-IS|115|
+|RIP|120|
+|External EIGRP|170|
+|Internal BGP|200|
 `A stub network is one accessed by a single route, and the router only has one neighbour`
 `A default route can either be static or dynamically learned. 0.0.0.0/0 for IPv4 and ::/0 for IPv6`
 `IPv6 routing protocols use the link-local address of the next-hop router, while IPv4 uses the IP address`
+# 14.5 Static and Dynamic Routing
+Most networks use a combo of dynamic routing protocols and static routes
