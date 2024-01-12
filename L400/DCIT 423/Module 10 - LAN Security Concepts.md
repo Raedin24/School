@@ -84,7 +84,7 @@ Two method of implementation
 
 
 # 10.3 Layer 2 Security Threats
-Technologies such as **VPNs**, **Firewalls** and **IPS** 
+Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to protect *Layer 3 to Layer 7*. However, if the Layer 2 is compromised, all subsequent protections are rendered useless, hence the need for Layer 2 security
 ## 10.3.2 Switch Attack Categories
 |**Category**|**Examples**|
 |---|---|
@@ -105,4 +105,8 @@ Technologies such as **VPNs**, **Firewalls** and **IPS**
 - Use an out-of-band management network for device management
 - Use a dedicated management VLAN
 - Use ACLs to filter unwanted access
-- 
+
+# 10.4 MAC Address Table Attack
+## 10.4.1 Switch Operation Review
+- Layer 2 switch builds a MAC address table based on the source MAC address in received frames. This info is used to make forwarding decisions
+- MAC address tables are stored in 
