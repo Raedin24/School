@@ -167,3 +167,7 @@ There are **2** types of DHCP attacks
 ## 10.5.10 CDP Reconnaisance
 - Stands for Cisco Discovery  Protocol
 - Is a *Layer 2*  protocol and can be used to verify Layer 1 and 2 connectivity
+- Enabled by default on Cisco devices and allow them to automatically discover other CDP-enabled devices and auto-configure a connection
+- CDP information includes the *IP address* of the device, *IOS version*, *platform*, *capabilities*, and *native VLAN*
+- Info is send out on CDP-enabled ports in *periodic, unencrypted broadcasts*.
+- Threat actors can use this info to discover network infrastructure vulnerabilities
