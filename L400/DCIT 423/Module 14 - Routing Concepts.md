@@ -146,9 +146,9 @@ The main components of dynamic routing protocols include
 
 |**Routing Protocol**|**Metric**|
 |---|---|
-|**Routing Information Protocol (RIP)**|- Metric is “hop count”.<br>- Each router along a path adds a hop to the hop count.<br>- A maximum of **15** hops allowed. |
-|**Open Shortest Path First (OSPF)**|- Metric is “cost” which is the based on the cumulative bandwidth from source to destination.<br>- Faster links are assigned lower costs compared to slower (higher cost) links. |
-|**Enhanced Interior Gateway Routing Protocol (EIGRP)**|- Metric is based on the slowest bandwidth and delay values.<br>- Could also include load and reliability into the metric calculation. |
+|**Routing Information Protocol (RIP)**|- Metric is **hop count**.<br>- Each router along a path adds a hop to the hop count.<br>- A maximum of **15** hops allowed. |
+|**Open Shortest Path First (OSPF)**|- Metric is **cost** which is the based on the cumulative bandwidth from source to destination.<br>- Faster links are assigned lower costs compared to slower (higher cost) links. |
+|**Enhanced Interior Gateway Routing Protocol (EIGRP)**|- Metric is based on the **slowest bandwidth and delay values**.<br>- Could also include load and reliability into the metric calculation. |
 ## 14.5.5 Load Balancing
 - If a router has two or more paths to a destination with equal cost metrics, the router uses both paths.
 - This is known as *equal cost load balancing*
