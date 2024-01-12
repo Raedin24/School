@@ -108,7 +108,7 @@ Technologies such as **VPNs**, **Firewalls** and **IPS** devices are used to pro
 - Use a dedicated management VLAN
 - Use ACLs to filter unwanted access
 - Disable **DTP** to prevent VLAN hopping
-- Place unused ports in an unused VLAN
+- Place unused ports in an unused VLAN to prevent unauthorized access
 
 # 10.4 MAC Address Table Attack
 ## 10.4.1 Switch Operation Review
