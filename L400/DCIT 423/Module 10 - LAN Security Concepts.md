@@ -142,4 +142,8 @@ There are **2** types of DHCP attacks
 **DHCP Starvation Attack**
 - Goal is to create a *denial  of service (DOS)*
 - Threat actor creates DHCP discovery messages from fake MAC addresses
-- Th
+- This allows it to consume all available IP addresses
+
+**DHCP Spoofing Attack**
+- Threat actor configures rogue DHCP server on network to provide false IP configuration parameters to legitimate clients
+- In the *DHCPACK*  stage, the rogue server sends out its own acknowledgement packet and can provide the wrong default gateway, DNS server and IP address for client
