@@ -151,4 +151,8 @@ There are **2** types of DHCP attacks
 - If not, in the *DHCPACK*  stage, the rogue server sends out its own acknowledgement packet and can provide the wrong default gateway, DNS server and IP address for client
 
 ## 10.5.7 ARP Attacks
-****
+**ARP Spoofing and ARP Poisoning Attack**
+- A client can send an unsolicited ARP reply, called a *gratuitous ARP*
+- This is a broadcast that the host has a specific IP address that is mapped to a specific MAC address
+- Other hosts store the MAC and IP address of the gratuitous ARP in their ARP tables
+- If a threat actor sends a gratuitous ARP with  a spoofed MAC address, any host can claim to be the owner of any IP and MAC address of their choice
