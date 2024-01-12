@@ -100,4 +100,5 @@ Two method of implementation
 |**DHCP Snooping**|Prevents DHCP starvation and DHCP spoofing attacks.|
 |**Dynamic ARP Inspection (DAI)**|Prevents ARP spoofing and ARP poisoning attacks.|
 |**IP Source Guard (IPSG)**|Prevents MAC and IP address spoofing attacks.|
-- Always use secure variants such as **SSH**, Secure Copy Protocol (**SCP**), Secure FTP
+- Always use secure variants such as **SSH**, Secure Copy Protocol (**SCP**), Secure FTP (**SFTP**), Secure Socket Layer/Transport Layer Security (**SSL/TLS**)
+- Use an out-of-band managem
