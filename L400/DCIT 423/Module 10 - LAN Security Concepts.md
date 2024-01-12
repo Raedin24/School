@@ -1,4 +1,4 @@
-> Endpoints are best protected by a combination of NAC,
+
 # 10.1 Endpoint Security
 ## 10.1.1 Common Network Attacks
 1. **Distributed Denial of Service (DDoS)**
@@ -27,7 +27,7 @@
 
 - Cisco **Email Security Appliance (ESA)**  is designed to monitor SMTP traffic(emails). Works by pulling data from a security database to perform real-time checks of email content. Also encrypts outgoing email messages.
 - Cisco **Web Security Appliance (WSA)** is designed to monitor HTTP traffic. Can allow/restrict access to certain features such as chat, messaging, video/audio. Can perform URL blacklisting, web app filtering, and encryption and decryption of web traffic.
-
+` Endpoints are best protected by a combination of NAC, AMP software, an ESA, and a WSA`
 # 10.2 Access Control
 ## 10.2.1 Authentication with a Local Password
 - Simplest and least secure method to authenticate remote access is to configure a *login* and *password* combo on **console, vty lines**, and **aux ports**
