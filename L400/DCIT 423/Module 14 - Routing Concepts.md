@@ -63,7 +63,7 @@ If router and next-hop router are on an ethernet network, a similar process as [
 - Build a **Forwarding Information Base (FIB)** and an *adjacency table*
 - Table entries are *change-triggered*  meaning they only change when there is a change in the network topology.
 - After network convergence, FIB and adjacency table contains all necessary routing information
-- Packets are processed and forwarded in the data plane
+- Packets are processed and forwarded in the *data plane*
 
 
 # 14.4 IP Routing Table
