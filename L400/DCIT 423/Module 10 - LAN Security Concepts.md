@@ -159,4 +159,7 @@ There are **2** types of DHCP attacks
 - Basically a man-in-the-middle attack. If the threat actor claims that the MAC address for another device is actually the MAC address address of it own device(threat actor), other hosts update their table with that info. Hence, any packets meant for that host is sent to the threat actor's device, who then forwards it to the actual intended target
 - Can be mitigated by implementing **DAI**
 
-## 10.5.6 STP Attack
+## 10.5.9 STP Attack
+- Threat actor makes their device appear as the root bridge sending BPDUs announcing it has a low priority.
+- Other devices will try to route packets through the root bridge, giving the threat actor access to all transmitted info. 
+- Mitigated by implementing BPDU G
