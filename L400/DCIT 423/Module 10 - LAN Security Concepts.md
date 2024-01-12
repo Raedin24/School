@@ -151,3 +151,4 @@ There are **2** types of DHCP attacks
 - If not, in the *DHCPACK*  stage, the rogue server sends out its own acknowledgement packet and can provide the wrong default gateway, DNS server and IP address for client
 
 ## 10.5.7 ARP Attacks
+****
