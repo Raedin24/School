@@ -116,6 +116,20 @@ Used:
 | Resource Usage | Uses CPU, memory, and link bandwidth | No additional resources needed |
 | Path Predictability | Route depends on topology and routing protocol used | Explicitly defined by the administrator |
 ## 14.5.2 Dynamic Routing Evolution
+**Interior Gateway Protocols**: Used to exchange routing info within a routing domain
 - RIPv1 - Released in 1988
 - RIPv2 - Released to accommodate growth in network environment
-- OSPF and In
+- OSPF and IS-IS - Released to address the needs of even larger networks
+- IGRP - Developed by Cisco
+- EIGRP - Developed to replace IGRP
+
+**Exterior Gateway Protocols**: Used to exchange routing info between different organizations. Used by ISPs
+- EGP
+- BGP - Developed to replace EGP. 
+
+
+||**Interior Gateway Protocols**|   |   |   |**Exterior Gateway Protocols**|
+|---|---|---|---|---|---|
+||**Distance Vector**|   |**Link-State**|   |**Path Vector**|
+|**IPv4**|RIPv2|EIGRP|OSPFv2|IS-IS|BGP-4|
+|**IPv6**|RIPng|EIGRP for IPv6|OSPFv3|IS-IS for IPv6|BGP-MP|
