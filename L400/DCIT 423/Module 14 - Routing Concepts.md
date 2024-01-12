@@ -133,3 +133,9 @@ Used:
 |  | **Distance Vector** |  | **Link-State** |  | **Path Vector** |
 | **IPv4** | RIPv2 | EIGRP | OSPFv2 | IS-IS | BGP-4 |
 | **IPv6** | RIPng | EIGRP for IPv6 | OSPFv3 | IS-IS for IPv6 | BGP-MP |
+## 14.5.3 Dynamic Routing Protocol Concepts
+A routing protocol is a set of *processes*, *algorithms*  and *messages*  that are used to exchange routing information and populate the routing table.
+The main components of dynamic routing protocols include
+1. **Data structures**
+2. **Routing protocol messages**
+3. **Algorithm** - Used for best path determination
