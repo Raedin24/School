@@ -116,3 +116,5 @@ Used:
 | Resource Usage | Uses CPU, memory, and link bandwidth | No additional resources needed |
 | Path Predictability | Route depends on topology and routing protocol used | Explicitly defined by the administrator |
 ## 14.5.2 Dynamic Routing Evolution
+- RIPv1 - Released in 1988
+- RIPv2 - Released to accommodate growth in network environment
