@@ -6,3 +6,6 @@ Four types of static routes:
 2. Default static route
 3. Floating static route
 4. Summary static route
+
+## 15.1.2 Next-Hop Options
+The next hop can be identified either by an *IP address*, *exit interface*, or both. How the destination is identified
