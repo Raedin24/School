@@ -11,8 +11,9 @@ Four types of static routes:
 The next hop can be identified either by an *IP address*, *exit interface*, or both. How the destination is identified creates one of **3** types of static route
 1. **Next-hop route** - Only next-hop IP address specified
 2. **Directly connected static route** - Only router exit interface specified
-3. **Fully specified static route** - Both next-hop IP and exit interface specified
-
+3. **Fully specified static route** - Both next-hop IP and exit interface specified.
+`Directly connected static routes should only be used with point-to-point serial interfaces`
+`Fully specified static routes are used when the exit interface is a multi-access interface and it is necessary to specifically identify the next hop`
 ## 15.1.3 IPv4 Static Route Command
 ```shell
 ip route network-address subnet-mask {ip-address | exit-intf [ip-address]} [distance]
@@ -40,5 +41,6 @@ ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ipv6-address]} [
 
 Remaining parameters are similar in function to IPv4
 `ipv6 unicast-routing` must be configured to enable IPv6 routing
-`Directly connected static routes should only be used with point-to-point serial interfaces`
+`If the IPv6 static route uses a `
+
 # 15.2 Configure IP Static Routes
