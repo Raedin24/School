@@ -47,3 +47,7 @@ Remaining parameters are similar in function to IPv4
 # 15.2 Configure IP Static Routes
 Requires hands-on configuration. No notes needed. Commands are specified above
 
+## 15.3 Configure IP Default Static Routes
+A **default route** is a static route that matches all packets. 
+- Used to represent any network that is not in the routing table. 
+- Commonly used when connecting an edge router to an ISP network, or connecting to a stub router.`
