@@ -62,3 +62,5 @@ ip route 0.0.0.0 0.0.0.0 {ip-address | exit-intf}
 ```shell
 ipv6 route ::/0 {ip-address | exit-intf}
 ```
+
+`The IPv6 subnet ma`
