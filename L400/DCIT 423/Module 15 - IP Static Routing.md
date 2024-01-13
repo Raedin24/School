@@ -40,4 +40,5 @@ ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ipv6-address]} [
 
 Remaining parameters are similar in function to IPv4
 `ipv6 unicast-routing` must be configured to enable IPv6 routing
+`Directly connected static routes should only be used with point-to-point serial interfaces`
 # 15.2 Configure IP Static Routes
