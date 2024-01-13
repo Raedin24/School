@@ -45,3 +45,5 @@ Remaining parameters are similar in function to IPv4
 > Reason is because link-local addresses are not contained in the IPv6 routing table. Link-local addresses are only unique on a given link/network, buy other networks might also have that link-local address
 
 # 15.2 Configure IP Static Routes
+Requires hands-on configuration. No notes needed. Commands are specified above
+
