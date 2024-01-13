@@ -48,6 +48,17 @@ Remaining parameters are similar in function to IPv4
 Requires hands-on configuration. No notes needed. Commands are specified above
 
 ## 15.3 Configure IP Default Static Routes
+## 15.3.1 Default Static Route
 A **default route** is a static route that matches all packets. 
 - Used to represent any network that is not in the routing table. 
-- Commonly used when connecting an edge router to an ISP network, or connecting to a stub router.`
+- Commonly used when connecting an edge router to an ISP network, or connecting to a stub router.
+**IPv4 Default Static Route**
+```shell
+ip route 0.0.0.0 0.0.0.0 {ip-address | exit-intf}
+```
+`Default IPv4 route is aka a quad-zero route`
+
+**IPv6 Default Static Route**
+```shell
+ipv6 route ::/0 {ip-address | exit-intf}
+```
