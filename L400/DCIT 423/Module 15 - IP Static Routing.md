@@ -67,4 +67,6 @@ ipv6 route ::/0 {ip-address | exit-intf}
 
 # 15.4 Configure Floating Static Routes
 ## 15.4.1 Floating Static Routes
-A **floating static route** is used to provide a backup path to a primary static or d
+A **floating static route** is used to provide a backup path to a primary static or dynamic route, in case of link failure.
+- It will only be used when the primary route is not available
+- Configured with a higher administrative distance than the primary route
