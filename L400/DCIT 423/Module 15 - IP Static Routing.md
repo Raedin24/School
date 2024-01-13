@@ -41,6 +41,7 @@ ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ipv6-address]} [
 
 Remaining parameters are similar in function to IPv4
 `ipv6 unicast-routing` must be configured to enable IPv6 routing
-`If the IPv6 static route uses a `
+`If the IPv6 static route uses a link-local address as the next-hop address, use a fully specified static route.'
+> Reason is because link-local addresses are not contained in the IPv6 routing table. Link-local addresses are only unique on a given link/network, buy other networks might also have that link-local address
 
 # 15.2 Configure IP Static Routes
