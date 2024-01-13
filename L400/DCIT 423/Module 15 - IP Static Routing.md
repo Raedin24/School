@@ -29,5 +29,14 @@ ip route network-address subnet-mask {ip-address | exit-intf [ip-address]} [dist
 
 ## 15.1.4 IPv6 Static Route Command
 ```shell
-ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf []
+ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ipv6-address]} [distance]
 ```
+
+|**Parameter**|**Description**|
+|---|---|
+|_ipv6-prefix_|Identifies the destination IPv6 network address of the remote network to add to the routing table.|
+|_/prefix-length_|Identifies the prefix length of the remote network.|
+|_ipv6-address_|- Identifies the next-hop router IPv6 address.<br>- Typically used with broadcast networks (i.e., Ethernet)<br>- Could create a recursive static route where the router performs an additional lookup to find the exit interface.
+
+Remaining parameters are similar in function to IPv4
+`ipv6 unicast-routing` must be configured to enable IPv6 routing
