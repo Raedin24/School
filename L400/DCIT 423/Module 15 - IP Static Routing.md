@@ -63,4 +63,4 @@ ip route 0.0.0.0 0.0.0.0 {ip-address | exit-intf}
 ipv6 route ::/0 {ip-address | exit-intf}
 ```
 
-`The IPv6 subnet ma`
+`The IPv6 subnet mask and the IPv6 prefix-length determine how many bits must match b/n the destination IP and the route in the routing table`
