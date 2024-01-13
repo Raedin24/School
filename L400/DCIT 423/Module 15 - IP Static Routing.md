@@ -47,7 +47,7 @@ Remaining parameters are similar in function to IPv4
 # 15.2 Configure IP Static Routes
 Requires hands-on configuration. No notes needed. Commands are specified above
 
-## 15.3 Configure IP Default Static Routes
+# 15.3 Configure IP Default Static Routes
 ## 15.3.1 Default Static Route
 A **default route** is a static route that matches all packets. 
 - Used to represent any network that is not in the routing table. 
@@ -64,3 +64,7 @@ ipv6 route ::/0 {ip-address | exit-intf}
 ```
 
 `The IPv6 subnet mask and the IPv6 prefix-length determine how many bits must match b/n the destination IP and the route in the routing table`
+
+# 15.4 Configure Floating Static Routes
+## 15.4.1 Floating Static Routes
+A **floating static route** is used to provide a backup path to a primary static or d
