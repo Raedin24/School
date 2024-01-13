@@ -13,3 +13,4 @@ The next hop can be identified either by an *IP address*, *exit interface*, or b
 2. **Directly connected static route** - Only router exit interface specified
 3. **Fully specified static route** - Both next-hop IP and exit interface specified
 
+## 15.1.3 IPv4 S
