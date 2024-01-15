@@ -10,4 +10,9 @@
 2. **Unsystematic Approach**: When analysts arbitrarily select system parameters, factors, metrics and workloads.
 3. **Incorrect Performance Metrics**: The analyst should choose metrics that are relevant, rather than ones that can be easily computed or measured.
 4. **Unrepresentative Workload**: The choice of workload has a significant impact on the outcome of a performance study. The workload used to compare different systems should be representative of the actual system usage in the field.
-5. **Wrong Evaluation Technique**
+5. **Wrong Evaluation Technique**: An analyst should have a basic understanding of all *3*  evaluation techniques and when each one is appropriate to use
+`The 3 evaluation techniques are measurement, simulation, and analytical modeling.`
+
+### Systematic Approach to Performance Evaluation
+1. **State Goals and Define the System**: The choice of system boundaries affects what metrics and workloads are used to compare the systems
+2. **Select metrics**: Select the criteria (metrics) to compare system performance. eg. speed, 
