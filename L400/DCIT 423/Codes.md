@@ -177,3 +177,101 @@ login
 |||2001:db8:acad:b::ff/64|fe80::1|
 |Server (TFTP Server)|NIC|192.168.1.147/28|192.168.1.158|
 |||2001:db8:acad:b::15/64|fe80::1|
+
+
+# SWRE Part 2 Codes
+```shell
+Sw-A
+---------------------------------------------------------
+
+en
+conf t
+vlan 10
+name users
+vlan 999
+name unused
+exit
+int range f0/1-5, g0/1
+switchport mode access
+switchport access vlan 10
+int range f0/1-5
+switchport port-security
+switchport port-sec maximum 4
+switchport port-sec violation restrict
+switchport port-sec aging time 10
+switchport port-sec mac-address sticky
+exit
+int f0/1
+switchport port-sec mac-address 00D0.D3DC.2825
+exit
+ip dhcp snooping
+ip dhcp snooping vlan 10,999
+int range f0/1-5, g0/1
+ip dhcp snooping limit rate 5
+exit
+int g0/1
+ip dhcp snooping trust
+exit
+ip arp inspection vlan 10,999
+int g0/1
+ip arp inspection trust
+exit
+int range f0/1-5
+spanning-tree portfast
+spanning-tree bpduguard enable
+int range f0/6-24, g0/2
+switchport mode access
+switchport access vlan 999
+shutdown
+
+------------------------------------------------------------
+
+
+R-B-10
+------------------------------------------------------------
+
+en
+conf t
+int g0/0/0.10
+desc WLAN users
+encapsulation dot1q 10
+ip address 192.168.10.1 255.255.255.0
+exit
+ip dhcp excluded-address 192.168.10.1
+ip dhcp excluded-address 192.168.10.254
+ip dhcp pool WLAN-hosts
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+dns-server 198.51.100.163
+exit
+int g0/0/1
+ip address dhcp
+end
+exit
+
+en
+conf t
+ip route 0.0.0.0 0.0.0.0 g0/0/1
+ip route 0.0.0.0 0.0.0.0 s0/1/0 10
+ipv6 unicast-routing
+ipv6 route ::/0 2001:DB8:ACAD:C::1
+ipv6 route ::/0 2001:DB8:ACAD:B::1 10
+
+
+-----------------------------------------------------------
+
+R-1-A
+-----------------------------------------------------------
+
+en
+conf t
+ip route 0.0.0.0 0.0.0.0 g0/0/2
+ip route 0.0.0.0 0.0.0.0 s0/1/0 10
+ip route 192.168.10.0 255.255.255.0 g0/0/2
+ip route 192.168.10.0 255.255.255.0 s0/1/0 10
+ip route 192.168.3.122 255.255.255.255 s0/1/1
+ipv6 unicast-routing
+ipv6 route ::/0 2001:DB8:ACAD:A::2
+ipv6 route ::/0 2001:DB8:ACAD:B::2 10
+ipv6 route 2001:DB8:ACAD:3::122/128 2001:DB8:ACAD:D::2
+```
