@@ -15,4 +15,8 @@
 
 ### Systematic Approach to Performance Evaluation
 1. **State Goals and Define the System**: The choice of system boundaries affects what metrics and workloads are used to compare the systems
-2. **Select metrics**: Select the criteria (metrics) to compare system performance. eg. speed, 
+2. **Select metrics**: Select the criteria (metrics) to compare system performance. eg. speed, accuracy, etc
+3. **List parameters**: List all parameters that affect system performance. The list can be divided into *system parameters*  and *workload parameters*.
+4. **Select factors to study**: The list of parameters can be divided into those that will be varied during the evaluation (*factors*) and those that will not. The values of the factors are called *levels*
+### Performance Evaluation Techniques
+Deciding which evaluation technique to use is dependent on the 
