@@ -22,12 +22,28 @@
 Deciding which evaluation technique to use is dependent on the *life-cycle stage*  in which the system is.
 - Measurement - Something similar to the proposed system already exists
 - Analytical modeling and Simulation - Measurement is not possible, new concepts
-**Analytical Modeling**
+1. **Analytical Modeling**
 Network system > Abstraction > Queuing System Model > Formulation > Graphing/Conclusions
 
-**Simulation Modeling**
+2. **Simulation Modeling**
 Network system > Moderate Abstraction > Computer Program > Graphing/Conclusions
 
-**Measurement**
+3. **Measurement**
 Network System > Collect real system data > Measuring device > Graphing/Conclusions
 
+Can measure:
+1. Average packet service time
+2. Average queue length
+3. Probability that waiting time is above a certain threshold
+
+### Comparison of Evaluation Techniques
+
+| **Criterion** | **Analytical Modeling** | **Simulation** | **Measurement** |
+| ---- | ---- | ---- | ---- |
+| 1. Stage | Any | Any | Post-prototype |
+| 2. Time required | Small | Medium | Varies |
+| 3. Tools | Analysts | Computer languages | Instrumentation |
+| 4. Accuracy | Low | Moderate | Varies |
+| 5. Trade-off valuation | Easy | Moderate | Difficult |
+|  6. Cost | Small | Medium | High |
+| 7. Saleability | Low | Medium | High |
