@@ -22,4 +22,12 @@
 Deciding which evaluation technique to use is dependent on the *life-cycle stage*  in which the system is.
 - Measurement - Something similar to the proposed system already exists
 - Analytical modeling and Simulation - Measurement is not possible, new concepts
-#### **Analytical Modeling**
+**Analytical Modeling**
+Network system > Abstraction > Queuing System Model > Formulation > Graphing/Conclusions
+
+**Simulation Modeling**
+Network system > Moderate Abstraction > Computer Program > Graphing/Conclusions
+
+**Measurement**
+Network System > Collect real system data > Measuring device > Graphing/Conclusions
+
