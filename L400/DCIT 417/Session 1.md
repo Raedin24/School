@@ -47,3 +47,9 @@ Can measure:
 | 5. Trade-off valuation | Easy | Moderate | Difficult |
 |  6. Cost | Small | Medium | High |
 | 7. Saleability | Low | Medium | High |
+`In general, the results of any evaluation method should not be trusted unless validated by another evaluation method. Hence, it is suggested to use two or more techniques simultaneously`
+
+### Network Performance Metrics
+There are **3** kinds of performance metrics
+1. Time-based metrics: The time b/n two events eg. response time, round trip time
+2. Number-based metrics: The number of times an event happens or the size of a parameter eg. total number of packets
