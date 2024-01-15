@@ -7,3 +7,5 @@
 Terminal devices have 2 default MAC addresses:
 1. MAC address of the NIC or Wireless Interface Card (Static)
 2. MAC address of the OS (Can be changed)
+
+Native VLAN carries untagged 
