@@ -10,4 +10,4 @@ Terminal devices have 2 default MAC addresses:
 
 Native VLAN carries untagged traffic
 Data VLAN carries user-generated traffic
-Management VLAN carries management traffic. 
+Management VLAN carries management traffic. Configured specifically for network traffic such as SSH, Telnet, HTTPS etc
