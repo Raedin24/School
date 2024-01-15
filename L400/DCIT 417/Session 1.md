@@ -6,5 +6,8 @@
 5. To use queuing models to analyse the performance of systems
 
 **Common Mistakes in Performance Evaluation**
-1. Starting without clear goals: The analyst must understand the system and identify the problem to be solved
-2. Unsystematic Approach: 
+1. **Starting without clear goals**: The analyst must understand the system and identify the problem to be solved
+2. **Unsystematic Approach**: When analysts arbitrarily select system parameters, factors, metrics and workloads.
+3. **Incorrect Performance Metrics**: The analyst should choose metrics that are relevant, rather than ones that can be easily computed or measured.
+4. **Unrepresentative Workload**: The choice of workload has a significant impact on the outcome of a performance study. The workload used to compare different systems should be representative of the actual system usage in the field.
+5. **Wrong Evaluation Technique**
