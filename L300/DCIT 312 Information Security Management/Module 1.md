@@ -88,6 +88,7 @@ The grades are defined based on the extent of information system damage to citiz
 4. *Rectification* - Key to the implementation of graded protection
 5. *Supervision* - External management of graded protection
 
+**Sarbanes-Oxley Act (SOX)** - An act to protect investors by improving accuracy and reliability of corporate disclosure
 # 1.3 Basic Network Concepts
 ## 1.3.1 TCP/IP Architecture
 ### Architecture of a Typical Campus Network
