@@ -275,3 +275,218 @@ ipv6 route ::/0 2001:DB8:ACAD:A::2
 ipv6 route ::/0 2001:DB8:ACAD:B::2 10
 ipv6 route 2001:DB8:ACAD:3::122/128 2001:DB8:ACAD:D::2
 ```
+# SWRE Final Exam
+```shell
+R1
+---------------------------------------------------------------
+
+en
+conf t
+no ip domain-lookup
+hostname R1
+banner motd # Authorized Users Only! #
+line console 0
+password cisco
+login
+exit
+enable secret class
+service password-encryption
+security passwords min-length 10
+username admin secret admin1pass
+ip domain-name ccna-ptsa.com
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+line vty 0 15
+login local
+transport input ssh
+exit
+int lo0
+ip address 209.165.201.1 255.255.255.224
+ipv6 address 2001:db8:acad:209::1/64
+ipv6 address fe80::1 link-local
+desc Loopback/Simulated Internet
+exit
+ipv6 unicast-routing
+int g0/0/1.2
+desc Bikes
+encap dot1q 2
+ip address 10.19.8.1 255.255.255.192
+ipv6 address 2001:db8:acad:a::1/64
+ipv6 address fe80::1 link-local
+exit
+int g0/0/1.3
+desc Trikes
+encap dot1q 3
+ip address 10.19.8.65 255.255.255.224
+ipv6 address 2001:db8:acad:b::1/64
+ipv6 address fe80::1 link-local
+exit
+int g0/0/1.4
+desc Management
+encap dot1q 4
+ip address 10.19.8.97 255.255.255.248
+ipv6 address 2001:db8:acad:c::1/64
+ipv6 address fe80::1 link-local
+exit
+int g0/0/1.6
+encap dot1q 6 native
+desc Native
+exit
+int g0/0/1
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 lo0
+ipv6 route ::/0 lo0
+ip dhcp excluded-address 10.19.8.1 10.19.8.52
+ip dhcp pool CCNA-A
+network 10.19.8.0 255.255.255.192
+default-router 10.19.8.1
+domain-name ccna-a.net
+exit
+ip dhcp excluded-address 10.19.8.65 10.19.8.84
+ip dhcp pool CCNA-B
+network 10.19.8.64 255.255.255.224
+default-router 10.19.8.65
+domain-name ccna-b.net
+exit
+
+VLAN 2
+router subinterface: 10.19.8.1 /26
+subnet: 10.19.8.0 /26
+host range: 10.19.8.1 - 10.19.8.62
+excluded address range: 10.19.8.1 - 10.19.8.52
+
+VLAN 3
+router subinterface: 10.19.8.65 /27
+subnet: 10.19.8.64 /27
+host range: 10.19.8.65 - 10.19.8.94
+excluded address range: 10.19.8.65 - 10.19.8.84
+
+
+---------------------------------------------------------------
+
+S1
+---------------------------------------------------------------
+
+en
+conf t
+no ip domain-lookup
+hostname S1
+banner motd # Authorized Users Only! #
+line console 0
+password cisco
+login
+exit
+enable secret class
+service password-encryption
+username admin secret admin1pass
+ip domain-name ccna-ptsa.com
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+line vty 0 15
+login local
+transport input ssh
+exit
+int vlan 4
+ip address 10.19.8.98 255.255.255.248
+desc Management SVI
+no shutdown
+exit
+ip default-gateway 10.19.8.97
+vlan 2
+name Bikes
+vlan 3
+name Trikes
+vlan 4
+name Management
+vlan 5
+name Parking
+vlan 6
+name Native
+exit
+int range f0/1-2
+switchport mode trunk
+switchport trunk native vlan 6
+exit
+int f0/5
+switchport mode trunk
+switchport trunk native vlan 6
+exit
+int range f0/1-2
+channel-group 1 mode active
+int f0/6
+switchport mode access
+switchport access vlan 2
+switchport port-security
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+exit
+int range f0/3-4,f0/7-24,g0/1-2
+switchport mode access
+switchport access vlan 5
+desc Unused Ports
+shutdown
+exit
+
+
+---------------------------------------------------------------
+
+S2
+---------------------------------------------------------------
+
+en
+conf t
+no ip domain-lookup
+hostname S2
+banner motd # Authorized Users Only! #
+line console 0
+password cisco
+login
+exit
+enable secret class
+service password-encryption
+username admin secret admin1pass
+ip domain-name ccna-ptsa.com
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+line vty 0 15
+login local
+transport input ssh
+exit
+int vlan 4
+ip address 10.19.8.99 255.255.255.248
+desc Management SVI
+no shutdown
+exit
+ip default-gateway 10.19.8.97
+vlan 2
+name Bikes
+vlan 3
+name Trikes
+vlan 4
+name Management
+vlan 5
+name Parking
+vlan 6
+name Native
+exit
+int range f0/1-2
+switchport mode trunk
+switchport trunk native vlan 6
+exit
+int range f0/1-2
+channel-group 1 mode active
+int f0/18
+switchport mode access
+switchport access vlan 3
+switchport port-security
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+exit
+int range f0/3-17,f0/19-24,g0/1-2
+switchport mode access
+switchport access vlan 5
+desc Unused Ports
+shutdown
+exit
+```
