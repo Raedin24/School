@@ -65,8 +65,9 @@ There are **3** kinds of performance metrics
 6. **Efficiency** - Ratio of maximum achievable throughput (usable capacity) to nominal capacity
 7. **Latency** - Time taken to transfer data from source to destination node
 8. **Jitter** - Time delay/difference b/n sending each packet over the network.
-
+![[Pasted image 20240120231738.png]]
 ### Utility Classification of Metrics
 - **Higher is Better (HB)** - Higher values are preferred. eg throughput
 - **Lower is Better (LB)** - Smaller values are preferred. eg. Latency / Delay
-- **Nominal is Best (NB)** - Both low 
+- **Nominal is Best (NB)** - Both low and high values are not preferred. A particular midpoint is best
+![[Pasted image 20240120231710.png]]
