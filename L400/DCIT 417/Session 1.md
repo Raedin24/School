@@ -57,4 +57,10 @@ There are **3** kinds of performance metrics
 `Metrics that are ratios of two variables have higher variability and should be avoided`
 **Commonly Used Performance Metrics**
 1. Response time - Interval b/n user's request and system response
-2. Throughput - 
+2. Throughput - Number of packets delivered per unit time. Increases with increasing system load
+`Maximum achievable throughput under ideal workload is called Bandwidth`
+3. Usable capacity - Maximum throughput achievable w/o exceeding a pre-specified response time limit
+4. Knee - Optimal operating point. Beyond this point, response time increases rapidly but gain in throughput is small
+5. Knee capacity - Throughput at knee
+6. Efficiency - Ratio of maximum achievable throughput (usable capacity) to nominal capacity
+7. Latency - Time 
