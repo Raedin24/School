@@ -55,12 +55,18 @@ There are **3** kinds of performance metrics
 2. *Number-based* metrics: The number of times an event happens or the size of a parameter eg. total number of; packets delivered, errors, failures
 3. *Rate-based* metrics: The number of parameter/event count over time eg. packets/sec, jobs/sec
 `Metrics that are ratios of two variables have higher variability and should be avoided`
-**Commonly Used Performance Metrics**
-1. Response time - Interval b/n user's request and system response
-2. Throughput - Number of packets delivered per unit time. Increases with increasing system load
+### Commonly Used Performance Metrics
+1. **Response time** - Interval b/n user's request and system response
+2. **Throughput** - Number of packets delivered per unit time. Increases with increasing system load
 `Maximum achievable throughput under ideal workload is called Bandwidth`
-3. Usable capacity - Maximum throughput achievable w/o exceeding a pre-specified response time limit
-4. Knee - Optimal operating point. Beyond this point, response time increases rapidly but gain in throughput is small
-5. Knee capacity - Throughput at knee
-6. Efficiency - Ratio of maximum achievable throughput (usable capacity) to nominal capacity
-7. Latency - Time 
+3. **Usable capacity** - Maximum throughput achievable w/o exceeding a pre-specified response time limit
+4. **Knee** - Optimal operating point. Beyond this point, response time increases rapidly but gain in throughput is small
+5. **Knee capacity** - Throughput at knee
+6. **Efficiency** - Ratio of maximum achievable throughput (usable capacity) to nominal capacity
+7. **Latency** - Time taken to transfer data from source to destination node
+8. **Jitter** - Time delay/difference b/n sending each packet over the network.
+
+### Utility Classification of Metrics
+- **Higher is Better (HB)** - Higher values are preferred. eg throughput
+- **Lower is Better (LB)** - Smaller values are preferred. eg. Latency / Delay
+- **Nominal is Best (NB)** - Both low 
