@@ -54,3 +54,7 @@ There are **3** kinds of performance metrics
 1. *Time-based* metrics: The time b/n two events eg. response time, round trip time
 2. *Number-based* metrics: The number of times an event happens or the size of a parameter eg. total number of; packets delivered, errors, failures
 3. *Rate-based* metrics: The number of parameter/event count over time eg. packets/sec, jobs/sec
+`Metrics that are ratios of two variables have higher variability and should be avoided`
+**Commonly Used Performance Metrics**
+1. Response time - Interval b/n user's request and system response
+2. Throughput - 
