@@ -1,4 +1,13 @@
 # Simple Point-To-Point Network
+Steps:
+1. Command Line
+2. Create nodes
+3. Create point-to-point channel  and set attributes
+4. Install point-to-point on netdevice container
+5. Install internet protocols on nodes
+6. Set base IP address
+7. Assign IP address to node devices
+8. Create and UDP server
 ```cpp
 #include "ns3/core-module.h"
 #include "ns3/point-to-point-module.h"
@@ -22,7 +31,12 @@ int main(int argc, char* argv[])
 
 	PointToPointHelper pointToPoint;
 	pointToPoint.SetAttribute("DataRate", StringValue("5mbps"));
-	pointToPoint.SetAttribute("Delay", StringValue("2ms));
+	pointToPoint.SetAttribute("Delay", StringValue("2ms))
+
+	NetDeviceContainer devices;
+	devices = pointToPoint.Install(devices);
+
+	InternetStack
 
 }
 ```
