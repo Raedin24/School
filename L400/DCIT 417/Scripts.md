@@ -204,7 +204,8 @@ int main(argc, char* argv[])
 	NetDeviceHelper csmaDevices = csma.Install(csmaNodes);
 
 	InternetStackHelper stack;
-	stack.Install()
+	stack.Install(csmaDevices);
+	
 
 }
 ```
