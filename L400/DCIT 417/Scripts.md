@@ -19,6 +19,8 @@ Steps:
 #inlucde "ns3/internet-module.h"
 #include "ns3/application-module.h"
 
+using namespace ns3;
+
 NS_LOG_COMPONENT_DEFINE(firstExample);
 
 int main(int argc, char* argv[])
@@ -63,9 +65,11 @@ int main(int argc, char* argv[])
 	echoClient.Start(Seconds(2.0));
 	echoClient.Stop(Seconds(10.0));
 
-	Simulation::Run();
-	Simulation::Destroy();
+	Simulator::Run();
+	Simulator::Destroy();
 	return 0;
 }
 ```
 
+
+# Multi Point-To-Point Network
