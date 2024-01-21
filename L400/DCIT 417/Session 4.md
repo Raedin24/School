@@ -1,6 +1,12 @@
 **Network management** is the monitoring, testing, configuring and trouble-shooting network components to meet a set of requirements
 There are **5** ISO areas for network managements
-- Configuration
+- Configuration management
+- Fault management
+- Performance management
+- Security management
+- Accounting management
+
+**Performance management** is the monitoring and control of a network to ensure it is running as efficiently as possible
 **Simple Network Management Protocol (SNMP)** provides framework for managing devices in an internet using the *TCP/IP*  protocol suite.
 - Consists of **2** parts
 	1. Structure of Management Information (SMI)
