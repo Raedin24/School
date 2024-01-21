@@ -82,7 +82,7 @@ int main(int argc, char* argv[])
 
 using namespace ns3;
 
-NS_LOG_COMPONENT_DEFINE("first");
+NS_LOG_COMPONENT_DEFINE("multipoint");
 
 int main(int argc, char* argv[])
 {
@@ -187,5 +187,24 @@ int main(int argc, char* argv[])
 
 using namespace ns3;
 
-NS_LOG_COMPONENT_DEFINE()
+NS_LOG_COMPONENT_DEFINE("csma");
+
+int main(argc, char* argv[])
+{
+	CommandLine cmd(__FILE__);
+	cmd.Parse(argc, argv);
+
+	NodeContainer csmaNodes;
+	csmaNodes.Create(4)
+
+	CsmaHelper csma;
+	csma.SetAttribute("DataRate", StringValue("1000mbps"))
+	csma.SetAttribute("Delay", TimeValue(Nanoseconds(6560)));
+
+	NetDeviceHelper csmaDevices = csma.Install(csmaNodes);
+
+	InternetStackHelper stack;
+	stack.Install()
+
+}
 ```
