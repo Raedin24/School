@@ -162,7 +162,13 @@ int main(int argc, char* argv[])
 	clientApp2.Stop(Seconds(10.0);	
 
 	// Additional Code for running NetAnim
-	AnimationInterface anim("anim.xml")
+	AnimationInterface anim("anim.xml");
+	anim.SetConstantPosition(nodes.Get(0), 1.0, 1.0);
+	anim.SetConstantPosition(nodes.Get(1), 3.0, 1.0);
+	anim.SetConstantPosition(nodes.Get(4), 2.0, 2.0);
+	anim.SetConstantPosition(nodes.Get(2), 1.0, 4.0);
+	anim.SetConstantPosition(nodes.Get(3), 3.0, 4.0);
+	anim.SetConstantPosition(nodes.Get(5), 2.0, 3.0);
 	
 	
 	Simulator::Run();
