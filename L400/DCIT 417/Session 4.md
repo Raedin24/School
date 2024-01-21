@@ -17,3 +17,10 @@ There are **5** ISO areas for network managements
 `Designed as an application layer protocol to allows monitoring of devices from different manufactures, installed on different physical networks`
 - **Manager** is a host that runs the SNMP client program
 - **Agent** is a router / host that runs the SNMP server program
+
+SNMP defines the format of packets exchanged b/n a manager and an agent.
+- Packets contain the *object (variable)*
+**SMI** defines the following:
+- Rules for naming objects
+- Object types
+- How to encode objects and values
