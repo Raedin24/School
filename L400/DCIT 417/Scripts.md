@@ -14,7 +14,16 @@ int main(int argc, char* argv[])
 	cmd.Parse(argc, argv);
 
 	Time::SetResolution(Time::NS);
-	LogComponentEnable("UdpEcho)
+	LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO)
+	LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
+
+	NodeContainer nodes;
+	nodes.Create(2);
+
+	PointToPointHelper pointToPoint;
+	pointToPoint.SetAttribute("DataRate", StringValue("5mbps"));
+	pointToPoint.SetAttribute("Delay", StringValue("2ms));
+
 }
 ```
 
