@@ -8,7 +8,7 @@ Steps:
 6. Set base IP address
 7. Assign IP address to node devices
 8. Create UDP server, port 9
-9. Install server on application container
+9. Install server on application container. Start and stop
 10. Create UDP client and set ping attributes
 12. Install client on application container
 13. Start and end simulation
@@ -46,8 +46,16 @@ int main(int argc, char* argv[])
 	Ipv4AddressHelper address;
 	address.SetBase("10.1.1.10", "255.255.255.0")
 
-	Ipv4InterfaceContainer interfaces;
-	interfaces = address.Assign(devices)
+	Ipv4InterfaceContainer interfaces = address.Assign(devices);
+
+	UdpEchoServerHelper echoServer(9);
+
+	ApplicationContainer serverApps = echoServer.Install(nodes.Get(1));
+	echoServer.Start(Seconds(1.0));
+	echoServer.Stop(Seconds(10.0));
+
+	UdpEchoClientHelper echoClient(interfaces.GetAddress(1), 9);
+	UdpEcho
 
 }
 ```
