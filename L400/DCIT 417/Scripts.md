@@ -168,8 +168,7 @@ int main(int argc, char* argv[])
 	anim.SetConstantPosition(nodes.Get(4), 2.0, 2.0);
 	anim.SetConstantPosition(nodes.Get(2), 1.0, 4.0);
 	anim.SetConstantPosition(nodes.Get(3), 3.0, 4.0);
-	anim.SetConstantPosition(nodes.Get(5), 2.0, 3.0);
-	
+	anim.SetConstantPosition(nodes.Get(5), 2.0, 3.0);	
 	
 	Simulator::Run();
 	Simulator::Destroy();
@@ -177,3 +176,16 @@ int main(int argc, char* argv[])
 }
 ```
 
+
+# CSMA Network
+```cpp
+#include "ns3/applications-module.h"
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/csma-module.h"
+
+using namespace ns3;
+
+NS_LOG_COMPONENT_DEFINE()
+```
