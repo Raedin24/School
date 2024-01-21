@@ -32,7 +32,12 @@
 
 ## Components
 1. **NodeContainer** - A topology helper that provides a way to *create*, *manage* and *access* **Node** objects
-2. PointToPointHelper - Used to create a point-to-point link b/n no
+2. **PointToPointHelper** - Used to create a point-to-point link b/n nodes. Configure *PointToPointNetDevice*  and *PointToPointChannel*
+3. **NetDeviceContainer** - Used to connect two **netdevices**
+4. **InternetStackHelper** - Used to install internet protocols in the nodes. Protocols include *TCP*, *UDP*, *IP* etc
+5. **Ipv4AddressHelper** - Used to manage the allocation of IP addresses
+6. **Ipv4InterfaceContainer** - Used to perform address assignment
+7. **Application Package** - Used to simulate the generation and transmission of data packets. Supports **TCP*** and **UDP** traffic
 ## Simulation Workflow
 1. Command Line Arguments
 2. Set Attribute Values and Random Seed
