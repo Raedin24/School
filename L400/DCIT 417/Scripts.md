@@ -73,3 +73,101 @@ int main(int argc, char* argv[])
 
 
 # Multi Point-To-Point Network
+```cpp
+#include "ns3/applications-module.h"
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+
+using namespace ns3;
+
+NS_LOG_COMPONENT_DEFINE("first");
+
+int main(int argc, char* argv[])
+{
+	// Command line
+	CommandLine cmd(__FILE__);
+	cmd.Parse(argc, argv);
+	
+	Time::SetResolution(Time::NS);
+	LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
+	LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
+	
+	// Create nodes
+	NodeContainer nodes;
+	nodes.Create(6);
+	NodeContainer n0n4 = NodeContainer(nodes.Get(0), nodes.Get(4);
+	NodeContainer n1n4 = NodeContainer(nodes.Get(1), nodes.Get(4);
+	NodeContainer n2n5 = NodeContainer(nodes.Get(2), nodes.Get(5);	
+	NodeContainer n3n5 = NodeContainer(nodes.Get(3), nodes.Get(5);	
+	NodeContainer n4n5 = NodeContainer(nodes.Get(4), nodes.Get(5);	
+	
+	// Point-to-Point
+	PointToPointHelper p2p;
+	p2p.SetAttributes("DataRate", StringValue("5mbps");
+	p2p.SetAttributes("Delay", StringValue("2ms");
+	
+	// NetDevice
+	NetDeviceContainer d0d4 = p2p.Install(n0n4);
+	NetDeviceContainer d1d4 = p2p.Install(n1n4);	
+	NetDeviceContainer d2d5 = p2p.Install(n2n5);
+	NetDeviceContainer d3d5 = p2p.Install(n3n5);
+	NetDeviceContainer d4d5 = p2p.Install(n4n5);
+	
+	Ipv4AddressHelper address;
+	
+	address.SetBase("10.1.1.0", "255.255.255.0");
+	Ipv4InterfaceContainer i0i4 = address.Assign(d0d4);
+	
+	address.SetBase("10.1.2.0", "255.255.255.0");
+	Ipv4InterfaceContainer i1i4 = address.Assign(d1d4);
+
+	address.SetBase("10.1.3.0", "255.255.255.0");
+	Ipv4InterfaceContainer i2i5 = address.Assign(d2d5);
+	
+	address.SetBase("10.1.4.0", "255.255.255.0");
+	Ipv4InterfaceContainer i3i5 = address.Assign(d3d5);	
+	
+	address.SetBase("10.1.5.0", "255.255.255.0");
+	Ipv4InterfaceContainer i4i5 = address.Assign(d4d5);	
+	
+	UdpEchoServerHelper echoServer1(9);
+	UdpEchoServerHelper echoServer2(10);
+	
+	ApplicationContainer serverApp1 = echoServer1.Install(nodes.Get(4);
+	serverApp1.Start(Seconds(1.0));
+	serverApp1.Start(Seconds(10.0));
+	
+	Application Container serverApp2 = echoServer2.Install(nodes.Get(5);
+	serverApp2.Start(Seconds(1.0));
+	serverApp2.Stop(Seconds(10.0));
+	
+	UdpEchoClientHelper echoClient1(i4i5.GetAddress(0), 9);
+	echoClient1.SetAttribute("MaxPackets", UintegerValue(4));
+	echoClient1.SetAttribute("Interval", TimeValue(Seconds(1.0));
+	echoClient1.SetAttribute("PacketSize", UintegerValue(1024));
+	
+	UdpEchoClientHelper echoClient2(i4i5.GetAddress(1), 10);
+	echoClient2.SetAttribute("MaxPackets", UintegerValue(4));
+	echoClient2.SetAttribute("Interval", TimeValue(Seconds(1.0));
+	echoClient2.SetAttribute("PacketSize", UintegerValue(1024));
+	
+	ApplicationContainer clientApp1 = echoClient1.Install(nodes.Get(0));
+	clientApp1.Start(Seconds(2.0);
+	clientApp1.Stop(Seconds(10.0);
+	
+	ApplicationContainer clientApp2 = echoClient2.Install(nodes.Get(2));
+	clientApp2.Start(Seconds(2.0);
+	clientApp2.Stop(Seconds(10.0);	
+
+	// Additional Code for running NetAnim
+	AnimationInterface anim("anim.xml")
+	
+	
+	Simulator::Run();
+	Simulator::Destroy();
+	return 0;
+}
+```
+
