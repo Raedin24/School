@@ -7,7 +7,11 @@ Steps:
 5. Install internet protocols on nodes
 6. Set base IP address
 7. Assign IP address to node devices
-8. Create and UDP server
+8. Create UDP server, port 9
+9. Install server on application container
+10. Create UDP client and set ping attributes
+12. Install client on application container
+13. Start and end simulation
 ```cpp
 #include "ns3/core-module.h"
 #include "ns3/point-to-point-module.h"
@@ -36,7 +40,14 @@ int main(int argc, char* argv[])
 	NetDeviceContainer devices;
 	devices = pointToPoint.Install(devices);
 
-	InternetStack
+	InternetStackHelper stack;
+	stack.Install(devices)
+
+	Ipv4AddressHelper address;
+	address.SetBase("10.1.1.10", "255.255.255.0")
+
+	Ipv4InterfaceContainer interfaces;
+	interfaces = address.Assign(devices)
 
 }
 ```
