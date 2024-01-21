@@ -19,8 +19,10 @@ There are **5** ISO areas for network managements
 - **Agent** is a router / host that runs the SNMP server program
 
 SNMP defines the format of packets exchanged b/n a manager and an agent.
-- Packets contain the *object (variable)*
+- Packets contain the *object (variable)* and *status (value)*
 **SMI** defines the following:
 - Rules for naming objects
 - Object types
 - How to encode objects and values
+`SMI only defines the rules, not how objects are managed`
+**MIB** creates and maintains a collection of named objects, their types and their relationship to each other
