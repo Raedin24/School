@@ -30,4 +30,16 @@
 2. Computationally expensive for large systems
 3. Might be slow
 
+## Components
+1. **NodeContainer** - A topology helper that provides a way to *create*, *manage* and *access* **Node** objects
+2. PointToPointHelper - Used to create a point-to-point link b/n no
 ## Simulation Workflow
+1. Command Line Arguments
+2. Set Attribute Values and Random Seed
+3. Create Nodes
+4. Create Point-to-Point Links
+5. Install the link in nodes
+6. Install Communication Protocol stack
+7. Add and configure Logical Topology
+8. Add and configure Applications
+9. Run and End the Simulation
