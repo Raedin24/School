@@ -1,4 +1,4 @@
-Task 1
+`Task 1`
 
 MANET Routing Protocols
 
@@ -42,13 +42,11 @@ Routes are dynamically maintained using Route Reply (RREP) and Route Error (RERR
 2. Local Repair: Enable nodes to proactively discover alternate paths within their vicinity when receiving RERRs, minimising route re-discovery overhead and delays.
     
 3. Mobility Prediction: Utilise mobility prediction techniques to anticipate node movement and proactively update routes before link breakage, reducing delays and packet loss.
-    
+
 
  
 
- 
-
-Destination-Sequenced Distance Vector (DSDV)
+# Destination-Sequenced Distance Vector (DSDV)
 
 ## Route Discovery Process
 
@@ -65,12 +63,6 @@ DSDV uses periodic updates to maintain routing tables. Nodes broadcast updates w
 2. Zone Routing: Partition the network into zones for localised routing within zones and summary routing between zones, optimising traffic and scalability in large networks.
     
 3. Hybrid Routing: Combine DSDV's loop-free properties with proactive updates from lightweight protocols like OLSR to maintain consistent routing information while reducing control traffic.
-    
-
- 
-
- 
-
  
 
  
@@ -91,41 +83,31 @@ Klein-Berndt, L. (n.d.). _A Quick Guide to AODV Routing_. Retrieved December 15,
 
  
 
-Task 2
+`Task 2`
 
 # Improvements to LEACH Protocol
 
 The Low-Energy Adaptive Clustering Hierarchy (LEACH) protocol is a hierarchical protocol where the majority of the nodes transmit their packets to a cluster head, and the cluster heads aggregate the data and forwards it to the base station. Nodes are chosen at random to become cluster heads at each round of transmission (Wikipedia Contributors, 2023). This report reviews five papers with proposed improvements to the LEACH protocol.
 
 1. # **Improved LEACH Protocol for Wireless Sensor Networks** (Kumar & Kaur, 2011):  This paper focuses on the energy usage requirement of the original LEACH protocol. It proposed two main changes:
-    
-2. Residual Energy Selection - I-LEACH selects nodes to become cluster heads based on the node’s residual energy, instead of probability or random selection as used in LEACH.
-    
-3. Distance-based Clustering - Clusters are formed based on coordinates and node locations. This guarantees that a cluster head is within reasonable distance to every sensor node, minimising long-distance transmissions and energy consumption.
-    
-
+    - Residual Energy Selection - I-LEACH selects nodes to become cluster heads based on the node’s residual energy, instead of probability or random selection as used in LEACH.
+    - Distance-based Clustering - Clusters are formed based on coordinates and node locations. This guarantees that a cluster head is within reasonable distance to every sensor node, minimising long-distance transmissions and energy consumption.
 Results from the paper show that I-LEACH improves the network lifespan, going 171 more rounds, and is 15% more energy efficient
 
  
 
-4. **LEACH-A: An adaptive method for improving leach protocol** (Zhao & Yang, 2014): This paper proposed an adaptive routing protocol with an energy threshold E0. A cluster head is selected from among the nodes whose residual energy is greater than E0, based on which node has the greatest energy. This ensures that nodes with higher energy reserves are more likely to become a cluster head, balancing the energy load distribution
-    
-
-LEACH-A has a 20-30% increase in network lifetime as compared to LEACH, especially in simulations with varying node energy levels.
-
+2. **LEACH-A: An adaptive method for improving leach protocol** (Zhao & Yang, 2014): This paper proposed an adaptive routing protocol with an energy threshold E0. A cluster head is selected from among the nodes whose residual energy is greater than E0, based on which node has the greatest energy. This ensures that nodes with higher energy reserves are more likely to become a cluster head, balancing the energy load distribution
+	LEACH-A has a 20-30% increase in network lifetime as compared to LEACH, especially in simulations with varying node energy levels.
  
 
-5. **LEACH-B: An Improved LEACH Protocol for Wireless Sensor Networks (**Mu & Tang, 2010**):** With the LEACH-Balanced, the first selection of cluster heads is done according to the original LEACH protocol. However, a second selection is done to modify the number of cluster heads, based on the node’s energy levels. This allows the energy within each cluster to be maintained at a near-optimal state.
-    
+3. **LEACH-B: An Improved LEACH Protocol for Wireless Sensor Networks (**Mu & Tang, 2010**):** With the LEACH-Balanced, the first selection of cluster heads is done according to the original LEACH protocol. However, a second selection is done to modify the number of cluster heads, based on the node’s energy levels. This allows the energy within each cluster to be maintained at a near-optimal state.
 
- 
 
-6. **An improvement on LEACH protocol (Cell-LEACH)** (Yektaparast et al, 2014)**:** This approach introduces a cellular structure to the network, dividing it into smaller cells with dedicated cluster heads. Nodes within a cell communicate directly with their designated cluster head, minimising hops and energy consumption. Cell-LEACH also incorporates a dynamic cluster head selection mechanism based on residual energy.
-    
-7. # **An improvement on LEACH protocol (EZ-LEACH)** (Salmabadi et al, 2015)**:** EZ-LEACH focuses on simplifying the LEACH protocol to reduce computational complexity and overhead. It utilises a static cluster head selection based on node IDs, eliminating the need for dynamic calculations and message exchanges. Additionally, EZ-LEACH employs data aggregation and compression at cluster heads, similar to LEACH-B.
-    
+4. **An improvement on LEACH protocol (Cell-LEACH)** (Yektaparast et al, 2014)**:** This approach introduces a cellular structure to the network, dividing it into smaller cells with dedicated cluster heads. Nodes within a cell communicate directly with their designated cluster head, minimising hops and energy consumption. Cell-LEACH also incorporates a dynamic cluster head selection mechanism based on residual energy.
 
-# While EZ-LEACH exhibits slightly lower network lifetime compared to other enhanced protocols (approximately 5-10% improvement over LEACH), its simplicity and reduced overhead make it attractive for resource-constrained sensor nodes
+
+5. **An improvement on LEACH protocol (EZ-LEACH)** (Salmabadi et al, 2015)**:** EZ-LEACH focuses on simplifying the LEACH protocol to reduce computational complexity and overhead. It utilises a static cluster head selection based on node IDs, eliminating the need for dynamic calculations and message exchanges. Additionally, EZ-LEACH employs data aggregation and compression at cluster heads, similar to LEACH-B.
+	While EZ-LEACH exhibits slightly lower network lifetime compared to other enhanced protocols (approximately 5-10% improvement over LEACH), its simplicity and reduced overhead make it attractive for resource-constrained sensor nodes
 
  
 
