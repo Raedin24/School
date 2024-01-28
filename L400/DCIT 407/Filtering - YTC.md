@@ -120,5 +120,14 @@ colormap('gray')
 ![[Pasted image 20240128235414.png]]
 ```cpp
 A = imread('image.tif');
-k = 
+k = fspecial('laplacian', [10 0], 3.0); #Create a 3*3 Laplacian filter
+B = imfilter(A, h); #Filter image with Laplacian kernel
+C = imsubtract(A, B); #Subtract Laplacian from original
+subplot(1,3,1), imshow(A);
+subplot(1,3,2), imagesc(B); axis image; axis off #Display original
+subplot(1,3,3), imshow(C); #Display enhanced image
 ```
+
+**Unsharp mask filter**
+- Alternative edge enhancement filter to Laplacian
+- Subtracts a *smoothed (unsharp)*  version of an image from the original
