@@ -91,11 +91,21 @@ subplot(2,2,4), imshow(IEs);
 **Laplacian Edge Detection**
 ![[Pasted image 20240128234051.png]]
 ```cpp
-I = rgb2gray(imread('image.png'))
-
+I = rgb2gray(imread('image.png')); #Read image in grayscale
+k = fspecial('laplacian'); #Create laplacian filter
+IEI = imfilter(double(I), k, 'symmetric');
+subplot(1,2,1), imagesc(I);
+subplot(1,2,2), imagesc(IEI);
+colormap('gray');
 ```
 **Zero-crossing detector**
 - Used to locate pixels at which Laplacian passes through zero
 - Has to be used on an image previously filtered using the **LoG** filter to overcome noise
 - Strongly influence by the size of the Gaussian filter used for smoothing
-- 
+```cpp
+I = rgb2gray(imread('image.png'));
+k = fspecial('log', [10 10], 3.0); #Create Log filter
+IEzc = edge(I, 'zerocross', [], k); #Zero crossing edges \auto threshold)
+subplot(1,2,1), imshow()
+
+```
