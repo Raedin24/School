@@ -71,9 +71,20 @@ Most common are
 - Fast to compute due to small number of kernels, but sensitive to noise
 **Prewitt / Sobel**
 - Preferred to **Roberts**
-- **Sobel** kernel implements *differentiation*  in one direction and *Gaussian averaging*  in the other.
+- **Sobel** kernel implements *differentiation*  in one direction and *Gaussian averaging*  in the other. Main difference between Sobel and Prewitt
 - This smooths the edge region reducing the effect of noise on the filter response
 - Sobel and Prewitt filters are *linearly separable filters*  - meaning they can be expressed as the matrix product of a *column vector*  and *row vector*.
 - `Basically, they're matrices`
+
+```cpp
+I = imread('circuit.tif'); #Read image
+IEr = edge(I, 'roberts'); #Roberts edge
+IEp = edge(I, 'prewitt'); #Prewitt edge
+IEs = edge(I, 'sobel'); #Sobel edge
+subplot(2,2,1), imshow(I);
+subplot(2,2,2), imshow(IEr);
+subplot(2,2,3), imshow(IEp);
+subplot(2,2,4), imshow(IEs);
+```
 
 ## Second-order Edge Detection
