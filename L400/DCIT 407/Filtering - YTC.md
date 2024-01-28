@@ -90,6 +90,8 @@ subplot(2,2,4), imshow(IEs);
 ## Second-order Edge Detection
 **Laplacian Edge Detection**
 ![[Pasted image 20240128234051.png]]
+- Only responds to fine detail. ie. when there is significant change in gradient
+- Has zero response to constant region and regions of smooth gradient change
 ```cpp
 I = rgb2gray(imread('image.png')); #Read image in grayscale
 k = fspecial('laplacian'); #Create laplacian filter
@@ -106,6 +108,17 @@ colormap('gray');
 I = rgb2gray(imread('image.png'));
 k = fspecial('log', [10 10], 3.0); #Create Log filter
 IEzc = edge(I, 'zerocross', [], k); #Zero crossing edges \auto threshold)
-subplot(1,2,1), imshow()
+subplot(1,2,1), imshow(I);
+subplot(1,2,2), imshow(IEzc);
+colormap('gray')
+```
 
+## Edge Enhancement
+- Commonly known as *image sharpening*
+**Laplacian edge sharpening**
+- By taking the original image and adding or subtracting the Laplacian, fine detail in the image can be enhanced
+![[Pasted image 20240128235414.png]]
+```cpp
+A = imread('image.tif');
+k = 
 ```
