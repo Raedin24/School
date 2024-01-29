@@ -130,4 +130,8 @@ subplot(1,3,3), imshow(C); #Display enhanced image
 
 **Unsharp mask filter**
 - Alternative edge enhancement filter to Laplacian
-- Subtracts a *smoothed (unsharp)*  version of an image from the original
+- Subtracts a *smoothed (unsharp)*  version of an image from the original to enhance the high-frequency info
+![[Pasted image 20240129000233.png]]
+- Smoothed version is usually obtained from **Mean** or **Gaussian** filtering.
+- The difference image is added to the original to obtained a sharpened image
+![[Pasted image 20240129000444.png]]
