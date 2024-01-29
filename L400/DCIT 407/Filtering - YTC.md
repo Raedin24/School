@@ -135,3 +135,9 @@ subplot(1,3,3), imshow(C); #Display enhanced image
 - Smoothed version is usually obtained from **Mean** or **Gaussian** filtering.
 - The difference image is added to the original to obtained a sharpened image
 ![[Pasted image 20240129000444.png]]
+```cpp
+I = imread('image.tif');
+g = fspecial('gaussian', [5 5], 1.5); #Generate Gaussian kernel
+Is = imfilter(I, g); #Create smoothed image
+Ie = I - Is
+```
