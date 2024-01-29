@@ -139,5 +139,9 @@ subplot(1,3,3), imshow(C); #Display enhanced image
 I = imread('image.tif');
 g = fspecial('gaussian', [5 5], 1.5); #Generate Gaussian kernel
 Is = imfilter(I, g); #Create smoothed image
-Ie = I - Is
+Ie = I - Is #Get difference image
+lout = (I+0.3), *Ie; #Add k* difference image to original
+subplot(2,3,3), imshow(lout);
 ```
+
+## Convolution Theorem
