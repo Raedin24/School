@@ -145,3 +145,7 @@ subplot(2,3,3), imshow(lout);
 ```
 
 ## Convolution Theorem
+- The process of physical measurement with an imperfect instrument can be described as **convolution**
+- The **Fourier transform** of the convolution of two function is equal to the product of the individual transforms
+- The Fourier transform of the product of two functions is equal to the convolution of their individual functions (vice versa)
+- The most widely used measure of quality/fidelity of a *linear shift-invariant imaging system* is the **OTF**
