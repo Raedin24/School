@@ -38,3 +38,7 @@ OSPF messages are used to create and maintain *3* OSPF databases
 ### Multiarea OSPF
 1. Smaller routing table
 2. Reduces link-state update overhead
+3. Reduces frequency of SPF calculations
+
+
+# 1.2 OSPF Packets
