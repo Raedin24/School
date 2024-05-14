@@ -20,5 +20,12 @@ OSPF messages are used to create and maintain *3* OSPF databases
 | ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------- |
 | Adjacency Database       | Neighbor Table   | - Lists all neighbor routers with bi-directional comms. Unique for each router. `ip ospf neghbor` |
 | Link-State Databse(LSDB) | Topology Table   | - Lists info about all other routers in network. All routers in an area have identical LSDB.      |
-|                          | Forwarding Table |                                                                                                   |
-- Topology table is built using Dijkstra's algorithm
+| Forwarding Database      | Forwarding Table |                                                                                                   |
+- Topology table is built using Dijkstra's SPF algorithm
+
+## Link-State Operation
+1. Establish Neighbor Adjacencies
+2. Exchange Link-State Advertisements
+3. Build link state database
+4. Execute the SPF algo
+5. Choose the best route
