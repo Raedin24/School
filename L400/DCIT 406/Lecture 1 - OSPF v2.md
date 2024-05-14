@@ -29,3 +29,12 @@ OSPF messages are used to create and maintain *3* OSPF databases
 3. Build link state database
 4. Execute the SPF algo
 5. Choose the best route
+
+## Single and Multiarea OSPF
+- OSPF supports hierarchical routing using areas.
+- An OSPF area is a group of routers that share the same link-state info in their LSDB
+> Networks are usually connected to the ISP through area 0
+
+### Multiarea OSPF
+1. Smaller routing table
+2. Reduces link-state update overhead
