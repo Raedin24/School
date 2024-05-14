@@ -14,4 +14,11 @@ OSPF uses *5*  types of packets
 4. Link-state update
 5. Link-state acknowledgment
 
-OSPF messages are used to create and maintain 3 OSPF databases
+OSPF messages are used to create and maintain *3* OSPF databases
+
+| Database                 | Table            | Description                                                                                       |
+| ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------- |
+| Adjacency Database       | Neighbor Table   | - Lists all neighbor routers with bi-directional comms. Unique for each router. `ip ospf neghbor` |
+| Link-State Databse(LSDB) | Topology Table   | - Lists info about all other routers in network. All routers in an area have identical LSDB.      |
+|                          | Forwarding Table |                                                                                                   |
+- Topology table is built using Dijkstra's algorithm
