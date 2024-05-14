@@ -42,3 +42,8 @@ OSPF messages are used to create and maintain *3* OSPF databases
 
 
 # 1.2 OSPF Packets
+
+
+```
+
+```
