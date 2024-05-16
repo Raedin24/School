@@ -9,3 +9,5 @@
 ## Intrusion Detection Systems (IDS)
 - Designed to monitor network/system activities for malicious/suspicious behaviour
 - Works by analyzing incoming and outgoing traffic and system logs
+### Terminologies
+1. **Alert, Alarm** - Notification generated to indicate the detection of suspicious activity
