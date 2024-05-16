@@ -13,4 +13,9 @@ A series of **documented processes** that define how to **implement, manage and 
 	- Special Publications (*SP*)
 - **Internet Society (ISOC)** - Addresses issues about the future of the Internet
 - **International Telecommunication Union (ITU-T)** - Produces standards covering all fields of telecommunications. Standards are referred to as *Recommendations*
-- **International Organization for Standardization (ISO)**
+- **International Organization for Standardization (ISO)** - Worldwide federation of national standards bodies.
+
+## Threats to Network and System Security
+- **Malware** - Software designed to infiltrate
+- **Phishing** - Tactics used to trick individuals into divulging confidential info
+- **Denial of Service (DoS)** and **Distributed Denial of Service (DDOS)** - Coordinated efforts to overwhelm network resources
