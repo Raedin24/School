@@ -8,4 +8,7 @@ Ensures
 A series of **documented processes** that define how to **implement, manage and monitor** security controls
 - **Ghana Cybersecurity Act** - Act No. *1038 of 202* . Concerned with development of cybersecurity
 - **Data Protection Act** - Protects individuals' privacy and personal data by regulating the processing of personal information
-- **National I**
+- **National Institute of Standards and Technology(NIST)** - A U.S. federal agency. Deals with measurement science, standards and tech related to government use and promotion of private-sector innovation. Developed the
+	- Federal Information Processing Standards (*FIPS*)
+	- Special Publications (*SP*)
+- **Internet Society(ISOC)** - 
