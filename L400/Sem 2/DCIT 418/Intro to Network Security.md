@@ -59,3 +59,4 @@ Implemented through:
 ## Security Technologies
 **Firewalls** monitor and control incoming and outgoing traffic based on predefined security rules
 **Intrusion Detection Systems (IDS)** analyze network traffic for suspicious patterns or anomalies.
+**Virtual Private Networks** enable secu
