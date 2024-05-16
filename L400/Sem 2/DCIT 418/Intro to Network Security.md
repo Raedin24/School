@@ -64,4 +64,4 @@ Implemented through:
 	- *Site-to-Site VPNs* - Secure connections b/n geographically dispersed networks or sites
 **Network Access Control (NAC)**  ensures only authorized devices/users can access network resources
 	- *Policy Enforcement* - Enforces security policies for access control based on ***user identity, device type, compliance status***
-	- *Endpoint Security* - Assess 
+	- *Endpoint Security* - Assesses the security posture of devices trying to access the network
