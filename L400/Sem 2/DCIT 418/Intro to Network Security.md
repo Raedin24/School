@@ -52,4 +52,6 @@ Essential for safeguarding data transmission over networks
 Implemented through:
 1. **Passwords** - Traditional authentication method. Uses secret credentials known only to authorized users
 2. **Multi-Factor Authentication (MFA)** - Requires multiple forms of authentication (eg passwords, biometrics etc)
-3. **Access Control Models** - Defines access permissions based on 
+3. **Access Control Models** - Defines access permissions based on roles, attributes, or policies
+4. **Peer entity authentication** - Two entities are considered peers if they implement the same protocol in different systems.Provides corroboration of the identity of a peer entity in an 
+5. **Data origin authentication** - 
