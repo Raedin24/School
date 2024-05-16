@@ -44,4 +44,12 @@ A series of **documented processes** that define how to **implement, manage and 
 ## Secure Network Protocols
 Essential for safeguarding data transmission over networks
 1. **Secure Layer / Transport Layer Security (SSL/TLS)** - Encrypts data exchanged between web servers and clients
-2. **Internet Protocol Secur**
+2. **Internet Protocol Security (IPSec)** - Secures communication at the IP layer, enable VPNs and secure data transmission
+3. **Secure Shell (SSH)** - Secures remote access and command execution on network devices
+## Authentication and Authorization
+**Authentication** - Verifies the identity of users/devices
+**Authorization** - Determines the level of access
+Implemented through:
+1. **Passwords** - Traditional authentication method. Uses secret credentials known only to authorized users
+2. **Multi-Factor Authentication (MFA)** - Requires multiple forms of authentication (eg passwords, biometrics etc)
+3. **Access Control Models** - Defines access permissions based on 
