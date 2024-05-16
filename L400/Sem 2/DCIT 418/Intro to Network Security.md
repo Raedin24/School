@@ -39,4 +39,9 @@ A series of **documented processes** that define how to **implement, manage and 
 **Cryptography** is used to facilitate secure comms and data protection through *encryption* and *decryption* processes.
 1. **Symmetric Encryption** - Uses a single shared key for both encryption and decryption
 2. **Asymmetric Encryption** - Uses a pair of keys (*public* and *private*)  for encryption and decryption
-3. **Digital Signatures** - Verifying the authenticity and integri
+3. **Digital Signatures** - Verifying the authenticity and integrity of digital messages
+
+## Secure Network Protocols
+Essential for safeguarding data transmission over networks
+1. **Secure Layer / Transport Layer Security (SSL/TLS)** - Encrypts data exchanged between web servers and clients
+2. **Internet Protocol Secur**
