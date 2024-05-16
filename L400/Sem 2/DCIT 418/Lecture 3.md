@@ -11,3 +11,6 @@
 - Works by analyzing incoming and outgoing traffic and system logs
 ### Terminologies
 1. **Alert, Alarm** - Notification generated to indicate the detection of suspicious activity
+2. **False Negative** - No problem detected, when there's a problem
+3. **False Positive** - Problem detected, when there's no problem
+4. **Confidence Value** - Represents the 
