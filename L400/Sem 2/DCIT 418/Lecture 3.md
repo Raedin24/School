@@ -18,4 +18,6 @@
 
 ### Uses of an IDS
 1. Detects attacks
-2. 
+2. Detects and deals with preambles to attacks
+3. Documents existing threats
+4. Provides info about intrusions that occur
