@@ -22,6 +22,13 @@ A series of **documented processes** that define how to **implement, manage and 
 - **Insider Threats** - Malicious activities carried out by individuals with authorized access
 
 ## Principles of Network Security
-1. **Confidentiality** - Ensuring sensitive info is only accessible by authorized individuals/systems
+1. **Confidentiality** - Ensuring sensitive info is only accessible by *authorized individuals/systems*
 2. **Integrity** - Maintaining the *accuracy*, *consistency* and *trustworthiness* of data throughout its lifecyclye
-3. **Availability** - Ensuring services and resources are *accessible*  an
+3. **Availability** - Ensuring services and resources are *accessible*  and *usable* when needed
+
+## CIA Triad
+- A security model designed to help organizations develop security policies to keep their sensitve data secure
+- Consists of the principles mentioned above
+![[Pasted image 20240516105015.png]]
+- Two additional concepts are added by some security experts
+	- **Authenticity** - Being genuine and verifiable.
