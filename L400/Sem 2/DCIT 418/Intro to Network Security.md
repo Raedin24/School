@@ -31,4 +31,5 @@ A series of **documented processes** that define how to **implement, manage and 
 - Consists of the principles mentioned above
 ![[Pasted image 20240516105015.png]]
 - Two additional concepts are added by some security experts
-	- **Authenticity** - Being genuine and verifiable.
+	- **Authenticity** - Being genuine and verifiable. ie. confidence in the validity of a transmission, message or message originator
+	- **Accountability** - Actions of an entity should be traced uniquely to that entity. Supports *nonrepudation*, *deterrence*, *fault isolation*, *intrusion detection and prevention*
