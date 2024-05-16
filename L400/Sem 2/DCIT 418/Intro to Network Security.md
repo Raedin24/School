@@ -11,4 +11,5 @@ A series of **documented processes** that define how to **implement, manage and 
 - **National Institute of Standards and Technology(NIST)** - A U.S. federal agency. Deals with measurement science, standards and tech related to government use and promotion of private-sector innovation. Developed the
 	- Federal Information Processing Standards (*FIPS*)
 	- Special Publications (*SP*)
-- **Internet Society(ISOC)** - 
+- **Internet Society(ISOC)** - Addresses issues about the future of the Internet
+- **International Telecommunication Union(ITU-T)** - Produces standards covering all fields of telecommunications. Standards are referred to as *Recommendations*
