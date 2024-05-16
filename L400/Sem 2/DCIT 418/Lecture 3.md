@@ -5,3 +5,7 @@
 - **Intrusion reaction** - Actions taken upon detecting intrusion
 - **Intrusion correction** - Restoring normal operations
 - **Intrusion prevention** - Actions to proactively deter intrusions
+
+## Intrusion Detection Systems (IDS)
+- Designed to monitor network/system activities for malicious/suspicious behaviour
+- Works by analyzing incoming and outgoing traffic and system logs
