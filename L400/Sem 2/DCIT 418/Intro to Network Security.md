@@ -56,6 +56,6 @@ Implemented through:
 4. **Peer entity authentication** - Two entities are considered peers if they implement the same protocol in different systems.Provides corroboration of the identity of a peer entity in an association
 5. **Data origin authentication** - Provides corroboration of the source of a data unit. Does not provide protection against duplication or modification of data units. eg. email
 
-## Firewalls and IDS
+## Security Technologies
 **Firewalls** monitor and control incoming and outgoing traffic based on predefined security rules
 **Intrusion Detection Systems (IDS)** analyze network traffic for suspicious patterns or anomalies.
