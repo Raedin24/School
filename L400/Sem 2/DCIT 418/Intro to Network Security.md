@@ -59,4 +59,9 @@ Implemented through:
 ## Security Technologies
 **Firewalls** monitor and control incoming and outgoing traffic based on predefined security rules
 **Intrusion Detection Systems (IDS)** analyze network traffic for suspicious patterns or anomalies.
-**Virtual Private Networks** enable secu
+**Virtual Private Networks** enable secure comms over public networks by creating encrypted tunnels b/n endpoints
+	- *Remote Access VPNs* - Allows remote users to securely connect to a private network from remote locations
+	- *Site-to-Site VPNs* - Secure connections b/n geographically dispersed networks or sites
+**Network Access Control (NAC)**  ensures only authorized devices/users can access network resources
+	- *Policy Enforcement* - Enforces security policies for access control based on ***user identity, device type, compliance status***
+	- *Endpoint Security* - Assess 
