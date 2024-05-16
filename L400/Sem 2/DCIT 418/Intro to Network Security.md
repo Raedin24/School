@@ -57,5 +57,5 @@ Implemented through:
 5. **Data origin authentication** - Provides corroboration of the source of a data unit. Does not provide protection against duplication or modification of data units. eg. email
 
 ## Firewalls and IDS
-**Firewalls** monitor and control incoming and outgoing traffic
+**Firewalls** monitor and control incoming and outgoing traffic based on predefined security rules
 **Intrusion Detection Systems (IDS)** analyze network traffic for suspicious patterns or anomalies.
