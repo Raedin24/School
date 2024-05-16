@@ -19,3 +19,9 @@ A series of **documented processes** that define how to **implement, manage and 
 - **Malware** - Software designed to infiltrate
 - **Phishing** - Tactics used to trick individuals into divulging confidential info
 - **Denial of Service (DoS)** and **Distributed Denial of Service (DDOS)** - Coordinated efforts to overwhelm network resources
+- **Insider Threats** - Malicious activities carried out by individuals with authorized access
+
+## Principles of Network Security
+1. **Confidentiality** - Ensuring sensitive info is only accessible by authorized individuals/systems
+2. **Integrity** - Maintaining the *accuracy*, *consistency* and *trustworthiness* of data throughout its lifecyclye
+3. **Availability** - Ensuring services and resources are *accessible*  an
