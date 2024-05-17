@@ -28,13 +28,14 @@ OSPF uses *5*  types of packets to discover neighbour routers and exchange routi
 
 OSPF messages are used to create and maintain *3*  OSPF databases
 
-| Database                 | Table          | Description                                                                                       |
-| ------------------------ | -------------- | ------------------------------------------------------------------------------------------------- |
-| Adjacency Database       | Neighbor Table | - Lists all neighbor routers with bi-directional comms. Unique for each router. `ip ospf neghbor` |
-| Link-State Databse(LSDB) | Topology Table | - Lists info about all other routers in network. All routers in an area have identical LSDB.      |
-| Forwarding Database      | Routing Table  |                                                                                                   |
-- Topology table is built using Dijkstra's SPF algorithm
-
+| Database                 | Table          | Description                                                                                                          |
+| ------------------------ | -------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Adjacency Database       | Neighbor Table | - Lists all neighbor routers with bi-directional comms. Unique for each router. `ip ospf neghbor`                    |
+| Link-State Databse(LSDB) | Topology Table | - Lists info about all other routers in network. All routers in an area have identical LSDB. `show ip ospf database` |
+| Forwarding Database      | Routing Table  | - Lists routes generated when an algorithm is run on the LSDB. Unique for each router. `show ip route`               |
+> Tables are stored in the RAM.
+> LSDB represents the network topology
+> Topology table is built using Dijkstra's SPF algorithm
 ## Link-State Operation
 1. Establish Neighbor Adjacencies
 2. Exchange Link-State Advertisements
