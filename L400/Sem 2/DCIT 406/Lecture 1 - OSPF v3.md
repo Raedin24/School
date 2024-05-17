@@ -14,6 +14,8 @@
 ## Components of OSPF
 > ACK packets are always exchanged before information exchange begins
 
+All routing protocols 
+
 OSPF uses *5*  types of packets
 1. Hello
 2. Database description
