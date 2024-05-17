@@ -12,24 +12,27 @@
 	- *Cost*
 
 ## Components of OSPF
-> ACK packets are always exchanged before information exchange begins
+All routing protocols have 3 main parts
+1. **Routing Protocol Messages** - Used to exchange route info
+2. **Data Structures** - Built using the messages exchanged
+3. **Routing Algorithm** - Used to process the data structures
 
-All routing protocols 
-
-OSPF uses *5*  types of packets
+OSPF uses *5*  types of packets to discover neighbour routers and exchange routing info
 1. Hello
 2. Database description
 3. Link-state request
 4. Link-state update
-5. Link-state acknowledgment
+5. Link-state acknowledgement
 
-OSPF messages are used to create and maintain *3* OSPF databases
+> ACK packets are always exchanged before information exchange begins
 
-| Database                 | Table            | Description                                                                                       |
-| ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------- |
-| Adjacency Database       | Neighbor Table   | - Lists all neighbor routers with bi-directional comms. Unique for each router. `ip ospf neghbor` |
-| Link-State Databse(LSDB) | Topology Table   | - Lists info about all other routers in network. All routers in an area have identical LSDB.      |
-| Forwarding Database      | Forwarding Table |                                                                                                   |
+OSPF messages are used to create and maintain *3*  OSPF databases
+
+| Database                 | Table          | Description                                                                                       |
+| ------------------------ | -------------- | ------------------------------------------------------------------------------------------------- |
+| Adjacency Database       | Neighbor Table | - Lists all neighbor routers with bi-directional comms. Unique for each router. `ip ospf neghbor` |
+| Link-State Databse(LSDB) | Topology Table | - Lists info about all other routers in network. All routers in an area have identical LSDB.      |
+| Forwarding Database      | Routing Table  |                                                                                                   |
 - Topology table is built using Dijkstra's SPF algorithm
 
 ## Link-State Operation
