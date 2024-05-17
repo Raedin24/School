@@ -16,15 +16,6 @@
 
 
 
-## Single and Multiarea OSPF
-- OSPF supports hierarchical routing using areas.
-- An OSPF area is a group of routers that share the same link-state info in their LSDB
-> Networks are usually connected to the ISP through area 0
-
-### Multiarea OSPF
-1. Smaller routing table
-2. Reduces link-state update overhead
-3. Reduces frequency of SPF calculations
 
 
 # 1.2 OSPF Packets
