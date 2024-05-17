@@ -2,7 +2,7 @@
 - Is a *link-state* routing protocol
 - Offers faster convergence and scales better to larger networks. **Convergence** is the rate at which information is being collected and shared
 - Uses the concept of **areas** , with routing domains being divided into distinct areas
-- A *link*  is an interface on a router, a network segment connecting two routers.
+- A *link*  is an interface on a router, a network segment connecting two routers, or
 
 ## Components of OSPF
 > ACK packets are always exchanged before information exchange begins
