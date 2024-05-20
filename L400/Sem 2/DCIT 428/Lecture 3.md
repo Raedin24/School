@@ -51,3 +51,7 @@ $$
 	- *Frequency Division Multiple Access* (*FDMA*) - Available bands are divided into slots for use by users, meaning there's a limit on how many can use it at one time. Used with *analog*  transmissions. Causes crosstalk/inteference
 	- *Time Division Multiple Access* (*TDMA*) - Whole band is given to a user, but they're only allowed a short period
 	- *Code Division Multiple Access* (*CDMA*) - Whole band is available for use at any time
+
+### Transmission Direction
+- **Simplex transmission** - Occurs in only one direction. Rarely used except in radio and TV
+- **Half-duplex transmission** - Sends data in both directions, but only one way at a time. eg walkie-talkies
