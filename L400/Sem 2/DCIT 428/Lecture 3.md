@@ -56,3 +56,13 @@ $$
 - **Simplex transmission** - Occurs in only one direction. Rarely used except in radio and TV
 - **Half-duplex transmission** - Sends data in both directions, but only one way at a time. eg .walkie-talkies
 - **Full-duplex** -Allows data to flow in both directions simultaneously by sending and receiving on different frequencies
+
+### Switching
+- Moving the signal from one wire / frequency to another
+**Circuit switching**
+	- Used by telephone systems
+	- Dedicated physical connection is made b/n caller and recipient
+**Packet switching**
+	- Used by data network
+	- Data is broken into packets, each packet sent independently
+	
