@@ -12,4 +12,4 @@ Used to remove unwanted RF signals
 #### Types of filters
 1. **Low-pass filter** - Max frequency is set and all signals below that value is allowed
 2. **High-pass filter** - Min frequency is set and all signals above that value is allowed
-3. **Bandpass filter** - 
+3. **Bandpass filter** - Sets a range called *passband*  and allows signals that fall within that range
