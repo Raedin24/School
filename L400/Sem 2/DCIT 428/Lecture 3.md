@@ -24,3 +24,10 @@
 - Used to combine two radio frequency inputs to create a single output
 - Resultant output is the range of the *highest sum* and *lowest difference* of the two frequencies
 - Resultant maximum signal is the combination of the higher frequency signal + the message frequency. 
+- *Sidebands* are created from this process (basically a spillover of the signal)
+- *Dark bands* are left in between radio signals to prevent them from interfering with each other
+
+#### Amplifier
+$$
+P_r 
+$$
