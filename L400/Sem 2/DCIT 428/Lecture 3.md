@@ -34,8 +34,9 @@
 	- Electricity is used to increase signal's intensity/strength
 - RF signals lose intensity(amplitude) by travelling through circuits, space
 $$
-P_r = k{frac(l,r^2})
+P_{\g} \propto {frac(l,r^2})
 $$
 
 #### Antennas
-- Used to transmit/
+- Used to transmit / receive an RF signal
+- *Antenna reciprocity*  refers to how a single antenna can be used to both transmit and receive signals.
