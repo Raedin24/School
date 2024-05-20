@@ -54,4 +54,5 @@ $$
 
 ### Transmission Direction
 - **Simplex transmission** - Occurs in only one direction. Rarely used except in radio and TV
-- **Half-duplex transmission** - Sends data in both directions, but only one way at a time. eg walkie-talkies
+- **Half-duplex transmission** - Sends data in both directions, but only one way at a time. eg .walkie-talkies
+- **Full-duplex** -Allows data to flow in both directions simultaneously by sending and receiving on different frequencies
