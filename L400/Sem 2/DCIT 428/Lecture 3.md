@@ -28,6 +28,14 @@
 - *Dark bands* are left in between radio signals to prevent them from interfering with each other
 
 #### Amplifier
+- Used to increase the amplitude of an RF signal
+- Is an active device
+	- Must be supplied with electricity
+	- Electricity is used to increase signal's intensity/strength
+- RF signals lose intensity(amplitude) by travelling through circuits, space
 $$
-P_r 
+P_r = k{frac(l,r^2})
 $$
+
+#### Antennas
+- Used to transmit/
