@@ -33,10 +33,21 @@
 	- Must be supplied with electricity
 	- Electricity is used to increase signal's intensity/strength
 - RF signals lose intensity(amplitude) by travelling through circuits, space
+- Formula to determine how much power remains after a certain distance
 $$
-P_{\g} \propto {frac(l,r^2})
+P_{\gamma} \propto P_r \frac{l}{r^2}
 $$
 
 #### Antennas
 - Used to transmit / receive an RF signal
 - *Antenna reciprocity*  refers to how a single antenna can be used to both transmit and receive signals.
+
+### Multiple Access
+- Needed because only a limited number of frequencies are available for radio transmission
+- Two types of access techniques
+	1. Contention-based
+	2. Contention-free
+- Methods that allow multiple access
+	- Frequency Division Multiple Access (FDMA) - Available bands are divided into slots for use by users, meaning there's a limit on how many 
+	- Time Division Multiple Access
+	- Code Division Multiple Access
