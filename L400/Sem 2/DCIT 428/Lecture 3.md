@@ -48,6 +48,6 @@ $$
 	1. Contention-based
 	2. Contention-free
 - Methods that allow multiple access
-	- Frequency Division Multiple Access (FDMA) - Available bands are divided into slots for use by users, meaning there's a limit on how many 
-	- Time Division Multiple Access
-	- Code Division Multiple Access
+	- *Frequency Division Multiple Access* (*FDMA*) - Available bands are divided into slots for use by users, meaning there's a limit on how many can use it at one time. Used with *analog*  transmissions. Causes crosstalk/
+	- *Time Division Multiple Access* (*TDMA*) - Whole band is given to a user, but they're only allowed a short period
+	- *Code Division Multiple Access* (*CDMA*) - Whole band is available for use at any time
