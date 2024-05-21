@@ -25,9 +25,23 @@ Networks are vulnerable to the ff types of attacks
 ### Social Engineering Attacks
 - An access attack that attempts to manipulate individuals into divulging info / performing actions
 
-| Technique      | Description |
-| -------------- | ----------- |
-| Pretexting     |             |
-| Spear Phishing |             |
-| Span           |             |
-| So             |             |
+| Technique               | Description                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------- |
+| Pretexting              | Pretends to need personal / financial data to confirm the identity of receipient |
+| Spear Phishing          |                                                                                  |
+| Spam                    | Tar                                                                              |
+| Something for Something |                                                                                  |
+| Baiting                 |                                                                                  |
+| Impersonation           |                                                                                  |
+| Tailgating              |                                                                                  |
+| Shoulder surfing        |                                                                                  |
+| Dumpster diving         |                                                                                  |
+| Phishing                | Sends fradulent email                                                            |
+
+### Dos and DDoS
+- Creates an interruption of network services
+- Two main types
+	1. Overwhelming Quantity of Traffic
+	2. Maliciously Formatted Packets
+
+# 3.
