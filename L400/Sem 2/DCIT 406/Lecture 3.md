@@ -15,4 +15,12 @@ Networks are vulnerable to the ff types of attacks
 | Perform info query           | Used to look for initial info about a target. Tools used include Google search, organization website, whois, etc      |
 | Ping sweep of target network | Used to reveal target network address and determine active IPs                                                        |
 | Port scan of active IPs      | Used to determine which ports / services are available. Tools used include Nmap, SuperScan, Angry IP Scanner, NetScan |
-| Run vulnerability scanners   |                                                                                                                       |
+| Run vulnerability scanners   | Query active ports to identify type and version of application and operating system of host.                          |
+| Run exploitation tools       |                                                                                                                       |
+### Access Attack
+- Exploits known vulnerabilites in authentication, FTP, and web services.
+- Used to retrieve data, gain access, or escalate access privileges.
+- **Password attack** - Attempt to discover critical system passwords.
+- **Spoofing attack** - IP Spoofing, MAC spoofing
+### Social Engineering Attacks
+- An access attack
