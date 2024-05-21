@@ -54,3 +54,5 @@ Networks are vulnerable to the ff types of attacks
 | Address spoofing attacks        | Threat actors create packets with false source IP address info. Classified into *blind* and *non-blind* spoofing.Non-blind allows one to see the traffic b/n host and target |
 | Man-in-the-middle attack (MITM) |                                                                                                                                                                              |
 | Session hijacking               |                                                                                                                                                                              |
+
+> ARP resolves MAC addresses to IP addresses. Works at Layer 2
