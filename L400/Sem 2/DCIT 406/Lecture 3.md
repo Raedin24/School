@@ -50,7 +50,7 @@ Networks are vulnerable to the ff types of attacks
 | IP Attack Techniques            | Description                                                                                       |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
 | ICMP attacks                    | Used for reconnaissance and scanning attacks. Preventable by using ICMP access control list (ACL) |
-| Amplification and reflection    |                                                                                                   |
+| Amplification and reflection    | Used to create DoS attacks. Newer forms are DNS-based and Network Time Protocol (NTP)             |
 | Address spoofing attacks        |                                                                                                   |
 | Man-in-the-middle attack (MITM) |                                                                                                   |
 | Session hijacking               |                                                                                                   |
