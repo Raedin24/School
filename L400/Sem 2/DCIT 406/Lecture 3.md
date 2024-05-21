@@ -8,4 +8,11 @@ Networks are vulnerable to the ff types of attacks
 ### Reconnaissance Attacks
 - Info gathering stage
 - Used by threat actors to perform unauthorized discovery and mapping of systems, services and vulnerabilities
-- Happens before 
+- Happens before access and DoS attacks
+
+| Technique                    | Description                                                                                                           |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Perform info query           | Used to look for initial info about a target. Tools used include Google search, organization website, whois, etc      |
+| Ping sweep of target network | Used to reveal target network address and determine active IPs                                                        |
+| Port scan of active IPs      | Used to determine which ports / services are available. Tools used include Nmap, SuperScan, Angry IP Scanner, NetScan |
+| Run vulnerability scanners   |                                                                                                                       |
