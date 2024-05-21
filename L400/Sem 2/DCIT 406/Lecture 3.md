@@ -47,10 +47,10 @@ Networks are vulnerable to the ff types of attacks
 # 3.6 IP Vulnerabilities and Threats
 - Possible because IP does not validate that the source IP in the packet is the actual source.
 
-| IP Attack Techniques            | Description |
-| ------------------------------- | ----------- |
-| ICMP attacks                    | Used for re |
-| Amplification and reflection    |             |
-| Address spoofing attacks        |             |
-| Man-in-the-middle attack (MITM) |             |
-| Session hijacking               |             |
+| IP Attack Techniques            | Description                                                                                       |
+| ------------------------------- | ------------------------------------------------------------------------------------------------- |
+| ICMP attacks                    | Used for reconnaissance and scanning attacks. Preventable by using ICMP access control list (ACL) |
+| Amplification and reflection    |                                                                                                   |
+| Address spoofing attacks        |                                                                                                   |
+| Man-in-the-middle attack (MITM) |                                                                                                   |
+| Session hijacking               |                                                                                                   |
