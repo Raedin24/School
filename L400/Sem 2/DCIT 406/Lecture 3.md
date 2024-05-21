@@ -56,5 +56,5 @@ Networks are vulnerable to the ff types of attacks
 | Session hijacking               |                                                                                                                                                                              |
 
 > ARP resolves  IP addresses to MAC addresses. Works at Layer 2
-> NAT resolves public IP addresses to private I
+> NAT resolves public IP addresses to private IPs.
 > DNS resolves domain names to IP addresses. 
