@@ -55,4 +55,6 @@ Networks are vulnerable to the ff types of attacks
 | Man-in-the-middle attack (MITM) |                                                                                                                                                                              |
 | Session hijacking               |                                                                                                                                                                              |
 
-> ARP resolves MAC addresses to IP addresses. Works at Layer 2
+> ARP resolves  IP addresses to MAC addresses. Works at Layer 2
+> NAT resolves public IP addresses to private I
+> DNS resolves domain names to IP addresses. 
