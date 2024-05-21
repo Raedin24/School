@@ -23,4 +23,11 @@ Networks are vulnerable to the ff types of attacks
 - **Password attack** - Attempt to discover critical system passwords.
 - **Spoofing attack** - IP Spoofing, MAC spoofing
 ### Social Engineering Attacks
-- An access attack
+- An access attack that attempts to manipulate individuals into divulging info / performing actions
+
+| Technique      | Description |
+| -------------- | ----------- |
+| Pretexting     |             |
+| Spear Phishing |             |
+| Span           |             |
+| So             |             |
