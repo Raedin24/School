@@ -4,4 +4,5 @@ Read on the
 3. west african chapter on cybersecurity
 4. budapest convention
 5. ISO 27001, 27002
-6. 
+
+Read Chapter 1 and 3
