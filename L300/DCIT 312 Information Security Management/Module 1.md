@@ -144,7 +144,7 @@ Link to extra [info](https://www.cisco.com/c/en/us/products/security/firewalls/w
 	- *Full help* -  Displays all the keywords and parameters of a command view
 	- *Partial help* - Displays all keywords and parameters that start with the character/string entered
 - **Tab**
-	- Complete command if there is only one match for a keyword
+	- Complete command if there is only one match for a `keyword`
 	- Displays possible commands if there are multiple matches
 
 **Device Login Management**
