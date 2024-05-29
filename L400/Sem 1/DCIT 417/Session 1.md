@@ -70,4 +70,4 @@ There are **3** kinds of performance metrics
 - **Higher is Better (HB)** - Higher values are preferred. eg throughput
 - **Lower is Better (LB)** - Smaller values are preferred. eg. Latency / Delay
 - **Nominal is Best (NB)** - Both low and high values are not preferred. A particular midpoint is best
-![[Pasted image 20240120231710.png]]
+![[Pasted image 20240120231710 1.png]]

@@ -29,7 +29,7 @@ A series of **documented processes** that define how to **implement, manage and 
 ## CIA Triad
 - A security model designed to help organizations develop security policies to keep their sensitve data secure
 - Consists of the principles mentioned above
-![[Pasted image 20240516105015.png]]
+![[Pasted image 20240516105015 1.png]]
 - Two additional concepts are added by some security experts
 	- **Authenticity** - Being genuine and verifiable. ie. confidence in the validity of a transmission, message or message originator
 	- **Accountability** - Actions of an entity should be traced uniquely to that entity. Supports *nonrepudation*, *deterrence*, *fault isolation*, *intrusion detection and prevention*
