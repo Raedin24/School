@@ -29,3 +29,6 @@ openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
 **Applications of Cryptography**
 1. Satellite communication
 2. Paid subscription streaming services
+3. Online banking
+4. GSM / Sim services
+5. GPS
