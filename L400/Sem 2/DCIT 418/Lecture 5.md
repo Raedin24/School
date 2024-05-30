@@ -27,4 +27,5 @@ openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
 ```
 
 **Applications of Cryptography**
-1. 
+1. Satellite communication
+2. Paid subscription streaming services
