@@ -7,7 +7,7 @@ Cryptology - Includes  Cyrptography, Protocols, Steganography
 1. Cryptographic hash function
 2. Pseudo-random number generator
 *Single Key*
-1. Block cipher symmetric encryption
+1. Block cipher symmetric encryption - Message is divided into equal blocks, which are then encrypted individually. eg. DES, Triple DES, AES
 2. Stream cipher symmetric encryption
 3. Message authentication code
 *Two-Key*
@@ -26,3 +26,5 @@ This is the first file to be hashed
 openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
 ```
 
+**Applications of Cryptography**
+1. 
