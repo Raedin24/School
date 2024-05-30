@@ -12,7 +12,7 @@ Cryptology - Includes  Cyrptography, Protocols, Steganography
 3. Message authentication code
 *Two-Key*
 1. Asymmetric encryption
-2. Digital signature
+2. Digital signature - Uses the private key to perform encryption, with the private key being used to decrypt. eg of Public key system is RSA
 3. Key exchange
 4. User authentication
 > In databases, columns containing sensitive info is hashed
