@@ -30,5 +30,7 @@ openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
 1. Satellite communication
 2. Paid subscription streaming services
 3. Online banking
-4. GSM / Sim services
+4. GSM / Telecomm services
 5. GPS
+6. Websites with HTTPS
+7. 
