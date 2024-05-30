@@ -8,7 +8,7 @@ Cryptology - Includes  Cyrptography, Protocols, Steganography
 2. Pseudo-random number generator
 *Single Key*
 1. Block cipher symmetric encryption - Message is divided into equal blocks, which are then encrypted individually. eg. DES, Triple DES, AES
-2. Stream cipher symmetric encryption
+2. Stream cipher symmetric encryption  - The bitstream is what is encrypted, not the raw message/packet
 3. Message authentication code
 *Two-Key*
 1. Asymmetric encryption
