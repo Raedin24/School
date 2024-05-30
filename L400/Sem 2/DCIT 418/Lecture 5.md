@@ -16,6 +16,7 @@ Cryptology - Includes  Cyrptography, Protocols, Steganography
 3. Key exchange
 4. User authentication
 > In databases, columns containing sensitive info is hashed
+> Hashing is a one-way function, which prevents hashes from being reversed
 
 ```shell
 cat>hashfile3 // Create a file
@@ -24,3 +25,4 @@ This is the first file to be hashed
 
 openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
 ```
+
