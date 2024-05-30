@@ -11,4 +11,13 @@ Cryptology - Includes  Cyrptography, Protocols, Steganography
 6. Asymmetric encryption
 7. Digital signature
 8. Key exchange
-9. 
+9. User authentication
+> In databases, columns containing sensitive info is hashed
+
+```shell
+cat>hashfile3 // Create a file
+Welcome to the class of cryptography
+This is hte first file to be hashed
+
+openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
+```
