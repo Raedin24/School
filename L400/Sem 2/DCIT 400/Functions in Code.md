@@ -52,6 +52,11 @@ The LePEAttention (Locally-enhanced Positional Encoding Attention) mechanism is 
 
 ### 4. Query, Key, Value Computations
 - Within each window, the feature vectors are used to compute queries (Q), keys (K), and values (V) using linear transformations. Optionally, a bias can be added to these transformations (qkv_bias).
+-  *Queries* (Q): Represent the current position’s perspective, used to score against all keys.
+- *Keys* (K): Are aspects of other positions that the queries compare against to determine relevance.
+- *Values* (V): Hold the actual content from the input data, which will be weighted according to the calculated attention scores from queries and keys.
+
+These components enable the model to dynamically focus on different parts of the input data, emphasizing the most relevant features for better prediction accuracy. This is crucial for learning complex dependencies and relationships within the data.
 
 ### 5. Scaled Dot-Product Attention
 - The dot products between the queries and keys are computed, which represent the attention scores. These scores are scaled down by a factor (qk_scale), typically the inverse square root of the dimension of the keys, to stabilize the gradients during training.
@@ -126,5 +131,5 @@ Description: Registers different configurations of the CSWin Transformer for eas
 ### 5. drop_rate
 - Purpose: Regularizes the model by randomly disabling a portion of the embeddings during training, promoting robustness and preventing overfitting.
 
-
+# Tensors
 The transforms.ToTensor() function is essential in preprocessing because it converts image data, typically stored in formats like PIL or NumPy arrays, into PyTorch tensors. This transformation standardizes the image data into a format suitable for input into neural networks, normalizing pixel values to the range [0, 1], which often leads to better performance during training. Additionally, transforming images to tensors allows for easier batch processing and GPU acceleration in PyTorch.
