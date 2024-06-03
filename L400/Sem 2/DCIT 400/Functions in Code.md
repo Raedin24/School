@@ -169,3 +169,17 @@ Layers are often flattened in neural network models for several reasons:
 5. **Compatibility with Software Libraries**: Many deep learning frameworks and libraries expect input data to be flattened before passing it to fully connected layers. Flattening layers provide a convenient way to preprocess data and ensure compatibility with these frameworks.
 
 Overall, flattening layers serve to prepare multidimensional data for processing by fully connected layers or other types of layers that expect one-dimensional input, facilitating the flow of information through the neural network and enabling effective learning and inference.
+
+# Answers to questions previously asked
+The forward function in neural networks, including transformers like the one described, is crucial for defining how data flows through the model. Here's a breakdown addressing your specific queries about the initialization function (__init__) which sets up the architecture for the forward pass:
+
+### What are H_sp and W_sp?
+- `H_sp` and `W_sp` stand for Height and Width splits, respectively. These variables determine the dimensions of each window in which the localized attention will operate. The values are set based on idx, which dictates different configurations for how the input should be split into windows.
+
+### Why is the stride set to 1 and kernel size set to 3?
+- Stride set to 1: A stride of 1 in a convolutional operation means that the filter moves one pixel at a time during the convolution. This setting ensures that every single pixel is used when applying the convolution, which is useful for detailed feature extraction without downsampling the feature map.
+- Kernel size set to 3: A kernel size of 3x3 is a common choice in convolutional neural networks because it allows the capture of spatial relationships in a small neighborhood around each pixel. This size is effective for extracting local features while keeping computational complexity relatively low.
+
+### What does the super() function do?
+- The super() function is used to call the constructor of the parent class (nn.Module in this case). This is necessary to properly initialize the inherited aspects of the current class, ensuring that all underlying mechanisms provided by the PyTorch framework are set up correctly. It allows the class to inherit all methods and properties from its parent class.
+
