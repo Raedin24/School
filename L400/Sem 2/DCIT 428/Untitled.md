@@ -40,4 +40,17 @@ Have 2 formats
 
 `For PSK, if there are consecutive ones, the signal doesn't change till it meets a 0. Put simply, it only occurs when there is a change is the signal level`
 
-**Applications of DIgital Modulati**
+**Applications of Digital Modulation Techniques**
+1. Military comm systems
+2. Mobile comm systems
+3. Digital broadcasting
+4. Radar systems
+
+**Advantages**
+1. High immunity to noise
+2. High security
+3. Efficient bandwidth usage
+**Disadvantages**
+1. Additional circuitry
+2. Synchronization
+3. High power consumption (not higher than analog modulation)
