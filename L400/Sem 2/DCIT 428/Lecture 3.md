@@ -32,6 +32,7 @@
 - Is an active device
 	- Must be supplied with electricity
 	- Electricity is used to increase signal's intensity/strength
+- The output is an exact copy of the input but with a higher amplitude
 - RF signals lose intensity(amplitude) by travelling through circuits, space
 - Formula to determine how much power remains after a certain distance
 $$
