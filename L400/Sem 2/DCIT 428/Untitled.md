@@ -29,3 +29,11 @@ Have 2 formats
 
 [[Excalidraw/Drawing 2024-06-03 10.19.17.excalidraw.md#^bAJxZQO5JWRSrTrvhffjc|Return to zero uni polar]]
 
+## Types of Digital to Analog Modulation
+1. Digital-to-analog conversion -> Broken down into
+2. Amplitude shift keying (ASK), Frequency shift keying (FSK), Phase shift keying (PSK) -> Can be combined into
+
+**ASK**
+- Binary modulation, similar to amplitude modulation
+
+
