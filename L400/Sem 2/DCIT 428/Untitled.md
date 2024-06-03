@@ -13,3 +13,9 @@ amplitude, frequency, phase
 2. Requires less power to transmit
 3. Performs better when the signal experiences interference
 4. More compatible with error-correcting techniques
+Have 2 formats
+1. Uni Polar - Voltages are present on one side of time axis (only positive values)
+2. Polar / Bipolar - Voltages are present on both sides of time axis, uses 2 voltage levels
+
+**Types of Line Encoding**
+1. Return to zero (uni pol)
