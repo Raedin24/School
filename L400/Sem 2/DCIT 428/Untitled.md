@@ -35,5 +35,5 @@ Have 2 formats
 
 **ASK**
 - Binary modulation, similar to amplitude modulation
-
+> Signals are only shown when there is a 1.
 
