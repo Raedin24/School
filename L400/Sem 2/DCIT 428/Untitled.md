@@ -18,4 +18,8 @@ Have 2 formats
 2. Polar / Bipolar - Voltages are present on both sides of time axis, uses 2 voltage levels
 
 **Types of Line Encoding**
-1. Return to zero (uni pol)
+1. Return to zero, *RZ* (uni polar)
+2. Return to zero *RZ* (polar)
+3. Non-return to zero *NRZ* (uni polar)
+4. Polar non-return to zero *Polar NRZ* (polar)
+> In return to zero, the transition to zero occurs before then end of the bit period
