@@ -1,7 +1,0 @@
-- **transforms.Compose**: A function to chain multiple image transformation operations together. Here, `transforms.Resize((224, 224))` resizes the image to 224x224 pixels, and `transforms.ToTensor()` converts the image to a PyTorch tensor.
-- **ImageFolder**: A dataset class for loading images from a directory where images are arranged in class-specific subdirectories.
-- **DataLoader**: A PyTorch class that provides an efficient way to iterate over datasets.
-- **torch.nn**: A PyTorch module containing neural network layers and loss functions.
-- **torch.optim**: A PyTorch module containing optimization algorithms.
-- **numpy**: A library for numerical computations.
-- **tqdm**: A library to display progress bars.
