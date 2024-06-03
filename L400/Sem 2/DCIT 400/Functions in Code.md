@@ -77,3 +77,5 @@ Parameters:
 
 ### 6. img2windows and windows2img Functions
 Description: Helper functions to convert images to window partitions and vice versa, facilitating the processing of local features.
+### 7. Model Registration Functions
+Description: Registers different configurations of the CSWin Transformer for easy instantiation with or without pre-trained weights.
