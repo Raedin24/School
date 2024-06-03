@@ -32,8 +32,10 @@ Have 2 formats
 ## Types of Digital to Analog Modulation
 1. Digital-to-analog conversion -> Broken down into
 2. Amplitude shift keying (ASK), Frequency shift keying (FSK), Phase shift keying (PSK) -> Can be combined into
+3. Quadrature amplitude modulation (QAM)
 
-**ASK**
-- Binary modulation, similar to amplitude modulation
-> Signals are only shown when there is a 1.
+> In ASK, signals are only shown when there is a 1.
+> In FSK, frequency of the signal increases when there is a 1. If not, it goes back to the resting state
+> 
+> 
 
