@@ -36,6 +36,8 @@ Have 2 formats
 
 > In ASK, signals are only shown when there is a 1.
 > In FSK, frequency of the signal increases when there is a 1. If not, it goes back to the resting state
-> 
-> 
+> In PSK, there is a phase shift when there is a 1. 0 moves the signal back to the original. 
 
+`For PSK, if there are consecutive ones, the signal doesn't change till it meets a 0. Put simply, it only occurs when there is a change is the signal level`
+
+**Applications of DIgital Modulati**
