@@ -22,7 +22,7 @@ Have 2 formats
 2. Return to zero *RZ* (polar)
 3. Non-return to zero *NRZ* (uni polar)
 4. Polar non-return to zero *Polar NRZ* (polar)
-> In return to zero, the transition to zero occurs before then end of the bit period (even if the next bit is not a zero)
+> In return to zero types, the transition to zero occurs before then end of the bit period (even if the next bit is not a zero)
 
 [[Excalidraw/Drawing 2024-06-03 10.19.17.excalidraw.md#^bAJxZQO5JWRSrTrvhffjc|Return to zero uni polar]]
 
