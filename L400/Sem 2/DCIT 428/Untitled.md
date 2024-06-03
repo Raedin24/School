@@ -22,4 +22,4 @@ Have 2 formats
 2. Return to zero *RZ* (polar)
 3. Non-return to zero *NRZ* (uni polar)
 4. Polar non-return to zero *Polar NRZ* (polar)
-> In return to zero, the transition to zero occurs before then end of the bit period
+> In return to zero, the transition to zero occurs before then end of the bit period (even if the next bit is not a zero)

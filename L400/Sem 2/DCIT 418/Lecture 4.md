@@ -6,3 +6,4 @@ Read on the
 5. ISO 27001, 27002
 
 Read Chapter 1 and 3
+The reverse of digital signature is used for confidentiality 
