@@ -43,3 +43,5 @@ Wavelength of a signal is inversely proportional to it's frequency
 Assume constant of proportionality to be c(speed of light)
 
 >  Read on Shannon theory, sampling theory(nyquist)
+
+**Shannon's Limit** is the limit on how much data can be pushed through any medium (air, water, etc)
