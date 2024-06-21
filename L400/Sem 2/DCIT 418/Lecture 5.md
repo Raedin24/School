@@ -35,3 +35,4 @@ openssl md5 hashfile3 // Hash using the md5 algorithm. Outputs a hash value
 6. Websites with HTTPS
 
 `In performing online transactions, the public key of the website is used to encrypt the transaction, with the private key being used on the end servers to decrypt`
+`For Digtal signature, the private key is used to encrypt`

@@ -1,0 +1,2 @@
+**Diffie-Hellman** key exchange is a method of digital encryption used to exchange *shared secret keys*  over an insecure network.
+- Allows for secure comms without pre-shared secrets or a trusted third party
