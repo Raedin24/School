@@ -9,4 +9,4 @@ $$
 A = 5^4 mod 23 = 4 \\{\newline}
 B = 5^3 mod23 = 10
 $$
-4. To exchange a shared key, the 
+4. To exchange a shared key, the public key gotten for the other party is 
