@@ -60,6 +60,7 @@ DECLARE
 BEGIN
 	NULL;
 END;
+/
 ```
 
 ## Variable Assignment
@@ -76,4 +77,22 @@ BEGIN
 	n_employee_id:= 10101010;
 	d_hire_date:= TO_DATE('19990101',')
 END;
+/
 ```
+
+- Can also be done using the `INTO` of the SQL `SELECT` statement. This moves the values from the SELECT query to the corresponding PL/SQL variables.
+```PL/SQL
+SET SERVEROUTPUT ON SIZE 1000000
+DECLARE
+	v_first_name    EMPLOYEES.FIRST_NAME%TYPE;
+	v_last_name     EMPLOYEES.LAST_NAME%TYPE;
+	n_employee_id   EMPLOYEES.EMPLOYEE_ID%TYPE;;
+	d_hire_date     EMPLOYEES.HIRE_DATE%TYPE;
+BEGIN
+	SELECT employee_id,
+		first_name,
+		last_name,
+		hire_date
+		
+```
+> SET SERVEROUTPUT ON SIZE 1000000  -> Used to echo the database's output to the screen.
