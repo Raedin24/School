@@ -45,3 +45,19 @@ BEGIN
 END;
 /
 ```
+
+## Variable Anchor
+- Used when selecting values from columns in a database into a set of variables
+- Allows the variable to have the same data type as the column.
+- Done using `%TYPE` keyword
+Selecting columns from the `EMPL`
+```PL/SQL
+DECLARE
+	v_first_name    EMPLOYEES.FIRST_NAME%TYPE;
+	v_last_name     EMPLOYEES.LAST_NAME%TYPE;
+	n_employee_id   EMPLOYEES.EMPLOYEE_ID%TYPE;;
+	d_hire_date     EMPLOYEES.HIRE_DATE%TYPE;
+BEGIN
+	NULL;
+END;
+```
