@@ -50,7 +50,7 @@ END;
 - Used when selecting values from columns in a database into a set of variables
 - Allows the variable to have the same data type as the column.
 - Done using `%TYPE` keyword
-Selecting columns from the `EMPL`
+Selecting columns from the `EMPLOYEES` table
 ```PL/SQL
 DECLARE
 	v_first_name    EMPLOYEES.FIRST_NAME%TYPE;
@@ -61,3 +61,6 @@ BEGIN
 	NULL;
 END;
 ```
+
+## Variable Assignment
+- Done using the assignment operator `:=` 
