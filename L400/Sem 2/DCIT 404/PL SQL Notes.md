@@ -17,3 +17,17 @@ BEGIN
 - **Exception** - As the name implies.
 > '/' is used to execute the block
 
+# Variables
+- Must be declared in declaration block to be usable
+- Must be less than 31 characters
+- Not case sensitive
+- Naming convention
+
+| **Prefix** | **Data Type** |
+| ---------- | ------------- |
+| v_         | VARCHAR2      |
+| n_         | NUMBER        |
+| t_         | TABLE         |
+| r_         | ROW           |
+| d_         | DATE          |
+| b_         | BOOLEAN       |
