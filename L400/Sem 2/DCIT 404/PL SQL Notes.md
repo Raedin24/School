@@ -93,6 +93,19 @@ BEGIN
 		first_name,
 		last_name,
 		hire_date
-		
+	INTO
+		v_first_name,
+		v_last_name,
+		d_hire_date
+	FROM employee
+	WHERE employee_id=200;
+	
+	DBMS_OUTPUT.PUT_LINE(v_first_name);
+	DBMS_OUTPUT.PUT_LINE(v_last_name);
+	DBMS_OUTPUT.PUT_LINE(d_hire_date);
+END
+/
 ```
 > SET SERVEROUTPUT ON SIZE 1000000  -> Used to echo the database's output to the screen.
+
+## Initialii
