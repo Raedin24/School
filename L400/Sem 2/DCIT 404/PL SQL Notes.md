@@ -63,4 +63,17 @@ END;
 ```
 
 ## Variable Assignment
-- Done using the assignment operator `:=` 
+- Done using the assignment operator `:=`  (colon, equal sign)
+```PL/SQL
+DECLARE
+	v_first_name    EMPLOYEES.FIRST_NAME%TYPE;
+	v_last_name     EMPLOYEES.LAST_NAME%TYPE;
+	n_employee_id   EMPLOYEES.EMPLOYEE_ID%TYPE;;
+	d_hire_date     EMPLOYEES.HIRE_DATE%TYPE;
+BEGIN
+	v_first_name:= 'Mary';
+	v_last_name:= 'Magdalene';
+	n_employee_id:= 10101010;
+	d_hire_date:= TO_DATE('19990101',')
+END;
+```
