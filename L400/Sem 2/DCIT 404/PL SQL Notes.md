@@ -9,7 +9,7 @@ BEGIN
 	execution statements;
 	[EXCECPTION]
 		exception statement;
-	END;
+END;
 /
 ```
 - **Declaration** is used to define *data types*, *structures* and *variables*. Can also be used for declaration
@@ -21,7 +21,7 @@ BEGIN
 - Must be declared in declaration block to be usable
 - Must be less than 31 characters
 - Not case sensitive
-- Naming convention
+- Naming convention states that the variable should be preceded by the data type
 
 | **Prefix** | **Data Type** |
 | ---------- | ------------- |
@@ -31,3 +31,17 @@ BEGIN
 | r_         | ROW           |
 | d_         | DATE          |
 | b_         | BOOLEAN       |
+## Variable Declaration
+- Variable name and data type, terminated with semicolon
+- Can specify length constraints on data type in parentheses.
+```PL/SQL
+DECLARE
+	v_first_name    VARCHAR2(20);
+	v_last_name     VARCHAR2(20);
+	n_employee_id   NUMBER;
+	d_hire_date     DATE;
+BEGIN
+	NULL;
+END;
+/
+```
