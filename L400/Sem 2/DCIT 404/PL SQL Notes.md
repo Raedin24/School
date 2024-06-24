@@ -108,4 +108,9 @@ END
 ```
 > SET SERVEROUTPUT ON SIZE 1000000  -> Used to echo the database's output to the screen.
 
-## Initialii
+## Initializing Variables
+- When a variable is declared, its value is uninitialized, hence `NULL`
+- `NULL` means an unknown value, and has the following characteristis
+	1. Not equal to anything, not even itself (`NULL != NULL)
+	2. Not greater or less than anything, not even itself (`NULL !> NULL && NULL !< NULL)
+	3. Cannot use logical operators (`=, <, >)` with NULL. Must use `is NULL` OR `is not NULL` to test for NULL values (the ones done above are just for explanati)
