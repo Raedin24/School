@@ -1,6 +1,4 @@
-Subnetting Table
-
-  
+**Addressing Table** 
 
 | Device           | Interface | IP Address/Mask                  | Default Gateway |
 | ---------------- | --------- | -------------------------------- | --------------- |
@@ -19,3 +17,20 @@ Subnetting Table
 | PC3              | NIC       | 2001:db8:acad:b::ff/64           | fe80::1         |
 | Server           | NIC       | 192.168.1.146<br>255.255.255.240 | 192.168.1.158   |
 | TFTP Server      |           | 2001:db8:acad:b::15/64           | fe80::1         |
+
+**CS Department Router Config**
+```
+en
+conf t
+hostname CS-Department
+en secret class12345
+service password-encryption
+banner motd "My Router"
+security passwords min-length 10
+login block-for 120 attempts 2 within 30
+no ip domain-lookup
+crypto key generate rsa
+1024
+
+
+```
