@@ -108,5 +108,5 @@ no shut
 exit
 ip default-gateway 192.168.1.158
 exit
-do wr
+write
 ```
