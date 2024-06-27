@@ -105,6 +105,7 @@ exit
 int vlan 1
 ip add 192.168.1.157 255.255.255.240
 no shut
+exit
 ip default-gateway 192.168.1.158
 exit
 do wr
