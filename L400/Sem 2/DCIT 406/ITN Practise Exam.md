@@ -41,7 +41,7 @@ exec-timeout 60
 exit
 
 line vty 0 4
-password cisco
+password cisco12345
 transport input ssh
 login local
 logging synchronous
@@ -49,7 +49,7 @@ exec-timeout 60
 exit
 
 line aux 0
-password cisco
+password cisco12345
 login
 logging synchronous
 exec-timeout 60
