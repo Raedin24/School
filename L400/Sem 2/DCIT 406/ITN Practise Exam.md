@@ -76,5 +76,36 @@ exit
 
 ipv6 unicast-routing
 exit
+copy run start
+```
+
+**Lab 214-A Switch**
+```
+en
+conf t
+enable secret class
+service password-encryption
+banner motd # Authorized Users Only! #
+no ip domain-lookup
+
+line con 0
+password cisco12345
+login
+logging synchronous
+exec-timeout 60
+exit
+
+line vty 0 15
+password cisco12345
+login
+logging synchronous
+exec-timeout 60
+exit
+
+int vlan 1
+ip add 192.168.1.157 255.255.255.240
+no shut
+ip default-gateway 192.168.1.158
+exit
 do wr
 ```
