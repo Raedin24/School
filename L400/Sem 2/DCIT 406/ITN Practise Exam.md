@@ -29,11 +29,12 @@ banner motd "My Router"
 security passwords min-length 10
 login block-for 120 attempts 2 within 30
 no ip domain-lookup
+ip domain-name cisco.com
 crypto key generate rsa
 1024
 
 line console 0
-password cisco
+password cisco12345
 login
 logging synchronous
 exec-timeout 60
