@@ -23,7 +23,7 @@
 en
 conf t
 hostname CS-Department
-en secret class12345
+en secret class
 service password-encryption
 banner motd "My Router"
 security passwords min-length 10
@@ -32,5 +32,31 @@ no ip domain-lookup
 crypto key generate rsa
 1024
 
+line console 0
+password cisco
+login
+logging synchronous
+exec-timeout 60
+exit
 
+line vty 0 4
+password cisco
+transport input ssh
+login local
+logging synchronous
+exec-timeout 60
+exit
+
+line aux 0
+password cisco
+login
+logging synchronous
+exec-timeout 60
+exit
+ip ssh version 2
+ip ssh time-out 120
+username netadmin privilege 15 secret Cisco_CCNA7
+
+interface g0/0
+ip address 192.168.1.126
 ```
