@@ -58,5 +58,22 @@ ip ssh time-out 120
 username netadmin privilege 15 secret Cisco_CCNA7
 
 interface g0/0
-ip address 192.168.1.126
+ip address 192.168.1.126 255.255.255.224
+description First Florr LAN
+ipv6 address 2001:db8:acad:a::1/64
+ipv6 address fe80::1 link-local
+no shutdown
+exit
+
+int g0/1
+ip address 192.168.1.158 255.255.255.240
+desc Second Floor LAN
+ipv6 address 2001:db8:acad:b::1/64
+ipv6 address fe80::1 link-local
+no shutdown
+exit
+
+ipv6 unicast-routing
+exit
+do wr
 ```
