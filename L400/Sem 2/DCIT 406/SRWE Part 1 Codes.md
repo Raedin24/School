@@ -1,3 +1,4 @@
+**R-1 Config**
 ```shell
 enable
 conf t
@@ -40,24 +41,25 @@ no shutdown
 int g0/0/1.40
 desc "Gateway for VLAN40"
 encap dot1q 40
-ip address
+ip address 172.31.40.1 255.255.255.0
 exit
 
-int g0/0/1.40
-desc "Gateway for VLAN40"
-encap dot1q 40
-ip address
+int g0/0/1.50
+desc "Gateway for VLAN50"
+encap dot1q 50
+ip address 172.31.50.1 255.255.255.0
 exit
 
-int g0/0/1.40
-desc "Gateway for VLAN40"
-encap dot1q 40
-ip address
+int g0/0/1.60
+desc "Gateway for VLAN60"
+encap dot1q 60
+ip address 172.31.60.1 255.255.255.0
 exit
 
-int g0/0/1.40
-desc "Gateway for VLAN40"
-encap dot1q 40
-ip address
+int g0/0/1.99
+desc "Gateway for VLAN99"
+encap dot1q 99 native
+ip address 172.31.99.17 255.255.255.240
+
 exit
 ```
