@@ -1,4 +1,4 @@
-**R-1 Config**
+**Router R-1 Config**
 ```shell
 enable
 conf t
@@ -60,6 +60,13 @@ int g0/0/1.99
 desc "Gateway for VLAN99"
 encap dot1q 99 native
 ip address 172.31.99.17 255.255.255.240
-
 exit
+```
+
+**Switch S-3 Config**
+```
+en
+conf t
+int vlan 99
+ip address
 ```
