@@ -5,6 +5,7 @@ conf t
 ip route 172.31.10.0 255.255.255.0 GigabitEthernet0/0/0
 ip route 172.31.20.0 255.255.255.0 GigabitEthernet0/0/0
 ip route 172.31.30.0 255.255.255.0 GigabitEthernet0/0/0
+ip route 172.31.99.0 255.255.255.240 GigabitEthernet0/0/0
 
 no ip domain-lookup
 enable secret class
