@@ -185,6 +185,20 @@ ip address 172.31.0.2 255.255.255.0
 exit
 
 int range g1/0/1-2
+channel-group 1 mode active  
+exit  
+interface port-channel 1  
+switchport mode trunk  
+switchport trunk allowed vlan 10,20,30  
+exit  
+interface range g1/0/3-4  
+channel-group 2 mode active  
+exit  
+interface port-channel 2  
+switchport mode trunk  
+switchport trunk allowed vlan 10,20,30  
+end  
+copy running-config startup-config
 ```
 
 **Switch S-1**
@@ -212,6 +226,40 @@ int vlan 30
 desc B1F4
 ip address 172.31.30.0 255.255.255.0
 exit
+
+interface range f0/7-10  
+switchport mode access  
+switchport access vlan 10  
+exit  
+
+interface range f0/11-15  
+switchport mode access  
+switchport access vlan 20  
+exit  
+
+interface range f0/16-24  
+switchport mode access  
+switchport access vlan 30  
+exit  
+
+interface range g0/1-2  
+channel-group 1 mode active  
+exit  
+
+interface port-channel 1  
+switchport mode trunk  
+switchport nonegotiate  
+exit  
+
+interface range f0/5-6  
+channel-group 3 mode active  
+exit  
+
+interface port-channel 3  
+switchport mode trunk  
+switchport nonegotiate  
+end  
+copy running-config startup-config
 ```
 
 **Switch S-2**
@@ -239,4 +287,38 @@ int vlan 30
 desc B1F4
 ip address 172.31.30.0 255.255.255.0
 exit
+
+interface range f0/7-10  
+switchport mode access  
+switchport access vlan 10  
+exit  
+
+interface range f0/11-15  
+switchport mode access  
+switchport access vlan 20  
+exit  
+
+interface range f0/16-24  
+switchport mode access  
+switchport access vlan 30  
+exit  
+
+interface range g0/1-2  
+channel-group 2 mode active  
+exit  
+
+interface port-channel 2  
+switchport mode trunk  
+switchport nonegotiate  
+exit  
+
+interface range f0/5-6  
+channel-group 3 mode active  
+exit  
+
+interface port-channel 3  
+switchport mode trunk  
+switchport nonegotiate  
+end  
+copy running-config startup-config
 ```
