@@ -178,7 +178,7 @@ int vlan 99
 desc NetAdmin
 ip address
 
-
+ip 
 ```
 
 **Switch S-1**
