@@ -145,3 +145,92 @@ switchport trunk native vlan 99
 end
 copy run start
 ```
+
+**Switch MULTI-1**
+```
+enable
+configure terminal
+
+vlan 10
+name B1F1
+int vlan 10
+desc B1F1
+ip address 172.31.10.0 255.255.255.0
+exit
+
+vlan 20
+name B1F2
+int vlan 20
+desc B1F2
+ip address 172.31.20.0 255.255.255.0
+exit
+
+vlan 30
+name B1F4
+int vlan 30
+desc B1F4
+ip address 172.31.30.0 255.255.255.0
+exit
+
+vlan 99
+name NetAdmin
+int vlan 99
+desc NetAdmin
+ip address
+
+
+```
+
+**Switch S-1**
+```
+enable
+configure terminal
+
+vlan 10
+name B1F1
+int vlan 10
+desc B1F1
+ip address 172.31.10.0 255.255.255.0
+exit
+
+vlan 20
+name B1F2
+int vlan 20
+desc B1F2
+ip address 172.31.20.0 255.255.255.0
+exit
+
+vlan 30
+name B1F4
+int vlan 30
+desc B1F4
+ip address 172.31.30.0 255.255.255.0
+exit
+```
+
+**Switch S-2**
+```
+enable
+configure terminal
+
+vlan 10
+name B1F1
+int vlan 10
+desc B1F1
+ip address 172.31.10.0 255.255.255.0
+exit
+
+vlan 20
+name B1F2
+int vlan 20
+desc B1F2
+ip address 172.31.20.0 255.255.255.0
+exit
+
+vlan 30
+name B1F4
+int vlan 30
+desc B1F4
+ip address 172.31.30.0 255.255.255.0
+exit
+```
