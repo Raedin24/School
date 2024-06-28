@@ -178,7 +178,13 @@ int vlan 99
 desc NetAdmin
 ip address
 
-ip 
+ip routing
+int g1/1/1
+no switchport
+ip address 172.31.0.2 255.255.255.0
+exit
+
+int range g1/0/1-2
 ```
 
 **Switch S-1**
