@@ -176,7 +176,8 @@ vlan 99
 name NetAdmin
 int vlan 99
 desc NetAdmin
-ip address
+ip address 172.31.99.16 255.255.255.240
+exit
 
 ip routing
 int g1/1/1
@@ -187,13 +188,16 @@ exit
 int range g1/0/1-2
 channel-group 1 mode active  
 exit  
+
 interface port-channel 1  
 switchport mode trunk  
 switchport trunk allowed vlan 10,20,30  
 exit  
+
 interface range g1/0/3-4  
 channel-group 2 mode active  
 exit  
+
 interface port-channel 2  
 switchport mode trunk  
 switchport trunk allowed vlan 10,20,30  
