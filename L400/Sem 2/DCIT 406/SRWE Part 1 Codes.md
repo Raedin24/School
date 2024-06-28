@@ -77,10 +77,71 @@ ip domain-name acad.pt
 crypto key generate rsa
 1024
 
-username admin privelege 15 secret Cisco123!
-enable secret Cisco123!
+username admin privilege 15 secret C1sco123!
+enable secret C1sco123!
 line vty 0 15
 transport input ssh
 login local
 exit
+ip ssh version 2
+
+vlan 40
+name B3
+exit
+int vlan 40
+ip address 172.31.40.0 255.255.255.0
+desc B3
+exit
+
+vlan 50
+name B4
+exit
+int vlan 50
+ip address 172.31.50.0 255.255.255.0
+desc B4
+exit
+
+vlan 60
+name B5
+exit
+int vlan 60
+ip address 172.31.60.0 255.255.255.0
+desc B5
+exit
+
+vlan 99
+name NetAdmin
+exit
+int vlan 99
+ip address 172.31.99.16 255.255.255.240
+desc NetAdmin
+exit
+
+int range f0/1-5
+switchport mode access
+switchport access vlan 40
+exit
+
+int range f0/6-10
+switchport mode access
+switchport access vlan 50
+exit
+
+int range f0/11-15
+switchport mode access
+switchport access vlan 60
+exit
+
+int f0/24
+switchport mode access
+switchport access vlan 99
+exit
+
+int g0/1
+switchport mode trunk
+switchport nonegotiate
+switchport trunk allowed vlan 40, 50, 60, 99
+switchport trunk native vlan 99
+end
+copy run start
 ```
