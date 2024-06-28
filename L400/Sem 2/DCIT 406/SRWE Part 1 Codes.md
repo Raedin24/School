@@ -65,8 +65,22 @@ exit
 
 **Switch S-3 Config**
 ```
-en
-conf t
+enable
+configure terminal
 int vlan 99
-ip address
+ip address 172.31.99.18 255.255.255.240
+no shutdown
+exit
+
+ip default-gateway 172.31.99.15
+ip domain-name acad.pt
+crypto key generate rsa
+1024
+
+username admin privelege 15 secret Cisco123!
+enable secret Cisco123!
+line vty 0 15
+transport input ssh
+login local
+exit
 ```
