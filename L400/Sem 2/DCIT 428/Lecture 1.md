@@ -34,5 +34,5 @@ Radio waves were first known as *Hertzian Waves*.
 	- Free propagation (wireless broadcast, mobile radio)
 
 # Cellular System Infrastructure
-- Early mobile systems used one powerful transmitter located at a high spot to cover areas, with radius of up to *50km*
-- 
+- Early mobile systems used one powerful transmitter located at a high spot to cover areas, with radius of up to **50km**
+- Cellular systems use a number of low power transmitters to cover a large area
