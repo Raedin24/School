@@ -27,11 +27,16 @@ Radio waves were first known as *Hertzian Waves*.
 2. Channel
 3. Receiver
 ![[Pasted image 20240630200017.png]]
-### Communication Channel
-- Medium across which transmission takes place
-- Grouped according to mode of transmission
-	- Guided propagation (telephone, coaxial cable, optical fibre)
-	- Free propagation (wireless broadcast, mobile radio)
+#### Modes of Transmission
+1. Guided propagation 
+    - Telephone
+    - Coaxial cable
+    - Optical fiber
+2. Free propagation
+    - Wireless broadcast channels
+    - Radio channels
+`Isotropic antennas transmit in all directions. Omnidirectional antennas transmit equally well in all directions.`
+The coverage area of a transmitter is known as a **cell**. Cells are grouped into **clusters**
 
 # Cellular System Infrastructure
 - Early mobile systems used one powerful transmitter located at a high spot to cover areas, with radius of up to **50km**
@@ -40,3 +45,17 @@ Radio waves were first known as *Hertzian Waves*.
 1. **PSTN** - Public switch telephone network
 2. **MSC** - Mobile switching centre
 3. **BSC** - Base station controller
+### Base Station
+Base stations maintain 4 channels
+- **FCC** - Forward (Downlink) control channel
+- **RCC** - Reverse (Uplink) control channel
+- **FTC** - Forward (Downlink) traffic channel
+- **RTC** - Reverse (Uplink) traffic channel
+
+## Components of a Cellular System
+1. Mobile unit(phone)
+2. Base station
+3. Mobile switching center
+**Generic Mobile Unit**
+![[Pasted image 20240630202519.png]]**Generic Base Station**
+![[Pasted image 20240630202604.png]]
