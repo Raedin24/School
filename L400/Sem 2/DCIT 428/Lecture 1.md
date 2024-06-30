@@ -14,3 +14,16 @@ Radio waves were first known as *Hertzian Waves*.
 # Communication Systems
 - Used to distribute info from one location to another.
 - Information is more conveniently shared as signals
+- *Communication engineers*  are concerned with the transmission and reception of such signals
+## Communication Process
+1. Generation of message signal (*Voice*, *music, picture, etc* )
+2. Description of message signal (*electrical, aural, visual*)
+3. Coding of signal for transmission
+4. Transmission
+5. Decoding and reproduction of original signal
+6. Recreation of original message signal
+# Components of Communication System
+1. Transmitter
+2. Channel
+3. Receiver
+![[Pasted image 20240630200017.png]]
