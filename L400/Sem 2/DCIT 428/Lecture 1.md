@@ -87,3 +87,11 @@ Base stations maintain 4 channels
 	- Pulse duration
 `Standard form of digital pulse modulation is pulse code modulation`
 
+---
+- A *signal*  is a single valued function of time (value changes with time)
+- Can be expressed as a function of *frequency*
+- Consists of components of different frequencies
+- Can be
+	1. One-dimensional (*speech, music, computer data*)
+	2. Two-dimensional (*pictures*)
+	3. Three-dimem
