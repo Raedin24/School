@@ -36,3 +36,7 @@ Radio waves were first known as *Hertzian Waves*.
 # Cellular System Infrastructure
 - Early mobile systems used one powerful transmitter located at a high spot to cover areas, with radius of up to **50km**
 - Cellular systems use a number of low power transmitters to cover a large area
+![[Pasted image 20240630201805.png]]
+1. **PSTN** - Public switch telephone network
+2. **MSC** - Mobile switching centre
+3. **BSC** - Base station controller
