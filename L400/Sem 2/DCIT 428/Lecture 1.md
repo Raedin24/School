@@ -61,5 +61,16 @@ Base stations maintain 4 channels
 ![[Pasted image 20240630202604.png]]
 # Modulation
 - Process of transferring information signal to a high frequency carrier
-**Importance**
-1. 
+## Importance
+1. Allows transmission of large amount of info using a single carrier frequency
+2. Increases the transmission length
+3. Shorter aerial length
+4. Security
+5. Quality of service
+6. Multiplexing
+
+- Can be classified into
+	- Continuous wave modulation (cw)
+	- Pulse wave modulation
+## Continuous Wave
+- Can be classified depending on te
