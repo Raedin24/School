@@ -5,4 +5,12 @@ Radio waves were first known as *Hertzian Waves*.
 
 # Mobile Systems
 - Designed to operate over large areas with limited bandwidth
-- Cellular mobile commun
+- Cellular mobile communication systems use large numbers of *low-power wireless transmitters*  to create cells
+- Offers larger capacity through cell splitting.
+- Cells can be sized according to subscriber density and demand by varying power levels
+- Conversations are handed off to new cells as mobile users move from one region to another
+- Channels / frequencies used in one cell can be reused in a cell in another region
+
+# Communication Systems
+- Used to distribute info from one location to another.
+- Information is more conveniently shared as signals
