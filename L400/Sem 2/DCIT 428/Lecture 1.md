@@ -141,3 +141,7 @@ where:
 C = channel capacity
 B = bandwidth of channel (in Hz)
 SNR = 10 log(signal power / noise power)  in dB
+
+- Mathematical models of wireless comm systems can be divided into
+	1. Deterministic
+	2. Stochastic
