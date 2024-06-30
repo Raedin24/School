@@ -107,4 +107,10 @@ Base stations maintain 4 channels
 	- Distance to be travelled
 	- Noise
 	- Channel bandwidth
-- *Bandwidth*  is the range of frequencies that can pas
+- *Bandwidth of a media*  is the range of frequencies that can pass through that medium
+- *Bandwidth of a signal*  is the range of frequencies the signal carries
+`The b.w of the communication medium should be large enough to transmit the digital signal reliably. An inadequate b.w will distort the signal and introduce errors into the received signal.`
+```
+Data rate depends on the amount of data that the user is sending, thus a variable. Can increase, decrease and may become zero if the user is not sending. The bandwidth depends on the natural property of the media and thus, a fixed value
+```
+- *Noise*  
