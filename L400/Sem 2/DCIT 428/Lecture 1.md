@@ -73,4 +73,17 @@ Base stations maintain 4 channels
 	- Continuous wave modulation (cw)
 	- Pulse wave modulation
 ## Continuous Wave
-- Can be classified depending on te
+- Can be classified depending on the parameter of the high frequency carrier that is modified
+	1. Amplitude modulation
+	2. Frequency modulation
+	3. Phase modulation
+
+## Pulse Wave
+- Uses periodic sequence of rectangular pulses
+- Can be either **analogue** or **digital**
+- Analogue pulse modulation focuses on
+	- Pulse amplitude
+	- Pulse position
+	- Pulse duration
+`Standard form of digital pulse modulation is pulse code modulation`
+
