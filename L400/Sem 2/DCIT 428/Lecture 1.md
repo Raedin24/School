@@ -27,3 +27,12 @@ Radio waves were first known as *Hertzian Waves*.
 2. Channel
 3. Receiver
 ![[Pasted image 20240630200017.png]]
+### Communication Channel
+- Medium across which transmission takes place
+- Grouped according to mode of transmission
+	- Guided propagation (telephone, coaxial cable, optical fibre)
+	- Free propagation (wireless broadcast, mobile radio)
+
+# Cellular System Infrastructure
+- Early mobile systems used one powerful transmitter located at a high spot to cover areas, with radius of up to *50km*
+- 
