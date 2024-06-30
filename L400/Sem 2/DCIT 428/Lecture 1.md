@@ -59,3 +59,7 @@ Base stations maintain 4 channels
 **Generic Mobile Unit**
 ![[Pasted image 20240630202519.png]]**Generic Base Station**
 ![[Pasted image 20240630202604.png]]
+# Modulation
+- Process of transferring information signal to a high frequency carrier
+**Importance**
+1. 
