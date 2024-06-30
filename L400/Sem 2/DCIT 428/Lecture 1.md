@@ -113,4 +113,11 @@ Base stations maintain 4 channels
 ```
 Data rate depends on the amount of data that the user is sending, thus a variable. Can increase, decrease and may become zero if the user is not sending. The bandwidth depends on the natural property of the media and thus, a fixed value
 ```
-- *Noise*  
+- *Noise*  is an unwanted signal which interferes with the original message signal and corrupts its parameters
+- Likely to be introduces on the **channel** or the **receiver**
+- *Error rate*  is a measure of the **degree of prediction error** of a model made with respect to the true model
+- *Bit error rate*  is calculated by dividing the quantity of bits received in error by the total numbers of bits transmitted within the same period
+- ****
+$$
+C = 2B\space log_2M
+$$
