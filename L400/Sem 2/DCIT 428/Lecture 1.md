@@ -45,6 +45,18 @@ The coverage area of a transmitter is known as a **cell**. Cells are grouped int
 1. **PSTN** - Public switch telephone network
 2. **MSC** - Mobile switching centre
 3. **BSC** - Base station controller
+4. **MS** - Mobile station
+5. **BS** - Base station
+
+### Factors Influencing Performance of Wireless and Mobile Networking System
+1. Density of MS in a cell
+2. Distribution of speed and direction of MS
+3. Frequency of calls
+4. Number of simultaneous calls
+5. Duration of calls
+6. Position of MS w.r.t each other and BS
+7. Type of traffic real-time and non-real-time
+8. Traffic in adjacent cells and frequency of handoff
 ### Base Station
 Base stations maintain 4 channels
 - **FCC** - Forward (Downlink) control channel
@@ -97,7 +109,7 @@ Base stations maintain 4 channels
 	3. Three-dimensional (*video*)
 	4. Four-dimensional (*volume data over time*)
 
-## Channel Capacity
+## Channel Capacity (C)
 - Defined as the **maximum rate** at which information can be transmitted through a channel
 - The *fundamental theorem of information* theory says that at any rate below channel capacity, an error control code can be designed whose probability of error is arbitrarily small
 
@@ -117,7 +129,15 @@ Data rate depends on the amount of data that the user is sending, thus a variabl
 - Likely to be introduces on the **channel** or the **receiver**
 - *Error rate*  is a measure of the **degree of prediction error** of a model made with respect to the true model
 - *Bit error rate*  is calculated by dividing the quantity of bits received in error by the total numbers of bits transmitted within the same period
-- ****
+- **Nyquist Bandwidth** (noise free)
 $$
 C = 2B\space log_2M
 $$
+- **Shannon Capacity**
+$$
+C = B\space log_2(1 + SNR)
+$$
+where:
+C = channel capacity
+B = bandwidth of channel (in Hz)
+SNR = 10 log(signal power / noise power)  in dB
