@@ -94,4 +94,17 @@ Base stations maintain 4 channels
 - Can be
 	1. One-dimensional (*speech, music, computer data*)
 	2. Two-dimensional (*pictures*)
-	3. Three-dimem
+	3. Three-dimensional (*video*)
+	4. Four-dimensional (*volume data over time*)
+
+## Channel Capacity
+- Defined as the **maximum rate** at which information can be transmitted through a channel
+- The *fundamental theorem of information* theory says that at any rate below channel capacity, an error control code can be designed whose probability of error is arbitrarily small
+
+- *Data rate*  is the number of bits transmitted per second. Indicates how fast a signal can be transmitted reliably over a given medium
+- Affected by
+	- Amount of energy put into signal transmission
+	- Distance to be travelled
+	- Noise
+	- Channel bandwidth
+- *Bandwidth*  is the range of frequencies that can pas
