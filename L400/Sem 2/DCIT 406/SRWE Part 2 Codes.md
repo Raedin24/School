@@ -91,3 +91,5 @@ ipv6 unicast-routing
 ipv6 route ::/0 2001:DB8:ACAD:C::1  
 ipv6 route ::/0 2001:DB8:ACAD:B::1 10
 ```
+
+RADsecret
