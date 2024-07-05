@@ -40,11 +40,11 @@ interface range f0/6-24, g0/2
 switchport mode access  
 switchport access vlan 999  
 shutdown  
-  
+```  
 --------------------------------------------------  
-R-B-10:  
---------------------------------------------------  
-  
+# R-B-10:  
+
+```  
 enable  
 configure terminal  
 interface g0/0/0.10  
@@ -63,11 +63,11 @@ interface g0/0/1
 ip address dhcp  
 end  
 exit  
-  
+```  
 ----------------------------------------------------  
-R-1-A:  
-----------------------------------------------------  
-  
+# R-1-A:  
+
+```
 enable  
 configure terminal  
 ip route 0.0.0.0 0.0.0.0 g0/0/2  
@@ -79,11 +79,10 @@ ipv6 unicast-routing
 ipv6 route ::/0 2001:DB8:ACAD:A::2  
 ipv6 route ::/0 2001:db8:acad:b::2 10  
 ipv6 route 2001:db8:acad:3::122/128 2001:db8:acad:d::2  
-  
+```  
 -------------------------------------------------------  
-R-B-10:  
--------------------------------------------------------  
-  
+# R-B-10:  
+``` 
 enable  
 configure terminal  
 ip route 0.0.0.0 0.0.0.0 g0/0/1  
