@@ -34,7 +34,7 @@ A series of *documented processes* that define how to *implement, manage and mon
 	- **Authenticity** - Being genuine and verifiable. ie. confidence in the validity of a transmission, message or message originator
 	- **Accountability** - Actions of an entity should be traced uniquely to that entity. Supports *nonrepudation*, *deterrence*, *fault isolation*, *intrusion detection and prevention*
 
-
+**Defense in Depth** - A strategy that uses layered security mechanisms to provide comprehensive protection against diverse threats. Minimizes the impact of potential security breaches
 ## Cryptography in Network Security
 **Cryptography** is used to facilitate secure comms and data protection through *encryption* and *decryption* processes.
 1. **Symmetric Encryption** - Uses a single shared key for both encryption and decryption
@@ -49,6 +49,7 @@ Essential for safeguarding data transmission over networks
 ## Authentication and Authorization
 **Authentication** - Verifies the identity of users/devices
 **Authorization** - Determines the level of access
+
 Implemented through:
 1. **Passwords** - Traditional authentication method. Uses secret credentials known only to authorized users
 2. **Multi-Factor Authentication (MFA)** - Requires multiple forms of authentication (eg passwords, biometrics etc)
@@ -65,3 +66,10 @@ Implemented through:
 **Network Access Control (NAC)**  ensures only authorized devices/users can access network resources
 	- *Policy Enforcement* - Enforces security policies for access control based on ***user identity, device type, compliance status***
 	- *Endpoint Security* - Assesses the security posture of devices trying to access the network
+
+# Attacks
+Divided into the active and passive categories
+
+## Passive Attacks
+- Attempts to learn from the system but does not affect system resources.
+- 
