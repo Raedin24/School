@@ -78,4 +78,4 @@ Divided into the active and passive categories
 - Has **2** main types
 
 **Release of message contents** - An outsider being able to read contents of a transmission
-**Traffic analysis** - 
+**Traffic analysis** - The process of intercepting and examining messages in order to deduce information from patterns in communication. Can be prevented by encryption
