@@ -85,7 +85,9 @@ Divided into the active and passive categories
 - Emphasis is on **detection** and **recovery** instead of prevention.
 - Has **4** main categories
 
-**Masquerade** - One entity pretends to be another. Usually involves other forms o
-**Replay**
-**Modification of messages**
-**Denial of service**
+**Masquerade** - One entity pretends to be another. Usually involves other forms of active attack.
+**Replay** - Involves passive capture of a data unit and retransmission to produce an unauthorized effect
+**Modification of messages** - Modifying portions of a legitimate message, or reordering them to produce an unauthorized effect
+**Denial of service** - Preventing the normal use of network facilities by overloading it
+
+# OSI Security Architecture
