@@ -91,3 +91,7 @@ Divided into the active and passive categories
 **Denial of service** - Preventing the normal use of network facilities by overloading it
 
 # OSI Security Architecture
+Focuses on security attacks, mechanisms, and services
+- **Security attack** - An *action* that compromises the security of information
+- **Security mechanism** - A *process*  or _device_ using such a process, designed to detect, prevent or recover from a security attack
+- **Security service** - A _processing or communication service_  that enhances the security of data processing systems and info transfers. Makes use of 
