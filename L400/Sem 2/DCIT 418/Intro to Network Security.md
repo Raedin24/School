@@ -79,3 +79,11 @@ Divided into the active and passive categories
 
 **Release of message contents** - An outsider being able to read contents of a transmission
 **Traffic analysis** - The process of intercepting and examining messages in order to deduce information from patterns in communication. Can be prevented by encryption
+
+## Active Attacks
+- Involves modification of the data stream
+- Emphasis is on **detection** instead of prevention
+- Has **4** main categories
+
+**Masquerade**
+**Replay**
