@@ -82,8 +82,10 @@ Divided into the active and passive categories
 
 ## Active Attacks
 - Involves modification of the data stream
-- Emphasis is on **detection** instead of prevention
+- Emphasis is on **detection** and **recovery** instead of prevention.
 - Has **4** main categories
 
-**Masquerade**
+**Masquerade** - One entity pretends to be another. Usually involves other forms o
 **Replay**
+**Modification of messages**
+**Denial of service**
