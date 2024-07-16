@@ -72,4 +72,10 @@ Divided into the active and passive categories
 
 ## Passive Attacks
 - Attempts to learn from the system but does not affect system resources.
-- 
+- Difficult to detect (because of the above reason)
+- Usually achieved by eavesdropping on transmissions
+- Emphasis is on **prevention** rather than detection
+- Has **2** main types
+
+**Release of message contents** - An outsider being able to read contents of a transmission
+**Traffic analysis** - 
