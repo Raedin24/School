@@ -58,6 +58,16 @@ The LePEAttention (Locally-enhanced Positional Encoding Attention) mechanism is 
 
 These components enable the model to dynamically focus on different parts of the input data, emphasizing the most relevant features for better prediction accuracy. This is crucial for learning complex dependencies and relationships within the data.
 
+The `forward` method in the provided code snippet performs several operations on the input tensor `x`:
+
+1. **Convolution**: The input tensor `x` is passed through a convolutional layer (`self.conv`). This layer applies convolutional filters to the input tensor to extract features.
+    
+2. **Permute for Normalization**: After the convolution, the tensor's shape is assumed to be `(batch_size, channels, height, width)`. To apply `LayerNorm`, the tensor is permuted to `(batch_size, height, width, channels)` using `x.permute(0, 2, 3, 1)`. This reorders the dimensions so that `LayerNorm` can be applied along the channel dimension.
+    
+3. **Layer Normalization**: The permuted tensor is then passed through a layer normalization layer (`self.norm`). `LayerNorm` normalizes the tensor across the last dimension (channels in this case), which helps stabilize the learning process and improve convergence.
+    
+4. **Permute Back**: After normalization, the tensor is permuted back to its original shape `(batch_size, channels, height, width)` using `x.permute(0, 3, 1, 2)`.
+
 # SSF Explanation
 1. **Problem Statement**: 
    When fine-tuning pre-trained models for tasks like image classification, there are two common approaches:
@@ -94,7 +104,7 @@ In simpler terms, SSF fine-tuning method focuses on tweaking the deep features e
 ### Conclusion
 The LePEAttention mechanism enhances the traditional transformer attention by focusing on local regions within the input and enhancing these regions with locally specific positional encodings. This makes it particularly suited for tasks like image processing, where local spatial relationships are more informative and relevant than global relationships.
 
-### 3. CSWinBlock Class
+## 3. CSWinBlock Class
 Description: Basic building block of the CSWin Transformer, containing a LePE attention layer and an MLP.
 Parameters:
 - dim: Dimension of the feature vectors.
@@ -106,7 +116,7 @@ Parameters:
 - qk_scale: Scale factor for query-key interactions.
 
 ### 4. Merge_Block Class
-Description: Performs down-sampling and channel-wise normalization to prepare features for the subsequent transformer stage.
+Description: Performs down-sampling and channel-wise normalization to prepare features for the subsequent transformer stage. Basically responsible for reducing the resolution and increasing the number of output channels
 Parameters:
 - dim: Dimension of the input feature vectors.
 - dim_out: Dimension of the output feature vectors.
