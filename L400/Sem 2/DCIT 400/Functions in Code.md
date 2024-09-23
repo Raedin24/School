@@ -104,7 +104,7 @@ In simpler terms, SSF fine-tuning method focuses on tweaking the deep features e
 ### Conclusion
 The LePEAttention mechanism enhances the traditional transformer attention by focusing on local regions within the input and enhancing these regions with locally specific positional encodings. This makes it particularly suited for tasks like image processing, where local spatial relationships are more informative and relevant than global relationships.
 
-## 3. CSWinBlock Class
+# 3. CSWinBlock Class
 Description: Basic building block of the CSWin Transformer, containing a LePE attention layer and an MLP.
 Parameters:
 - dim: Dimension of the feature vectors.
