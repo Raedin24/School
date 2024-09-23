@@ -164,6 +164,63 @@ The LePEAttention mechanism enhances the traditional transformer attention by fo
 
 
 
+
+# CBAM
+### 1. Channel Attention (`ChannelAttention` class)
+
+This module computes attention across the feature channels of the input tensor. The goal is to highlight which channels are more important for the current task (e.g., classification, detection).
+
+#### Key Steps:
+
+- **Pooling**:
+    
+    - `self.avg_pool` and `self.max_pool` perform global average and global max pooling, respectively, over the spatial dimensions (height and width). This reduces the spatial information and focuses only on channel-wise information.
+- **Fully Connected Layers (`fc1` and `fc2`)**:
+    
+    - The `fc1` reduces the number of channels by `ratio` (a compression factor to reduce computational complexity).
+    - The `fc2` restores the number of channels back to the original `in_planes`.
+- **Sigmoid Activation**:
+    
+    - The sigmoid function squashes the output to the range `[0, 1]`, allowing the model to assign weights to each channel.
+- **Combining Outputs**:
+    
+    - The results of the average and max pooling paths are summed and multiplied element-wise by the original input. This modulates the importance of each channel.
+
+### 2. Spatial Attention (`SpatialAttention` class)
+
+This module computes attention across the spatial dimensions, emphasizing "where" in the image the model should focus.
+
+#### Key Steps:
+
+- **Pooling**:
+    
+    - Similar to the channel attention module, this computes global average (`avg_out`) and global max pooling (`max_out`) but across the channel dimension. This retains spatial information, reducing the channel dimension to 1.
+- **Concatenation**:
+    
+    - The outputs of the average and max pooling operations are concatenated along the channel dimension (forming a two-channel output).
+- **Convolution**:
+    
+    - A convolutional layer is applied to the concatenated tensor to compute a spatial attention map. The convolution filters are used to capture spatial dependencies.
+- **Sigmoid Activation**:
+    
+    - The spatial attention map is then passed through the sigmoid function, which outputs values between 0 and 1. These values indicate the relative importance of each spatial position.
+- **Element-wise Multiplication**:
+    
+    - The final spatial attention map is multiplied with the original input tensor, highlighting the important spatial regions.
+
+### 3. CBAM (`CBAM` class)
+
+The **CBAM** combines both channel attention and spatial attention sequentially to generate a refined attention map.
+
+#### Key Steps:
+
+- **Channel Attention (`ca`)**:
+    - The input tensor first passes through the `ChannelAttention` module, generating a channel-refined tensor.
+- **Spatial Attention (`sa`)**:
+    - The output from the channel attention module is then passed through the `SpatialAttention` module, which refines the spatial features of the tensor.
+
+The result is a tensor that has been refined in both channel and spatial dimensions, focusing on the most important features across the entire input.
+
 # Tensors
 The transforms.ToTensor() function is essential in preprocessing because it converts image data, typically stored in formats like PIL or NumPy arrays, into PyTorch tensors. This transformation standardizes the image data into a format suitable for input into neural networks, normalizing pixel values to the range [0, 1], which often leads to better performance during training. Additionally, transforming images to tensors allows for easier batch processing and GPU acceleration in PyTorch.
 
