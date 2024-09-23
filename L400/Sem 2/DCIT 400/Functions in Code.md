@@ -40,17 +40,17 @@ Parameters:
 - qk_scale: Scaling factor for the query-key dot product, defaults to the inverse square root of the head dimension.
 The LePEAttention (Locally-enhanced Positional Encoding Attention) mechanism is a variant of the self-attention mechanism used in transformer models, specifically designed to incorporate enhanced positional information. Here’s a simplified explanation of how it operates:
 
-### 1. Positional Encoding Enhancement
+#### 1. Positional Encoding Enhancement
 - Unlike standard transformers that use global positional encodings, LePE modifies the positional encodings locally within sub-regions of the input. This approach aims to make the positional encodings more relevant and useful for vision tasks, where local spatial relationships can be critical.
 
-### 2. Setup and Configuration
+#### 2. Setup and Configuration
 - Input: The mechanism takes an input feature map (e.g., from an image split into patches).
 - Configuration: It is configured with parameters such as the number of heads in multi-head attention, the dimensions of each head, and the split size, which defines how the input is partitioned into smaller regions or windows.
 
-### 3. Windowing
+#### 3. Windowing
 - The input feature map is divided into windows according to the specified split_size. This windowing step is crucial because it confines the computation of attention to smaller local regions, reducing computational complexity and allowing the model to focus more on local features.
 
-### 4. Query, Key, Value Computations
+#### 4. Query, Key, Value Computations
 - Within each window, the feature vectors are used to compute queries (Q), keys (K), and values (V) using linear transformations. Optionally, a bias can be added to these transformations (qkv_bias).
 -  *Queries* (Q): Represent the current position’s perspective, used to score against all keys.
 - *Keys* (K): Are aspects of other positions that the queries compare against to determine relevance.
@@ -68,43 +68,7 @@ The `forward` method in the provided code snippet performs several operations on
     
 4. **Permute Back**: After normalization, the tensor is permuted back to its original shape `(batch_size, channels, height, width)` using `x.permute(0, 3, 1, 2)`.
 
-# SSF Explanation
-1. **Problem Statement**: 
-   When fine-tuning pre-trained models for tasks like image classification, there are two common approaches:
-   - **Full Fine-Tuning**: Tune all parameters of the pre-trained model. This is computationally expensive and may not be efficient.
-   - **Linear Probing**: Only tune the last linear layer of the pre-trained model. While computationally efficient, it often leads to a significant drop in accuracy compared to full fine-tuning.
-
-2. **SSF Method**:
-   The SSF method proposes a parameter-efficient fine-tuning approach that strikes a balance between full fine-tuning and linear probing. Here's how it works:
-
-   - **Scale and Shift Features**: Instead of tuning all parameters or just the last layer, SSF focuses on adjusting the deep features extracted by the pre-trained model. It scales and shifts these features to improve their effectiveness for the specific task at hand.
-   
-   - **Parameter Efficiency**: SSF introduces a small number of learnable parameters during the training stage. These parameters are used to scale and shift the deep features extracted by the pre-trained model.
-   
-   - **Re-parameterization**: During the inference phase, the additional parameters introduced by SSF can be merged into the original pre-trained model weights. This means that SSF doesn't introduce extra computational cost during inference.
-
-3. **Benefits**:
-   - **Performance Improvement**: SSF achieves significant performance improvements compared to linear probing, approaching the accuracy of full fine-tuning.
-   - **Parameter Efficiency**: Despite fine-tuning only a small fraction of the model's parameters, SSF outperforms other parameter-efficient fine-tuning methods.
-   - **Versatility**: SSF is applicable across various model families (CNNs, Transformers, MLPs) and datasets, demonstrating its effectiveness in different scenarios.
-
-In simpler terms, SSF fine-tuning method focuses on tweaking the deep features extracted by a pre-trained model to better suit the specific task, without the need to tune all parameters or introduce excessive computational overhead. It achieves significant performance gains while being efficient in terms of parameters and computational cost.
-### 5. Scaled Dot-Product Attention
-- The dot products between the queries and keys are computed, which represent the attention scores. These scores are scaled down by a factor (qk_scale), typically the inverse square root of the dimension of the keys, to stabilize the gradients during training.
-
-### 6. Attention Scores and Value Weighting
-- Softmax is applied to the scaled attention scores to normalize them into a probability distribution. The resulting normalized scores are then used to weigh the values.
-
-### 7. Enhancement with Local Positional Encodings
-- After computing the initial attention outputs using the values, locally-enhanced positional encodings are added. This step incorporates specific positional information into the attention output, further enhancing its sensitivity to the positions within each local window.
-
-### 8. Output Projection
-- Finally, the attention outputs (enhanced with positional information) are passed through an output projection layer, which can also include dropout for regularization. The projected outputs are then typically used as inputs to subsequent layers or operations in the network.
-
-### Conclusion
-The LePEAttention mechanism enhances the traditional transformer attention by focusing on local regions within the input and enhancing these regions with locally specific positional encodings. This makes it particularly suited for tasks like image processing, where local spatial relationships are more informative and relevant than global relationships.
-
-# 3. CSWinBlock Class
+### 3. CSWinBlock Class
 Description: Basic building block of the CSWin Transformer, containing a LePE attention layer and an MLP.
 Parameters:
 - dim: Dimension of the feature vectors.
@@ -161,6 +125,44 @@ Description: Registers different configurations of the CSWin Transformer for eas
 
 ### 5. drop_rate
 - Purpose: Regularizes the model by randomly disabling a portion of the embeddings during training, promoting robustness and preventing overfitting.
+
+# SSF Explanation
+1. **Problem Statement**: 
+   When fine-tuning pre-trained models for tasks like image classification, there are two common approaches:
+   - **Full Fine-Tuning**: Tune all parameters of the pre-trained model. This is computationally expensive and may not be efficient.
+   - **Linear Probing**: Only tune the last linear layer of the pre-trained model. While computationally efficient, it often leads to a significant drop in accuracy compared to full fine-tuning.
+
+2. **SSF Method**:
+   The SSF method proposes a parameter-efficient fine-tuning approach that strikes a balance between full fine-tuning and linear probing. Here's how it works:
+
+   - **Scale and Shift Features**: Instead of tuning all parameters or just the last layer, SSF focuses on adjusting the deep features extracted by the pre-trained model. It scales and shifts these features to improve their effectiveness for the specific task at hand.
+   
+   - **Parameter Efficiency**: SSF introduces a small number of learnable parameters during the training stage. These parameters are used to scale and shift the deep features extracted by the pre-trained model.
+   
+   - **Re-parameterization**: During the inference phase, the additional parameters introduced by SSF can be merged into the original pre-trained model weights. This means that SSF doesn't introduce extra computational cost during inference.
+
+3. **Benefits**:
+   - **Performance Improvement**: SSF achieves significant performance improvements compared to linear probing, approaching the accuracy of full fine-tuning.
+   - **Parameter Efficiency**: Despite fine-tuning only a small fraction of the model's parameters, SSF outperforms other parameter-efficient fine-tuning methods.
+   - **Versatility**: SSF is applicable across various model families (CNNs, Transformers, MLPs) and datasets, demonstrating its effectiveness in different scenarios.
+
+In simpler terms, SSF fine-tuning method focuses on tweaking the deep features extracted by a pre-trained model to better suit the specific task, without the need to tune all parameters or introduce excessive computational overhead. It achieves significant performance gains while being efficient in terms of parameters and computational cost.
+### 5. Scaled Dot-Product Attention
+- The dot products between the queries and keys are computed, which represent the attention scores. These scores are scaled down by a factor (qk_scale), typically the inverse square root of the dimension of the keys, to stabilize the gradients during training.
+
+### 6. Attention Scores and Value Weighting
+- Softmax is applied to the scaled attention scores to normalize them into a probability distribution. The resulting normalized scores are then used to weigh the values.
+
+### 7. Enhancement with Local Positional Encodings
+- After computing the initial attention outputs using the values, locally-enhanced positional encodings are added. This step incorporates specific positional information into the attention output, further enhancing its sensitivity to the positions within each local window.
+
+### 8. Output Projection
+- Finally, the attention outputs (enhanced with positional information) are passed through an output projection layer, which can also include dropout for regularization. The projected outputs are then typically used as inputs to subsequent layers or operations in the network.
+
+### Conclusion
+The LePEAttention mechanism enhances the traditional transformer attention by focusing on local regions within the input and enhancing these regions with locally specific positional encodings. This makes it particularly suited for tasks like image processing, where local spatial relationships are more informative and relevant than global relationships.
+
+
 
 # Tensors
 The transforms.ToTensor() function is essential in preprocessing because it converts image data, typically stored in formats like PIL or NumPy arrays, into PyTorch tensors. This transformation standardizes the image data into a format suitable for input into neural networks, normalizing pixel values to the range [0, 1], which often leads to better performance during training. Additionally, transforming images to tensors allows for easier batch processing and GPU acceleration in PyTorch.
