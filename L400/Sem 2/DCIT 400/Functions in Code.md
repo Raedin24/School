@@ -68,6 +68,21 @@ The `forward` method in the provided code snippet performs several operations on
     
 4. **Permute Back**: After normalization, the tensor is permuted back to its original shape `(batch_size, channels, height, width)` using `x.permute(0, 3, 1, 2)`.
 
+#### 5. Scaled Dot-Product Attention
+- The dot products between the queries and keys are computed, which represent the attention scores. These scores are scaled down by a factor (qk_scale), typically the inverse square root of the dimension of the keys, to stabilize the gradients during training.
+
+#### 6. Attention Scores and Value Weighting
+- Softmax is applied to the scaled attention scores to normalize them into a probability distribution. The resulting normalized scores are then used to weigh the values.
+
+#### 7. Enhancement with Local Positional Encodings
+- After computing the initial attention outputs using the values, locally-enhanced positional encodings are added. This step incorporates specific positional information into the attention output, further enhancing its sensitivity to the positions within each local window.
+
+#### 8. Output Projection
+- Finally, the attention outputs (enhanced with positional information) are passed through an output projection layer, which can also include dropout for regularization. The projected outputs are then typically used as inputs to subsequent layers or operations in the network.
+
+#### Conclusion
+The LePEAttention mechanism enhances the traditional transformer attention by focusing on local regions within the input and enhancing these regions with locally specific positional encodings. This makes it particularly suited for tasks like image processing, where local spatial relationships are more informative and relevant than global relationships.
+
 ### 3. CSWinBlock Class
 Description: Basic building block of the CSWin Transformer, containing a LePE attention layer and an MLP.
 Parameters:
@@ -147,20 +162,60 @@ Description: Registers different configurations of the CSWin Transformer for eas
    - **Versatility**: SSF is applicable across various model families (CNNs, Transformers, MLPs) and datasets, demonstrating its effectiveness in different scenarios.
 
 In simpler terms, SSF fine-tuning method focuses on tweaking the deep features extracted by a pre-trained model to better suit the specific task, without the need to tune all parameters or introduce excessive computational overhead. It achieves significant performance gains while being efficient in terms of parameters and computational cost.
-### 5. Scaled Dot-Product Attention
-- The dot products between the queries and keys are computed, which represent the attention scores. These scores are scaled down by a factor (qk_scale), typically the inverse square root of the dimension of the keys, to stabilize the gradients during training.
 
-### 6. Attention Scores and Value Weighting
-- Softmax is applied to the scaled attention scores to normalize them into a probability distribution. The resulting normalized scores are then used to weigh the values.
+### 1. `init_ssf_scale_shift(dim)` function
 
-### 7. Enhancement with Local Positional Encodings
-- After computing the initial attention outputs using the values, locally-enhanced positional encodings are added. This step incorporates specific positional information into the attention output, further enhancing its sensitivity to the positions within each local window.
+This function initializes the `scale` and `shift` parameters that will be applied to the input tensor.
 
-### 8. Output Projection
-- Finally, the attention outputs (enhanced with positional information) are passed through an output projection layer, which can also include dropout for regularization. The projected outputs are then typically used as inputs to subsequent layers or operations in the network.
+- **`scale`**: Initialized to a tensor of ones, which means initially it does not change the input values. It’s learnable and can modify each input feature channel by multiplying it.
+- **`shift`**: Initialized to a tensor of zeros, meaning initially there’s no additive shift to the input. Like `scale`, this is also learnable.
 
-### Conclusion
-The LePEAttention mechanism enhances the traditional transformer attention by focusing on local regions within the input and enhancing these regions with locally specific positional encodings. This makes it particularly suited for tasks like image processing, where local spatial relationships are more informative and relevant than global relationships.
+The function then randomly initializes these parameters with normal distributions:
+
+- `scale`: Initialized with mean `1` and standard deviation `0.02`.
+- `shift`: Initialized with mean `0` and standard deviation `0.02`.
+
+This random initialization allows the parameters to start close to the identity function (i.e., no modification), but they can change during training.
+
+### 2. `ssf_ada(x, scale, shift)` function
+
+This function applies the scale and shift transformations to the input tensor `x`.
+
+- **Input**:
+    
+    - `x`: A tensor of size `[B, N, C]` where:
+        - `B`: Batch size.
+        - `N`: Number of elements (e.g., sequence length or spatial resolution).
+        - `C`: Number of channels (features).
+    - `scale` and `shift`: Learnable parameters with shape `[C]`.
+- **Operation**:
+    
+    - **Element-wise multiplication and addition**:
+        - Each element in `x` is scaled by the corresponding element in `scale` and then shifted by the corresponding value in `shift`.
+    - **Shape checking**:
+        - If the last dimension of `x` (the feature dimension) matches the size of `scale` and `shift`, apply the scaling and shifting directly.
+        - If the second dimension of `x` matches the size of `scale` and `shift`, reshape `scale` and `shift` to match the input tensor's size for broadcasting.
+- **Output**: A tensor with the same shape as `x` but modified by `scale` and `shift`.
+    
+
+### 3. `SSF` class (the main module)
+
+This class encapsulates the SSF mechanism as a PyTorch module, making it easier to integrate into models.
+
+#### Initialization (`__init__`):
+
+- **`num_features`**: The number of input features (channels) that will be scaled and shifted.
+- **`scale`** and **`shift`**: Learnable parameters that are initialized as in `init_ssf_scale_shift`. Both are tensors of shape `[1, 1, num_features]`, meaning each feature will have its own scale and shift.
+
+#### Forward Pass (`forward`):
+
+- The forward method processes an input tensor `x` and applies the scale and shift.
+- **If `x.dim() == 3`**: Assumes the input has shape `[B, N, C]` (batch size, number of elements, and channels), and the scaling and shifting is applied along the channel dimension.
+- **If `x.dim() == 2`**: Assumes a 2D tensor where `x` is flattened, and it applies the scaling and shifting appropriately.
+
+#### Handling Errors:
+
+- If the input tensor does not have 2 or 3 dimensions, the code raises a `ValueError`, indicating that it received an unexpected input shape.
 
 
 
