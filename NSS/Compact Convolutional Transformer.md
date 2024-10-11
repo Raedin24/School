@@ -35,5 +35,8 @@ For each epoch:
 - Add *dropout*  layers in the transformer block to prevent the model from overfitting.
 - Use *weight decay*  to prevent weights from growing too large.
 ## 7. Learning Rate Schedules
-- Adjust the learning rate dynamically as training progresses to help the model converge faster and more stably
-- 
+- Adjust the *learning rate* dynamically as training progresses to help the model converge faster and more stably
+## 8. Validation
+- Evaluate the model on a validation set during training to see how well the model is generalising to unseen data
+## 9. Testing
+- Test the final version on a separate test set to evaluate its performance on completely unseen data
