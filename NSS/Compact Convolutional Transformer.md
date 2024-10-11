@@ -10,3 +10,8 @@
 2. More efficient than a traditional transformer
 3. Better for small datasets
 4. Better at handling images
+
+# Pipeline
+## 1. Data Preparation
+**Input data**: Resize and normalise images
+**Augmentation**: Perform data augmentation techniques (rotation, flipping, cropping, etc)
