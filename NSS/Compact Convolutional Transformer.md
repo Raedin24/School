@@ -22,4 +22,12 @@
 - Use *self-attention*  to capture global relationships between different parts of the image.
 - Transformer analyses the full set of patches, which allows it to learn more global patterns.
 ## 4. Optimisation
-- Use loss function (eg. cross-entropy)
+- Use *loss function* (eg. cross-entropy) to measure how far the model's predictions are from the true labels.
+- Use the error calculated by the loss function to adjust the model's weights. This includes adjusting both the convolutional and transformer layers using *backpropagation*.
+- Use an *optimiser* (eg. Adam or SDG) to minimise the loss by updating the weights in small steps.
+## 5. Training Loop
+For each epoch:
+- Process batches of training images
+- Predict class label
+- Calculate loss and adjust gradients using backpropagation
+- Update the model weights for next round of training
