@@ -1,0 +1,3 @@
+- Is a type of **neural network**
+- Combines CNNs and Transformers.
+	- **CNNs** : Good at processing images. Can efficiently detect pat

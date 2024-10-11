@@ -17,5 +17,3 @@ Here goes
 - It is good to note, however, that the Obsidian mobile does not face such startup challenges. Even with the same sync and themes, the start-up time is as fast as can possibly be
 
 Tests shall end here for now, as I require rest. I have installed the git plugin and will proceed to set it up and test it in the coming hours
-
-- [ ] Migrate passwords to new manager
