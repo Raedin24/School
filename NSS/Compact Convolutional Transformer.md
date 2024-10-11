@@ -6,4 +6,7 @@
 - Then uses a transformer block to focus on relationships between the patches to understand the overall structure
 
 **Benefits**
-1. Has fewer parametr
+1. Has fewer parameters
+2. More efficient than a traditional transformer
+3. Better for small datasets
+4. Better at handling images
