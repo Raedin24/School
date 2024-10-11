@@ -13,5 +13,13 @@
 
 # Pipeline
 ## 1. Data Preparation
-**Input data**: Resize and normalise images
-**Augmentation**: Perform data augmentation techniques (rotation, flipping, cropping, etc)
+- Resize and normalise images
+- Perform data augmentation techniques (rotation, flipping, cropping, etc)
+## 2. Patch Creation
+- Use a convolutional layer to automatically process images into patches. This layer extracts low-level features (edges, textures, corners)
+- Patches are passed into the transformer part of the architecture
+## 3. Transformer Block
+- Use *self-attention*  to capture global relationships between different parts of the image.
+- Transformer analyses the full set of patches, which allows it to learn more global patterns.
+## 4. Optimisation
+- Use loss function (eg. cross-entropy)
