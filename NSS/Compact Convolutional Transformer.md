@@ -31,3 +31,9 @@ For each epoch:
 - Predict class label
 - Calculate loss and adjust gradients using backpropagation
 - Update the model weights for next round of training
+## 6. Regularisation
+- Add *dropout*  layers in the transformer block to prevent the model from overfitting.
+- Use *weight decay*  to prevent weights from growing too large.
+## 7. Learning Rate Schedules
+- Adjust the learning rate dynamically as training progresses to help the model converge faster and more stably
+- 
