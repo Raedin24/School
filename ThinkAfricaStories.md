@@ -1,7 +1,3 @@
-
-
----
-
 ### Comparative Analysis
 
 | **Feature / Provider**      | **Hostinger**                                                                                                                                 | **DigitalOcean**                              | **GoDaddy**                                                                                                                                                                                                            |
@@ -18,7 +14,7 @@
 
 - **Hosting**: Business plan is ideal—features daily backups, CDN, staging, 50 GB NVMe storage. Promo plan starts $3.99/mo, then renews at $13.99/mo.
     
-- **Email**: Business Starter at $0.59/mo (10 GB), renews at $1.59/mo; Business Premium gives 50 GB at $2.99 → $3.99 ([techradar.com](https://www.techradar.com/pro/hostinger-email-review?utm_source=chatgpt.com "Hostinger email review - TechRadar")).
+- **Email**: Business Starter at $0.59/mo (10 GB), renews at $1.59/mo; Business Premium gives 50 GB at $2.99 → $3.99.
     
 
 **DigitalOcean**
@@ -28,10 +24,9 @@
 
 **GoDaddy**
 
-- **Hosting + Domain**: $5.99/mo promo → $8.99/mo renewal.
+- **Hosting + Domain**: $6.99/mo promo → $9.99/mo renewal.
     
 - **Email**: First year includes Microsoft Email Essentials (10 GB). Upon expiration, it renews at $7.99/mo.  
-    Upgrades: Email Plus (50 GB) at $6.99/mo; Business Professional at $15.99/mo ([hostingrevelations.com](https://hostingrevelations.com/godaddy-email-cost/?utm_source=chatgpt.com "GoDaddy Email Hosting Review (2025) - HostingRevelations"), [expertmarket.com](https://www.expertmarket.com/ca/website-builders/godaddy-pricing?utm_source=chatgpt.com "GoDaddy Pricing: Plans & Costs - Expert Market")).
 
 **Zoho Mail**
 - Mail Lite: $0.70/user/mo. Billed annually. 5GB per user
@@ -39,7 +34,7 @@
 
 ---
 
-### 💡 Best Setup for a Blog + Seminar Updates Website
+### Best Setup for semi-regularly updated website
 
 - **Hostinger**: Great value, easy WordPress setup, low-cost email, and transparent renewal rates.
     
@@ -50,17 +45,15 @@
 
 ---
 
-### ✅ Recommendation
+### Recommendation
 
 For a streamlined and budget-friendly blog + seminars site:
 
 - **Hostinger Business + Business Starter Email**
     
-    - **Year 1 cost**: Hosting ~$3.99/mo + Email $0.99/mo
+    - **Year 1 cost**: Hosting ~$3.99/mo + Email $0.59/mo
         
-    - **Renewal cost**: Hosting $8.99/mo + Email $1.59/mo
+    - **Renewal cost**: Hosting $13.99/mo + Email $1.59/mo
         
     - Provides easy WordPress install, SSL, backups, domain, and email.
         
-
-Let me know if you want a projected 3-year cost summary or help setting everything up!
