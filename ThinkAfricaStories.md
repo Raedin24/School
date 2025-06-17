@@ -47,8 +47,6 @@
 
 ### Recommendation
 
-For a streamlined and budget-friendly blog + seminars site:
-
 - **Hostinger Business + Business Starter Email**
     
     - **Year 1 cost**: Hosting ~$3.99/mo + Email $0.59/mo
