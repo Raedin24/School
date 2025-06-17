@@ -4,11 +4,11 @@
 
 ### Comparative Analysis
 
-| **Feature / Provider**      | **Hostinger**                                                                                                                                 | **DigitalOcean**                              | **GoDaddy**                                                                                                                                                                                                       |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Website Hosting**      | Shared (“Premium” or “Business”) starting ~$2.99–$3.99/mo promo; renews at $10.99–$13.99/mo. 2 year term + 3 months free                      | VPS Droplet 1 GB: $4/mo (self‑managed)        | Web Hosting Starter - $4.99/mo for 1 year. $59.88 upfront. Renews at same price.<br><br>Web Hosting Economy -  $6.99/mo. $83.88 upfront. Renews at $119.88; includes domain, email and SSL certificate first year |
-| **2. Domain Registration**  | Free first year; renews ~$5 - $10/year                                                                                                        | Register separately (~$10–15/year)            | Free first year; renews ~$12/year                                                                                                                                                                                 |
-| **3. Custom Email Service** | Business Starter: $0.59/mo (promo), renews $1.59/mo for 4 years — 10 GB mailbox; <br><br>Business Premium: $2.99 → $3.99 for  4 years - 50 GB | No native email; use third‑party (e.g., Zoho) | **Included Year 1**: Microsoft Email Essentials Free → auto-renews to the paid tier.**Essentials**: renews at $95.88 (10 GB)  / year                                                                              |
+| **Feature / Provider**      | **Hostinger**                                                                                                                                 | **DigitalOcean**                              | **GoDaddy**                                                                                                                                                                                                            |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Website Hosting**      | Shared (“Premium” or “Business”) starting ~$2.99–$3.99/mo promo; renews at $10.99–$13.99/mo. 2 year term + 3 months free                      | VPS Droplet 1 GB: $4/mo (self‑managed)        | Web Hosting Starter - $4.99/mo for 1 year. $59.88 upfront. Renews at same price.<br><br>Web Hosting Economy -  $6.99/mo. $83.88 upfront. Renews at $119.88; includes free domain, email and SSL certificate first year |
+| **2. Domain Registration**  | Free first year; renews ~$5 - $10/year                                                                                                        | Register separately (~$10–15/year)            | Free first year; renews ~$22.17/year                                                                                                                                                                                   |
+| **3. Custom Email Service** | Business Starter: $0.59/mo (promo), renews $1.59/mo for 4 years — 10 GB mailbox; <br><br>Business Premium: $2.99 → $3.99 for  4 years - 50 GB | No native email; use third‑party (e.g., Zoho) | **Included Year 1**: Microsoft Email Essentials Free → auto-renews to the paid tier.**Essentials**: renews at $95.88 (10 GB)  / year                                                                                   |
 
 ---
 
@@ -23,14 +23,14 @@
 
 **DigitalOcean**
 
-- All you need is a $4/mo Droplet and an external domain (~$12/year). No native email—you’d pair with something like Zoho ($1/mo/user) or similar.
+- A $4/mo Droplet and an external domain (~$12/year). No native email.
     
 
 **GoDaddy**
 
 - **Hosting + Domain**: $5.99/mo promo → $8.99/mo renewal.
     
-- **Email**: First year includes Microsoft Email Essentials (10 GB). Upon expiration, it renews at $5.99/mo.  
+- **Email**: First year includes Microsoft Email Essentials (10 GB). Upon expiration, it renews at $7.99/mo.  
     Upgrades: Email Plus (50 GB) at $6.99/mo; Business Professional at $15.99/mo ([hostingrevelations.com](https://hostingrevelations.com/godaddy-email-cost/?utm_source=chatgpt.com "GoDaddy Email Hosting Review (2025) - HostingRevelations"), [expertmarket.com](https://www.expertmarket.com/ca/website-builders/godaddy-pricing?utm_source=chatgpt.com "GoDaddy Pricing: Plans & Costs - Expert Market")).
 
 **Zoho Mail**
