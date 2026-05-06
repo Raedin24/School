@@ -30,4 +30,4 @@ Has 2 types:
 ## Linux Architecture
 1. **Hardware** - Basically the CPU. Cannot directly communicate with users since there is no common language
 2. **Kernel** - Acts as the middleman between the user and the hardware. Users communicate to the hardware through the kernel.
-3. **Shell** - Executes user commands. Allows user to communicate with the shell.
+3. **Shell** - CLI that allows user to communicate with the kernel.
