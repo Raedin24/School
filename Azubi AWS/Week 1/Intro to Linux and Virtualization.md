@@ -30,4 +30,16 @@ Has 2 types:
 ## Linux Architecture
 1. **Hardware** - Basically the CPU. Cannot directly communicate with users since there is no common language
 2. **Kernel** - Acts as the middleman between the user and the hardware. Users communicate to the hardware through the kernel.
-3. **Shell** - CLI that allows user to communicate with the kernel.
+3. **Shell** - Executes user commands. Allows users to communicate with the kernel.
+
+### Kernel
+- A computer program, the core interface that connects hardware components to the software processes
+
+**Operations performed by a kernel**
+1. **Resource Management** - Allocates CPU, RAM, and I/O resources to processes.
+2. **Memory Management** - Manages virtual memory and protects memory spaces.
+3. **Device Management** - Controls hardware devices via drivers, handles I/O operations and manages interrupts.
+4. **System Calls** - Provides a secure interface for applications to request kernel services like file operations and process control.
+
+### Shell
+- A command-line interface (CLI)
