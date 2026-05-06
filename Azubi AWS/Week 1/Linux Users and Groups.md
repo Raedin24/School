@@ -1,7 +1,19 @@
 Linux is a **multi-user** OS, which means multiple users can access and use the system simultaneously
 Managing users and groups is crucial for ensuring proper security and organization
 
-# Types of Users
+# Users
+## Types of Users
 1. **Root User** - Superuser with complete control over the system. Can perform any task, including administrative and system-level operations.
-2. **Regular Users** - Standard user accounts created for daily use. Each has a home directory and can be assigned permissions to files and directories
-3. **System Users** - Used by system processes and services, often without a home directory or login priveleges
+2. **Regular Users** - Standard user accounts created for daily use. Each has a home directory and can be assigned permissions to files and directories.
+3. **System Users** - Used by system processes and services, often without a home directory or login privileges.
+
+## User Accounts
+- Represents users on the system.
+- User information can be stored locally or on another server through a network.
+- If stored locally, is stored in `/etc/passwd` file
+- Best practice is to assign one user per account.
+
+**`/etc/passwd` file**
+- Contain the registered users on the system.
+- Formatted as a colon-separated file
+- `user:password_placeholder:UID:GID:home_directory:default_shell`
