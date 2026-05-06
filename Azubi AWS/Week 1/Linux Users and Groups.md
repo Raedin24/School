@@ -1,0 +1,1 @@
+Linux is a **multi-user** OS, which means multiple users can access and use the system simultaneously
