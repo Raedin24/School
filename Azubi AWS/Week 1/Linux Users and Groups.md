@@ -16,4 +16,10 @@ Managing users and groups is crucial for ensuring proper security and organizati
 **`/etc/passwd` file**
 - Contain the registered users on the system.
 - Formatted as a colon-separated file
-- `user:password_placeholder:UID:GID:home_directory:default_shell`
+	- `user:password_placeholder:UID:GID:Comment(full name):home_directory:default_shell`
+	- `raedin:x:1000:1000:Raedin,,,:/home/raedin:/bin/bash`
+	- `newuser:x:1001:1006::/home/newuser:/bin/bash`
+
+
+# User Management Commands
+- `adduser`
