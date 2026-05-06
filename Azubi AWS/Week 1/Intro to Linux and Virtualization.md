@@ -42,4 +42,8 @@ Has 2 types:
 4. **System Calls** - Provides a secure interface for applications to request kernel services like file operations and process control.
 
 ### Shell
-- A command-line interface (CLI)
+- A **command-line interface (CLI)** that allows users to interact with the OS by typing commands.
+- Interprets the commands entered by the user, executes them, and returns the output.
+- Acts as the intermediary between the user and kernel
+- Eg bash, zsh, fish, tcsh, tmux
+
