@@ -4,4 +4,8 @@
 ## **Key Concepts**
 **Hypervisor** - The software layer that enables virtualization. Manages the creation and running of virtual machines
 Has 2 types:
-1. **Type 1**
+1. **Type 1 (Bare-Metal)**: Runs directly on the host hardware. eg. VMWare ESXi, Microsoft Hyper-V, Xen
+2. **Type 2 (Hosted)**: Runs on top of an existing OS. eg. VMWare Workstation, Oracle VirtualBox.
+
+## Benefits of Virtualization
+1. Resource efficiency: Maximizes hardware utilization by running multiple VMs on a single physical machine.
