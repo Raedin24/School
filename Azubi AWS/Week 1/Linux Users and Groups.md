@@ -26,4 +26,7 @@ Managing users and groups is crucial for ensuring proper security and organizati
 - `passwd` - Change a user's password
 - `usermod` - Modify an existing user
 - `userdel` - Delete a user
-- 
+- `id` - Displays a user's ID and group information
+- `who` - Shows who is logged on and what processes they are running
+- `su` - Switch to another user account
+- `sudo` - Execute commands with root privileges
