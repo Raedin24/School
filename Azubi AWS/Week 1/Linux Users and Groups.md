@@ -22,4 +22,8 @@ Managing users and groups is crucial for ensuring proper security and organizati
 
 
 # User Management Commands
-- `adduser`
+- `adduser / useradd` - Create a new user
+- `passwd` - Change a user's password
+- `usermod` - Modify an existing user
+- `userdel` - Delete a user
+- 
