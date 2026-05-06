@@ -13,4 +13,5 @@ Has 2 types:
 3. **Cost Savings**: Reduces the need for physical hardware
 4. **Flexibility**: Easily create, clone, and migrate VMs
 5. **Testing and Development**: Provides a sandbox environment for testing new software / configurations
-6. 
+
+# Linux
