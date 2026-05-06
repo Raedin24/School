@@ -27,4 +27,7 @@ Has 2 types:
 - Designed for use on AWS virtual machines
 - Derived from RHEL
 
-## Linux Arch
+## Linux Architecture
+1. **Hardware** - Basically the CPU. Cannot directly communicate with users since there is no common language
+2. **Kernel** - Acts as the middleman between the user and the hardware. Users communicate to the hardware through the kernel.
+3. **Shell** - Executes user commands. Allows user to communicate with the shell.
