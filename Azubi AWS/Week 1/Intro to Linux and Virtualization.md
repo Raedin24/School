@@ -15,3 +15,16 @@ Has 2 types:
 5. **Testing and Development**: Provides a sandbox environment for testing new software / configurations
 
 # Linux
+- The best-known and most-used open source OS
+- Provides the source code for the core functionality of an OS (called ***kernel*** ) which user can modify and expand
+
+## Linux Distributions
+- A **distribution** includes the Linux kernel and complementary tools and software applications.
+- ![[Pasted image 20260506134957.png]]
+
+**Amazon Linux 2**
+- Enterprise-class Linux Distribution
+- Designed for use on AWS virtual machines
+- Derived from RHEL
+
+## Linux Arch
